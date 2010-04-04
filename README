@@ -76,8 +76,3 @@ aqhbci-tool4 ausfuehren
 
 ./aqhbci-tool4 adduser -N 100944715 -u 100944715 -b 50850150 -t pintan -n pin -s 'https://hbci-pintan-he.s-hbci.de/PinTanServlet'
 ./aqbanking-cli request -b 50850150 -a 100944715 --transactions
-
-
-
-
-
