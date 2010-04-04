@@ -122,18 +122,15 @@ PATH=$(PREFIX)/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 	make install
 	touch .iconv.compiled$(postfix)
 
-.gwen-cvs: .libgcrypt.compiled-i386 .pkg-config.compiled$(postfix)
-	mkdir -p static-build-i386-$(AqVer)/share/aclocal
-	cd gwenhywfar-$(GwenVer); \
-	aclocal -I ./m4 -I ../static-build-i386-$(AqVer)/share/aclocal/; \
-	autoheader; \
-	if test ! -f i18nsources; then echo > i18nsources; fi; \
-	automake -f --add-missing; \
-	autoconf
-	touch .gwen-cvs
-
-.gwen.compiled$(postfix): .gettext.compiled$(postfix) .libgcrypt.compiled$(postfix) .gnutls.compiled$(postfix) .gwen-cvs
+.gwen.compiled$(postfix): .pkg-config.compiled$(postfix) .gettext.compiled$(postfix) .libgcrypt.compiled$(postfix) .gnutls.compiled$(postfix)
 	mkdir -p $(BUILDDIR)/gwenhywfar-$(GwenVer)
+	rsync -av --delete gwenhywfar/ $(BUILDDIR)/gwenhywfar-$(GwenVer)/
+	cd $(BUILDDIR)/gwenhywfar-$(GwenVer); glibtoolize -f --automake
+	cd $(BUILDDIR)/gwenhywfar-$(GwenVer); aclocal -I ./m4 -I $(PREFIX)/share/aclocal/
+	cd $(BUILDDIR)/gwenhywfar-$(GwenVer); autoheader
+	cd $(BUILDDIR)/gwenhywfar-$(GwenVer); if test ! -f i18nsources; then echo > i18nsources; fi
+	cd $(BUILDDIR)/gwenhywfar-$(GwenVer); automake -f --add-missing
+	cd $(BUILDDIR)/gwenhywfar-$(GwenVer); /usr/bin/autoconf
 	cd $(BUILDDIR)/gwenhywfar-$(GwenVer); \
 	PATH=$(PATH) \
 	LDFLAGS="-framework CoreFoundation $(LDFLAGS) -lcharset -liconv -lintl -lgmp -lgpg-error -lgcrypt -lgnutls -lgnutls-extra -lgnutls-openssl" \
@@ -142,7 +139,7 @@ PATH=$(PREFIX)/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 	LIBGNUTLS_CFLAGS="-H$(PREFIX)/include/gnutls" \
 	LIBGNUTLS_LIBS="-lz -lintl -lgnutls -lgnutls-openssl" \
 	PKG_CONFIG=$(PREFIX)/bin/pkg-config PKG_CONFIG_PATH=$(PREFIX)/lib/pkgconfig/ \
-	$(BASEDIR)/gwenhywfar-$(GwenVer)/configure $(SHARED_CONFFLAGS) --enable-debug=$(DEBUG) \
+	./configure $(SHARED_CONFFLAGS) --enable-debug=$(DEBUG) \
 	--enable-local-install --disable-rpath --enable-binreloc --enable-binreloc-threads \
 	--with-libgcrypt-prefix=$(PREFIX) --with-libgnutls-prefix=$(PREFIX) \
 	--disable-variadic-macros --with-iconv=/usr && \
@@ -154,25 +151,22 @@ PATH=$(PREFIX)/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 	ranlib $(PREFIX)/lib/libgwen_plugins.a)
 	touch .gwen.compiled$(postfix)
 
-.aqbanking-cvs: .gwen.compiled$(postfix)
-	mkdir -p $(PREFIX)/share/aclocal
-	cd aqbanking-$(AqVer); \
-	aclocal -I ./m4 -I $(PREFIX)/share/aclocal/; \
-	autoheader; \
-	if test ! -f i18nsources; then echo > i18nsources; fi; \
-	automake -f --add-missing; \
-	autoconf
-	touch .aqbanking-cvs
-
-.aqbanking.compiled$(postfix): .gwen.compiled$(postfix) .aqbanking-cvs
+.aqbanking.compiled$(postfix): .gwen.compiled$(postfix)
 	mkdir -p $(BUILDDIR)/aqbanking-$(AqVer)
+	rsync -av --delete aqbanking/ $(BUILDDIR)/aqbanking-$(AqVer)/
+	cd $(BUILDDIR)/aqbanking-$(AqVer); glibtoolize -f --automake
+	cd $(BUILDDIR)/aqbanking-$(AqVer); aclocal -I ./m4 -I $(PREFIX)/share/aclocal/
+	cd $(BUILDDIR)/aqbanking-$(AqVer); autoheader
+	cd $(BUILDDIR)/aqbanking-$(AqVer); if test ! -f i18nsources; then echo > i18nsources; fi
+	cd $(BUILDDIR)/aqbanking-$(AqVer); automake -f --add-missing
+	cd $(BUILDDIR)/aqbanking-$(AqVer); /usr/bin/autoconf
 	cd $(BUILDDIR)/aqbanking-$(AqVer); \
 	PATH=$(PATH) \
 	LDFLAGS="-framework CoreFoundation $(LDFLAGS) -lcharset -liconv -lintl -lgmp -lgpg-error -lgcrypt -lgnutls -lgnutls-extra -lgnutls-openssl -lgwenhywfar" \
 	CFLAGS="$(CFLAGS)" \
 	CPPFLAGS="$(CFLAGS)" \
 	PKG_CONFIG=$(PREFIX)/bin/pkg-config PKG_CONFIG_PATH=$(PREFIX)/lib/pkgconfig/ \
-	$(BASEDIR)/aqbanking-$(AqVer)/configure $(SHARED_CONFFLAGS) --enable-debug=$(DEBUG) \
+	./configure $(SHARED_CONFFLAGS) --enable-debug=$(DEBUG) \
 	--with-backends="aqhbci" --with-frontends="" \
 	--enable-local-install --disable-tutorials --with-bankinfos=de --without-imexports \
 	--disable-qt3-threads --disable-qt3 --with-exporter=csv \
