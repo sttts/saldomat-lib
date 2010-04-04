@@ -1,0 +1,83 @@
+Vorgehen zum Update von Aqbanking und Gwen
+==========================================
+
+0. Ins aqbanking-Verzeichnis gehen
+
+     cd aqbanking 
+
+1. /sw umbenennen!!! /sw/lib wird sonst benutzt und die Binaries sind unbrauchbar.
+  Muss nur waehrend des Bauens sein. Nachher kann es wieder hergestellt werden.
+
+     sudo mv /sw /sw.old
+
+2.1 Aqb und Gwen laden und entpacken nach aqbanking
+2.2 Im aqbanking/Makefile die Versionsnummern oben anpassen
+
+     AqVer=4.2.x
+     GwenVer=3.11.x
+
+3. make distclean
+
+4. Gwen und Aqp patchen (siehe alte SVN-Commits fuer Patches). 
+
+  4.1 load/save-Routinen freigeben in:
+
+     aqbanking-4.2.x/src/libs/aqbanking/banking_cfg.h
+     aqbanking-4.2.x/src/libs/aqbanking/banking_p.h
+
+  4.2 Locking deaktivieren:
+
+     gwen.../plugins/configmgr/dif/cfgdir.c
+
+  4.3 GWEN_Logger...-Macros fixen in
+
+     gwen.../src/base/debug.c
+
+  4.4 GWEN_PathManager_RelModeExe fixen in 
+
+     gwen.../src/base/pathmanager.c
+  
+  4.5 Dabei jeweils einzeln committen!
+
+5. Bauen:
+
+     make
+
+6.1 Die Aenderungen in aqbanking-4.2.x und gwenhywfar-3.11.x committen.
+
+     svn commit aqbanking-4.2.x
+     svn commit gwenhywfar-3.11.x
+
+6.2 Die Verzeichnisse static-...-4.2.x committen
+
+     svn commit static-build-*-4.2.x
+
+6.3 Links static-build-* setzen auf neue Version
+
+     ln -sf static-build-debug-4.2.x static-build-debug 
+     ln -sf static-build-i386-4.2.x static-build-i386 
+     ln -sf static-build-ppc-4.2.x static-build-ppc
+
+7. Evtl. /sw wieder herstellen
+
+     sudo mv /sw.old /sw
+
+aqhbci-tool4 ausfuehren
+=======================
+
+1. cd static-.../lib
+2. find . -name "*.so" -and \( -not -path "**/*.dSYM/**" \) | while read f; do rm `dirname $f`/`basename $f .so`.dylib; ln -s `basename $f` `dirname $f`/`basename $f .so`.dylib; done
+3. cd ../bin
+4. ln -s ../lib lib
+5. ln -s ../share share
+6. sudo mkdir /var/`whoami`
+7. chown `whoami` /var/`whoami`
+6. ./aqhbci-tool4
+
+./aqhbci-tool4 adduser -N 100944715 -u 100944715 -b 50850150 -t pintan -n pin -s 'https://hbci-pintan-he.s-hbci.de/PinTanServlet'
+./aqbanking-cli request -b 50850150 -a 100944715 --transactions
+
+
+
+
+
