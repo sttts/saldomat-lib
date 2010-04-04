@@ -1,0 +1,6 @@
+[submodule "gwenhywfar"]
+	path = gwenhywfar
+	url = ssh+git://limoia.com/home/git/gwenhywfar
+[submodule "aqbanking"]
+	path = aqbanking
+	url = ssh+git://limoia.com/home/git/aqbanking
