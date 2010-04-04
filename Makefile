@@ -124,7 +124,7 @@ PATH=$(PREFIX)/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 
 .gwen.compiled$(postfix): .pkg-config.compiled$(postfix) .gettext.compiled$(postfix) .libgcrypt.compiled$(postfix) .gnutls.compiled$(postfix)
 	mkdir -p $(BUILDDIR)/gwenhywfar-$(GwenVer)
-	rsync -av --delete gwenhywfar/ $(BUILDDIR)/gwenhywfar-$(GwenVer)/
+	rsync -av gwenhywfar/ $(BUILDDIR)/gwenhywfar-$(GwenVer)/
 	cd $(BUILDDIR)/gwenhywfar-$(GwenVer); glibtoolize -f --automake
 	cd $(BUILDDIR)/gwenhywfar-$(GwenVer); aclocal -I ./m4 -I $(PREFIX)/share/aclocal/
 	cd $(BUILDDIR)/gwenhywfar-$(GwenVer); autoheader
@@ -143,7 +143,7 @@ PATH=$(PREFIX)/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 	--enable-local-install --disable-rpath --enable-binreloc --enable-binreloc-threads \
 	--with-libgcrypt-prefix=$(PREFIX) --with-libgnutls-prefix=$(PREFIX) \
 	--disable-variadic-macros --with-iconv=/usr && \
-	make && \
+	PATH=$(PATH):/usr/local/git/bin make && \
 	make install && \
 	(rm -rf ar-tmp; mkdir ar-tmp; cd ar-tmp; \
 	find ../plugins -name "*.a" -exec ar x {} \; ; \
@@ -153,7 +153,7 @@ PATH=$(PREFIX)/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 
 .aqbanking.compiled$(postfix): .gwen.compiled$(postfix)
 	mkdir -p $(BUILDDIR)/aqbanking-$(AqVer)
-	rsync -av --delete aqbanking/ $(BUILDDIR)/aqbanking-$(AqVer)/
+	rsync -av aqbanking/ $(BUILDDIR)/aqbanking-$(AqVer)/
 	cd $(BUILDDIR)/aqbanking-$(AqVer); glibtoolize -f --automake
 	cd $(BUILDDIR)/aqbanking-$(AqVer); aclocal -I ./m4 -I $(PREFIX)/share/aclocal/
 	cd $(BUILDDIR)/aqbanking-$(AqVer); autoheader
@@ -171,7 +171,7 @@ PATH=$(PREFIX)/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 	--enable-local-install --disable-tutorials --with-bankinfos=de --without-imexports \
 	--disable-qt3-threads --disable-qt3 --with-exporter=csv \
 	--disable-variadic-macros && \
-	make && \
+	PATH=$(PATH):/usr/local/git/bin make && \
 	make install && \
 	(rm -rf ar-tmp; mkdir ar-tmp; cd ar-tmp; \
 	find ../src/plugins -name "*.a" -exec ar x {} \; ; \
