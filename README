@@ -3,62 +3,88 @@ Vorgehen zum Update von Aqbanking und Gwen
 
 0. Ins aqbanking-Verzeichnis gehen
 
-     cd aqbanking 
+     cd lib
+
+   Prüfen, dass der lib-branch richtig ist:
+
+     git branch
+     git checkout richtiger-branch
 
 1. /sw umbenennen!!! /sw/lib wird sonst benutzt und die Binaries sind unbrauchbar.
   Muss nur waehrend des Bauens sein. Nachher kann es wieder hergestellt werden.
 
      sudo mv /sw /sw.old
 
-2.1 Aqb und Gwen laden und entpacken nach aqbanking
-2.2 Im aqbanking/Makefile die Versionsnummern oben anpassen
+2.0 Prüfen, dass der Branch von gwen richtig ist.
+
+    git branch
+    git checkout richtiger-branch
+
+2.1 Gwen auf den aktuellen Stand bringen
+
+     ssh limoia.com
+     cd /home/git/gwenhywfar
+     git svn rebase
+     exit
+
+     cd gwenhywfar
+     git pull --all
+     git rebase neue-zielversions-commit
+     git push --all -f
+
+   Evtl. die anderen Branches nachziehen
+
+     git branch -D anderer-branch
+     git checkout -b anderer-branch
+     git push --all -f
+ 
+   Superprojekt anpassen:
+
+     cd ..
+     git add gwenhywfar
+     git commit
+
+2.2 Aqbanking analog
+
+2.3 Im aqbanking/Makefile die Versionsnummern oben anpassen
 
      AqVer=4.2.x
      GwenVer=3.11.x
 
 3. make distclean
 
-4. Gwen und Aqp patchen (siehe alte SVN-Commits fuer Patches). 
-
-  4.1 load/save-Routinen freigeben in:
-
-     aqbanking-4.2.x/src/libs/aqbanking/banking_cfg.h
-     aqbanking-4.2.x/src/libs/aqbanking/banking_p.h
-
-  4.2 Locking deaktivieren:
-
-     gwen.../plugins/configmgr/dif/cfgdir.c
-
-  4.3 GWEN_Logger...-Macros fixen in
-
-     gwen.../src/base/debug.c
-
-  4.4 GWEN_PathManager_RelModeExe fixen in 
-
-     gwen.../src/base/pathmanager.c
-  
-  4.5 Dabei jeweils einzeln committen!
-
-5. Bauen:
+4. Bauen:
 
      make
 
-6.1 Die Aenderungen in aqbanking-4.2.x und gwenhywfar-3.11.x committen.
-
-     svn commit aqbanking-4.2.x
-     svn commit gwenhywfar-3.11.x
-
-6.2 Die Verzeichnisse static-...-4.2.x committen
+5.1 Die Verzeichnisse static-...-4.2.x committen
 
      svn commit static-build-*-4.2.x
 
-6.3 Links static-build-* setzen auf neue Version
+5.2 Links static-build-* setzen auf neue Version
 
      ln -sf static-build-debug-4.2.x static-build-debug 
      ln -sf static-build-i386-4.2.x static-build-i386 
      ln -sf static-build-ppc-4.2.x static-build-ppc
 
-7. Evtl. /sw wieder herstellen
+5.3 Links committen
+
+     git add static-build-debug static-build-i386 static-build-ppc
+     git commit
+
+5.4 andere Branches (1.5 etc.) anpassen, analog 2.1
+
+5.5 Alles hochladen
+
+     git push --all -f
+
+6. Superprojekt hbci anpassen
+
+     cd ..
+     git add lib
+     git commit
+
+6. Evtl. /sw wieder herstellen
 
      sudo mv /sw.old /sw
 
