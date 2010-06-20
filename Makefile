@@ -8,8 +8,8 @@
 # gwen
 # aqbanking
 
-AqVer=4.2.4
-GwenVer=3.11.3
+AqVer=4.99.7beta
+GwenVer=3.99.9beta
 
 all:
 	$(MAKE) build arch=i386 postfix=-i386
@@ -140,6 +140,7 @@ PATH=$(PREFIX)/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 	PKG_CONFIG=$(PREFIX)/bin/pkg-config PKG_CONFIG_PATH=$(PREFIX)/lib/pkgconfig/ \
 	$(BASEDIR)/gwenhywfar/configure $(SHARED_CONFFLAGS) --enable-debug=$(DEBUG) \
 	--enable-local-install --disable-rpath --enable-binreloc --enable-binreloc-threads \
+	--disable-fox --with-guis="" \
 	--with-libgcrypt-prefix=$(PREFIX) --with-libgnutls-prefix=$(PREFIX) \
 	--disable-variadic-macros --with-iconv=/usr && \
 	PATH=$(PATH):/usr/local/git/bin make && \
