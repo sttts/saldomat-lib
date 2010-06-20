@@ -1,0 +1,1 @@
+/Users/sts/Quellen/mac/hbci/lib/gwenhywfar/gui/fox16/fox16_htmllabel.hpp

@@ -1,0 +1,1 @@
+/Users/sts/Quellen/mac/hbci/lib/gwenhywfar/gui/qt3/qt3_gui.hpp

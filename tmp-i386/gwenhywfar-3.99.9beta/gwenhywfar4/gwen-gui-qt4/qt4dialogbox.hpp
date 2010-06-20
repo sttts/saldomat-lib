@@ -1,0 +1,1 @@
+/Users/sts/Quellen/mac/hbci/lib/gwenhywfar/gui/qt4/qt4dialogbox.hpp

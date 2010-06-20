@@ -1,0 +1,1 @@
+/Users/sts/Quellen/mac/hbci/lib/tmp-ppc/aqbanking-4.99.7beta/src/libs/aqbanking/backendsupport/ab_userqueue.h

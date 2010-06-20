@@ -1,0 +1,1 @@
+/Users/sts/Quellen/mac/hbci/lib/gwenhywfar/src/cryptmsg/cryptmgr_be.h

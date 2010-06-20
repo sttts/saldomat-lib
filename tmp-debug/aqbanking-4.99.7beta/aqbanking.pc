@@ -1,0 +1,42 @@
+# pkg-config configuration for aqbanking
+# For information about the syntax, see pkg-config(1)
+
+# General installation directories
+prefix=/Users/sts/Quellen/mac/hbci/lib/static-build-debug-4.99.7beta
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+pkgincludedir=${prefix}/include/aqbanking
+datarootdir=${prefix}/share
+datadir=${datarootdir}
+bindir=${exec_prefix}/bin
+
+# Particular variables of aqbanking
+plugindir=${libdir}/aqbanking/plugins/32
+pkgdatadir=${datadir}/aqbanking
+all_includes=-I/Users/sts/Quellen/mac/hbci/lib/static-build-debug-4.99.7beta/include/gwenhywfar4
+
+# ... and particular variables of all included subpackages
+aqbanking_libs=-L${libdir} -laqbanking
+aqbanking_includes=-I${includedir}/aqbanking5
+aqbanking_plugindir=${libdir}/aqbanking/plugins/32
+aqhbci_includes=-I${includedir}/aqbanking5
+aqhbci_libs=-L${libdir} -laqhbci
+aqhbci_plugindir=@aqhbci_plugindir@
+aqhbci_datadir=@aqhbci_data@
+qbanking_includes=-I${includedir}/aqbanking5
+qbanking_libs=-L${libdir} -lqbanking
+qbanking_datadir=${datadir}/qbanking
+q4banking_includes=-I${includedir}/aqbanking5
+q4banking_libs=-L${libdir} -lq4banking
+q4banking_datadir=${datadir}/q4banking
+
+# Human-readable name
+Name: AqBanking
+# Human-readable description
+Description: A library for online banking functions and financial data import/export
+
+Version: 4.99.7beta
+Libs: -L${libdir} -laqbanking
+Cflags: -I${includedir}/aqbanking5 -I/Users/sts/Quellen/mac/hbci/lib/static-build-debug-4.99.7beta/include/gwenhywfar4
+
