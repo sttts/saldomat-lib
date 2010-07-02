@@ -14,11 +14,9 @@ GwenVer=3.99.9beta
 all:
 	$(MAKE) build arch=i386 postfix=-i386
 	$(MAKE) build arch=i386 postfix=-debug DEBUG=yes
-	$(MAKE) build arch=ppc postfix=-ppc
-	rm -f static-build-debug static-build-i386 static-build-ppc
+	rm -f static-build-debug static-build-i386
 	ln -s static-build-debug-$(AqVer) static-build-debug 
 	ln -s static-build-i386-$(AqVer) static-build-i386 
-	ln -s static-build-ppc-$(AqVer) static-build-ppc
 
 build: .aqbanking.compiled$(postfix) dsyms
 
