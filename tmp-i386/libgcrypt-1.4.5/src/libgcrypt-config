@@ -12,13 +12,13 @@
 # File: src/libgcrypt-config.  Generated from libgcrypt-config.in by configure.
 
 # General.
-prefix="/Users/sts/Quellen/mac/hbci/lib/static-build-i386-4.99.7beta"
+prefix="/Users/michael/src/git/lib/static-build-i386-4.99.12beta"
 exec_prefix="${prefix}"
 version="1.4.5"
 includedir="${prefix}/include"
 libdir="${exec_prefix}/lib"
-gpg_error_libs="-L/Users/sts/Quellen/mac/hbci/lib/static-build-i386-4.99.7beta/lib -lgpg-error"
-gpg_error_cflags="-I/Users/sts/Quellen/mac/hbci/lib/static-build-i386-4.99.7beta/include"
+gpg_error_libs="-L/Users/michael/src/git/lib/static-build-i386-4.99.12beta/lib -lgpg-error"
+gpg_error_cflags="-I/Users/michael/src/git/lib/static-build-i386-4.99.12beta/include"
 
 # libgcrypt values.
 libs="-lgcrypt"

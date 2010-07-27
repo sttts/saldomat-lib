@@ -1,1 +1,0 @@
-/Users/sts/Quellen/mac/hbci/lib/gmp-4.3.2/mpn/generic/redc_1.c

@@ -13,7 +13,7 @@
 # PARTICULAR PURPOSE.
 
 
-VPATH = /Users/sts/Quellen/mac/hbci/lib/libgcrypt-1.4.5/m4
+VPATH = /Users/michael/src/git/lib/libgcrypt-1.4.5/m4
 pkgdatadir = $(datadir)/libgcrypt
 pkglibdir = $(libdir)/libgcrypt
 pkgincludedir = $(includedir)/libgcrypt
@@ -46,13 +46,13 @@ CONFIG_CLEAN_FILES =
 SOURCES =
 DIST_SOURCES =
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/libgcrypt-1.4.5/missing --run aclocal-1.10
-AMTAR = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/libgcrypt-1.4.5/missing --run tar
+ACLOCAL = ${SHELL} /Users/michael/src/git/lib/libgcrypt-1.4.5/missing --run aclocal-1.10
+AMTAR = ${SHELL} /Users/michael/src/git/lib/libgcrypt-1.4.5/missing --run tar
 AR = ar
 AS = as
-AUTOCONF = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/libgcrypt-1.4.5/missing --run autoconf
-AUTOHEADER = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/libgcrypt-1.4.5/missing --run autoheader
-AUTOMAKE = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/libgcrypt-1.4.5/missing --run automake-1.10
+AUTOCONF = ${SHELL} /Users/michael/src/git/lib/libgcrypt-1.4.5/missing --run autoconf
+AUTOHEADER = ${SHELL} /Users/michael/src/git/lib/libgcrypt-1.4.5/missing --run autoheader
+AUTOMAKE = ${SHELL} /Users/michael/src/git/lib/libgcrypt-1.4.5/missing --run automake-1.10
 AWK = awk
 BUILD_FILEVERSION = 
 BUILD_REVISION = 1417
@@ -60,11 +60,11 @@ BUILD_TIMESTAMP =
 CC = gcc
 CCAS = gcc
 CCASDEPMODE = depmode=none
-CCASFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/sts/Quellen/mac/hbci/lib/static-build-debug-4.99.7beta/include/ -mmacosx-version-min=10.5
+CCASFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-4.99.12beta/include/ -mmacosx-version-min=10.5
 CCDEPMODE = depmode=none
-CFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/sts/Quellen/mac/hbci/lib/static-build-debug-4.99.7beta/include/ -mmacosx-version-min=10.5 -Wall
+CFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-4.99.12beta/include/ -mmacosx-version-min=10.5 -Wall
 CPP = gcc -E
-CPPFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/sts/Quellen/mac/hbci/lib/static-build-debug-4.99.7beta/include/ -mmacosx-version-min=10.5
+CPPFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-4.99.12beta/include/ -mmacosx-version-min=10.5
 CXX = g++
 CXXCPP = g++ -E
 CXXDEPMODE = depmode=none
@@ -87,16 +87,16 @@ GCRYPT_CIPHERS =  arcfour.lo blowfish.lo cast5.lo des.lo rijndael.lo twofish.lo 
 GCRYPT_DIGESTS =  crc.lo md4.lo md5.lo sha256.lo sha512.lo tiger.lo whirlpool.lo rmd160.lo sha1.lo
 GCRYPT_PUBKEY_CIPHERS =  dsa.lo rsa.lo elgamal.lo ecc.lo
 GCRYPT_RANDOM =  rndlinux.lo
-GPG_ERROR_CFLAGS = -I/Users/sts/Quellen/mac/hbci/lib/static-build-debug-4.99.7beta/include
-GPG_ERROR_CONFIG = /Users/sts/Quellen/mac/hbci/lib/static-build-debug-4.99.7beta/bin/gpg-error-config
-GPG_ERROR_LIBS = -L/Users/sts/Quellen/mac/hbci/lib/static-build-debug-4.99.7beta/lib -lgpg-error
+GPG_ERROR_CFLAGS = -I/Users/michael/src/git/lib/static-build-debug-4.99.12beta/include
+GPG_ERROR_CONFIG = /Users/michael/src/git/lib/static-build-debug-4.99.12beta/bin/gpg-error-config
+GPG_ERROR_LIBS = -L/Users/michael/src/git/lib/static-build-debug-4.99.12beta/lib -lgpg-error
 GREP = /usr/bin/grep
 INSTALL = /usr/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
-LDFLAGS = -arch i386 -L/Users/sts/Quellen/mac/hbci/lib/static-build-debug-4.99.7beta/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
+LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-debug-4.99.12beta/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
 LIBGCRYPT_CIPHERS = arcfour blowfish cast5 des aes twofish serpent rfc2268 seed camellia
 LIBGCRYPT_CONFIG_API_VERSION = 1
 LIBGCRYPT_CONFIG_CFLAGS = 
@@ -113,8 +113,8 @@ LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LN_S = ln -s
 LTLIBOBJS = 
 MAINT = #
-MAKEINFO = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/libgcrypt-1.4.5/missing --run makeinfo
-MKDIR_P = /Users/sts/Quellen/mac/hbci/lib/libgcrypt-1.4.5/install-sh -c -d
+MAKEINFO = ${SHELL} /Users/michael/src/git/lib/libgcrypt-1.4.5/missing --run makeinfo
+MKDIR_P = /Users/michael/src/git/lib/libgcrypt-1.4.5/install-sh -c -d
 MPI_SFLAGS = 
 NOEXECSTACK_FLAGS = 
 OBJDUMP = objdump
@@ -137,10 +137,10 @@ SHELL = /bin/sh
 STRIP = strip
 SYS_SOCKET_H = 
 VERSION = 1.4.5
-abs_builddir = /Users/sts/Quellen/mac/hbci/lib/tmp-debug/libgcrypt-1.4.5/m4
-abs_srcdir = /Users/sts/Quellen/mac/hbci/lib/libgcrypt-1.4.5/m4
-abs_top_builddir = /Users/sts/Quellen/mac/hbci/lib/tmp-debug/libgcrypt-1.4.5
-abs_top_srcdir = /Users/sts/Quellen/mac/hbci/lib/libgcrypt-1.4.5
+abs_builddir = /Users/michael/src/git/lib/tmp-debug/libgcrypt-1.4.5/m4
+abs_srcdir = /Users/michael/src/git/lib/libgcrypt-1.4.5/m4
+abs_top_builddir = /Users/michael/src/git/lib/tmp-debug/libgcrypt-1.4.5
+abs_top_srcdir = /Users/michael/src/git/lib/libgcrypt-1.4.5
 ac_ct_CC = gcc
 ac_ct_CXX = g++
 ac_ct_F77 = 
@@ -169,26 +169,26 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = $(SHELL) /Users/sts/Quellen/mac/hbci/lib/libgcrypt-1.4.5/install-sh
+install_sh = $(SHELL) /Users/michael/src/git/lib/libgcrypt-1.4.5/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
 localstatedir = ${prefix}/var
 mandir = ${datarootdir}/man
-mkdir_p = /Users/sts/Quellen/mac/hbci/lib/libgcrypt-1.4.5/install-sh -c -d
+mkdir_p = /Users/michael/src/git/lib/libgcrypt-1.4.5/install-sh -c -d
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /Users/sts/Quellen/mac/hbci/lib/static-build-debug-4.99.7beta
+prefix = /Users/michael/src/git/lib/static-build-debug-4.99.12beta
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
-srcdir = /Users/sts/Quellen/mac/hbci/lib/libgcrypt-1.4.5/m4
+srcdir = /Users/michael/src/git/lib/libgcrypt-1.4.5/m4
 sysconfdir = ${prefix}/etc
 target_alias = 
 top_build_prefix = ../
 top_builddir = ..
-top_srcdir = /Users/sts/Quellen/mac/hbci/lib/libgcrypt-1.4.5
+top_srcdir = /Users/michael/src/git/lib/libgcrypt-1.4.5
 EXTRA_DIST = libtool.m4 onceonly.m4 socklen.m4 sys_socket_h.m4 noexecstack.m4
 all: all-am
 

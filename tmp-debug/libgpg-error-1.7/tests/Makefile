@@ -33,7 +33,7 @@
 # License along with this program; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 
-VPATH = /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7/tests
+VPATH = /Users/michael/src/git/lib/libgpg-error-1.7/tests
 pkgdatadir = $(datadir)/libgpg-error
 pkglibdir = $(libdir)/libgpg-error
 pkgincludedir = $(includedir)/libgpg-error
@@ -94,22 +94,22 @@ DIST_SOURCES = t-strerror.c t-syserror.c
 ETAGS = etags
 CTAGS = ctags
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7/missing --run aclocal-1.10
-AMTAR = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7/missing --run tar
+ACLOCAL = ${SHELL} /Users/michael/src/git/lib/libgpg-error-1.7/missing --run aclocal-1.10
+AMTAR = ${SHELL} /Users/michael/src/git/lib/libgpg-error-1.7/missing --run tar
 AR = ar
 AS = as
-AUTOCONF = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7/missing --run autoconf
-AUTOHEADER = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7/missing --run autoheader
-AUTOMAKE = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7/missing --run automake-1.10
+AUTOCONF = ${SHELL} /Users/michael/src/git/lib/libgpg-error-1.7/missing --run autoconf
+AUTOHEADER = ${SHELL} /Users/michael/src/git/lib/libgpg-error-1.7/missing --run autoheader
+AUTOMAKE = ${SHELL} /Users/michael/src/git/lib/libgpg-error-1.7/missing --run automake-1.10
 AWK = awk
 BUILD_FILEVERSION = 
 BUILD_TIMESTAMP = 
 CC = gcc
 CCDEPMODE = depmode=none
 CC_FOR_BUILD = gcc
-CFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/sts/Quellen/mac/hbci/lib/static-build-debug-4.99.7beta/include/ -mmacosx-version-min=10.5
+CFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-4.99.12beta/include/ -mmacosx-version-min=10.5
 CPP = gcc -E
-CPPFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/sts/Quellen/mac/hbci/lib/static-build-debug-4.99.7beta/include/ -mmacosx-version-min=10.5
+CPPFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-4.99.12beta/include/ -mmacosx-version-min=10.5
 CXX = g++
 CXXCPP = g++ -E
 CXXDEPMODE = depmode=none
@@ -138,7 +138,7 @@ INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 INTLLIBS = 
 INTL_MACOSX_LIBS = -Wl,-framework -Wl,CoreFoundation
-LDFLAGS = -arch i386 -L/Users/sts/Quellen/mac/hbci/lib/static-build-debug-4.99.7beta/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
+LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-debug-4.99.12beta/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
 LIBGPG_ERROR_LT_AGE = 5
 LIBGPG_ERROR_LT_CURRENT = 5
 LIBGPG_ERROR_LT_REVISION = 0
@@ -152,8 +152,8 @@ LTLIBICONV = -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -liconv
 LTLIBINTL = 
 LTLIBOBJS = 
 MAINT = #
-MAKEINFO = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7/missing --run makeinfo
-MKDIR_P = /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7/install-sh -c -d
+MAKEINFO = ${SHELL} /Users/michael/src/git/lib/libgpg-error-1.7/missing --run makeinfo
+MKDIR_P = /Users/michael/src/git/lib/libgpg-error-1.7/install-sh -c -d
 MSGFMT = :
 MSGFMT_015 = :
 MSGMERGE = :
@@ -176,10 +176,10 @@ USE_NLS = no
 VERSION = 1.7
 XGETTEXT = :
 XGETTEXT_015 = :
-abs_builddir = /Users/sts/Quellen/mac/hbci/lib/tmp-debug/libgpg-error-1.7/tests
-abs_srcdir = /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7/tests
-abs_top_builddir = /Users/sts/Quellen/mac/hbci/lib/tmp-debug/libgpg-error-1.7
-abs_top_srcdir = /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7
+abs_builddir = /Users/michael/src/git/lib/tmp-debug/libgpg-error-1.7/tests
+abs_srcdir = /Users/michael/src/git/lib/libgpg-error-1.7/tests
+abs_top_builddir = /Users/michael/src/git/lib/tmp-debug/libgpg-error-1.7
+abs_top_srcdir = /Users/michael/src/git/lib/libgpg-error-1.7
 ac_ct_CC = gcc
 ac_ct_CXX = g++
 ac_ct_F77 = 
@@ -208,25 +208,25 @@ host_vendor = apple
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = $(SHELL) /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7/install-sh
+install_sh = $(SHELL) /Users/michael/src/git/lib/libgpg-error-1.7/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
 localstatedir = ${prefix}/var
 mandir = ${datarootdir}/man
-mkdir_p = /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7/install-sh -c -d
+mkdir_p = /Users/michael/src/git/lib/libgpg-error-1.7/install-sh -c -d
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /Users/sts/Quellen/mac/hbci/lib/static-build-debug-4.99.7beta
+prefix = /Users/michael/src/git/lib/static-build-debug-4.99.12beta
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
-srcdir = /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7/tests
+srcdir = /Users/michael/src/git/lib/libgpg-error-1.7/tests
 sysconfdir = ${prefix}/etc
 target_alias = 
 top_builddir = ..
-top_srcdir = /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7
+top_srcdir = /Users/michael/src/git/lib/libgpg-error-1.7
 INCLUDES = -I$(top_builddir)/src
 LDADD = ../src/libgpg-error.la
 all: all-am

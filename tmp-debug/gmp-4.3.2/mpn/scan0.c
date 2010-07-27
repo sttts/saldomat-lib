@@ -1,1 +1,1 @@
-/Users/sts/Quellen/mac/hbci/lib/gmp-4.3.2/mpn/generic/scan0.c
+/Users/michael/src/git/lib/gmp-4.3.2/mpn/generic/scan0.c

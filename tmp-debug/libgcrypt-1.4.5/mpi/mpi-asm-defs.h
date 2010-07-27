@@ -1,1 +1,1 @@
-/Users/sts/Quellen/mac/hbci/lib/libgcrypt-1.4.5/mpi/generic/mpi-asm-defs.h
+/Users/michael/src/git/lib/libgcrypt-1.4.5/mpi/generic/mpi-asm-defs.h

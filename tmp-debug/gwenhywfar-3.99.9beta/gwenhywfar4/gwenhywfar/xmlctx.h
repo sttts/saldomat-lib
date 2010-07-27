@@ -1,1 +1,0 @@
-/Users/sts/Quellen/mac/hbci/lib/gwenhywfar/src/parser/xmlctx.h

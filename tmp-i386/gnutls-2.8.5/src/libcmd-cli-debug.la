@@ -17,7 +17,7 @@ old_library='libcmd-cli-debug.a'
 inherited_linker_flags=' '
 
 # Libraries that this one depends upon.
-dependency_libs=' -L/Users/sts/Quellen/mac/hbci/lib/static-build-i386-4.99.7beta/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/'
+dependency_libs=' -L/Users/michael/src/git/lib/static-build-i386-4.99.12beta/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''

@@ -14,9 +14,9 @@
 
 
 
-srcdir = /Users/sts/Quellen/mac/hbci/lib/pkg-config-0.23
-top_srcdir = /Users/sts/Quellen/mac/hbci/lib/pkg-config-0.23
-VPATH = /Users/sts/Quellen/mac/hbci/lib/pkg-config-0.23
+srcdir = /Users/michael/src/git/lib/pkg-config-0.23
+top_srcdir = /Users/michael/src/git/lib/pkg-config-0.23
+VPATH = /Users/michael/src/git/lib/pkg-config-0.23
 pkgdatadir = $(datadir)/pkg-config
 pkglibdir = $(libdir)/pkg-config
 pkgincludedir = $(includedir)/pkg-config
@@ -36,21 +36,21 @@ NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
 host_triplet = i386-apple-darwin10.4.0
-ACLOCAL = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/pkg-config-0.23/missing --run aclocal-1.7
+ACLOCAL = ${SHELL} /Users/michael/src/git/lib/pkg-config-0.23/missing --run aclocal-1.7
 ALLOCA = 
 AMDEP_FALSE = 
 AMDEP_TRUE = #
-AMTAR = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/pkg-config-0.23/missing --run tar
+AMTAR = ${SHELL} /Users/michael/src/git/lib/pkg-config-0.23/missing --run tar
 AR = ar
-AUTOCONF = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/pkg-config-0.23/missing --run autoconf
-AUTOHEADER = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/pkg-config-0.23/missing --run autoheader
-AUTOMAKE = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/pkg-config-0.23/missing --run automake-1.7
+AUTOCONF = ${SHELL} /Users/michael/src/git/lib/pkg-config-0.23/missing --run autoconf
+AUTOHEADER = ${SHELL} /Users/michael/src/git/lib/pkg-config-0.23/missing --run autoheader
+AUTOMAKE = ${SHELL} /Users/michael/src/git/lib/pkg-config-0.23/missing --run automake-1.7
 AWK = awk
 CC = gcc
 CCDEPMODE = depmode=none
-CFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/sts/Quellen/mac/hbci/lib/static-build-i386-4.99.7beta/include/ -mmacosx-version-min=10.5
+CFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.12beta/include/ -mmacosx-version-min=10.5
 CPP = gcc -E
-CPPFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/sts/Quellen/mac/hbci/lib/static-build-i386-4.99.7beta/include/ -mmacosx-version-min=10.5
+CPPFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.12beta/include/ -mmacosx-version-min=10.5
 CXX = g++
 CXXCPP = g++ -E
 CXXDEPMODE = depmode=none
@@ -73,7 +73,7 @@ INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = ${SHELL} $(install_sh) -c -s
-LDFLAGS = -arch i386 -L/Users/sts/Quellen/mac/hbci/lib/static-build-i386-4.99.7beta/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
+LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-i386-4.99.12beta/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
 LIBOBJS = 
 LIBS = 
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
@@ -82,7 +82,7 @@ LTLIBOBJS =
 MAINT = #
 MAINTAINER_MODE_FALSE = 
 MAINTAINER_MODE_TRUE = #
-MAKEINFO = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/pkg-config-0.23/missing --run makeinfo
+MAKEINFO = ${SHELL} /Users/michael/src/git/lib/pkg-config-0.23/missing --run makeinfo
 OBJEXT = o
 PACKAGE = pkg-config
 PACKAGE_BUGREPORT = 
@@ -130,7 +130,7 @@ host_vendor = apple
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = /Users/sts/Quellen/mac/hbci/lib/pkg-config-0.23/install-sh
+install_sh = /Users/michael/src/git/lib/pkg-config-0.23/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -139,7 +139,7 @@ mandir = ${datarootdir}/man
 oldincludedir = /usr/include
 pc_path = ${libdir}/pkgconfig:${datadir}/pkgconfig
 pdfdir = ${docdir}
-prefix = /Users/sts/Quellen/mac/hbci/lib/static-build-i386-4.99.7beta
+prefix = /Users/michael/src/git/lib/static-build-i386-4.99.12beta
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin

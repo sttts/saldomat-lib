@@ -17,7 +17,7 @@ old_library='libgnutls-openssl.a'
 inherited_linker_flags=' '
 
 # Libraries that this one depends upon.
-dependency_libs=' -L/Users/sts/Quellen/mac/hbci/lib/static-build-debug-4.99.7beta/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ /Users/sts/Quellen/mac/hbci/lib/tmp-debug/gnutls-2.8.5/lib/libgnutls.la -lz /Users/sts/Quellen/mac/hbci/lib/static-build-debug-4.99.7beta/lib/libgcrypt.la /Users/sts/Quellen/mac/hbci/lib/static-build-debug-4.99.7beta/lib/libgpg-error.la'
+dependency_libs=' -L/Users/michael/src/git/lib/static-build-debug-4.99.12beta/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ /Users/michael/src/git/lib/tmp-debug/gnutls-2.8.5/lib/libgnutls.la -lz /Users/michael/src/git/lib/static-build-debug-4.99.12beta/lib/libgcrypt.la /Users/michael/src/git/lib/static-build-debug-4.99.12beta/lib/libgpg-error.la'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''
@@ -38,4 +38,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/Users/sts/Quellen/mac/hbci/lib/static-build-debug-4.99.7beta/lib'
+libdir='/Users/michael/src/git/lib/static-build-debug-4.99.12beta/lib'

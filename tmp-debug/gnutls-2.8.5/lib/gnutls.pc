@@ -11,7 +11,7 @@
 # WITHOUT ANY WARRANTY, to the extent permitted by law; without even the
 # implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-prefix=/Users/sts/Quellen/mac/hbci/lib/static-build-debug-4.99.7beta
+prefix=/Users/michael/src/git/lib/static-build-debug-4.99.12beta
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

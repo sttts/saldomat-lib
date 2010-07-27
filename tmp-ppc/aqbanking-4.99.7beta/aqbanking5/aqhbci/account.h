@@ -1,1 +1,0 @@
-/Users/sts/Quellen/mac/hbci/lib/aqbanking/src/plugins/backends/aqhbci/plugin/msglayer/account.h

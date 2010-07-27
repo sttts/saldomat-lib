@@ -1,1 +1,1 @@
-/Users/sts/Quellen/mac/hbci/lib/gmp-4.3.2/mpn/generic/perfsqr.c
+/Users/michael/src/git/lib/gmp-4.3.2/mpn/generic/perfsqr.c

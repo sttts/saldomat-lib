@@ -1,1 +1,0 @@
-/Users/sts/Quellen/mac/hbci/lib/gwenhywfar/src/crypt3/cryptalgo.h

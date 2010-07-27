@@ -1,1 +1,0 @@
-/Users/sts/Quellen/mac/hbci/lib/gwenhywfar/gui/fox16/cppgui.hpp

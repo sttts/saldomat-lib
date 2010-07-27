@@ -14,9 +14,9 @@
 
 
 
-srcdir = /Users/sts/Quellen/mac/hbci/lib/pkg-config-0.23/glib-1.2.10
-top_srcdir = /Users/sts/Quellen/mac/hbci/lib/pkg-config-0.23/glib-1.2.10
-VPATH = /Users/sts/Quellen/mac/hbci/lib/pkg-config-0.23/glib-1.2.10
+srcdir = /Users/michael/src/git/lib/pkg-config-0.23/glib-1.2.10
+top_srcdir = /Users/michael/src/git/lib/pkg-config-0.23/glib-1.2.10
+VPATH = /Users/michael/src/git/lib/pkg-config-0.23/glib-1.2.10
 pkgdatadir = $(datadir)/glib
 pkglibdir = $(libdir)/glib
 pkgincludedir = $(includedir)/glib
@@ -36,20 +36,20 @@ NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
 host_triplet = i386-apple-darwin10.4.0
-ACLOCAL = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/pkg-config-0.23/glib-1.2.10/missing --run aclocal-1.7
+ACLOCAL = ${SHELL} /Users/michael/src/git/lib/pkg-config-0.23/glib-1.2.10/missing --run aclocal-1.7
 AMDEP_FALSE = 
 AMDEP_TRUE = #
-AMTAR = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/pkg-config-0.23/glib-1.2.10/missing --run tar
+AMTAR = ${SHELL} /Users/michael/src/git/lib/pkg-config-0.23/glib-1.2.10/missing --run tar
 AR = ar
-AUTOCONF = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/pkg-config-0.23/glib-1.2.10/missing --run autoconf
-AUTOHEADER = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/pkg-config-0.23/glib-1.2.10/missing --run autoheader
-AUTOMAKE = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/pkg-config-0.23/glib-1.2.10/missing --run automake-1.7
+AUTOCONF = ${SHELL} /Users/michael/src/git/lib/pkg-config-0.23/glib-1.2.10/missing --run autoconf
+AUTOHEADER = ${SHELL} /Users/michael/src/git/lib/pkg-config-0.23/glib-1.2.10/missing --run autoheader
+AUTOMAKE = ${SHELL} /Users/michael/src/git/lib/pkg-config-0.23/glib-1.2.10/missing --run automake-1.7
 AWK = awk
 CC = gcc
 CCDEPMODE = depmode=none
-CFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/sts/Quellen/mac/hbci/lib/static-build-debug-4.99.7beta/include/ -mmacosx-version-min=10.5 -Wall  -D_REENTRANT
+CFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-4.99.12beta/include/ -mmacosx-version-min=10.5 -Wall  -D_REENTRANT
 CPP = gcc -E
-CPPFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/sts/Quellen/mac/hbci/lib/static-build-debug-4.99.7beta/include/ -mmacosx-version-min=10.5
+CPPFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-4.99.12beta/include/ -mmacosx-version-min=10.5
 CXX = g++
 CXXCPP = g++ -E
 CXXDEPMODE = depmode=none
@@ -87,7 +87,7 @@ INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = ${SHELL} $(install_sh) -c -s
-LDFLAGS = -arch i386 -L/Users/sts/Quellen/mac/hbci/lib/static-build-debug-4.99.7beta/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
+LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-debug-4.99.12beta/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
 LIBOBJS = 
 LIBS = 
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
@@ -100,7 +100,7 @@ LT_REVISION = 10
 MAINT = #
 MAINTAINER_MODE_FALSE = 
 MAINTAINER_MODE_TRUE = #
-MAKEINFO = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/pkg-config-0.23/glib-1.2.10/missing --run makeinfo
+MAKEINFO = ${SHELL} /Users/michael/src/git/lib/pkg-config-0.23/glib-1.2.10/missing --run makeinfo
 OBJEXT = o
 PACKAGE = glib
 PACKAGE_BUGREPORT = 
@@ -144,7 +144,7 @@ host_vendor = apple
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = /Users/sts/Quellen/mac/hbci/lib/pkg-config-0.23/glib-1.2.10/install-sh
+install_sh = /Users/michael/src/git/lib/pkg-config-0.23/glib-1.2.10/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -152,7 +152,7 @@ localstatedir = ${prefix}/var
 mandir = ${datarootdir}/man
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /Users/sts/Quellen/mac/hbci/lib/static-build-debug-4.99.7beta
+prefix = /Users/michael/src/git/lib/static-build-debug-4.99.12beta
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin

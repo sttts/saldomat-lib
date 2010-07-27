@@ -37,7 +37,7 @@
 # MA 02110-1301, USA
 
 
-VPATH = /Users/sts/Quellen/mac/hbci/lib/gnutls-2.8.5/lib
+VPATH = /Users/michael/src/git/lib/gnutls-2.8.5/lib
 pkgdatadir = $(datadir)/libgnutls
 pkgincludedir = $(includedir)/libgnutls
 pkglibdir = $(libdir)/libgnutls
@@ -311,16 +311,16 @@ DIST_ARCHIVES = $(distdir).tar.gz
 GZIP_ENV = --best
 distuninstallcheck_listfiles = find . -type f -print
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/gnutls-2.8.5/lib/build-aux/missing --run aclocal-1.11
+ACLOCAL = ${SHELL} /Users/michael/src/git/lib/gnutls-2.8.5/lib/build-aux/missing --run aclocal-1.11
 ALLOCA = 
 ALLOCA_H = alloca.h
-AMTAR = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/gnutls-2.8.5/lib/build-aux/missing --run tar
+AMTAR = ${SHELL} /Users/michael/src/git/lib/gnutls-2.8.5/lib/build-aux/missing --run tar
 APPLE_UNIVERSAL_BUILD = 0
 AR = ar
 AS = as
-AUTOCONF = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/gnutls-2.8.5/lib/build-aux/missing --run autoconf
-AUTOHEADER = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/gnutls-2.8.5/lib/build-aux/missing --run autoheader
-AUTOMAKE = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/gnutls-2.8.5/lib/build-aux/missing --run automake-1.11
+AUTOCONF = ${SHELL} /Users/michael/src/git/lib/gnutls-2.8.5/lib/build-aux/missing --run autoconf
+AUTOHEADER = ${SHELL} /Users/michael/src/git/lib/gnutls-2.8.5/lib/build-aux/missing --run autoheader
+AUTOMAKE = ${SHELL} /Users/michael/src/git/lib/gnutls-2.8.5/lib/build-aux/missing --run automake-1.11
 AWK = awk
 BITSIZEOF_PTRDIFF_T = 32
 BITSIZEOF_SIG_ATOMIC_T = 32
@@ -330,9 +330,9 @@ BITSIZEOF_WINT_T = 32
 BYTESWAP_H = byteswap.h
 CC = gcc
 CCDEPMODE = depmode=none
-CFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/sts/Quellen/mac/hbci/lib/static-build-i386-4.99.7beta/include/ -mmacosx-version-min=10.5
+CFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.12beta/include/ -mmacosx-version-min=10.5
 CPP = gcc -E
-CPPFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/sts/Quellen/mac/hbci/lib/static-build-i386-4.99.7beta/include/ -mmacosx-version-min=10.5 -I/Users/sts/Quellen/mac/hbci/lib/static-build-i386-4.99.7beta/include -I/Developer/SDKs/MacOSX10.5.sdk/usr/include
+CPPFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.12beta/include/ -mmacosx-version-min=10.5 -I/Users/michael/src/git/lib/static-build-i386-4.99.12beta/include -I/Developer/SDKs/MacOSX10.5.sdk/usr/include
 CXX = g++
 CXXCPP = g++ -E
 CXXDEPMODE = depmode=none
@@ -610,9 +610,9 @@ INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 INTLLIBS = 
 INTL_MACOSX_LIBS = -Wl,-framework -Wl,CoreFoundation
 LD = /usr/libexec/gcc/i686-apple-darwin10/4.2.1/ld
-LDFLAGS = -arch i386 -L/Users/sts/Quellen/mac/hbci/lib/static-build-i386-4.99.7beta/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
-LIBGCRYPT = /Users/sts/Quellen/mac/hbci/lib/static-build-i386-4.99.7beta/lib/libgcrypt.a /Users/sts/Quellen/mac/hbci/lib/static-build-i386-4.99.7beta/lib/libgpg-error.a
-LIBGCRYPT_PREFIX = /Users/sts/Quellen/mac/hbci/lib/static-build-i386-4.99.7beta
+LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-i386-4.99.12beta/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
+LIBGCRYPT = /Users/michael/src/git/lib/static-build-i386-4.99.12beta/lib/libgcrypt.a /Users/michael/src/git/lib/static-build-i386-4.99.12beta/lib/libgpg-error.a
+LIBGCRYPT_PREFIX = /Users/michael/src/git/lib/static-build-i386-4.99.12beta
 LIBGNUTLS_CFLAGS = -I${prefix}/include
 LIBGNUTLS_LIBS = -L${exec_prefix}/lib -lgnutls 
 LIBICONV = /Developer/SDKs/MacOSX10.5.sdk/usr/lib//libiconv.dylib
@@ -628,7 +628,7 @@ LIBZ = /Developer/SDKs/MacOSX10.5.sdk/usr/lib//libz.dylib
 LIBZ_PREFIX = /Developer/SDKs/MacOSX10.5.sdk/usr
 LIPO = lipo
 LN_S = ln -s
-LTLIBGCRYPT = -L/Users/sts/Quellen/mac/hbci/lib/static-build-i386-4.99.7beta/lib -lgcrypt -L/Users/sts/Quellen/mac/hbci/lib/static-build-i386-4.99.7beta/lib -lgpg-error
+LTLIBGCRYPT = -L/Users/michael/src/git/lib/static-build-i386-4.99.12beta/lib -lgcrypt -L/Users/michael/src/git/lib/static-build-i386-4.99.12beta/lib -lgpg-error
 LTLIBICONV = -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -liconv
 LTLIBINTL = 
 LTLIBOBJS = 
@@ -639,9 +639,9 @@ LT_CURRENT = 40
 LT_REVISION = 12
 LZO_LIBS = 
 MAJOR_VERSION = 2
-MAKEINFO = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/gnutls-2.8.5/lib/build-aux/missing --run makeinfo
+MAKEINFO = ${SHELL} /Users/michael/src/git/lib/gnutls-2.8.5/lib/build-aux/missing --run makeinfo
 MINOR_VERSION = 8
-MKDIR_P = /Users/sts/Quellen/mac/hbci/lib/gnutls-2.8.5/lib/build-aux/install-sh -c -d
+MKDIR_P = /Users/michael/src/git/lib/gnutls-2.8.5/lib/build-aux/install-sh -c -d
 MSGFMT = :
 MSGFMT_015 = :
 MSGMERGE = :
@@ -761,10 +761,10 @@ WINT_T_SUFFIX =
 XGETTEXT = :
 XGETTEXT_015 = :
 XGETTEXT_EXTRA_OPTIONS =  --flag=asprintf:2:c-format --flag=vasprintf:2:c-format
-abs_builddir = /Users/sts/Quellen/mac/hbci/lib/tmp-i386/gnutls-2.8.5/lib
-abs_srcdir = /Users/sts/Quellen/mac/hbci/lib/gnutls-2.8.5/lib
-abs_top_builddir = /Users/sts/Quellen/mac/hbci/lib/tmp-i386/gnutls-2.8.5/lib
-abs_top_srcdir = /Users/sts/Quellen/mac/hbci/lib/gnutls-2.8.5/lib
+abs_builddir = /Users/michael/src/git/lib/tmp-i386/gnutls-2.8.5/lib
+abs_srcdir = /Users/michael/src/git/lib/gnutls-2.8.5/lib
+abs_top_builddir = /Users/michael/src/git/lib/tmp-i386/gnutls-2.8.5/lib
+abs_top_srcdir = /Users/michael/src/git/lib/gnutls-2.8.5/lib
 ac_ct_CC = gcc
 ac_ct_CXX = g++
 ac_ct_DUMPBIN = 
@@ -793,7 +793,7 @@ host_vendor = apple
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/gnutls-2.8.5/lib/build-aux/install-sh
+install_sh = ${SHELL} /Users/michael/src/git/lib/gnutls-2.8.5/lib/build-aux/install-sh
 lgl_LIBOBJS =  asnprintf.o memmem.o printf-args.o printf-parse.o read-file.o strverscmp.o vasnprintf.o
 lgl_LTLIBOBJS =  asnprintf.lo memmem.lo printf-args.lo printf-parse.lo read-file.lo strverscmp.lo vasnprintf.lo
 lgltests_LIBOBJS = 
@@ -804,20 +804,20 @@ localedir = $(datadir)/locale
 localstatedir = ${prefix}/var
 lt_ECHO = /bin/echo
 mandir = ${datarootdir}/man
-mkdir_p = /Users/sts/Quellen/mac/hbci/lib/gnutls-2.8.5/lib/build-aux/install-sh -c -d
+mkdir_p = /Users/michael/src/git/lib/gnutls-2.8.5/lib/build-aux/install-sh -c -d
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /Users/sts/Quellen/mac/hbci/lib/static-build-i386-4.99.7beta
+prefix = /Users/michael/src/git/lib/static-build-i386-4.99.12beta
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
-srcdir = /Users/sts/Quellen/mac/hbci/lib/gnutls-2.8.5/lib
+srcdir = /Users/michael/src/git/lib/gnutls-2.8.5/lib
 sysconfdir = ${prefix}/etc
 target_alias = 
 top_build_prefix = 
 top_builddir = .
-top_srcdir = /Users/sts/Quellen/mac/hbci/lib/gnutls-2.8.5/lib
+top_srcdir = /Users/michael/src/git/lib/gnutls-2.8.5/lib
 ACLOCAL_AMFLAGS = -I m4 -I gl/m4
 SUBDIRS = gl po includes x509 $(am__append_1) $(am__append_2)
 AM_CFLAGS = $(WARN_CFLAGS) $(WERROR_CFLAGS)

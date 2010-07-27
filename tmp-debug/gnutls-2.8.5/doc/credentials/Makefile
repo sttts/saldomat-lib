@@ -34,7 +34,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this file; if not, write to the Free Software Foundation,
 # Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
-VPATH = /Users/sts/Quellen/mac/hbci/lib/gnutls-2.8.5/doc/credentials
+VPATH = /Users/michael/src/git/lib/gnutls-2.8.5/doc/credentials
 pkgdatadir = $(datadir)/gnutls
 pkgincludedir = $(includedir)/gnutls
 pkglibdir = $(libdir)/gnutls
@@ -161,17 +161,17 @@ am__relativize = \
     dir1=`echo "$$dir1" | sed -e "$$sed_rest"`; \
   done; \
   reldir="$$dir2"
-ACLOCAL = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/gnutls-2.8.5/build-aux/missing --run aclocal-1.11
+ACLOCAL = ${SHELL} /Users/michael/src/git/lib/gnutls-2.8.5/build-aux/missing --run aclocal-1.11
 ALLOCA = 
 ALLOCA_H = alloca.h
-AMTAR = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/gnutls-2.8.5/build-aux/missing --run tar
+AMTAR = ${SHELL} /Users/michael/src/git/lib/gnutls-2.8.5/build-aux/missing --run tar
 APPLE_UNIVERSAL_BUILD = 0
 AR = ar
 ARPA_INET_H = arpa/inet.h
 AS = as
-AUTOCONF = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/gnutls-2.8.5/build-aux/missing --run autoconf
-AUTOHEADER = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/gnutls-2.8.5/build-aux/missing --run autoheader
-AUTOMAKE = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/gnutls-2.8.5/build-aux/missing --run automake-1.11
+AUTOCONF = ${SHELL} /Users/michael/src/git/lib/gnutls-2.8.5/build-aux/missing --run autoconf
+AUTOHEADER = ${SHELL} /Users/michael/src/git/lib/gnutls-2.8.5/build-aux/missing --run autoheader
+AUTOMAKE = ${SHELL} /Users/michael/src/git/lib/gnutls-2.8.5/build-aux/missing --run automake-1.11
 AWK = awk
 BITSIZEOF_PTRDIFF_T = 32
 BITSIZEOF_SIG_ATOMIC_T = 32
@@ -180,9 +180,9 @@ BITSIZEOF_WCHAR_T = 32
 BITSIZEOF_WINT_T = 32
 CC = gcc -std=gnu99
 CCDEPMODE = depmode=none
-CFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/sts/Quellen/mac/hbci/lib/static-build-debug-4.99.7beta/include/ -mmacosx-version-min=10.5
+CFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-4.99.12beta/include/ -mmacosx-version-min=10.5
 CPP = gcc -E
-CPPFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/sts/Quellen/mac/hbci/lib/static-build-debug-4.99.7beta/include/ -mmacosx-version-min=10.5 -I/Developer/SDKs/MacOSX10.5.sdk/usr/include
+CPPFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-4.99.12beta/include/ -mmacosx-version-min=10.5 -I/Developer/SDKs/MacOSX10.5.sdk/usr/include
 CXX = g++
 CXXCPP = g++ -E
 CXXDEPMODE = depmode=none
@@ -473,7 +473,7 @@ INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 LD = /usr/libexec/gcc/i686-apple-darwin10/4.2.1/ld
-LDFLAGS = -arch i386 -L/Users/sts/Quellen/mac/hbci/lib/static-build-debug-4.99.7beta/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
+LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-debug-4.99.12beta/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
 LIBINTL = 
 LIBOBJS = 
 LIBREADLINE = /Developer/SDKs/MacOSX10.5.sdk/usr/lib//libreadline.dylib
@@ -487,8 +487,8 @@ LTALLOCA =
 LTLIBINTL = 
 LTLIBOBJS = 
 LTLIBREADLINE = -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -lreadline
-MAKEINFO = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/gnutls-2.8.5/build-aux/missing --run makeinfo
-MKDIR_P = /Users/sts/Quellen/mac/hbci/lib/gnutls-2.8.5/build-aux/install-sh -c -d
+MAKEINFO = ${SHELL} /Users/michael/src/git/lib/gnutls-2.8.5/build-aux/missing --run makeinfo
+MKDIR_P = /Users/michael/src/git/lib/gnutls-2.8.5/build-aux/install-sh -c -d
 NETDB_H = netdb.h
 NETINET_IN_H = 
 NEXT_ARPA_INET_H = <arpa/inet.h>
@@ -522,7 +522,7 @@ PACKAGE_TARNAME = gnutls
 PACKAGE_URL = 
 PACKAGE_VERSION = 2.8.5
 PATH_SEPARATOR = :
-PKG_CONFIG = /Users/sts/Quellen/mac/hbci/lib/static-build-debug-4.99.7beta/bin/pkg-config
+PKG_CONFIG = /Users/michael/src/git/lib/static-build-debug-4.99.12beta/bin/pkg-config
 PMCCABE = false
 PRAGMA_SYSTEM_HEADER = #pragma GCC system_header
 PTRDIFF_T_SUFFIX = 
@@ -608,11 +608,11 @@ WCHAR_H =
 WCHAR_T_SUFFIX = 
 WERROR_CFLAGS = 
 WINT_T_SUFFIX = 
-abs_aux_dir = /Users/sts/Quellen/mac/hbci/lib/gnutls-2.8.5/build-aux
-abs_builddir = /Users/sts/Quellen/mac/hbci/lib/tmp-debug/gnutls-2.8.5/doc/credentials
-abs_srcdir = /Users/sts/Quellen/mac/hbci/lib/gnutls-2.8.5/doc/credentials
-abs_top_builddir = /Users/sts/Quellen/mac/hbci/lib/tmp-debug/gnutls-2.8.5
-abs_top_srcdir = /Users/sts/Quellen/mac/hbci/lib/gnutls-2.8.5
+abs_aux_dir = /Users/michael/src/git/lib/gnutls-2.8.5/build-aux
+abs_builddir = /Users/michael/src/git/lib/tmp-debug/gnutls-2.8.5/doc/credentials
+abs_srcdir = /Users/michael/src/git/lib/gnutls-2.8.5/doc/credentials
+abs_top_builddir = /Users/michael/src/git/lib/tmp-debug/gnutls-2.8.5
+abs_top_srcdir = /Users/michael/src/git/lib/gnutls-2.8.5
 ac_ct_CC = gcc
 ac_ct_CXX = g++
 ac_ct_DUMPBIN = 
@@ -646,28 +646,28 @@ host_vendor = apple
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/gnutls-2.8.5/build-aux/install-sh
+install_sh = ${SHELL} /Users/michael/src/git/lib/gnutls-2.8.5/build-aux/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
 localstatedir = ${prefix}/var
 lt_ECHO = /bin/echo
 mandir = ${datarootdir}/man
-mkdir_p = /Users/sts/Quellen/mac/hbci/lib/gnutls-2.8.5/build-aux/install-sh -c -d
+mkdir_p = /Users/michael/src/git/lib/gnutls-2.8.5/build-aux/install-sh -c -d
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /Users/sts/Quellen/mac/hbci/lib/static-build-debug-4.99.7beta
+prefix = /Users/michael/src/git/lib/static-build-debug-4.99.12beta
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
-srcdir = /Users/sts/Quellen/mac/hbci/lib/gnutls-2.8.5/doc/credentials
+srcdir = /Users/michael/src/git/lib/gnutls-2.8.5/doc/credentials
 subdirs =  lib libextra
 sysconfdir = ${prefix}/etc
 target_alias = 
 top_build_prefix = ../../
 top_builddir = ../..
-top_srcdir = /Users/sts/Quellen/mac/hbci/lib/gnutls-2.8.5
+top_srcdir = /Users/michael/src/git/lib/gnutls-2.8.5
 SUBDIRS = openpgp srp x509
 EXTRA_DIST = gnutls-http-serv ca.tmpl client.tmpl proxy.tmpl \
 	server.tmpl params.pem srp-passwd.txt srp-tpasswd.conf \

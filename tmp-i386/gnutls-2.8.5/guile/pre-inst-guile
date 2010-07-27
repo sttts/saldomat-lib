@@ -20,10 +20,10 @@
 # and produce the documentation.
 
 
-GUILE_LOAD_PATH="/Users/sts/Quellen/mac/hbci/lib/gnutls-2.8.5/guile/modules:$GUILE_LOAD_PATH"
+GUILE_LOAD_PATH="/Users/michael/src/git/lib/gnutls-2.8.5/guile/modules:$GUILE_LOAD_PATH"
 export GUILE_LOAD_PATH
 
-exec /Users/sts/Quellen/mac/hbci/lib/tmp-i386/gnutls-2.8.5/libtool --mode=execute		                    \
-       -dlopen "/Users/sts/Quellen/mac/hbci/lib/tmp-i386/gnutls-2.8.5/guile/src/libguile-gnutls-v-1.la"        \
-       -dlopen "/Users/sts/Quellen/mac/hbci/lib/tmp-i386/gnutls-2.8.5/guile/src/libguile-gnutls-extra-v-1.la"  \
+exec /Users/michael/src/git/lib/tmp-i386/gnutls-2.8.5/libtool --mode=execute		                    \
+       -dlopen "/Users/michael/src/git/lib/tmp-i386/gnutls-2.8.5/guile/src/libguile-gnutls-v-1.la"        \
+       -dlopen "/Users/michael/src/git/lib/tmp-i386/gnutls-2.8.5/guile/src/libguile-gnutls-extra-v-1.la"  \
         "$@"
