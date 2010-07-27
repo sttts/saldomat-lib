@@ -17,3 +17,6 @@ tmp-ppc/
 .libgpg-error.compiled-i386
 .pkg-config.compiled-debug
 .pkg-config.compiled-i386
+
+gnutls-*/lib/*.cache/
+gnutls-*/libextra/*e.cache/
