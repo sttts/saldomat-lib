@@ -59,7 +59,9 @@ Vorgehen zum Update von Aqbanking und Gwen
 
 5.1 Die Verzeichnisse static-...-4.2.x committen
 
-     svn commit static-build-*-4.2.x
+     git add static-build-*-4.2.x
+     git commit
+	Message: * binaries 4.2.x
 
 5.2 Links static-build-* setzen auf neue Version
 
@@ -71,10 +73,18 @@ Vorgehen zum Update von Aqbanking und Gwen
 
      git add static-build-debug static-build-i386 static-build-ppc
      git commit
+	Message: * links 4.2.x
 
-5.4 andere Branches (1.5 etc.) anpassen, analog 2.1
+5.4 Alles andere committen (tmp-* etc.)
+     
+     git add tmp-*
+     … (müssen wir genauer dokumentieren)
+     git commit
+	Message: * make 4.2.x
 
-5.5 Alles hochladen
+5.5 andere Branches (1.5 etc.) anpassen, analog 2.1
+
+5.6 Alles hochladen
 
      git push --all -f
 
