@@ -1,0 +1,482 @@
+                                                                    2008/11/25
+
+                                Content
+                                =======
+
+               1.   What Is AqBanking ?
+               1.1.   Generic Online Banking Interface
+               1.2.   Generic Financial Data Importer/Exporter Framework
+               1.3.   Bank/Account Information
+               2.   Supported Platforms
+               3.   Supported Frontends
+               4.   Supported Backends
+               4.1.   HBCI
+               4.2.   OFX Direct Connect
+               4.3.   EBICS
+               4.4.   None
+               5.   What Do I Need ?
+               5.1.   Required Packages
+               5.2.   Applications
+               6.   Building AqBanking
+               6.1.   Building from the Tar File
+               6.2.   Building from CVS/SVN
+               6.3.   Building the API Documentation
+               6.4.   Notes on porting the qt parts to Qt-4: 
+               7.   Windows Registry Keys Used
+               7.1.   Software\\AqBanking\\Paths\\pkgdatadir
+               7.2.   Software\\AqBanking\\Paths\\sysconfdir
+               7.3.   Software\\AqBanking\\Paths\\bankinfodir
+               7.4.   Software\\AqBanking\\Paths\\providerdir
+               7.5.   Software\\AqBanking\\Paths\\importerdir
+               8.   Environment Variables Used
+               8.1.   AQBANKING_LOGLEVEL
+               8.2.   AQBANKING_STORE_JOBLOGS
+               8.3.   AQHBCI_LOGBOOKED
+               8.4.   AQHBCI_LOGNOTED
+               8.5.   AQHBCI_DEBUG_JOBS
+               8.6.   AQOFX_LOG_COMM
+               9.   Security in PIN/TAN Mode
+               10.  Using Your Own Profiles for Im-/Exporters
+               11.  Thanks
+
+
+
+1. What Is AqBanking ?
+======================
+
+AqBanking is a library for online banking and financial
+applications. It has three major goals which are described in the
+following paragraphs.
+
+(Note: Information in German can be found on
+http://linuxwiki.de/AqBanking )
+
+The homepage of AqBanking is http://www.aqbanking.de/
+
+
+1.1. Generic Online Banking Interface
+-------------------------------------
+
+The intention of AqBanking is to provide a middle layer between the program
+and the various Online Banking libraries (e.g. AqHBCI, OpenHBCI etc). 
+
+The real work is done in so-called banking backends. See chapter 4 for a
+list of supported backends.
+
+
+
+1.2. Generic Financial Data Importer/Exporter Framework
+-------------------------------------------------------
+
+AqBanking uses various plugins to simplify import and export of financial
+data. It also provides the administration of profiles on a per import/export
+plugin basis.
+
+Currently there are plugins for the following formats:
+
+- Importers:
+  - DTAUS (German financial format)
+  - SWIFT (MT940 and MT942)
+  - OFX
+  - CSV
+  - OpenHBCI1 transactions
+  - ERI
+  
+- Exporters
+  - DTAUS (German financial format)
+  - CSV
+
+
+1.3. Bank/Account Information
+-----------------------------
+
+AqBanking supports plugins which allow lookup and verification of
+bank code/ account id pair validity. For Germany the library
+KtoBlzCheck is used for validation, but the bank information is
+shipped with aqbanking.
+
+Currently AqBanking provides informations about:
+- ca 25,000 US banks
+- ca 20,000 German banks
+- ca  3,600 Swiss banks
+- ca  2,300 Austrian banks
+
+AqBanking also provides information about countries: Country name, ISO-3166
+country code (both numeric and alpha) and currency information (ISO 4217
+currency codes).
+
+
+
+2. Supported Platforms
+======================
+
+AqBanking uses the library Gwenhywfar (http://gwenhywfar.sf.net/) for 
+abstraction of the underlying system. So it should work on any system for 
+which Gwenhywfar is available. 
+
+This includes (but is not limited to): 
+ - Linux (of course ;-)
+ - Windows (WIN32 platforms, such as Windows95 up to Windows XP)
+ - most POSIX systems (such as the BSDs) should also be supported, 
+   however, this is untested
+
+
+
+3. Supported Frontends
+======================
+
+The aqbanking package includes several so-called frontends which
+offer a simplified interface between aqbanking and GUI
+applications. The aqbanking library itself requires the
+implementation of various user interaction functions (e.g. opening
+a message box), and for particular GUI libraries these are already
+available in the respective frontends. 
+
+Basically all common GUI libraries (KDE, GNOME, Qt, console) are
+supported, and there exist frontend libraries for each of them. This
+is accomplished by only a few callback functions for user
+interaction which can be overloaded by applications.
+
+This package contains the following frontends:
+ - GTK 2 ("g2banking")
+ - Qt 3  ("qbanking"), can also be converted to Qt4 as described below
+ - KDE 3 ("kbanking")
+ - Console ("cbanking")
+
+
+
+4. Supported Backends
+=====================
+
+AqBanking includes all its currently known banking backends.
+
+
+4.1. HBCI
+---------
+
+The backend AqHBCI provides support for the German online banking protocol
+called "Homebanking Computer Interface". It is a national standard provided
+by most German credit institutes.
+
+The following security media are supported:
+ - DDV chipcard (DES-DES-Verfahren)
+ - RSA chipcard (RSA-DES-Hybrid mode)
+ - OpenHBCI keyfile (either OpenHBCI 1 or 2, this medium allows continued use 
+                     with OpenHBCI in parallel)
+ - PIN/TAN (PIN/TAN mode using HTTP over SSL)
+
+This backend supports the HBCI versions 2.01, 2.10 and 2.20.
+
+
+4.2. OFX Direct Connect
+-----------------------
+
+This backend provides support for an online banking protocol used in the 
+United States, Canada and maybe in the United Kingdom.
+
+
+4.3. EBICS
+--------------
+
+EBICS is the successor of the German banking protocol FTAM. It is used in commercial
+environments. The tool AqBanking-CLI comes with optional support for this protocol.
+
+
+4.4. None
+---------
+
+This is a fallback module which can be used by applications for accounts which
+are not managed by any online banking backend.
+
+
+
+5. What Do I Need ?
+===================
+
+
+5.1. Required Packages
+----------------------
+
+AqBanking has several direct dependencies:
+
+- "Gwenhywfar" >= 3.5.2, available from
+http://gwenhywfar.sf.net/, is absolutely required
+
+- "GMP", the GNU MP Bignum Library available from 
+  http://gmplib.org/index.html is required for calculations
+
+- "KtoBlzCheck" >= 1.0 from http://sf.net/projects/ktoblzcheck is
+required for the German bank account number checking, otherwise
+the account number checking will not be compiled.
+
+- "libchipcard" >= 4.0.0 from http://www.libchipcard.de is
+required for the aqgeldkarte backend, otherwise the geldkarte
+parts cannot be compiled
+
+- The python module "ctypes" http://sf.net/projects/ctypes is
+required for the python wrappers of aqbanking. The python wrappers
+are installed by default (to disable it, use --disable-python),
+but they cannot be used unless "ctypes" is installed.
+
+(Note: Further information in German can be found on
+http://linuxwiki.de/AqBanking )
+
+
+5.2. Applications
+-----------------
+
+These applications fully or partially support AqBanking:
+ - QBankManager (http://www.aquamaniac.de/qbanking/)
+ - Gnucash (http://www.gnucash.org/)
+ - KMyMoney (http://kmymoney2.sf.net/)
+ - (partially) Grisbi (http://sourceforge.net/projects/grisbi)
+ - OrgaMon (http://orgamon.org/)
+
+The aqbanking package also includes several command-line tools
+(aqbanking-tool, aqhbci-tool) and GUI tools (qt3-wizard etc)
+used by Gnucash, KMyMoney and QBanking to let the user setup,
+modify and debug HBCI settings.
+
+(Note: Further information in German can be found on
+http://linuxwiki.de/AqBanking )
+
+
+
+6. Building AqBanking
+=====================
+
+
+6.1. Building from the Tar File
+-------------------------------
+
+#>./configure
+#>make
+#>make install
+
+(the last step most probably requires you to be root)
+
+Compilation hints for specific platforms:
+
+- For FreeBSD and potentially other non-Linux platform, it might be
+  necessary to use "gmake" instead of the "make" program.
+
+- Also, if your "make" program happens to complain about the variable
+  definition "I18NFILES = $(shell cat ..." (in Makefile.in around line
+  230) and related definitions, then you need to look for comments in
+  the Makefile about "old make programs". Follow the instructions in
+  these comments, i.e. set some variable definitions to an empty
+  variable manually. This should remove all potentially incompatible
+  directives from the Makefile.
+
+- (especially on Mac/Darwin): If your configure run does not
+  detect the QT libraries and it says "checking for qt3
+  libraries... not found", then you need to specify the linker
+  flags for qt3 manually in the env variable qt3_libs. I.e. if
+  your qt3 library files are in /opt/qt/lib and is called
+  libqt-mt, then you need to specify 
+  ./configure qt3_libs="-L/opt/qt/lib -lqt-mt"
+
+
+6.2. Building from CVS/SVN
+--------------------------
+
+#>make -fMakefile.cvs
+
+and continue as described in "5.1. Building from the Tar File".
+
+
+6.3. Building the API Documentation
+-----------------------------------
+
+#>make srcdoc
+
+If you want to install a linked API documentation (which links against the
+API documentations of the projects AqBanking depends on) use this:
+
+#>make install-srcdoc
+
+This installs the linked doc to the path you gave to ./configure
+by "--with-docpath=PATH". It defaults to "$HOME/apidoc", which
+means it does *not* obey the --prefix argument.
+
+
+6.4. Notes on porting the qt parts to Qt-4: 
+------------------------------------------
+
+The Qt4 library is available as GPL on Linux *and* Windows, which
+means this online banking programm is available on windows as well,
+which is a GOOD THING!
+
+But qt4 is not at all source compatible to qt3, see
+http://doc.trolltech.com/4.0/porting4.html. Trolltech provides a
+tool for the necessary class renaming, called "qt3to4". This
+aqbanking package already has the necessary make rules ("make
+qt4-port") for calling that tool on all source files for the
+"qbanking" frontend and the ui-tools of the "aqhbci" backend, if
+the qt4 library has been detected at configure time. I.e. if you
+want to use this package in qt4, do the following two steps:
+
+1. Call ./configure with qt3_libs and qt3_includes set so that the
+   Qt4 libraries are found
+2. Call "make qt4-all"
+3. As usual call "make"
+
+An example for 1. is this for Linux/g++:
+
+DIR4=/usr/local/qt4
+LIBS4=-L${DIR4}/lib -lQtCore -lQtGui -lQt3Support
+INCS4=-I${DIR4}/include -I${DIR4}/include/Qt -I${DIR4}/include/QtCore
+INCS4+=-I${DIR4}/include/QtGui -I${DIR4}/include/Qt3Support
+TO4=${DIR4}/bin/qt3to4
+
+    ./configure --prefix=/my/prefix \
+    --enable-debug=yes --enable-qt3=yes \
+    QTDIR=${DIR4} QT3TO4=${TO4} \
+    qt3_libs="${LIBS4}" \
+    qt3_includes="${INCS4}"
+
+or on Windows/mingw32
+
+  ./configure -C 
+    --enable-debug QTDIR=$QTDIR 
+    qt3_libs="-L$QTDIR/bin -lQtCore4 -lQtGui4 -lQt3Support4" 
+    qt3_includes="-I$QTDIR/include -I$QTDIR/include/Qt -I$QTDIR/include/QtCore -I$QTDIR/include/QtGui -I$QTDIR/include/Qt3Support" 
+    --with-gwen-dir=/c/Programme/gwenhywfar 
+    --with-aqbanking-dir=/c/Programme/aqbanking
+
+-- 2005-08-10, cstim
+
+
+
+7. Windows Registry Keys Used
+=============================
+
+AqBanking uses registry keys below HKEY_CURRENT_USER.  Currently the
+following keys are used. These keys are created by the setup.exe which
+contains the binary package for WIN32 platforms.
+
+ Note: Additionally in Sept/Oct 2007 a relocatable mode of aqbanking
+ has been introduced. This might mean that those registry keys are not
+ needed anymore. (FIXME: Need to clarify this.)
+
+
+7.1. Software\\AqBanking\\Paths\\pkgdatadir
+-------------------------------------------
+This is the data folder (i.e. $PREFIX/share/aqbanking on POSIX systems).
+
+
+7.2. Software\\AqBanking\\Paths\\sysconfdir
+-------------------------------------------
+This is the folder containing system configuration files.
+(i.e. $PREFIX/etc on POSIX systems).
+
+
+7.3. Software\\AqBanking\\Paths\\bankinfodir
+-------------------------------------------
+This folder is used to store bankinfo plugins.
+
+
+7.4. Software\\AqBanking\\Paths\\providerdir
+-------------------------------------------
+This folder is used to store provider (backend) plugins.
+
+
+7.5. Software\\AqBanking\\Paths\\importerdir
+-------------------------------------------
+This folder is used to store importer/exporter plugins.
+
+
+
+8. Environment Variables Used
+=============================
+
+
+8.1. AQBANKING_LOGLEVEL
+-----------------------
+
+This variable stores the loglevel to be used for AqBanking.
+Possible values are: emergency, alert, critical, error, warning, notice,
+info, debug and verbous.
+
+
+8.2. AQBANKING_STORE_JOBLOGS
+----------------------------
+If this variable is defined then AqBanking will always store job logs with 
+jobs. Otherwise job logs are only stored for jobs with a status other than
+"finished". Job logs can become quite big.
+
+
+8.3. AQHBCI_LOGBOOKED
+---------------------
+If this environment variable exists then the file "/tmp/booked.mt" is created
+upon reception of transactions via the job GetTransactions. This file then
+contains a SWIFT MT940 document which can be very helpfull in case there is
+a problem in the SWIFT parser.
+
+
+8.4. AQHBCI_LOGNOTED
+--------------------
+Same as AQHBCI_LOGBOOKED but for noted transactions (which are transactions
+which are noted but ot yet booked)
+
+
+8.5. AQHBCI_DEBUG_JOBS
+----------------------
+If this variable exists then additional debugging data is stored with each
+job.
+
+
+8.6. AQOFX_LOG_COMM
+-------------------
+If this variable exists then all OFX communication is logged to /tmp/ofx.log.
+This is only needed when debugging AqOfxConnect.
+WARNING: This might expose your user id and password to everyone who can read
+that file!
+
+
+
+9. Security in PIN/TAN Mode
+===========================
+
+In PIN/TAN mode AqHBCI stores certificates of the bank in a special folder:
+      $HOME/.banking/backends/aqhbci/data/banks/280/<BLZ>/certs/.
+(<BLZ> is the routing number of your bank, German "Bankleitzahl")
+
+Authentification of the bank is only possible by checking against the known
+certificates stored in this folder.
+
+For maximum security you could chown this folder to another user and make it
+readable and accessible by the running user after having received and 
+acknowledged the bank's certificate.
+
+This way the running application is able to read and verify the certificates
+but unable to modify it or to add new ones.
+
+
+
+10. Using Your Own Profiles for Im-/Exporters
+=============================================
+
+You can create your own profiles to be used with the various importers.
+For AqBanking to recognize your private profiles they must be stored in
+the user local folder. 
+E.g. CSV profiles on Linux must be stored in 
+"$HOME/.aqbanking/imexporters/csv/profiles/".
+
+
+
+11. Thanks
+==========
+
+I wish to thank the following (among others) people for their support in 
+making AqBanking work:
+- Christian Stimming (build-system and tarball cleanup, translations, inputs)
+- Jens Koerner (did some huge jobs to provide German translation)
+- David Reiser (for helping in debugging the OFX DirectConnect code)
+- Christoph Bohl (for helping with the YellowNet backend)
+
+- and of course the many people who submitted bug reports !!
+
+
+Martin Preuss, Hamburg/Germany, 2009/09/22
+
