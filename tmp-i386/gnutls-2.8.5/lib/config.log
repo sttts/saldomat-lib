@@ -30,8 +30,8 @@ Kernel configured for up to 2 processors.
 Processor type: i486 (Intel 80486)
 Processors active: 0 1
 Primary memory available: 4.00 gigabytes
-Default processor set: 112 tasks, 496 threads, 2 processors
-Load average: 3.14, Mach factor: 0.37
+Default processor set: 105 tasks, 462 threads, 2 processors
+Load average: 3.49, Mach factor: 0.29
 /bin/machine           = unknown
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
@@ -1315,7 +1315,7 @@ configure:17980: checking for vasnprintf
 configure:17980: gcc -o conftest -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include -I/Developer/SDKs/MacOSX10.5.sdk/usr/include -arch i386 -L/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5 conftest.c  >&5
 Undefined symbols:
   "_vasnprintf", referenced from:
-      _main in cc00pU7N.o
+      _main in ccoZtGes.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 configure:17980: $? = 1
@@ -1594,7 +1594,7 @@ configure:18382: checking for strnlen
 configure:18382: gcc -o conftest -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include -I/Developer/SDKs/MacOSX10.5.sdk/usr/include -arch i386 -L/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5 conftest.c  >&5
 Undefined symbols:
   "_strnlen", referenced from:
-      _main in ccfjDSZx.o
+      _main in ccGXUkEi.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 configure:18382: $? = 1
@@ -1725,7 +1725,7 @@ configure:18382: checking for wcsnlen
 configure:18382: gcc -o conftest -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include -I/Developer/SDKs/MacOSX10.5.sdk/usr/include -arch i386 -L/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5 conftest.c  >&5
 Undefined symbols:
   "_wcsnlen", referenced from:
-      _main in ccnn3zuK.o
+      _main in ccKquGaq.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 configure:18382: $? = 1
@@ -2309,7 +2309,7 @@ configure:18953: checking for memmem
 configure:18953: gcc -o conftest -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include -I/Developer/SDKs/MacOSX10.5.sdk/usr/include -arch i386 -L/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5 conftest.c  >&5
 Undefined symbols:
   "_memmem", referenced from:
-      _main in ccmtVtZd.o
+      _main in cctuyEF1.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 configure:18953: $? = 1
@@ -3853,7 +3853,7 @@ configure:20497: checking for strverscmp
 configure:20497: gcc -o conftest -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include -I/Developer/SDKs/MacOSX10.5.sdk/usr/include -arch i386 -L/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5 conftest.c  >&5
 Undefined symbols:
   "_strverscmp", referenced from:
-      _main in ccsCVULq.o
+      _main in cc4fDKBA.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 configure:20497: $? = 1

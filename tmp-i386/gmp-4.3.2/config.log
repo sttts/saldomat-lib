@@ -30,8 +30,8 @@ Kernel configured for up to 2 processors.
 Processor type: i486 (Intel 80486)
 Processors active: 0 1
 Primary memory available: 4.00 gigabytes
-Default processor set: 111 tasks, 489 threads, 2 processors
-Load average: 1.48, Mach factor: 0.82
+Default processor set: 105 tasks, 463 threads, 2 processors
+Load average: 2.43, Mach factor: 0.47
 /bin/machine           = unknown
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
@@ -1938,7 +1938,7 @@ configure:28722: checking for attr_get
 configure:28778: gcc -std=gnu99 -o conftest -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -arch i386 -L/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5 conftest.c  >&5
 Undefined symbols:
   "_attr_get", referenced from:
-      _main in ccvEIZmD.o
+      _main in ccmy8OKZ.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 configure:28784: $? = 1
@@ -2054,7 +2054,7 @@ configure:28722: checking for clock_gettime
 configure:28778: gcc -std=gnu99 -o conftest -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -arch i386 -L/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5 conftest.c  >&5
 Undefined symbols:
   "_clock_gettime", referenced from:
-      _main in cc74djWW.o
+      _main in ccvtMqk5.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 configure:28784: $? = 1
@@ -2167,7 +2167,7 @@ configure:28722: checking for cputime
 configure:28778: gcc -std=gnu99 -o conftest -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -arch i386 -L/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5 conftest.c  >&5
 Undefined symbols:
   "_cputime", referenced from:
-      _main in ccY34frk.o
+      _main in cctqoUQh.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 configure:28784: $? = 1
@@ -2292,7 +2292,7 @@ configure:28722: checking for getsysinfo
 configure:28778: gcc -std=gnu99 -o conftest -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -arch i386 -L/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5 conftest.c  >&5
 Undefined symbols:
   "_getsysinfo", referenced from:
-      _main in ccgBRbuY.o
+      _main in ccGw5M9f.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 configure:28784: $? = 1
@@ -2429,7 +2429,7 @@ configure:28722: checking for obstack_vprintf
 configure:28778: gcc -std=gnu99 -o conftest -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -arch i386 -L/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5 conftest.c  >&5
 Undefined symbols:
   "_obstack_vprintf", referenced from:
-      _main in ccgApAXp.o
+      _main in cc4RtE5U.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 configure:28784: $? = 1
@@ -2558,7 +2558,7 @@ configure:28722: checking for pstat_getprocessor
 configure:28778: gcc -std=gnu99 -o conftest -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -arch i386 -L/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5 conftest.c  >&5
 Undefined symbols:
   "_pstat_getprocessor", referenced from:
-      _main in ccM1L3UB.o
+      _main in cclgEiMi.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 configure:28784: $? = 1
@@ -2685,7 +2685,7 @@ configure:28722: checking for read_real_time
 configure:28778: gcc -std=gnu99 -o conftest -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -arch i386 -L/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5 conftest.c  >&5
 Undefined symbols:
   "_read_real_time", referenced from:
-      _main in ccAOwddO.o
+      _main in ccRABi66.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 configure:28784: $? = 1
@@ -2817,7 +2817,7 @@ configure:28722: checking for sigstack
 configure:28778: gcc -std=gnu99 -o conftest -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -arch i386 -L/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5 conftest.c  >&5
 Undefined symbols:
   "_sigstack", referenced from:
-      _main in ccVwN9eD.o
+      _main in ccoFQ2l0.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 configure:28784: $? = 1
@@ -2943,7 +2943,7 @@ configure:28722: checking for syssgi
 configure:28778: gcc -std=gnu99 -o conftest -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -arch i386 -L/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5 conftest.c  >&5
 Undefined symbols:
   "_syssgi", referenced from:
-      _main in cc3GMELt.o
+      _main in ccWQp7aD.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 configure:28784: $? = 1
@@ -3078,7 +3078,7 @@ configure:28722: checking for strnlen
 configure:28778: gcc -std=gnu99 -o conftest -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -arch i386 -L/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5 conftest.c  >&5
 Undefined symbols:
   "_strnlen", referenced from:
-      _main in ccPH1qiV.o
+      _main in ccI6dlLw.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 configure:28784: $? = 1
@@ -3553,9 +3553,9 @@ configure:33961: checking lex library
 configure:33980: gcc -std=gnu99 -o conftest -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -arch i386 -L/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5 conftest.c   >&5
 Undefined symbols:
   "_yywrap", referenced from:
-      _input in cckIK19G.o
-      _yylex in cckIK19G.o
-      _main in cckIK19G.o
+      _input in ccjoR0YH.o
+      _yylex in ccjoR0YH.o
+      _main in ccjoR0YH.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 configure:33986: $? = 1

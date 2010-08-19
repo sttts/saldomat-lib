@@ -30,8 +30,8 @@ Kernel configured for up to 2 processors.
 Processor type: i486 (Intel 80486)
 Processors active: 0 1
 Primary memory available: 4.00 gigabytes
-Default processor set: 114 tasks, 490 threads, 2 processors
-Load average: 1.93, Mach factor: 0.73
+Default processor set: 105 tasks, 461 threads, 2 processors
+Load average: 1.72, Mach factor: 0.72
 /bin/machine           = unknown
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
@@ -709,7 +709,7 @@ configure:23509: gcc -o conftest -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk 
 ld: warning: directory '/Users/michael/src/git/lib/static-build-debug-4.99.19rc3/lib' following -L not found
 Undefined symbols:
   "_xyzzy", referenced from:
-      _main in ccNtYAxR.o
+      _main in ccXJiVLi.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 configure:23515: $? = 1
@@ -982,7 +982,7 @@ conftest.c:76: warning: conflicting types for built-in function 'mempcpy'
 ld: warning: directory '/Users/michael/src/git/lib/static-build-debug-4.99.19rc3/lib' following -L not found
 Undefined symbols:
   "_mempcpy", referenced from:
-      _main in ccbEixt7.o
+      _main in ccPkrcqa.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 configure:25466: $? = 1
@@ -1116,7 +1116,7 @@ configure:25460: gcc -o conftest -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk 
 ld: warning: directory '/Users/michael/src/git/lib/static-build-debug-4.99.19rc3/lib' following -L not found
 Undefined symbols:
   "_argz_count", referenced from:
-      _main in ccQTIq26.o
+      _main in ccwUYHvE.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 configure:25466: $? = 1
@@ -1223,7 +1223,7 @@ configure:25460: gcc -o conftest -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk 
 ld: warning: directory '/Users/michael/src/git/lib/static-build-debug-4.99.19rc3/lib' following -L not found
 Undefined symbols:
   "_argz_stringify", referenced from:
-      _main in ccRH6iER.o
+      _main in ccf14r5a.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 configure:25466: $? = 1
@@ -1330,7 +1330,7 @@ configure:25460: gcc -o conftest -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk 
 ld: warning: directory '/Users/michael/src/git/lib/static-build-debug-4.99.19rc3/lib' following -L not found
 Undefined symbols:
   "_argz_next", referenced from:
-      _main in ccQA2EKb.o
+      _main in ccm57e2S.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 configure:25466: $? = 1
@@ -1437,7 +1437,7 @@ configure:25460: gcc -o conftest -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk 
 ld: warning: directory '/Users/michael/src/git/lib/static-build-debug-4.99.19rc3/lib' following -L not found
 Undefined symbols:
   "___fsetlocking", referenced from:
-      _main in ccpzgHrM.o
+      _main in ccZEvzxw.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 configure:25466: $? = 1
@@ -1628,11 +1628,11 @@ configure:25688: gcc -o conftest -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk 
 ld: warning: directory '/Users/michael/src/git/lib/static-build-debug-4.99.19rc3/lib' following -L not found
 Undefined symbols:
   "_iconv_close", referenced from:
-      _main in ccc6P80U.o
+      _main in cc5fJLUC.o
   "_iconv", referenced from:
-      _main in ccc6P80U.o
+      _main in cc5fJLUC.o
   "_iconv_open", referenced from:
-      _main in ccc6P80U.o
+      _main in cc5fJLUC.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 configure:25694: $? = 1
@@ -1731,7 +1731,7 @@ configure:26017: gcc -o conftest -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk 
 ld: warning: directory '/Users/michael/src/git/lib/static-build-debug-4.99.19rc3/lib' following -L not found
 Undefined symbols:
   "__NL_LOCALE_NAME", referenced from:
-      _main in cciO8eXo.o
+      _main in cctcRAPW.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 configure:26023: $? = 1
@@ -2673,7 +2673,7 @@ configure:29782: gcc -o conftest -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk 
 ld: warning: directory '/Users/michael/src/git/lib/static-build-debug-4.99.19rc3/lib' following -L not found
 Undefined symbols:
   "_canonicalize_file_name", referenced from:
-      _main in ccLZrblc.o
+      _main in cccdGW95.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 configure:29788: $? = 1
@@ -5643,7 +5643,7 @@ configure:36279: gcc -o conftest -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk 
 ld: warning: directory '/Users/michael/src/git/lib/static-build-debug-4.99.19rc3/lib' following -L not found
 Undefined symbols:
   "_strnlen", referenced from:
-      _main in ccH5pMYZ.o
+      _main in cceL9HZJ.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 configure:36282: $? = 1

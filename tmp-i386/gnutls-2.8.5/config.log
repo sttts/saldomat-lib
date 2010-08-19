@@ -30,8 +30,8 @@ Kernel configured for up to 2 processors.
 Processor type: i486 (Intel 80486)
 Processors active: 0 1
 Primary memory available: 4.00 gigabytes
-Default processor set: 109 tasks, 482 threads, 2 processors
-Load average: 1.73, Mach factor: 0.55
+Default processor set: 103 tasks, 455 threads, 2 processors
+Load average: 1.44, Mach factor: 0.97
 /bin/machine           = unknown
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
@@ -519,7 +519,7 @@ configure:6110: result: -std=gnu99
 configure:6123: autobuild project... GnuTLS
 configure:6129: autobuild revision... 2.8.5
 configure:6134: autobuild hostname... moeve
-configure:6145: autobuild timestamp... 20100819T163701Z
+configure:6145: autobuild timestamp... 20100819T204459Z
 configure:6153: checking for inline
 configure:6169: gcc -std=gnu99 -c -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 conftest.c >&5
 configure:6169: $? = 0
@@ -1912,7 +1912,7 @@ configure:18805: checking for __fsetlocking
 configure:18805: gcc -std=gnu99 -o conftest -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -arch i386 -L/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5 conftest.c  >&5
 Undefined symbols:
   "___fsetlocking", referenced from:
-      _main in cc4cmJZq.o
+      _main in ccyBAjmm.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 configure:18805: $? = 1
@@ -2043,7 +2043,7 @@ configure:18805: checking for vasnprintf
 configure:18805: gcc -std=gnu99 -o conftest -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -arch i386 -L/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5 conftest.c  >&5
 Undefined symbols:
   "_vasnprintf", referenced from:
-      _main in cc3far1B.o
+      _main in ccklbize.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 configure:18805: $? = 1
@@ -2882,7 +2882,7 @@ configure:20346: checking for strnlen
 configure:20346: gcc -std=gnu99 -o conftest -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -arch i386 -L/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5 conftest.c  >&5
 Undefined symbols:
   "_strnlen", referenced from:
-      _main in ccuzMfVi.o
+      _main in ccHYeuLH.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 configure:20346: $? = 1
@@ -3026,7 +3026,7 @@ configure:20346: checking for wcsnlen
 configure:20346: gcc -std=gnu99 -o conftest -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -arch i386 -L/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5 conftest.c  >&5
 Undefined symbols:
   "_wcsnlen", referenced from:
-      _main in ccfQCd5F.o
+      _main in cc2FajjJ.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 configure:20346: $? = 1
@@ -3583,7 +3583,7 @@ configure:21361: checking for getdelim
 configure:21361: gcc -std=gnu99 -o conftest -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -arch i386 -L/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5 conftest.c  >&5
 Undefined symbols:
   "_getdelim", referenced from:
-      _main in ccJiatJM.o
+      _main in cc8G3MiL.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 configure:21361: $? = 1
@@ -3746,7 +3746,7 @@ configure:21434: checking for getline
 configure:21434: gcc -std=gnu99 -o conftest -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -arch i386 -L/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5 conftest.c  >&5
 Undefined symbols:
   "_getline", referenced from:
-      _main in cchGJTLt.o
+      _main in cc81jGlP.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 configure:21434: $? = 1

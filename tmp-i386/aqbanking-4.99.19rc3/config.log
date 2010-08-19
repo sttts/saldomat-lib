@@ -30,8 +30,8 @@ Kernel configured for up to 2 processors.
 Processor type: i486 (Intel 80486)
 Processors active: 0 1
 Primary memory available: 4.00 gigabytes
-Default processor set: 105 tasks, 459 threads, 2 processors
-Load average: 1.08, Mach factor: 0.91
+Default processor set: 104 tasks, 456 threads, 2 processors
+Load average: 1.49, Mach factor: 0.88
 /bin/machine           = unknown
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
@@ -1071,7 +1071,6 @@ config.status:1241: creating aqbanking.iss
 config.status:1241: creating version.h
 config.status:1241: creating system.h
 config.status:1241: creating config.h
-config.status:1544: config.h is unchanged
 config.status:1590: executing depfiles commands
 config.status:1590: executing libtool commands
 
@@ -1275,7 +1274,7 @@ CXXCPP='g++ -E'
 CXXDEPMODE='depmode=none'
 CXXFLAGS='-g -O2 -Wall'
 CYGPATH_W='echo'
-DATETIME='20100819203025'
+DATETIME='20100819225001'
 DEFS='-DHAVE_CONFIG_H'
 DEPDIR='.deps'
 DLLTOOL='dlltool'

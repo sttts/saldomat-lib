@@ -949,7 +949,7 @@ s,@host@,|#_!!_#|i386-apple-darwin10.4.0,g
 s,@host_cpu@,|#_!!_#|i386,g
 s,@host_vendor@,|#_!!_#|apple,g
 s,@host_os@,|#_!!_#|darwin10.4.0,g
-s,@DATETIME@,|#_!!_#|20100819203025,g
+s,@DATETIME@,|#_!!_#|20100819225001,g
 s,@AQBANKING_VERSION_MAJOR@,|#_!!_#|4,g
 s,@AQBANKING_VERSION_MINOR@,|#_!!_#|99,g
 s,@AQBANKING_VERSION_PATCHLEVEL@,|#_!!_#|19,g

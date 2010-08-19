@@ -147,7 +147,7 @@ CXXCPP = g++ -E
 CXXDEPMODE = depmode=none
 CXXFLAGS = -g -Wall
 CYGPATH_W = echo
-DATETIME = 20100819203123
+DATETIME = 20100819230516
 DEFS = -DHAVE_CONFIG_H \
 	-DXMLDATA_DIR=\"$(aqbanking_pkgdatadir)/backends/aqhbci\"
 DEPDIR = .deps

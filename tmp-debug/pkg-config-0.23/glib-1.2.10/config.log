@@ -30,8 +30,8 @@ Kernel configured for up to 2 processors.
 Processor type: i486 (Intel 80486)
 Processors active: 0 1
 Primary memory available: 4.00 gigabytes
-Default processor set: 115 tasks, 496 threads, 2 processors
-Load average: 1.66, Mach factor: 0.79
+Default processor set: 106 tasks, 462 threads, 2 processors
+Load average: 1.75, Mach factor: 0.71
 /bin/machine           = unknown
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
@@ -564,7 +564,7 @@ configure:21093: gcc -o conftest -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk 
 ld: warning: directory '/Users/michael/src/git/lib/static-build-debug-4.99.19rc3/lib' following -L not found
 Undefined symbols:
   "__doprnt", referenced from:
-      _main in ccnVEn16.o
+      _main in cceKJqb7.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 configure:21099: $? = 1
@@ -644,7 +644,7 @@ configure:21192: gcc -o conftest -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk 
 ld: warning: directory '/Users/michael/src/git/lib/static-build-debug-4.99.19rc3/lib' following -L not found
 Undefined symbols:
   "_on_exit", referenced from:
-      _main in ccOeHzoj.o
+      _main in ccVWvSal.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 configure:21198: $? = 1
