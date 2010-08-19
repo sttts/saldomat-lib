@@ -165,7 +165,7 @@ CXXCPP = g++ -E
 CXXDEPMODE = depmode=none
 CXXFLAGS = -g -Wall
 CYGPATH_W = echo
-DATETIME = 20100819193458
+DATETIME = 20100819203123
 DEFS = -DHAVE_CONFIG_H
 DEPDIR = .deps
 DLLTOOL = dlltool
@@ -287,7 +287,7 @@ aqbanking_pkgdatadir = ${datadir}/aqbanking
 aqbanking_plugin_searchdir = Frameworks/AqBanking/lib/aqbanking/plugins/32
 aqbanking_plugindir = ${libdir}/aqbanking/plugins/32
 aqbanking_plugins_backends_dirs =  aqhbci
-aqbanking_plugins_bankinfo_dirs = 
+aqbanking_plugins_bankinfo_dirs =  de
 aqbanking_plugins_imexporters_dirs =  csv dtaus eri2 ofx openhbci1 swift xmldb yellownet sepa ctxfile q43
 aqbanking_plugins_parsers_dirs =  dtaus swift
 aqbanking_symlinkdir = $(top_builddir)/aqbanking5
