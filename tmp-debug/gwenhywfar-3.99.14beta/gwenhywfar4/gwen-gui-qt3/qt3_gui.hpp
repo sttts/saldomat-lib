@@ -1,1 +1,0 @@
-/Users/michael/src/git/lib/gwenhywfar/gui/qt3/qt3_gui.hpp

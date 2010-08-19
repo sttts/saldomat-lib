@@ -12,13 +12,13 @@
 # File: src/libgcrypt-config.  Generated from libgcrypt-config.in by configure.
 
 # General.
-prefix="/Users/michael/src/git/lib/static-build-i386-4.99.12beta"
+prefix="/Users/michael/src/git/lib/static-build-i386-4.99.19rc3"
 exec_prefix="${prefix}"
 version="1.4.5"
 includedir="${prefix}/include"
 libdir="${exec_prefix}/lib"
-gpg_error_libs="-L/Users/michael/src/git/lib/static-build-i386-4.99.12beta/lib -lgpg-error"
-gpg_error_cflags="-I/Users/michael/src/git/lib/static-build-i386-4.99.12beta/include"
+gpg_error_libs="-L/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/lib -lgpg-error"
+gpg_error_cflags="-I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include"
 
 # libgcrypt values.
 libs="-lgcrypt"

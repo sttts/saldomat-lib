@@ -11,7 +11,7 @@
 # WITHOUT ANY WARRANTY, to the extent permitted by law; without even the
 # implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-prefix=/Users/michael/src/git/lib/static-build-i386-4.99.12beta
+prefix=/Users/michael/src/git/lib/static-build-i386-4.99.19rc3
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

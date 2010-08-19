@@ -8,8 +8,8 @@
 # gwen
 # aqbanking
 
-AqVer=4.99.12beta
-GwenVer=3.99.14beta
+AqVer=4.99.19rc3
+GwenVer=3.99.21rc4
 
 all:
 	$(MAKE) build arch=i386 postfix=-i386
@@ -165,7 +165,7 @@ PATH=$(PREFIX)/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 	PKG_CONFIG=$(PREFIX)/bin/pkg-config PKG_CONFIG_PATH=$(PREFIX)/lib/pkgconfig/ \
 	$(BASEDIR)/aqbanking/configure $(SHARED_CONFFLAGS) --enable-debug=$(DEBUG) \
 	--with-backends="aqhbci" --with-frontends="" \
-	--enable-local-install --disable-tutorials --with-bankinfos=de --without-imexports \
+	--enable-local-install --disable-tutorials --with-bankinfos="" --without-imexports \
 	--disable-qt3-threads --disable-qt3 --with-exporter=csv \
 	--disable-variadic-macros && \
 	PATH=$(PATH):/usr/local/git/bin make && \

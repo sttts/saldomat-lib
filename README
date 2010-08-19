@@ -5,7 +5,7 @@ Vorgehen zum Update von Aqbanking und Gwen
 
      cd lib
 
-   Prüfen, dass der lib-branch richtig ist:
+   Prï¿½fen, dass der lib-branch richtig ist:
 
      git branch
      git checkout richtiger-branch
@@ -15,7 +15,7 @@ Vorgehen zum Update von Aqbanking und Gwen
 
      sudo mv /sw /sw.old
 
-2.0 Prüfen, dass der Branch von gwen richtig ist.
+2.0 Prï¿½fen, dass der Branch von gwen richtig ist.
 
     git branch
     git checkout richtiger-branch
@@ -24,6 +24,15 @@ Vorgehen zum Update von Aqbanking und Gwen
 
      ssh limoia.com
      cd /home/git/gwenhywfar
+     
+     Immer als sschimanski
+     (Sonst: 	git checkout -f master^ (commit vor master)
+				git checkout -f master
+				git clean -f
+				=> alles wieder sauber wie im master)
+	
+     su
+     su sschimanski
      git svn rebase
      exit
 
@@ -39,29 +48,42 @@ Vorgehen zum Update von Aqbanking und Gwen
      git push --all -f
  
    Superprojekt anpassen:
-
+   
+   	 git checkout richtiger-branch
      cd ..
      git add gwenhywfar
      git commit
 
+   Evtl. die anderen Branches nachziehen
+   
+     git branch -D anderer-branch
+     git checkout -b anderer-branch
+     
+
 2.2 Aqbanking analog
 
-2.3 Im aqbanking/Makefile die Versionsnummern oben anpassen
+3.0 make distclean
+
+3.1 Im aqbanking/Makefile die Versionsnummern oben anpassen
 
      AqVer=4.2.x
      GwenVer=3.11.x
-
-3. make distclean
 
 4. Bauen:
 
      make
 
 5.1 Die Verzeichnisse static-...-4.2.x committen
-
+	
+	Die alten entfernen
+	
+	 git rm static-build-alteVersion
+	
+	Die neuen aufnehmen
+	
      git add static-build-*-4.2.x
      git commit
-	Message: * binaries 4.2.x
+		Message: * binaries 4.2.x
 
 5.2 Links static-build-* setzen auf neue Version
 
@@ -78,7 +100,7 @@ Vorgehen zum Update von Aqbanking und Gwen
 5.4 Alles andere committen (tmp-* etc.)
      
      git add tmp-*
-     É (mŸssen wir genauer dokumentieren)
+     ï¿½ (mï¿½ssen wir genauer dokumentieren)
      git commit
 	Message: * make 4.2.x
 

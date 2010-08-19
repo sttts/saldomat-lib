@@ -1,1 +1,0 @@
-/Users/michael/src/git/lib/gwenhywfar/gui/fox16/theme.h
