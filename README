@@ -53,6 +53,7 @@ Vorgehen zum Update von Aqbanking und Gwen
      cd ..
      git add gwenhywfar
      git commit
+     	Message: * code 4.2.x
 
    Evtl. die anderen Branches nachziehen
    
@@ -73,7 +74,13 @@ Vorgehen zum Update von Aqbanking und Gwen
 
      make
 
-5.1 Die Verzeichnisse static-...-4.2.x committen
+5.1 Alles committen
+	
+	git commit
+		Message: * make 4.2.x
+
+/* Links werden durch make angelegt... einfach alles committen
+5.x Die Verzeichnisse static-...-4.2.x committen
 	
 	Die alten entfernen
 	
@@ -85,40 +92,42 @@ Vorgehen zum Update von Aqbanking und Gwen
      git commit
 		Message: * binaries 4.2.x
 
-5.2 Links static-build-* setzen auf neue Version
+5.x Links static-build-* setzen auf neue Version
 
      ln -sf static-build-debug-4.2.x static-build-debug 
      ln -sf static-build-i386-4.2.x static-build-i386 
      ln -sf static-build-ppc-4.2.x static-build-ppc
 
-5.3 Links committen
+5.x Links committen
 
      git add static-build-debug static-build-i386 static-build-ppc
      git commit
 	Message: * links 4.2.x
 
-5.4 Alles andere committen (tmp-* etc.)
+5.x Alles andere committen (tmp-* etc.)
      
      git add tmp-*
      � (m�ssen wir genauer dokumentieren)
      git commit
-	Message: * make 4.2.x
+	Message: * make 4.2.x	
+*/
 
-5.5 andere Branches (1.5 etc.) anpassen, analog 2.1
+5.2 andere Branches (1.5 etc.) anpassen, analog 2.1
 
-5.6 Alles hochladen
+5.3 Alles hochladen
 
      git push --all -f
 
-6. Superprojekt hbci anpassen
+5.4 Superprojekt hbci anpassen
 
      cd ..
      git add lib
      git commit
 
-6. Evtl. /sw wieder herstellen
+6. /sw wieder herstellen
 
      sudo mv /sw.old /sw
+
 
 aqhbci-tool4 ausfuehren
 =======================
