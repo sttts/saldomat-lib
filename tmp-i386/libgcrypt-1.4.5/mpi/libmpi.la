@@ -14,7 +14,7 @@ library_names=''
 old_library='libmpi.a'
 
 # Libraries that this one depends upon.
-dependency_libs=' -L/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/'
+dependency_libs=' -L/Users/michael/src/git/lib/static-build-i386-4.99.21rc5/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/'
 
 # Version information for libmpi.
 current=

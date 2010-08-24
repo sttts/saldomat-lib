@@ -44,7 +44,7 @@ available_tags=" RC CXX"
 
 # ### BEGIN LIBTOOL CONFIG
 
-# Libtool was configured on host moeve:
+# Libtool was configured on host moeve.fritz.box:
 
 # Shell to use when invoking shell scripts.
 SHELL="/bin/sh"
@@ -7211,7 +7211,7 @@ disable_libs=static
 # End:
 # ### BEGIN LIBTOOL TAG CONFIG: RC
 
-# Libtool was configured on host moeve:
+# Libtool was configured on host moeve.fritz.box:
 
 # Shell to use when invoking shell scripts.
 SHELL="/bin/sh"
@@ -7507,7 +7507,7 @@ include_expsyms=""
 
 # ### BEGIN LIBTOOL TAG CONFIG: CXX
 
-# Libtool was configured on host moeve:
+# Libtool was configured on host moeve.fritz.box:
 
 # Shell to use when invoking shell scripts.
 SHELL="/bin/sh"

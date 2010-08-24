@@ -420,7 +420,7 @@
 /* #undef ICONV_FLAVOR */
 
 /* Define to the value of ${prefix}, as a string. */
-#define INSTALLPREFIX "/Users/michael/src/git/lib/static-build-i386-4.99.19rc3"
+#define INSTALLPREFIX "/Users/michael/src/git/lib/static-build-i386-4.99.21rc5"
 
 /* Define if integer division by zero raises signal SIGFPE. */
 #define INTDIV0_RAISES_SIGFPE 1

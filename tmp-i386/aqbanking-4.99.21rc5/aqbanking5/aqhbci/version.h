@@ -1,0 +1,1 @@
+/Users/michael/src/git/lib/tmp-i386/aqbanking-4.99.21rc5/src/plugins/backends/aqhbci/plugin/version.h

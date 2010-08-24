@@ -132,9 +132,9 @@ AUTOMAKE = ${SHELL} /Users/michael/src/git/lib/gnutls-2.8.5/libextra/build-aux/m
 AWK = awk
 CC = gcc
 CCDEPMODE = depmode=none
-CFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5
+CFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.21rc5/include/ -mmacosx-version-min=10.5
 CPP = gcc -E
-CPPFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include/ -mmacosx-version-min=10.5 -I/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/include
+CPPFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-4.99.21rc5/include/ -mmacosx-version-min=10.5 -I/Users/michael/src/git/lib/static-build-i386-4.99.21rc5/include
 CYGPATH_W = echo
 DEFS = -DHAVE_CONFIG_H
 DEPDIR = .deps
@@ -196,9 +196,9 @@ INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 LD = /usr/libexec/gcc/i686-apple-darwin10/4.2.1/ld
-LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
-LIBGCRYPT = /Users/michael/src/git/lib/static-build-i386-4.99.19rc3/lib/libgcrypt.a /Users/michael/src/git/lib/static-build-i386-4.99.19rc3/lib/libgpg-error.a
-LIBGCRYPT_PREFIX = /Users/michael/src/git/lib/static-build-i386-4.99.19rc3
+LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-i386-4.99.21rc5/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
+LIBGCRYPT = /Users/michael/src/git/lib/static-build-i386-4.99.21rc5/lib/libgcrypt.a /Users/michael/src/git/lib/static-build-i386-4.99.21rc5/lib/libgpg-error.a
+LIBGCRYPT_PREFIX = /Users/michael/src/git/lib/static-build-i386-4.99.21rc5
 LIBGNUTLS_EXTRA_CFLAGS = -I${prefix}/include
 LIBGNUTLS_EXTRA_LIBS = -L${exec_prefix}/lib -lgnutls-extra  
 LIBOBJS = 
@@ -209,7 +209,7 @@ LIBTASN1_PREFIX =
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIPO = lipo
 LN_S = ln -s
-LTLIBGCRYPT = -L/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/lib -lgcrypt -L/Users/michael/src/git/lib/static-build-i386-4.99.19rc3/lib -lgpg-error
+LTLIBGCRYPT = -L/Users/michael/src/git/lib/static-build-i386-4.99.21rc5/lib -lgcrypt -L/Users/michael/src/git/lib/static-build-i386-4.99.21rc5/lib -lgpg-error
 LTLIBOBJS = 
 LTLIBTASN1 = 
 LT_AGE = 14
@@ -290,7 +290,7 @@ mandir = ${datarootdir}/man
 mkdir_p = /Users/michael/src/git/lib/gnutls-2.8.5/libextra/build-aux/install-sh -c -d
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /Users/michael/src/git/lib/static-build-i386-4.99.19rc3
+prefix = /Users/michael/src/git/lib/static-build-i386-4.99.21rc5
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin

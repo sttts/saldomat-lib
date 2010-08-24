@@ -1,6 +1,6 @@
 #!/bin/sh
 
-prefix=/Users/michael/src/git/lib/static-build-debug-4.99.19rc3
+prefix=/Users/michael/src/git/lib/static-build-debug-4.99.21rc5
 exec_prefix=${prefix}
 exec_prefix_set=no
 

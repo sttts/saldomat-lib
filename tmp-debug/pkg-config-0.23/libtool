@@ -44,7 +44,7 @@ available_tags=" CXX"
 
 # ### BEGIN LIBTOOL CONFIG
 
-# Libtool was configured on host moeve:
+# Libtool was configured on host moeve.fritz.box:
 
 # Shell to use when invoking shell scripts.
 SHELL="/bin/sh"
@@ -85,7 +85,7 @@ AR_FLAGS="cru"
 LTCC="gcc"
 
 # LTCC compiler flags.
-LTCFLAGS="-O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-4.99.19rc3/include/ -mmacosx-version-min=10.5"
+LTCFLAGS="-O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-4.99.21rc5/include/ -mmacosx-version-min=10.5"
 
 # A language-specific compiler.
 CC="gcc"
@@ -7287,7 +7287,7 @@ disable_libs=static
 # End:
 # ### BEGIN LIBTOOL TAG CONFIG: CXX
 
-# Libtool was configured on host moeve:
+# Libtool was configured on host moeve.fritz.box:
 
 # Shell to use when invoking shell scripts.
 SHELL="/bin/sh"
@@ -7328,7 +7328,7 @@ AR_FLAGS="cru"
 LTCC="gcc"
 
 # LTCC compiler flags.
-LTCFLAGS="-O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-4.99.19rc3/include/ -mmacosx-version-min=10.5"
+LTCFLAGS="-O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-4.99.21rc5/include/ -mmacosx-version-min=10.5"
 
 # A language-specific compiler.
 CC="g++"

@@ -177,13 +177,13 @@ BUILD_INCLUDED_LIBINTL = yes
 CATOBJEXT = .gmo
 CC = gcc
 CCDEPMODE = depmode=none
-CFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-4.99.19rc3/include/ -mmacosx-version-min=10.5
+CFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-4.99.21rc5/include/ -mmacosx-version-min=10.5
 CFLAG_VISIBILITY = -fvisibility=hidden
 CLASSPATH = 
 CLASSPATH_SEPARATOR = :
 CONF_JAVAC = javac -target 1.1 -source 1.3
 CPP = gcc -E
-CPPFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-4.99.19rc3/include/ -mmacosx-version-min=10.5 -I/Developer/SDKs/MacOSX10.5.sdk/usr/include
+CPPFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-4.99.21rc5/include/ -mmacosx-version-min=10.5 -I/Developer/SDKs/MacOSX10.5.sdk/usr/include
 CROSS_COMPILING = no
 CSHARPCOMPFLAGS = -O -g
 CSHARP_CHOICE = any
@@ -336,7 +336,7 @@ INTL_LIBTOOL_SUFFIX_PREFIX = l
 INTL_MACOSX_LIBS = -Wl,-framework -Wl,CoreFoundation
 JAR = jar
 JAVA_CHOICE = no
-LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-debug-4.99.19rc3/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
+LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-debug-4.99.21rc5/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
 LIBGRT_LIBDEPS =  /Developer/SDKs/MacOSX10.5.sdk/usr/lib//libiconv.dylib
 LIBGRT_LTLIBDEPS =  -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -liconv
 LIBICONV = /Developer/SDKs/MacOSX10.5.sdk/usr/lib//libiconv.dylib
@@ -469,7 +469,7 @@ mandir = ${datarootdir}/man
 mkdir_p = /Users/michael/src/git/lib/gettext-0.17/gettext-runtime/../build-aux/install-sh -c -d
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /Users/michael/src/git/lib/static-build-debug-4.99.19rc3
+prefix = /Users/michael/src/git/lib/static-build-debug-4.99.21rc5
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin

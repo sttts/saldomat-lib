@@ -8,8 +8,8 @@
 # gwen
 # aqbanking
 
-AqVer=4.99.19rc3
-GwenVer=3.99.21rc4
+AqVer=4.99.21rc5
+GwenVer=3.99.23rc6
 
 all:
 	$(MAKE) build arch=i386 postfix=-i386
