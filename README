@@ -112,7 +112,10 @@ Vorgehen zum Update von Aqbanking und Gwen
 	Message: * make 4.2.x	
 */
 
-5.2 andere Branches (1.5 etc.) anpassen, analog 2.1
+5.2 andere Branches (1.5 etc.) anpassen
+
+     git branch -D anderer-branch
+     git checkout -b anderer-branch
 
 5.3 Alles hochladen
 
