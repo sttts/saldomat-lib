@@ -1,1 +1,0 @@
-/Users/michael/src/git/lib/gwenhywfar/gui/gtk2/gtk2_gui.h

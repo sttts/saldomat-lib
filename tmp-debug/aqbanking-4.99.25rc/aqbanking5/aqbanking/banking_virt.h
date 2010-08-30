@@ -1,1 +1,0 @@
-/Users/michael/src/git/lib/aqbanking/src/libs/aqbanking/banking_virt.h
