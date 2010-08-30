@@ -1,0 +1,1 @@
+/Users/michael/src/git/lib/gwenhywfar/gui/cocoa/CocoaProgressbar.h
