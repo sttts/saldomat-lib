@@ -21,7 +21,7 @@ srcdir = /Users/michael/src/git/lib/libgpg-error-1.7/po
 top_srcdir = /Users/michael/src/git/lib/libgpg-error-1.7
 VPATH = /Users/michael/src/git/lib/libgpg-error-1.7/po
 
-prefix = /Users/michael/src/git/lib/static-build-debug-5.0.0
+prefix = /Users/michael/src/git/lib/static-build-debug-5.0.1
 exec_prefix = ${prefix}
 datarootdir = ${prefix}/share
 datadir = ${datarootdir}

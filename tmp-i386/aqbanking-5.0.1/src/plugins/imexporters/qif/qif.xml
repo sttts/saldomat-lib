@@ -1,0 +1,13 @@
+<PluginDescr>
+  <plugin name="qif" type="imexporter.inactive" import="1" export="1" >
+    <version>5.0.1</version>
+    <author>Martin Preuss(martin@libchipcard.de)</author>
+    <short>QIF</short>
+    <descr>
+      This plugin imports QIF data. (Export currently unimplemented.)
+    </descr>
+    <descr lang="de" >
+      Diese Erweiterung importiert QIF-Dateien. (Export ist noch nicht implementiert.)
+    </descr>
+  </plugin>
+</PluginDescr>

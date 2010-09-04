@@ -346,9 +346,9 @@ BITSIZEOF_WINT_T = 32
 BYTESWAP_H = byteswap.h
 CC = gcc
 CCDEPMODE = depmode=none
-CFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.0/include/ -mmacosx-version-min=10.5
+CFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.1/include/ -mmacosx-version-min=10.5
 CPP = gcc -E
-CPPFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.0/include/ -mmacosx-version-min=10.5 -I/Users/michael/src/git/lib/static-build-i386-5.0.0/include -I/Developer/SDKs/MacOSX10.5.sdk/usr/include
+CPPFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.1/include/ -mmacosx-version-min=10.5 -I/Users/michael/src/git/lib/static-build-i386-5.0.1/include -I/Developer/SDKs/MacOSX10.5.sdk/usr/include
 CXX = g++
 CXXCPP = g++ -E
 CXXDEPMODE = depmode=none
@@ -626,9 +626,9 @@ INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 INTLLIBS = 
 INTL_MACOSX_LIBS = -Wl,-framework -Wl,CoreFoundation
 LD = /usr/libexec/gcc/i686-apple-darwin10/4.2.1/ld
-LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-i386-5.0.0/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
-LIBGCRYPT = /Users/michael/src/git/lib/static-build-i386-5.0.0/lib/libgcrypt.a /Users/michael/src/git/lib/static-build-i386-5.0.0/lib/libgpg-error.a
-LIBGCRYPT_PREFIX = /Users/michael/src/git/lib/static-build-i386-5.0.0
+LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-i386-5.0.1/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
+LIBGCRYPT = /Users/michael/src/git/lib/static-build-i386-5.0.1/lib/libgcrypt.a /Users/michael/src/git/lib/static-build-i386-5.0.1/lib/libgpg-error.a
+LIBGCRYPT_PREFIX = /Users/michael/src/git/lib/static-build-i386-5.0.1
 LIBGNUTLS_CFLAGS = -I${prefix}/include
 LIBGNUTLS_LIBS = -L${exec_prefix}/lib -lgnutls 
 LIBICONV = /Developer/SDKs/MacOSX10.5.sdk/usr/lib//libiconv.dylib
@@ -644,7 +644,7 @@ LIBZ = /Developer/SDKs/MacOSX10.5.sdk/usr/lib//libz.dylib
 LIBZ_PREFIX = /Developer/SDKs/MacOSX10.5.sdk/usr
 LIPO = lipo
 LN_S = ln -s
-LTLIBGCRYPT = -L/Users/michael/src/git/lib/static-build-i386-5.0.0/lib -lgcrypt -L/Users/michael/src/git/lib/static-build-i386-5.0.0/lib -lgpg-error
+LTLIBGCRYPT = -L/Users/michael/src/git/lib/static-build-i386-5.0.1/lib -lgcrypt -L/Users/michael/src/git/lib/static-build-i386-5.0.1/lib -lgpg-error
 LTLIBICONV = -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -liconv
 LTLIBINTL = 
 LTLIBOBJS = 
@@ -823,7 +823,7 @@ mandir = ${datarootdir}/man
 mkdir_p = /Users/michael/src/git/lib/gnutls-2.8.5/lib/build-aux/install-sh -c -d
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /Users/michael/src/git/lib/static-build-i386-5.0.0
+prefix = /Users/michael/src/git/lib/static-build-i386-5.0.1
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin

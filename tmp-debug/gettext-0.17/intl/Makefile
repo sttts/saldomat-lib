@@ -37,7 +37,7 @@ top_builddir = ..
 #    files it finds in srcdir = ../../gettext-runtime/intl.
 VPATH = $(srcdir)
 
-prefix = /Users/michael/src/git/lib/static-build-debug-5.0.0
+prefix = /Users/michael/src/git/lib/static-build-debug-5.0.1
 exec_prefix = ${prefix}
 transform = s,x,x,
 libdir = ${exec_prefix}/lib
@@ -82,9 +82,9 @@ DEFS = -DLOCALEDIR=\"$(localedir)\" -DLOCALE_ALIAS_PATH=\"$(aliaspath)\" \
 -Dset_relocation_prefix=libintl_set_relocation_prefix \
 -Drelocate=libintl_relocate \
 -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H
-CPPFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-5.0.0/include/ -mmacosx-version-min=10.5 -I/Developer/SDKs/MacOSX10.5.sdk/usr/include
-CFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-5.0.0/include/ -mmacosx-version-min=10.5 -fvisibility=hidden
-LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-debug-5.0.0/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5 $(LDFLAGS_no)
+CPPFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-5.0.1/include/ -mmacosx-version-min=10.5 -I/Developer/SDKs/MacOSX10.5.sdk/usr/include
+CFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-5.0.1/include/ -mmacosx-version-min=10.5 -fvisibility=hidden
+LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-debug-5.0.1/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5 $(LDFLAGS_no)
 LDFLAGS_yes = -Wl,--export-all-symbols
 LDFLAGS_no =
 LIBS = 

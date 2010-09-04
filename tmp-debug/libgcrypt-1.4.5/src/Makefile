@@ -163,11 +163,11 @@ BUILD_TIMESTAMP =
 CC = gcc
 CCAS = gcc
 CCASDEPMODE = depmode=none
-CCASFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-5.0.0/include/ -mmacosx-version-min=10.5
+CCASFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-5.0.1/include/ -mmacosx-version-min=10.5
 CCDEPMODE = depmode=none
-CFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-5.0.0/include/ -mmacosx-version-min=10.5 -Wall
+CFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-5.0.1/include/ -mmacosx-version-min=10.5 -Wall
 CPP = gcc -E
-CPPFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-5.0.0/include/ -mmacosx-version-min=10.5
+CPPFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-5.0.1/include/ -mmacosx-version-min=10.5
 CXX = g++
 CXXCPP = g++ -E
 CXXDEPMODE = depmode=none
@@ -190,16 +190,16 @@ GCRYPT_CIPHERS =  arcfour.lo blowfish.lo cast5.lo des.lo rijndael.lo twofish.lo 
 GCRYPT_DIGESTS =  crc.lo md4.lo md5.lo sha256.lo sha512.lo tiger.lo whirlpool.lo rmd160.lo sha1.lo
 GCRYPT_PUBKEY_CIPHERS =  dsa.lo rsa.lo elgamal.lo ecc.lo
 GCRYPT_RANDOM =  rndlinux.lo
-GPG_ERROR_CFLAGS = -I/Users/michael/src/git/lib/static-build-debug-5.0.0/include
-GPG_ERROR_CONFIG = /Users/michael/src/git/lib/static-build-debug-5.0.0/bin/gpg-error-config
-GPG_ERROR_LIBS = -L/Users/michael/src/git/lib/static-build-debug-5.0.0/lib -lgpg-error
+GPG_ERROR_CFLAGS = -I/Users/michael/src/git/lib/static-build-debug-5.0.1/include
+GPG_ERROR_CONFIG = /Users/michael/src/git/lib/static-build-debug-5.0.1/bin/gpg-error-config
+GPG_ERROR_LIBS = -L/Users/michael/src/git/lib/static-build-debug-5.0.1/lib -lgpg-error
 GREP = /usr/bin/grep
 INSTALL = /usr/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
-LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-debug-5.0.0/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
+LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-debug-5.0.1/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
 LIBGCRYPT_CIPHERS = arcfour blowfish cast5 des aes twofish serpent rfc2268 seed camellia
 LIBGCRYPT_CONFIG_API_VERSION = 1
 LIBGCRYPT_CONFIG_CFLAGS = 
@@ -281,7 +281,7 @@ mandir = ${datarootdir}/man
 mkdir_p = /Users/michael/src/git/lib/libgcrypt-1.4.5/install-sh -c -d
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /Users/michael/src/git/lib/static-build-debug-5.0.0
+prefix = /Users/michael/src/git/lib/static-build-debug-5.0.1
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
@@ -302,7 +302,7 @@ include_HEADERS = gcrypt.h gcrypt-module.h
 lib_LTLIBRARIES = libgcrypt.la
 libgcrypt_version_script_cmd = 
 #libgcrypt_version_script_cmd = -Wl,--version-script=$(srcdir)/libgcrypt.vers
-libgcrypt_la_CFLAGS = -I/Users/michael/src/git/lib/static-build-debug-5.0.0/include
+libgcrypt_la_CFLAGS = -I/Users/michael/src/git/lib/static-build-debug-5.0.1/include
 libgcrypt_la_SOURCES = g10lib.h visibility.c visibility.h types.h \
 	cipher.h cipher-proto.h \
 	misc.c global.c sexp.c hwfeatures.c \
@@ -339,7 +339,7 @@ libgcrypt_la_LIBADD = \
 	../cipher/libcipher.la \
 	../random/librandom.la \
 	../mpi/libmpi.la \
-	 -L/Users/michael/src/git/lib/static-build-debug-5.0.0/lib -lgpg-error
+	 -L/Users/michael/src/git/lib/static-build-debug-5.0.1/lib -lgpg-error
 
 dumpsexp_SOURCES = dumpsexp.c
 dumpsexp_LDADD = 

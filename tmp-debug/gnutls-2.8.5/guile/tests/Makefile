@@ -143,9 +143,9 @@ BITSIZEOF_WCHAR_T = 32
 BITSIZEOF_WINT_T = 32
 CC = gcc -std=gnu99
 CCDEPMODE = depmode=none
-CFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-5.0.0/include/ -mmacosx-version-min=10.5
+CFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-5.0.1/include/ -mmacosx-version-min=10.5
 CPP = gcc -E
-CPPFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-5.0.0/include/ -mmacosx-version-min=10.5 -I/Developer/SDKs/MacOSX10.5.sdk/usr/include
+CPPFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-5.0.1/include/ -mmacosx-version-min=10.5 -I/Developer/SDKs/MacOSX10.5.sdk/usr/include
 CXX = g++
 CXXCPP = g++ -E
 CXXDEPMODE = depmode=none
@@ -439,7 +439,7 @@ INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 LD = /usr/libexec/gcc/i686-apple-darwin10/4.2.1/ld
-LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-debug-5.0.0/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
+LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-debug-5.0.1/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
 LIBGCRYPT = @LIBGCRYPT@
 LIBGCRYPT_PREFIX = @LIBGCRYPT_PREFIX@
 LIBINTL = 
@@ -498,7 +498,7 @@ PACKAGE_TARNAME = gnutls
 PACKAGE_URL = 
 PACKAGE_VERSION = 2.8.5
 PATH_SEPARATOR = :
-PKG_CONFIG = /Users/michael/src/git/lib/static-build-debug-5.0.0/bin/pkg-config
+PKG_CONFIG = /Users/michael/src/git/lib/static-build-debug-5.0.1/bin/pkg-config
 PMCCABE = false
 PRAGMA_SYSTEM_HEADER = #pragma GCC system_header
 PTRDIFF_T_SUFFIX = 
@@ -632,7 +632,7 @@ mandir = ${datarootdir}/man
 mkdir_p = /Users/michael/src/git/lib/gnutls-2.8.5/build-aux/install-sh -c -d
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /Users/michael/src/git/lib/static-build-debug-5.0.0
+prefix = /Users/michael/src/git/lib/static-build-debug-5.0.1
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin

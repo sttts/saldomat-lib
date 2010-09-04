@@ -22,7 +22,7 @@ srcdir = /Users/michael/src/git/lib/gettext-0.17/gettext-runtime/po
 top_srcdir = /Users/michael/src/git/lib/gettext-0.17/gettext-runtime
 VPATH = /Users/michael/src/git/lib/gettext-0.17/gettext-runtime/po
 
-prefix = /Users/michael/src/git/lib/static-build-debug-5.0.0
+prefix = /Users/michael/src/git/lib/static-build-debug-5.0.1
 exec_prefix = ${prefix}
 datarootdir = ${prefix}/share
 datadir = ${datarootdir}
