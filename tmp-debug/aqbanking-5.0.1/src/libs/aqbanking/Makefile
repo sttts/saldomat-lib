@@ -179,7 +179,7 @@ CXXCPP = g++ -E
 CXXDEPMODE = depmode=none
 CXXFLAGS = -g -Wall
 CYGPATH_W = echo
-DATETIME = 20100904142350
+DATETIME = 20101001160734
 
 # We define those here because within the configure script the variables 
 # $(datadir) et al are not available.
@@ -188,7 +188,7 @@ DEFS = -DHAVE_CONFIG_H -DEXEEXT=\"$(EXEEXT)\" \
 	-DAQBANKING_PLUGINS=\"$(aqbanking_plugin_searchdir)\" \
 	-DAQBANKING_SYSCONF_DIR=\"$(aqbanking_cfg_searchdir)\" \
 	-DAQBANKING_DATA_DIR=\"$(aqbanking_data_searchdir)\" \
-	-DCOMPILE_DATETIME=\"20100904142350\"
+	-DCOMPILE_DATETIME=\"20101001160734\"
 DEPDIR = .deps
 DLLTOOL = dlltool
 DOXYGEN_DEFINE = DOXYGEN_HIDE
