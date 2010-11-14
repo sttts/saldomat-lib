@@ -448,11 +448,11 @@ macro_revision='1.2976'
 pic_mode='default'
 enable_fast_install='needless'
 host_alias=''
-host='i386-apple-darwin10.4.0'
-host_os='darwin10.4.0'
+host='i386-apple-darwin10.5.0'
+host_os='darwin10.5.0'
 build_alias=''
-build='i386-apple-darwin10.4.0'
-build_os='darwin10.4.0'
+build='i386-apple-darwin10.5.0'
+build_os='darwin10.5.0'
 SED='/usr/bin/sed'
 Xsed='/usr/bin/sed -e 1s/^X//'
 GREP='/usr/bin/grep'
@@ -941,15 +941,15 @@ s,@LIBS@,|#_!!_#|,g
 s,@build_alias@,|#_!!_#|,g
 s,@host_alias@,|#_!!_#|,g
 s,@target_alias@,|#_!!_#|,g
-s,@build@,|#_!!_#|i386-apple-darwin10.4.0,g
+s,@build@,|#_!!_#|i386-apple-darwin10.5.0,g
 s,@build_cpu@,|#_!!_#|i386,g
 s,@build_vendor@,|#_!!_#|apple,g
-s,@build_os@,|#_!!_#|darwin10.4.0,g
-s,@host@,|#_!!_#|i386-apple-darwin10.4.0,g
+s,@build_os@,|#_!!_#|darwin10.5.0,g
+s,@host@,|#_!!_#|i386-apple-darwin10.5.0,g
 s,@host_cpu@,|#_!!_#|i386,g
 s,@host_vendor@,|#_!!_#|apple,g
-s,@host_os@,|#_!!_#|darwin10.4.0,g
-s,@DATETIME@,|#_!!_#|20101001160734,g
+s,@host_os@,|#_!!_#|darwin10.5.0,g
+s,@DATETIME@,|#_!!_#|20101114183937,g
 s,@AQBANKING_VERSION_MAJOR@,|#_!!_#|5,g
 s,@AQBANKING_VERSION_MINOR@,|#_!!_#|0,g
 s,@AQBANKING_VERSION_PATCHLEVEL@,|#_!!_#|1,g
@@ -1486,7 +1486,7 @@ s,^\([	 #]*\)[^	 ]*\([	 ]*Q4BANKING_VERSION_STRING\)[	 (].*,\1define\2 "5.0.1" ,
 s,^\([	 #]*\)[^	 ]*\([	 ]*Q4BANKING_VERSION_FULL_STRING\)[	 (].*,\1define\2 "5.0.1.0stable" ,
 s,^\([	 #]*\)[^	 ]*\([	 ]*Q4BANKING_VERSION_TAG\)[	 (].*,\1define\2 stable ,
 s,^\([	 #]*\)[^	 ]*\([	 ]*Q4BANKING_SO_EFFECTIVE_STR\)[	 (].*,\1define\2 "" ,
-s,^\([	 #]*\)[^	 ]*\([	 ]*OS_NAME\)[	 (].*,\1define\2 "i386-apple-darwin10.4.0" ,
+s,^\([	 #]*\)[^	 ]*\([	 ]*OS_NAME\)[	 (].*,\1define\2 "i386-apple-darwin10.5.0" ,
 CEOF
     sed -f "$tmp/defines.sed" $ac_file_inputs >"$tmp/out1"
     # First, check the format of the line:

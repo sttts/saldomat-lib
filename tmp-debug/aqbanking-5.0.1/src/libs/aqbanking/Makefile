@@ -32,8 +32,8 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-build_triplet = i386-apple-darwin10.4.0
-host_triplet = i386-apple-darwin10.4.0
+build_triplet = i386-apple-darwin10.5.0
+host_triplet = i386-apple-darwin10.5.0
 noinst_PROGRAMS = testlib$(EXEEXT) ab_value_test$(EXEEXT)
 TESTS = testlib$(EXEEXT) ab_value_test$(EXEEXT)
 subdir = src/libs/aqbanking
@@ -179,7 +179,7 @@ CXXCPP = g++ -E
 CXXDEPMODE = depmode=none
 CXXFLAGS = -g -Wall
 CYGPATH_W = echo
-DATETIME = 20101001160734
+DATETIME = 20101114183937
 
 # We define those here because within the configure script the variables 
 # $(datadir) et al are not available.
@@ -188,7 +188,7 @@ DEFS = -DHAVE_CONFIG_H -DEXEEXT=\"$(EXEEXT)\" \
 	-DAQBANKING_PLUGINS=\"$(aqbanking_plugin_searchdir)\" \
 	-DAQBANKING_SYSCONF_DIR=\"$(aqbanking_cfg_searchdir)\" \
 	-DAQBANKING_DATA_DIR=\"$(aqbanking_data_searchdir)\" \
-	-DCOMPILE_DATETIME=\"20101001160734\"
+	-DCOMPILE_DATETIME=\"20101114183937\"
 DEPDIR = .deps
 DLLTOOL = dlltool
 DOXYGEN_DEFINE = DOXYGEN_HIDE
@@ -332,10 +332,10 @@ aqpaypal_includes = -I${includedir}/aqbanking5
 aqpaypal_internal_libs = /Users/michael/src/git/lib/tmp-debug/aqbanking-5.0.1/src/plugins/backends/aqpaypal/plugin/libaqpaypal.la
 aqpaypal_libs = -L${libdir} -laqpaypal
 bindir = ${exec_prefix}/bin
-build = i386-apple-darwin10.4.0
+build = i386-apple-darwin10.5.0
 build_alias = 
 build_cpu = i386
-build_os = darwin10.4.0
+build_os = darwin10.5.0
 build_vendor = apple
 builddir = .
 datadir = ${datarootdir}
@@ -352,10 +352,10 @@ gwenhywfar_headers = /Users/michael/src/git/lib/static-build-debug-5.0.1/include
 gwenhywfar_includes = -I/Users/michael/src/git/lib/static-build-debug-5.0.1/include/gwenhywfar4
 gwenhywfar_libs = -L/Users/michael/src/git/lib/static-build-debug-5.0.1/lib -lgwenhywfar
 gwenhywfar_plugins = /Users/michael/src/git/lib/static-build-debug-5.0.1/lib/gwenhywfar/plugins/60
-host = i386-apple-darwin10.4.0
+host = i386-apple-darwin10.5.0
 host_alias = 
 host_cpu = i386
-host_os = darwin10.4.0
+host_os = darwin10.5.0
 host_vendor = apple
 htmldir = ${docdir}
 i18n_libs = 

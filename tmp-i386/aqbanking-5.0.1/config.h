@@ -220,7 +220,7 @@
 /* #undef OS_LINUX */
 
 /* host system */
-#define OS_NAME "i386-apple-darwin10.4.0"
+#define OS_NAME "i386-apple-darwin10.5.0"
 
 /* if NetBSD is used */
 /* #undef OS_NETBSD */

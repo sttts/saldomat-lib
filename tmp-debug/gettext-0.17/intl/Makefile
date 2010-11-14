@@ -326,7 +326,7 @@ libintl.h: $(srcdir)/libgnuintl.h.in
 	  < $(srcdir)/libgnuintl.h.in > libintl.h
 
 charset.alias: $(srcdir)/config.charset
-	$(SHELL) $(srcdir)/config.charset 'i386-apple-darwin10.4.0' > t-$@
+	$(SHELL) $(srcdir)/config.charset 'i386-apple-darwin10.5.0' > t-$@
 	mv t-$@ $@
 
 check: all
