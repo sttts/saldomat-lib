@@ -31,8 +31,8 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-build_triplet = i386-apple-darwin10.5.0
-host_triplet = i386-apple-darwin10.5.0
+build_triplet = i386-apple-darwin10.6.0
+host_triplet = i386-apple-darwin10.6.0
 subdir = .
 DIST_COMMON = README $(am__configure_deps) $(include_HEADERS) \
 	$(srcdir)/../../build-aux/config.guess \
@@ -145,9 +145,9 @@ AUTOMAKE = ${SHELL} /Users/michael/src/git/lib/gettext-0.17/build-aux/missing --
 AWK = awk
 CC = gcc
 CCDEPMODE = depmode=none
-CFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.1/include/ -mmacosx-version-min=10.5
+CFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.4/include/ -mmacosx-version-min=10.5
 CPP = gcc -E
-CPPFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.1/include/ -mmacosx-version-min=10.5
+CPPFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.4/include/ -mmacosx-version-min=10.5
 CXX = g++
 CXXCPP = g++ -E
 CXXDEPMODE = depmode=none
@@ -176,7 +176,7 @@ INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
-LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-i386-5.0.1/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
+LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-i386-5.0.4/lib -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
 LIBOBJS = 
 LIBS = 
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
@@ -217,10 +217,10 @@ am__quote =
 am__tar = ${AMTAR} chof - "$$tardir"
 am__untar = ${AMTAR} xf -
 bindir = ${exec_prefix}/bin
-build = i386-apple-darwin10.5.0
+build = i386-apple-darwin10.6.0
 build_alias = 
 build_cpu = i386
-build_os = darwin10.5.0
+build_os = darwin10.6.0
 build_vendor = apple
 builddir = .
 datadir = ${datarootdir}
@@ -228,10 +228,10 @@ datarootdir = ${prefix}/share
 docdir = ${datarootdir}/doc/${PACKAGE}
 dvidir = ${docdir}
 exec_prefix = ${prefix}
-host = i386-apple-darwin10.5.0
+host = i386-apple-darwin10.6.0
 host_alias = 
 host_cpu = i386
-host_os = darwin10.5.0
+host_os = darwin10.6.0
 host_vendor = apple
 htmldir = ${docdir}
 includedir = ${prefix}/include
@@ -245,7 +245,7 @@ mandir = ${datarootdir}/man
 mkdir_p = /Users/michael/src/git/lib/gettext-0.17/gettext-runtime/libasprintf/../../build-aux/install-sh -c -d
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /Users/michael/src/git/lib/static-build-i386-5.0.1
+prefix = /Users/michael/src/git/lib/static-build-i386-5.0.4
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin

@@ -44,7 +44,7 @@ available_tags=" RC CXX"
 
 # ### BEGIN LIBTOOL CONFIG
 
-# Libtool was configured on host moeve.fritz.box:
+# Libtool was configured on host moeve:
 
 # Shell to use when invoking shell scripts.
 SHELL="/bin/sh"
@@ -7211,7 +7211,7 @@ disable_libs=static
 # End:
 # ### BEGIN LIBTOOL TAG CONFIG: RC
 
-# Libtool was configured on host moeve.fritz.box:
+# Libtool was configured on host moeve:
 
 # Shell to use when invoking shell scripts.
 SHELL="/bin/sh"
@@ -7507,7 +7507,7 @@ include_expsyms=""
 
 # ### BEGIN LIBTOOL TAG CONFIG: CXX
 
-# Libtool was configured on host moeve.fritz.box:
+# Libtool was configured on host moeve:
 
 # Shell to use when invoking shell scripts.
 SHELL="/bin/sh"
@@ -7696,7 +7696,7 @@ postdeps="-lstdc++ -lgcc_s.10.5 -lgcc -lSystem"
 
 # The library search path used internally by the compiler when linking
 # a shared library.
-compiler_lib_search_path="-L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/i686-apple-darwin10/4.2.1 -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib -L/usr/lib/gcc/i686-apple-darwin10/4.2.1 -L/usr/lib/gcc/i686-apple-darwin10/4.2.1 -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/../../../i686-apple-darwin10/4.2.1 -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/../../.."
+compiler_lib_search_path="-L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/i686-apple-darwin10/4.2.1 -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib -L/usr/lib/gcc/i686-apple-darwin10/4.2.1 -L/usr/lib/gcc/i686-apple-darwin10/4.2.1 -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/../../../i686-apple-darwin10/4.2.1 -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/../../.."
 
 # Method to check whether dependent libraries are shared objects.
 deplibs_check_method="unknown"

@@ -1,4 +1,4 @@
-prefix=/Users/michael/src/git/lib/static-build-i386-5.0.1
+prefix=/Users/michael/src/git/lib/static-build-i386-5.0.4
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

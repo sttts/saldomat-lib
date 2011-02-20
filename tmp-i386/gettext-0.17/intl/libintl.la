@@ -14,7 +14,7 @@ library_names=''
 old_library='libintl.a'
 
 # Libraries that this one depends upon.
-dependency_libs=' -L/Users/michael/src/git/lib/static-build-i386-5.0.1/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -liconv -lc'
+dependency_libs=' -L/Users/michael/src/git/lib/static-build-i386-5.0.4/lib -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ -liconv -lc'
 
 # Version information for libintl.
 current=8
@@ -32,4 +32,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/Users/michael/src/git/lib/static-build-i386-5.0.1/lib'
+libdir='/Users/michael/src/git/lib/static-build-i386-5.0.4/lib'

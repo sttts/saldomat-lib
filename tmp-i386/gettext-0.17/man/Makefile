@@ -29,8 +29,8 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-build_triplet = i386-apple-darwin10.5.0
-host_triplet = i386-apple-darwin10.5.0
+build_triplet = i386-apple-darwin10.6.0
+host_triplet = i386-apple-darwin10.6.0
 subdir = man
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in \
 	$(srcdir)/x-to-1.in ChangeLog
@@ -136,13 +136,13 @@ BUILD_INCLUDED_LIBINTL = yes
 CATOBJEXT = .gmo
 CC = gcc
 CCDEPMODE = depmode=none
-CFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.1/include/ -mmacosx-version-min=10.5
+CFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.4/include/ -mmacosx-version-min=10.5
 CFLAG_VISIBILITY = -fvisibility=hidden
 CLASSPATH = 
 CLASSPATH_SEPARATOR = :
 CONF_JAVAC = javac -target 1.1 -source 1.3
 CPP = gcc -E
-CPPFLAGS = -O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.1/include/ -mmacosx-version-min=10.5 -I/Developer/SDKs/MacOSX10.5.sdk/usr/include
+CPPFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.4/include/ -mmacosx-version-min=10.5 -I/Developer_3/SDKs/MacOSX10.5.sdk/usr/include
 CROSS_COMPILING = no
 CSHARPCOMPFLAGS = -O -g
 CSHARP_CHOICE = any
@@ -289,17 +289,17 @@ INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 INSTOBJEXT = .mo
 INTLBISON = bison
-INTLLIBS = ${top_builddir}/intl/libintl.la /Developer/SDKs/MacOSX10.5.sdk/usr/lib//libiconv.dylib  -Wl,-framework -Wl,CoreFoundation
+INTLLIBS = ${top_builddir}/intl/libintl.la /Developer_3/SDKs/MacOSX10.5.sdk/usr/lib//libiconv.dylib  -Wl,-framework -Wl,CoreFoundation
 INTLOBJS = $(GETTOBJS)
 INTL_LIBTOOL_SUFFIX_PREFIX = l
 INTL_MACOSX_LIBS = -Wl,-framework -Wl,CoreFoundation
 JAR = jar
 JAVA_CHOICE = no
-LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-i386-5.0.1/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
-LIBGRT_LIBDEPS =  /Developer/SDKs/MacOSX10.5.sdk/usr/lib//libiconv.dylib
-LIBGRT_LTLIBDEPS =  -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -liconv
-LIBICONV = /Developer/SDKs/MacOSX10.5.sdk/usr/lib//libiconv.dylib
-LIBINTL = ${top_builddir}/intl/libintl.la /Developer/SDKs/MacOSX10.5.sdk/usr/lib//libiconv.dylib  -Wl,-framework -Wl,CoreFoundation
+LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-i386-5.0.4/lib -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
+LIBGRT_LIBDEPS =  /Developer_3/SDKs/MacOSX10.5.sdk/usr/lib//libiconv.dylib
+LIBGRT_LTLIBDEPS =  -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ -liconv
+LIBICONV = /Developer_3/SDKs/MacOSX10.5.sdk/usr/lib//libiconv.dylib
+LIBINTL = ${top_builddir}/intl/libintl.la /Developer_3/SDKs/MacOSX10.5.sdk/usr/lib//libiconv.dylib  -Wl,-framework -Wl,CoreFoundation
 LIBMULTITHREAD = -lpthread
 LIBOBJS = 
 LIBPTH = 
@@ -310,8 +310,8 @@ LIBTHREAD =
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LN_S = ln -s
 LTLIBC = -lc
-LTLIBICONV = -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -liconv
-LTLIBINTL = ${top_builddir}/intl/libintl.la -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -liconv  -Wl,-framework -Wl,CoreFoundation
+LTLIBICONV = -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ -liconv
+LTLIBINTL = ${top_builddir}/intl/libintl.la -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ -liconv  -Wl,-framework -Wl,CoreFoundation
 LTLIBMULTITHREAD = -lpthread
 LTLIBOBJS = 
 LTLIBPTH = 
@@ -396,10 +396,10 @@ am__quote =
 am__tar = ${AMTAR} chof - "$$tardir"
 am__untar = ${AMTAR} xf -
 bindir = ${exec_prefix}/bin
-build = i386-apple-darwin10.5.0
+build = i386-apple-darwin10.6.0
 build_alias = 
 build_cpu = i386
-build_os = darwin10.5.0
+build_os = darwin10.6.0
 build_vendor = apple
 builddir = .
 datadir = ${datarootdir}
@@ -409,10 +409,10 @@ dvidir = ${docdir}
 exec_prefix = ${prefix}
 gl_LIBOBJS =  canonicalize-lgpl.o error.o getopt.o getopt1.o progreloc.o relocatable.o strnlen.o wcwidth.o
 gl_LTLIBOBJS =  canonicalize-lgpl.lo error.lo getopt.lo getopt1.lo progreloc.lo relocatable.lo strnlen.lo wcwidth.lo
-host = i386-apple-darwin10.5.0
+host = i386-apple-darwin10.6.0
 host_alias = 
 host_cpu = i386
-host_os = darwin10.5.0
+host_os = darwin10.6.0
 host_vendor = apple
 htmldir = ${docdir}
 includedir = ${prefix}/include
@@ -426,7 +426,7 @@ mandir = ${datarootdir}/man
 mkdir_p = /Users/michael/src/git/lib/gettext-0.17/gettext-runtime/../build-aux/install-sh -c -d
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /Users/michael/src/git/lib/static-build-i386-5.0.1
+prefix = /Users/michael/src/git/lib/static-build-i386-5.0.4
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
