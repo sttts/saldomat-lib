@@ -8,8 +8,9 @@
 # gwen
 # aqbanking
 
-AqVer=5.0.1
-GwenVer=4.0.1
+AqVer=5.0.4
+GwenVer=4.0.7
+devdir=Developer_3
 
 all:
 	$(MAKE) build arch=i386 postfix=-i386
@@ -25,8 +26,8 @@ DEBUG=no
 BASEDIR=$(shell pwd)
 PREFIX=$(shell pwd)/static-build$(postfix)-$(AqVer)
 BUILDDIR=$(shell pwd)/tmp$(postfix)
-CFLAGS=-O -g -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch $(arch) -I$(PREFIX)/include/ -mmacosx-version-min=10.5
-LDFLAGS=-arch $(arch) -L$(PREFIX)/lib -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
+CFLAGS=-O -g -isysroot /$(devdir)/SDKs/MacOSX10.5.sdk -arch $(arch) -I$(PREFIX)/include/ -mmacosx-version-min=10.5
+LDFLAGS=-arch $(arch) -L$(PREFIX)/lib -L/$(devdir)/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
 CONFFLAGS=--disable-dependency-tracking --prefix=$(PREFIX) --disable-shared --enable-static
 SHARED_CONFFLAGS=--disable-dependency-tracking --prefix=$(PREFIX) --enable-shared --enable-static
 PATH=$(PREFIX)/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
