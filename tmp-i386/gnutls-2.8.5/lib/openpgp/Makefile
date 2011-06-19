@@ -53,8 +53,8 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-build_triplet = i386-apple-darwin10.6.0
-host_triplet = i386-apple-darwin10.6.0
+build_triplet = i386-apple-darwin10.7.4
+host_triplet = i386-apple-darwin10.7.4
 am__append_1 = -I$(srcdir)/../minitasn1
 subdir = openpgp
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in
@@ -151,9 +151,9 @@ BITSIZEOF_WINT_T = 32
 BYTESWAP_H = byteswap.h
 CC = gcc
 CCDEPMODE = depmode=none
-CFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.4/include/ -mmacosx-version-min=10.5
+CFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.10/include/ -mmacosx-version-min=10.5
 CPP = gcc -E
-CPPFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.4/include/ -mmacosx-version-min=10.5 -I/Users/michael/src/git/lib/static-build-i386-5.0.4/include -I/Developer_3/SDKs/MacOSX10.5.sdk/usr/include
+CPPFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.10/include/ -mmacosx-version-min=10.5 -I/Users/michael/src/git/lib/static-build-i386-5.0.10/include -I/Developer_3/SDKs/MacOSX10.5.sdk/usr/include
 CXX = g++
 CXXCPP = g++ -E
 CXXDEPMODE = depmode=none
@@ -431,9 +431,9 @@ INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 INTLLIBS = 
 INTL_MACOSX_LIBS = -Wl,-framework -Wl,CoreFoundation
 LD = /usr/libexec/gcc/i686-apple-darwin10/4.2.1/ld
-LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-i386-5.0.4/lib -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
-LIBGCRYPT = /Users/michael/src/git/lib/static-build-i386-5.0.4/lib/libgcrypt.a /Users/michael/src/git/lib/static-build-i386-5.0.4/lib/libgpg-error.a
-LIBGCRYPT_PREFIX = /Users/michael/src/git/lib/static-build-i386-5.0.4
+LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-i386-5.0.10/lib -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
+LIBGCRYPT = /Users/michael/src/git/lib/static-build-i386-5.0.10/lib/libgcrypt.a /Users/michael/src/git/lib/static-build-i386-5.0.10/lib/libgpg-error.a
+LIBGCRYPT_PREFIX = /Users/michael/src/git/lib/static-build-i386-5.0.10
 LIBGNUTLS_CFLAGS = -I${prefix}/include
 LIBGNUTLS_LIBS = -L${exec_prefix}/lib -lgnutls 
 LIBICONV = /Developer_3/SDKs/MacOSX10.5.sdk/usr/lib//libiconv.dylib
@@ -449,7 +449,7 @@ LIBZ = /Developer_3/SDKs/MacOSX10.5.sdk/usr/lib//libz.dylib
 LIBZ_PREFIX = /Developer_3/SDKs/MacOSX10.5.sdk/usr
 LIPO = lipo
 LN_S = ln -s
-LTLIBGCRYPT = -L/Users/michael/src/git/lib/static-build-i386-5.0.4/lib -lgcrypt -L/Users/michael/src/git/lib/static-build-i386-5.0.4/lib -lgpg-error
+LTLIBGCRYPT = -L/Users/michael/src/git/lib/static-build-i386-5.0.10/lib -lgcrypt -L/Users/michael/src/git/lib/static-build-i386-5.0.10/lib -lgpg-error
 LTLIBICONV = -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ -liconv
 LTLIBINTL = 
 LTLIBOBJS = 
@@ -595,10 +595,10 @@ am__quote =
 am__tar = ${AMTAR} chof - "$$tardir"
 am__untar = ${AMTAR} xf -
 bindir = ${exec_prefix}/bin
-build = i386-apple-darwin10.6.0
+build = i386-apple-darwin10.7.4
 build_alias = 
 build_cpu = i386
-build_os = darwin10.6.0
+build_os = darwin10.7.4
 build_vendor = apple
 builddir = .
 datadir = ${datarootdir}
@@ -606,10 +606,10 @@ datarootdir = ${prefix}/share
 docdir = ${datarootdir}/doc/${PACKAGE_TARNAME}
 dvidir = ${docdir}
 exec_prefix = ${prefix}
-host = i386-apple-darwin10.6.0
+host = i386-apple-darwin10.7.4
 host_alias = 
 host_cpu = i386
-host_os = darwin10.6.0
+host_os = darwin10.7.4
 host_vendor = apple
 htmldir = ${docdir}
 includedir = ${prefix}/include
@@ -628,7 +628,7 @@ mandir = ${datarootdir}/man
 mkdir_p = /Users/michael/src/git/lib/gnutls-2.8.5/lib/build-aux/install-sh -c -d
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /Users/michael/src/git/lib/static-build-i386-5.0.4
+prefix = /Users/michael/src/git/lib/static-build-i386-5.0.10
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin

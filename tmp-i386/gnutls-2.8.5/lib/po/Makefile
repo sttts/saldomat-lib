@@ -22,7 +22,7 @@ srcdir = /Users/michael/src/git/lib/gnutls-2.8.5/lib/po
 top_srcdir = /Users/michael/src/git/lib/gnutls-2.8.5/lib
 VPATH = /Users/michael/src/git/lib/gnutls-2.8.5/lib/po
 
-prefix = /Users/michael/src/git/lib/static-build-i386-5.0.4
+prefix = /Users/michael/src/git/lib/static-build-i386-5.0.10
 exec_prefix = ${prefix}
 datarootdir = ${prefix}/share
 datadir = ${datarootdir}

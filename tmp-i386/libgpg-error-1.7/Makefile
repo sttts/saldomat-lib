@@ -48,8 +48,8 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-build_triplet = i386-apple-darwin10.6.0
-host_triplet = i386-apple-darwin10.6.0
+build_triplet = i386-apple-darwin10.7.4
+host_triplet = i386-apple-darwin10.7.4
 subdir = .
 DIST_COMMON = README $(am__configure_deps) $(srcdir)/Makefile.am \
 	$(srcdir)/Makefile.in $(srcdir)/config.h.in \
@@ -109,9 +109,9 @@ BUILD_TIMESTAMP =
 CC = gcc
 CCDEPMODE = depmode=none
 CC_FOR_BUILD = gcc
-CFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.4/include/ -mmacosx-version-min=10.5
+CFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.10/include/ -mmacosx-version-min=10.5
 CPP = gcc -E
-CPPFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.4/include/ -mmacosx-version-min=10.5
+CPPFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.10/include/ -mmacosx-version-min=10.5
 CXX = g++
 CXXCPP = g++ -E
 CXXDEPMODE = depmode=none
@@ -140,7 +140,7 @@ INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 INTLLIBS = 
 INTL_MACOSX_LIBS = -Wl,-framework -Wl,CoreFoundation
-LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-i386-5.0.4/lib -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
+LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-i386-5.0.10/lib -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
 LIBGPG_ERROR_LT_AGE = 5
 LIBGPG_ERROR_LT_CURRENT = 5
 LIBGPG_ERROR_LT_REVISION = 0
@@ -191,10 +191,10 @@ am__quote =
 am__tar = ${AMTAR} chof - "$$tardir"
 am__untar = ${AMTAR} xf -
 bindir = ${exec_prefix}/bin
-build = i386-apple-darwin10.6.0
+build = i386-apple-darwin10.7.4
 build_alias = 
 build_cpu = i386
-build_os = darwin10.6.0
+build_os = darwin10.7.4
 build_vendor = apple
 builddir = .
 datadir = ${datarootdir}
@@ -202,10 +202,10 @@ datarootdir = ${prefix}/share
 docdir = ${datarootdir}/doc/${PACKAGE_TARNAME}
 dvidir = ${docdir}
 exec_prefix = ${prefix}
-host = i386-apple-darwin10.6.0
+host = i386-apple-darwin10.7.4
 host_alias = 
 host_cpu = i386
-host_os = darwin10.6.0
+host_os = darwin10.7.4
 host_vendor = apple
 htmldir = ${docdir}
 includedir = ${prefix}/include
@@ -219,7 +219,7 @@ mandir = ${datarootdir}/man
 mkdir_p = /Users/michael/src/git/lib/libgpg-error-1.7/install-sh -c -d
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /Users/michael/src/git/lib/static-build-i386-5.0.4
+prefix = /Users/michael/src/git/lib/static-build-i386-5.0.10
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin

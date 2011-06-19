@@ -44,7 +44,7 @@ available_tags=" CXX"
 
 # ### BEGIN LIBTOOL CONFIG
 
-# Libtool was configured on host moeve:
+# Libtool was configured on host kranich:
 
 # Shell to use when invoking shell scripts.
 SHELL="/bin/sh"
@@ -66,13 +66,13 @@ fast_install=needless
 
 # The host system.
 host_alias=
-host=i386-apple-darwin10.6.0
-host_os=darwin10.6.0
+host=i386-apple-darwin10.7.4
+host_os=darwin10.7.4
 
 # The build system.
 build_alias=
-build=i386-apple-darwin10.6.0
-build_os=darwin10.6.0
+build=i386-apple-darwin10.7.4
+build_os=darwin10.7.4
 
 # An echo program that does not interpret backslashes.
 echo="/bin/echo"
@@ -85,7 +85,7 @@ AR_FLAGS="cru"
 LTCC="gcc"
 
 # LTCC compiler flags.
-LTCFLAGS="-O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.4/include/ -mmacosx-version-min=10.5"
+LTCFLAGS="-O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.10/include/ -mmacosx-version-min=10.5"
 
 # A language-specific compiler.
 CC="gcc"
@@ -7283,7 +7283,7 @@ disable_libs=static
 # End:
 # ### BEGIN LIBTOOL TAG CONFIG: CXX
 
-# Libtool was configured on host moeve:
+# Libtool was configured on host kranich:
 
 # Shell to use when invoking shell scripts.
 SHELL="/bin/sh"
@@ -7305,13 +7305,13 @@ fast_install=needless
 
 # The host system.
 host_alias=
-host=i386-apple-darwin10.6.0
-host_os=darwin10.6.0
+host=i386-apple-darwin10.7.4
+host_os=darwin10.7.4
 
 # The build system.
 build_alias=
-build=i386-apple-darwin10.6.0
-build_os=darwin10.6.0
+build=i386-apple-darwin10.7.4
+build_os=darwin10.7.4
 
 # An echo program that does not interpret backslashes.
 echo="/bin/echo"
@@ -7324,7 +7324,7 @@ AR_FLAGS="cru"
 LTCC="gcc"
 
 # LTCC compiler flags.
-LTCFLAGS="-O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.4/include/ -mmacosx-version-min=10.5"
+LTCFLAGS="-O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.10/include/ -mmacosx-version-min=10.5"
 
 # A language-specific compiler.
 CC="g++"

@@ -1,1 +1,0 @@
-/Users/michael/src/git/lib/gwenhywfar/src/html/htmlimage_be.h

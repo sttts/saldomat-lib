@@ -8,8 +8,8 @@
 # gwen
 # aqbanking
 
-AqVer=5.0.4
-GwenVer=4.0.7
+AqVer=5.0.10
+GwenVer=4.1.0
 devdir=Developer_3
 
 all:

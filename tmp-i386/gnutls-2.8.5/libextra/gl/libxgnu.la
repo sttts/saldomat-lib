@@ -17,7 +17,7 @@ old_library='libxgnu.a'
 inherited_linker_flags=' '
 
 # Libraries that this one depends upon.
-dependency_libs=' -L/Users/michael/src/git/lib/static-build-i386-5.0.4/lib -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/'
+dependency_libs=' -L/Users/michael/src/git/lib/static-build-i386-5.0.10/lib -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''

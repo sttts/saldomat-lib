@@ -10,7 +10,7 @@
 # implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 
-prefix=/Users/michael/src/git/lib/static-build-i386-5.0.4
+prefix=/Users/michael/src/git/lib/static-build-i386-5.0.10
 exec_prefix=${prefix}
 includedir=${prefix}/include
 libdir=${exec_prefix}/lib
