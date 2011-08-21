@@ -1,0 +1,1 @@
+/Users/michael/Documents/Source/Limoia/git/lib/tmp-debug/aqbanking-5.0.14/src/plugins/backends/aqhbci/plugin/version.h

@@ -24,7 +24,7 @@ along with the GNU MP Library.  If not, see http://www.gnu.org/licenses/.
 
 /* The gmp-mparam.h file (a string) the tune program should suggest updating.
    */
-#define GMP_MPARAM_H_SUGGEST "/Users/michael/src/git/lib/gmp-4.3.2/mpn/generic/gmp-mparam.h"
+#define GMP_MPARAM_H_SUGGEST "/Users/michael/Documents/Source/Limoia/git/lib/gmp-4.3.2/mpn/generic/gmp-mparam.h"
 
 /* Define to 1 if you have the `alarm' function. */
 #define HAVE_ALARM 1

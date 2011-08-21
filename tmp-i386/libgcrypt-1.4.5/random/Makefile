@@ -50,7 +50,7 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-build_triplet = i386-apple-darwin10.7.4
+build_triplet = i386-apple-darwin11.0.0
 host_triplet = powerpc-unknown-none
 #am__append_1 = random-daemon.c 
 subdir = random
@@ -105,11 +105,11 @@ BUILD_TIMESTAMP =
 CC = gcc
 CCAS = gcc
 CCASDEPMODE = depmode=none
-CCASFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.10/include/ -mmacosx-version-min=10.5
+CCASFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.14/include/ -mmacosx-version-min=10.5
 CCDEPMODE = depmode=none
-CFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.10/include/ -mmacosx-version-min=10.5 -Wall
+CFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.14/include/ -mmacosx-version-min=10.5 -Wall
 CPP = gcc -E
-CPPFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.10/include/ -mmacosx-version-min=10.5
+CPPFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.14/include/ -mmacosx-version-min=10.5
 CXX = g++
 CXXCPP = g++ -E
 CXXDEPMODE = depmode=none
@@ -132,16 +132,16 @@ GCRYPT_CIPHERS =  arcfour.lo blowfish.lo cast5.lo des.lo rijndael.lo twofish.lo 
 GCRYPT_DIGESTS =  crc.lo md4.lo md5.lo sha256.lo sha512.lo tiger.lo whirlpool.lo rmd160.lo sha1.lo
 GCRYPT_PUBKEY_CIPHERS =  dsa.lo rsa.lo elgamal.lo ecc.lo
 GCRYPT_RANDOM =  rndlinux.lo
-GPG_ERROR_CFLAGS = -I/Users/michael/src/git/lib/static-build-i386-5.0.10/include
-GPG_ERROR_CONFIG = /Users/michael/src/git/lib/static-build-i386-5.0.10/bin/gpg-error-config
-GPG_ERROR_LIBS = -L/Users/michael/src/git/lib/static-build-i386-5.0.10/lib -lgpg-error
+GPG_ERROR_CFLAGS = -I/Users/michael/src/git/lib/static-build-i386-5.0.14/include
+GPG_ERROR_CONFIG = /Users/michael/src/git/lib/static-build-i386-5.0.14/bin/gpg-error-config
+GPG_ERROR_LIBS = -L/Users/michael/src/git/lib/static-build-i386-5.0.14/lib -lgpg-error
 GREP = /usr/bin/grep
 INSTALL = /usr/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
-LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-i386-5.0.10/lib -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
+LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-i386-5.0.14/lib -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
 LIBGCRYPT_CIPHERS = arcfour blowfish cast5 des aes twofish serpent rfc2268 seed camellia
 LIBGCRYPT_CONFIG_API_VERSION = 1
 LIBGCRYPT_CONFIG_CFLAGS = 
@@ -195,10 +195,10 @@ am__quote =
 am__tar = ${AMTAR} chof - "$$tardir"
 am__untar = ${AMTAR} xf -
 bindir = ${exec_prefix}/bin
-build = i386-apple-darwin10.7.4
+build = i386-apple-darwin11.0.0
 build_alias = 
 build_cpu = i386
-build_os = darwin10.7.4
+build_os = darwin11.0.0
 build_vendor = apple
 builddir = .
 datadir = ${datarootdir}
@@ -223,7 +223,7 @@ mandir = ${datarootdir}/man
 mkdir_p = /Users/michael/src/git/lib/libgcrypt-1.4.5/install-sh -c -d
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /Users/michael/src/git/lib/static-build-i386-5.0.10
+prefix = /Users/michael/src/git/lib/static-build-i386-5.0.14
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin

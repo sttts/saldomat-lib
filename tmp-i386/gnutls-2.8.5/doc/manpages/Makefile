@@ -51,8 +51,8 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-build_triplet = x86_64-apple-darwin10.7.4
-host_triplet = x86_64-apple-darwin10.7.4
+build_triplet = x86_64-apple-darwin11.0.0
+host_triplet = x86_64-apple-darwin11.0.0
 @ENABLE_SRP_TRUE@am__append_1 = srptool.1
 @ENABLE_SRP_TRUE@am__append_2 = $(SRPMANS)
 subdir = doc/manpages
@@ -171,9 +171,9 @@ BITSIZEOF_WCHAR_T = 32
 BITSIZEOF_WINT_T = 32
 CC = gcc -std=gnu99
 CCDEPMODE = depmode=none
-CFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.10/include/ -mmacosx-version-min=10.5
+CFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.14/include/ -mmacosx-version-min=10.5
 CPP = gcc -E
-CPPFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.10/include/ -mmacosx-version-min=10.5 -I/Developer_3/SDKs/MacOSX10.5.sdk/usr/include
+CPPFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.14/include/ -mmacosx-version-min=10.5 -I/Developer_3/SDKs/MacOSX10.5.sdk/usr/include
 CXX = g++
 CXXCPP = g++ -E
 CXXDEPMODE = depmode=none
@@ -466,8 +466,8 @@ INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
-LD = /usr/libexec/gcc/i686-apple-darwin10/4.2.1/ld
-LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-i386-5.0.10/lib -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
+LD = /usr/llvm-gcc-4.2/libexec/gcc/i686-apple-darwin11/4.2.1/ld
+LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-i386-5.0.14/lib -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
 LIBGCRYPT = @LIBGCRYPT@
 LIBGCRYPT_PREFIX = @LIBGCRYPT_PREFIX@
 LIBINTL = 
@@ -526,7 +526,7 @@ PACKAGE_TARNAME = gnutls
 PACKAGE_URL = 
 PACKAGE_VERSION = 2.8.5
 PATH_SEPARATOR = :
-PKG_CONFIG = /Users/michael/src/git/lib/static-build-i386-5.0.10/bin/pkg-config
+PKG_CONFIG = /Users/michael/src/git/lib/static-build-i386-5.0.14/bin/pkg-config
 PMCCABE = false
 PRAGMA_SYSTEM_HEADER = #pragma GCC system_header
 PTRDIFF_T_SUFFIX = 
@@ -594,7 +594,7 @@ SHELL = /bin/sh
 SIG_ATOMIC_T_SUFFIX = 
 SIZE_T_SUFFIX = ul
 STDARG_H = 
-STDBOOL_H = 
+STDBOOL_H = stdbool.h
 STDINT_H = stdint.h
 STRIP = strip
 SYS_IOCTL_H = 
@@ -626,10 +626,10 @@ am__quote =
 am__tar = ${AMTAR} chof - "$$tardir"
 am__untar = ${AMTAR} xf -
 bindir = ${exec_prefix}/bin
-build = x86_64-apple-darwin10.7.4
+build = x86_64-apple-darwin11.0.0
 build_alias = 
 build_cpu = x86_64
-build_os = darwin10.7.4
+build_os = darwin11.0.0
 build_vendor = apple
 builddir = .
 datadir = ${datarootdir}
@@ -642,10 +642,10 @@ gl_LTLIBOBJS =  asnprintf.lo error.lo getdelim.lo getline.lo getpass.lo printf-a
 gltests_LIBOBJS = 
 gltests_LTLIBOBJS = 
 guile_snarf = 
-host = x86_64-apple-darwin10.7.4
+host = x86_64-apple-darwin11.0.0
 host_alias = 
 host_cpu = x86_64
-host_os = darwin10.7.4
+host_os = darwin11.0.0
 host_vendor = apple
 htmldir = ${docdir}
 includedir = ${prefix}/include
@@ -660,7 +660,7 @@ mandir = ${datarootdir}/man
 mkdir_p = /Users/michael/src/git/lib/gnutls-2.8.5/build-aux/install-sh -c -d
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /Users/michael/src/git/lib/static-build-i386-5.0.10
+prefix = /Users/michael/src/git/lib/static-build-i386-5.0.14
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin

@@ -65,13 +65,13 @@ fast_install=needless
 
 # The host system.
 host_alias=
-host=i386-apple-darwin10.7.4
-host_os=darwin10.7.4
+host=i386-apple-darwin11.1.0
+host_os=darwin11.1.0
 
 # The build system.
 build_alias=
-build=i386-apple-darwin10.7.4
-build_os=darwin10.7.4
+build=i386-apple-darwin11.1.0
+build_os=darwin11.1.0
 
 # A sed program that does not truncate output.
 SED="/usr/bin/sed"
@@ -138,7 +138,7 @@ old_postuninstall_cmds=""
 LTCC="gcc"
 
 # LTCC compiler flags.
-LTCFLAGS="-O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-5.0.10/include/ -mmacosx-version-min=10.5"
+LTCFLAGS="-O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/include/ -mmacosx-version-min=10.5"
 
 # Take the output of nm and produce a listing of raw symbols and C names.
 global_symbol_pipe="sed -n -e 's/^.*[	 ]\\([BCDEGRST][BCDEGRST]*\\)[	 ][	 ]*_\\([_A-Za-z][_A-Za-z0-9]*\\)\$/\\1 _\\2 \\2/p'"
@@ -240,7 +240,7 @@ finish_eval=""
 hardcode_into_libs=no
 
 # Compile-time system search path for libraries.
-sys_lib_search_path_spec="/usr/lib/gcc/i686-apple-darwin10/4.2.1/x86_64 /usr/lib/i686-apple-darwin10/4.2.1 /usr/lib /usr/lib/gcc/i686-apple-darwin10/4.2.1 /usr/local/lib"
+sys_lib_search_path_spec="/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/x86_64 /Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/x86_64 /usr/lib/gcc/i686-apple-darwin11/4.2.1/x86_64 /usr/lib/i686-apple-darwin11/4.2.1 /usr/lib /usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1 /usr/llvm-gcc-4.2/lib/gcc /Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1 /usr/lib/gcc/i686-apple-darwin11/4.2.1 /usr/llvm-gcc-4.2/lib /Developer/usr/llvm-gcc-4.2/lib /usr/local/lib"
 
 # Run-time system search path for libraries.
 sys_lib_dlsearch_path_spec="/usr/local/lib /lib /usr/lib"
@@ -260,7 +260,7 @@ striplib="strip -x"
 
 
 # The linker used to build libraries.
-LD="/usr/libexec/gcc/i686-apple-darwin10/4.2.1/ld"
+LD="/usr/llvm-gcc-4.2/libexec/gcc/i686-apple-darwin11/4.2.1/ld"
 
 # Commands used to build an old-style archive.
 old_archive_cmds="\$AR \$AR_FLAGS \$oldlib\$oldobjs~\$RANLIB \$oldlib"
@@ -8919,7 +8919,7 @@ build_old_libs=`case $build_libtool_libs in yes) echo no;; *) echo yes;; esac`
 # ### BEGIN LIBTOOL TAG CONFIG: CXX
 
 # The linker used to build libraries.
-LD="/usr/libexec/gcc/i686-apple-darwin10/4.2.1/ld"
+LD="/usr/llvm-gcc-4.2/libexec/gcc/i686-apple-darwin11/4.2.1/ld"
 
 # Commands used to build an old-style archive.
 old_archive_cmds="\$AR \$AR_FLAGS \$oldlib\$oldobjs~\$RANLIB \$oldlib"

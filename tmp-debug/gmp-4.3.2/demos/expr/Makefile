@@ -32,9 +32,9 @@
 # along with the GNU MP Library.  If not, see http://www.gnu.org/licenses/.
 SOURCES = $(libexpr_a_SOURCES) run-expr.c t-expr.c
 
-srcdir = /Users/michael/src/git/lib/gmp-4.3.2/demos/expr
-top_srcdir = /Users/michael/src/git/lib/gmp-4.3.2
-VPATH = /Users/michael/src/git/lib/gmp-4.3.2/demos/expr
+srcdir = /Users/michael/Documents/Source/Limoia/git/lib/gmp-4.3.2/demos/expr
+top_srcdir = /Users/michael/Documents/Source/Limoia/git/lib/gmp-4.3.2
+VPATH = /Users/michael/Documents/Source/Limoia/git/lib/gmp-4.3.2/demos/expr
 pkgdatadir = $(datadir)/gmp
 pkglibdir = $(libdir)/gmp
 pkgincludedir = $(includedir)/gmp
@@ -97,23 +97,23 @@ ETAGS = etags
 CTAGS = ctags
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
 ABI = long
-ACLOCAL = ${SHELL} /Users/michael/src/git/lib/gmp-4.3.2/missing --run aclocal-1.8
-AMTAR = ${SHELL} /Users/michael/src/git/lib/gmp-4.3.2/missing --run tar
+ACLOCAL = ${SHELL} /Users/michael/Documents/Source/Limoia/git/lib/gmp-4.3.2/missing --run aclocal-1.8
+AMTAR = ${SHELL} /Users/michael/Documents/Source/Limoia/git/lib/gmp-4.3.2/missing --run tar
 AR = ar
 AS = as
 ASMFLAGS = 
-AUTOCONF = ${SHELL} /Users/michael/src/git/lib/gmp-4.3.2/missing --run autoconf
-AUTOHEADER = ${SHELL} /Users/michael/src/git/lib/gmp-4.3.2/missing --run autoheader
-AUTOMAKE = ${SHELL} /Users/michael/src/git/lib/gmp-4.3.2/missing --run automake-1.8
+AUTOCONF = ${SHELL} /Users/michael/Documents/Source/Limoia/git/lib/gmp-4.3.2/missing --run autoconf
+AUTOHEADER = ${SHELL} /Users/michael/Documents/Source/Limoia/git/lib/gmp-4.3.2/missing --run autoheader
+AUTOMAKE = ${SHELL} /Users/michael/Documents/Source/Limoia/git/lib/gmp-4.3.2/missing --run automake-1.8
 AWK = awk
 BITS_PER_MP_LIMB = 32
 CALLING_CONVENTIONS_OBJS = 
 CC = gcc -std=gnu99
 CCAS = gcc -std=gnu99 -c
 CC_FOR_BUILD = gcc -std=gnu99
-CFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-5.0.10/include/ -mmacosx-version-min=10.5
+CFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/include/ -mmacosx-version-min=10.5
 CPP = gcc -std=gnu99 -E
-CPPFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-5.0.10/include/ -mmacosx-version-min=10.5
+CPPFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/include/ -mmacosx-version-min=10.5
 CPP_FOR_BUILD = gcc -std=gnu99 -E
 CXX = 
 CXXCPP = 
@@ -149,7 +149,7 @@ INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = ${SHELL} $(install_sh) -c -s
-LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-debug-5.0.10/lib -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
+LDFLAGS = -arch i386 -L/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/lib -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
 LEX = flex
 LEXLIB = -lfl
 LEX_OUTPUT_ROOT = lex.yy
@@ -169,7 +169,7 @@ M4 = m4-not-needed
 MAINT = #
 MAINTAINER_MODE_FALSE = 
 MAINTAINER_MODE_TRUE = #
-MAKEINFO = ${SHELL} /Users/michael/src/git/lib/gmp-4.3.2/missing --run makeinfo
+MAKEINFO = ${SHELL} /Users/michael/Documents/Source/Limoia/git/lib/gmp-4.3.2/missing --run makeinfo
 OBJDUMP = objdump
 OBJEXT = o
 PACKAGE = gmp
@@ -220,7 +220,7 @@ host_vendor = apple
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = /Users/michael/src/git/lib/gmp-4.3.2/install-sh
+install_sh = /Users/michael/Documents/Source/Limoia/git/lib/gmp-4.3.2/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -232,7 +232,7 @@ mpn_objs_in_libgmp =  mpn/add$U.lo mpn/add_1$U.lo mpn/add_n$U.lo mpn/sub$U.lo mp
 mpn_objs_in_libmp =  mpn/add$U.lo mpn/add_1$U.lo mpn/add_n$U.lo mpn/sub$U.lo mpn/sub_1$U.lo mpn/sub_n$U.lo mpn/neg_n$U.lo mpn/mul_1$U.lo mpn/addmul_1$U.lo mpn/submul_1$U.lo mpn/lshift$U.lo mpn/rshift$U.lo mpn/dive_1$U.lo mpn/diveby3$U.lo mpn/divis$U.lo mpn/divrem$U.lo mpn/divrem_1$U.lo mpn/divrem_2$U.lo mpn/fib2_ui$U.lo mpn/mod_1$U.lo mpn/mod_34lsub1$U.lo mpn/mode1o$U.lo mpn/pre_divrem_1$U.lo mpn/pre_mod_1$U.lo mpn/dump$U.lo mpn/mod_1_1$U.lo mpn/mod_1_2$U.lo mpn/mod_1_3$U.lo mpn/mod_1_4$U.lo mpn/mul$U.lo mpn/mul_fft$U.lo mpn/mul_n$U.lo mpn/mul_basecase$U.lo mpn/sqr_basecase$U.lo mpn/pow_1$U.lo mpn/rootrem$U.lo mpn/sqrtrem$U.lo mpn/get_str$U.lo mpn/set_str$U.lo mpn/scan0$U.lo mpn/scan1$U.lo mpn/popcount$U.lo mpn/hamdist$U.lo mpn/cmp$U.lo mpn/perfsqr$U.lo mpn/bdivmod$U.lo mpn/gcd_1$U.lo mpn/gcd$U.lo mpn/gcdext_1$U.lo mpn/gcdext$U.lo mpn/gcd_lehmer$U.lo mpn/gcd_subdiv_step$U.lo mpn/gcdext_lehmer$U.lo mpn/gcdext_subdiv_step$U.lo mpn/tdiv_qr$U.lo mpn/dc_divrem_n$U.lo mpn/sb_divrem_mn$U.lo mpn/jacbase$U.lo mpn/get_d$U.lo mpn/matrix22_mul$U.lo mpn/hgcd2$U.lo mpn/hgcd$U.lo mpn/mullow_n$U.lo mpn/mullow_basecase$U.lo mpn/toom22_mul$U.lo mpn/toom33_mul$U.lo mpn/toom44_mul$U.lo mpn/toom32_mul$U.lo mpn/toom42_mul$U.lo mpn/toom62_mul$U.lo mpn/toom53_mul$U.lo mpn/toom2_sqr$U.lo mpn/toom3_sqr$U.lo mpn/toom4_sqr$U.lo mpn/toom_interpolate_5pts$U.lo mpn/toom_interpolate_7pts$U.lo mpn/invert$U.lo mpn/binvert$U.lo mpn/sb_div_qr$U.lo mpn/sb_divappr_q$U.lo mpn/sb_div_q$U.lo mpn/dc_div_qr$U.lo mpn/dc_divappr_q$U.lo mpn/dc_div_q$U.lo mpn/mu_div_qr$U.lo mpn/mu_divappr_q$U.lo mpn/mu_div_q$U.lo mpn/sb_bdiv_q$U.lo mpn/sb_bdiv_qr$U.lo mpn/dc_bdiv_q$U.lo mpn/dc_bdiv_qr$U.lo mpn/mu_bdiv_q$U.lo mpn/mu_bdiv_qr$U.lo mpn/divexact$U.lo mpn/bdiv_dbm1c$U.lo mpn/redc_1$U.lo mpn/redc_2$U.lo mpn/powm$U.lo mpn/powlo$U.lo mpn/powm_sec$U.lo mpn/subcnd_n$U.lo mpn/addsub_n$U.lo
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /Users/michael/src/git/lib/static-build-debug-5.0.10
+prefix = /Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin

@@ -8,8 +8,8 @@
 # gwen
 # aqbanking
 
-AqVer=5.0.10
-GwenVer=4.1.0
+AqVer=5.0.14
+GwenVer=4.2.1
 devdir=Developer_3
 
 all:
@@ -165,7 +165,7 @@ PATH=$(PREFIX)/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 	CPPFLAGS="$(CFLAGS)" \
 	PKG_CONFIG=$(PREFIX)/bin/pkg-config PKG_CONFIG_PATH=$(PREFIX)/lib/pkgconfig/ \
 	$(BASEDIR)/aqbanking/configure $(SHARED_CONFFLAGS) --enable-debug=$(DEBUG) \
-	--with-backends="aqhbci" --with-frontends="" \
+	--with-backends="aqhbci" --with-frontends="" --disable-gwenhywfar-test \
 	--enable-local-install --disable-tutorials --with-bankinfos="de" --without-imexports \
 	--disable-qt3-threads --disable-qt3 --with-exporter=csv \
 	--disable-variadic-macros && \

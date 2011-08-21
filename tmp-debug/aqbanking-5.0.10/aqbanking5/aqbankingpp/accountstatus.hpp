@@ -1,1 +1,0 @@
-/Users/michael/src/git/lib/aqbanking/src/libs/aqbankingpp/accountstatus.hpp
