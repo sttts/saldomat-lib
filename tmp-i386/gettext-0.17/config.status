@@ -622,14 +622,14 @@ s,@HAVE_MCS@,|#_!!_#|,g
 s,@HAVE_CSC@,|#_!!_#|,g
 s,@CSHARPCOMPFLAGS@,|#_!!_#|-O -g,g
 s,@BUILDCSHARP@,|#_!!_#|no,g
-s,@build@,|#_!!_#|i386-apple-darwin11.0.0,g
+s,@build@,|#_!!_#|i386-apple-darwin11.3.0,g
 s,@build_cpu@,|#_!!_#|i386,g
 s,@build_vendor@,|#_!!_#|apple,g
-s,@build_os@,|#_!!_#|darwin11.0.0,g
-s,@host@,|#_!!_#|i386-apple-darwin11.0.0,g
+s,@build_os@,|#_!!_#|darwin11.3.0,g
+s,@host@,|#_!!_#|i386-apple-darwin11.3.0,g
 s,@host_cpu@,|#_!!_#|i386,g
 s,@host_vendor@,|#_!!_#|apple,g
-s,@host_os@,|#_!!_#|darwin11.0.0,g
+s,@host_os@,|#_!!_#|darwin11.3.0,g
 s,@RANLIB@,|#_!!_#|ranlib,g
 s,@SED@,|#_!!_#|/usr/bin/sed,g
 s,@LN_S@,|#_!!_#|ln -s,g
@@ -638,7 +638,7 @@ s,@AR@,|#_!!_#|ar,g
 s,@DLLTOOL@,|#_!!_#|dlltool,g
 s,@AS@,|#_!!_#|as,g
 s,@OBJDUMP@,|#_!!_#|objdump,g
-s,@CXX@,|#_!!_#|:,g
+s,@CXX@,|#_!!_#|g++,g
 s,@CXXFLAGS@,|#_!!_#|-g -O2,g
 s,@ac_ct_CXX@,|#_!!_#|g++,g
 s,@CXXDEPMODE@,|#_!!_#|depmode=none,g
@@ -847,8 +847,8 @@ s,@LIBGRT_LTLIBDEPS@,|#_!!_#| -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ -licon
 s,@PERL@,|#_!!_#|/usr/bin/perl,g
 s,@CROSS_COMPILING@,|#_!!_#|no,g
 s,@LIBSCHED@,|#_!!_#|,g
-s,@ENABLE_LIBASPRINTF_TRUE@,|#_!!_#|#,g
-s,@ENABLE_LIBASPRINTF_FALSE@,|#_!!_#|,g
+s,@ENABLE_LIBASPRINTF_TRUE@,|#_!!_#|,g
+s,@ENABLE_LIBASPRINTF_FALSE@,|#_!!_#|#,g
 s,@subdirs@,|#_!!_#| libasprintf,g
 s,@LIBOBJS@,|#_!!_#|,g
 s,@LTLIBOBJS@,|#_!!_#|,g

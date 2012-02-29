@@ -12,13 +12,13 @@
 # File: src/libgcrypt-config.  Generated from libgcrypt-config.in by configure.
 
 # General.
-prefix="/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14"
+prefix="/Users/michael/src/git/lib/static-build-debug-5.0.14"
 exec_prefix="${prefix}"
 version="1.4.5"
 includedir="${prefix}/include"
 libdir="${exec_prefix}/lib"
-gpg_error_libs="-L/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/lib -lgpg-error"
-gpg_error_cflags="-I/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/include"
+gpg_error_libs="-L/Users/michael/src/git/lib/static-build-debug-5.0.14/lib -lgpg-error"
+gpg_error_cflags="-I/Users/michael/src/git/lib/static-build-debug-5.0.14/include"
 
 # libgcrypt values.
 libs="-lgcrypt"

@@ -28,7 +28,7 @@
 
 
 
-VPATH = /Users/michael/Documents/Source/Limoia/git/lib/gnutls-2.8.5/lib/gl
+VPATH = /Users/michael/src/git/lib/gnutls-2.8.5/lib/gl
 pkgdatadir = $(datadir)/libgnutls
 pkgincludedir = $(includedir)/libgnutls
 pkglibdir = $(libdir)/libgnutls
@@ -45,8 +45,8 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-build_triplet = i386-apple-darwin11.1.0
-host_triplet = i386-apple-darwin11.1.0
+build_triplet = i386-apple-darwin11.3.0
+host_triplet = i386-apple-darwin11.3.0
 subdir = gl
 DIST_COMMON = $(noinst_HEADERS) $(srcdir)/Makefile.am \
 	$(srcdir)/Makefile.in
@@ -165,16 +165,16 @@ am__relativize = \
     dir1=`echo "$$dir1" | sed -e "$$sed_rest"`; \
   done; \
   reldir="$$dir2"
-ACLOCAL = ${SHELL} /Users/michael/Documents/Source/Limoia/git/lib/gnutls-2.8.5/lib/build-aux/missing --run aclocal-1.11
+ACLOCAL = ${SHELL} /Users/michael/src/git/lib/gnutls-2.8.5/lib/build-aux/missing --run aclocal-1.11
 ALLOCA = 
 ALLOCA_H = alloca.h
-AMTAR = ${SHELL} /Users/michael/Documents/Source/Limoia/git/lib/gnutls-2.8.5/lib/build-aux/missing --run tar
+AMTAR = ${SHELL} /Users/michael/src/git/lib/gnutls-2.8.5/lib/build-aux/missing --run tar
 APPLE_UNIVERSAL_BUILD = 0
 AR = ar
 AS = as
-AUTOCONF = ${SHELL} /Users/michael/Documents/Source/Limoia/git/lib/gnutls-2.8.5/lib/build-aux/missing --run autoconf
-AUTOHEADER = ${SHELL} /Users/michael/Documents/Source/Limoia/git/lib/gnutls-2.8.5/lib/build-aux/missing --run autoheader
-AUTOMAKE = ${SHELL} /Users/michael/Documents/Source/Limoia/git/lib/gnutls-2.8.5/lib/build-aux/missing --run automake-1.11
+AUTOCONF = ${SHELL} /Users/michael/src/git/lib/gnutls-2.8.5/lib/build-aux/missing --run autoconf
+AUTOHEADER = ${SHELL} /Users/michael/src/git/lib/gnutls-2.8.5/lib/build-aux/missing --run autoheader
+AUTOMAKE = ${SHELL} /Users/michael/src/git/lib/gnutls-2.8.5/lib/build-aux/missing --run automake-1.11
 AWK = awk
 BITSIZEOF_PTRDIFF_T = 32
 BITSIZEOF_SIG_ATOMIC_T = 32
@@ -184,9 +184,9 @@ BITSIZEOF_WINT_T = 32
 BYTESWAP_H = byteswap.h
 CC = gcc
 CCDEPMODE = depmode=none
-CFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/include/ -mmacosx-version-min=10.5
+CFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-5.0.14/include/ -mmacosx-version-min=10.5
 CPP = gcc -E
-CPPFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/include/ -mmacosx-version-min=10.5 -I/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/include -I/Developer_3/SDKs/MacOSX10.5.sdk/usr/include
+CPPFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-5.0.14/include/ -mmacosx-version-min=10.5 -I/Users/michael/src/git/lib/static-build-debug-5.0.14/include -I/Developer_3/SDKs/MacOSX10.5.sdk/usr/include
 CXX = g++
 CXXCPP = g++ -E
 CXXDEPMODE = depmode=none
@@ -464,9 +464,9 @@ INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 INTLLIBS = 
 INTL_MACOSX_LIBS = -Wl,-framework -Wl,CoreFoundation
 LD = /usr/llvm-gcc-4.2/libexec/gcc/i686-apple-darwin11/4.2.1/ld
-LDFLAGS = -arch i386 -L/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/lib -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
-LIBGCRYPT = /Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/lib/libgcrypt.a /Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/lib/libgpg-error.a
-LIBGCRYPT_PREFIX = /Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14
+LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-debug-5.0.14/lib -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
+LIBGCRYPT = /Users/michael/src/git/lib/static-build-debug-5.0.14/lib/libgcrypt.a /Users/michael/src/git/lib/static-build-debug-5.0.14/lib/libgpg-error.a
+LIBGCRYPT_PREFIX = /Users/michael/src/git/lib/static-build-debug-5.0.14
 LIBGNUTLS_CFLAGS = -I${prefix}/include
 LIBGNUTLS_LIBS = -L${exec_prefix}/lib -lgnutls 
 LIBICONV = /Developer_3/SDKs/MacOSX10.5.sdk/usr/lib//libiconv.dylib
@@ -482,7 +482,7 @@ LIBZ = /Developer_3/SDKs/MacOSX10.5.sdk/usr/lib//libz.dylib
 LIBZ_PREFIX = /Developer_3/SDKs/MacOSX10.5.sdk/usr
 LIPO = lipo
 LN_S = ln -s
-LTLIBGCRYPT = -L/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/lib -lgcrypt -L/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/lib -lgpg-error
+LTLIBGCRYPT = -L/Users/michael/src/git/lib/static-build-debug-5.0.14/lib -lgcrypt -L/Users/michael/src/git/lib/static-build-debug-5.0.14/lib -lgpg-error
 LTLIBICONV = -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ -liconv
 LTLIBINTL = 
 LTLIBOBJS = 
@@ -493,9 +493,9 @@ LT_CURRENT = 40
 LT_REVISION = 12
 LZO_LIBS = 
 MAJOR_VERSION = 2
-MAKEINFO = ${SHELL} /Users/michael/Documents/Source/Limoia/git/lib/gnutls-2.8.5/lib/build-aux/missing --run makeinfo
+MAKEINFO = ${SHELL} /Users/michael/src/git/lib/gnutls-2.8.5/lib/build-aux/missing --run makeinfo
 MINOR_VERSION = 8
-MKDIR_P = /Users/michael/Documents/Source/Limoia/git/lib/gnutls-2.8.5/lib/build-aux/install-sh -c -d
+MKDIR_P = /Users/michael/src/git/lib/gnutls-2.8.5/lib/build-aux/install-sh -c -d
 MSGFMT = :
 MSGFMT_015 = :
 MSGMERGE = :
@@ -615,10 +615,10 @@ WINT_T_SUFFIX =
 XGETTEXT = :
 XGETTEXT_015 = :
 XGETTEXT_EXTRA_OPTIONS =  --flag=asprintf:2:c-format --flag=vasprintf:2:c-format
-abs_builddir = /Users/michael/Documents/Source/Limoia/git/lib/tmp-debug/gnutls-2.8.5/lib/gl
-abs_srcdir = /Users/michael/Documents/Source/Limoia/git/lib/gnutls-2.8.5/lib/gl
-abs_top_builddir = /Users/michael/Documents/Source/Limoia/git/lib/tmp-debug/gnutls-2.8.5/lib
-abs_top_srcdir = /Users/michael/Documents/Source/Limoia/git/lib/gnutls-2.8.5/lib
+abs_builddir = /Users/michael/src/git/lib/tmp-debug/gnutls-2.8.5/lib/gl
+abs_srcdir = /Users/michael/src/git/lib/gnutls-2.8.5/lib/gl
+abs_top_builddir = /Users/michael/src/git/lib/tmp-debug/gnutls-2.8.5/lib
+abs_top_srcdir = /Users/michael/src/git/lib/gnutls-2.8.5/lib
 ac_ct_CC = gcc
 ac_ct_CXX = g++
 ac_ct_DUMPBIN = 
@@ -628,10 +628,10 @@ am__quote =
 am__tar = ${AMTAR} chof - "$$tardir"
 am__untar = ${AMTAR} xf -
 bindir = ${exec_prefix}/bin
-build = i386-apple-darwin11.1.0
+build = i386-apple-darwin11.3.0
 build_alias = 
 build_cpu = i386
-build_os = darwin11.1.0
+build_os = darwin11.3.0
 build_vendor = apple
 builddir = .
 datadir = ${datarootdir}
@@ -639,15 +639,15 @@ datarootdir = ${prefix}/share
 docdir = ${datarootdir}/doc/${PACKAGE_TARNAME}
 dvidir = ${docdir}
 exec_prefix = ${prefix}
-host = i386-apple-darwin11.1.0
+host = i386-apple-darwin11.3.0
 host_alias = 
 host_cpu = i386
-host_os = darwin11.1.0
+host_os = darwin11.3.0
 host_vendor = apple
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /Users/michael/Documents/Source/Limoia/git/lib/gnutls-2.8.5/lib/build-aux/install-sh
+install_sh = ${SHELL} /Users/michael/src/git/lib/gnutls-2.8.5/lib/build-aux/install-sh
 lgl_LIBOBJS =  asnprintf.o memmem.o printf-args.o printf-parse.o read-file.o strverscmp.o vasnprintf.o
 lgl_LTLIBOBJS =  asnprintf.lo memmem.lo printf-args.lo printf-parse.lo read-file.lo strverscmp.lo vasnprintf.lo
 lgltests_LIBOBJS = 
@@ -658,20 +658,20 @@ localedir = ${datarootdir}/locale
 localstatedir = ${prefix}/var
 lt_ECHO = /bin/echo
 mandir = ${datarootdir}/man
-mkdir_p = /Users/michael/Documents/Source/Limoia/git/lib/gnutls-2.8.5/lib/build-aux/install-sh -c -d
+mkdir_p = /Users/michael/src/git/lib/gnutls-2.8.5/lib/build-aux/install-sh -c -d
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14
+prefix = /Users/michael/src/git/lib/static-build-debug-5.0.14
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
-srcdir = /Users/michael/Documents/Source/Limoia/git/lib/gnutls-2.8.5/lib/gl
+srcdir = /Users/michael/src/git/lib/gnutls-2.8.5/lib/gl
 sysconfdir = ${prefix}/etc
 target_alias = 
 top_build_prefix = ../
 top_builddir = ..
-top_srcdir = /Users/michael/Documents/Source/Limoia/git/lib/gnutls-2.8.5/lib
+top_srcdir = /Users/michael/src/git/lib/gnutls-2.8.5/lib
 AUTOMAKE_OPTIONS = 1.5 gnits
 SUBDIRS = tests
 noinst_HEADERS = 
@@ -1477,7 +1477,7 @@ strings.h: strings.in.h
 # We need the following in order to create <sys/socket.h> when the system
 # doesn't have one that works with the given compiler.
 sys/socket.h: sys_socket.in.h
-	/Users/michael/Documents/Source/Limoia/git/lib/gnutls-2.8.5/lib/build-aux/install-sh -c -d sys
+	/Users/michael/src/git/lib/gnutls-2.8.5/lib/build-aux/install-sh -c -d sys
 	{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
 	  sed -e 's|@''INCLUDE_NEXT''@|$(INCLUDE_NEXT)|g' \
 	      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
@@ -1510,7 +1510,7 @@ sys/socket.h: sys_socket.in.h
 # We need the following in order to create <sys/stat.h> when the system
 # has one that is incomplete.
 sys/stat.h: sys_stat.in.h
-	/Users/michael/Documents/Source/Limoia/git/lib/gnutls-2.8.5/lib/build-aux/install-sh -c -d sys
+	/Users/michael/src/git/lib/gnutls-2.8.5/lib/build-aux/install-sh -c -d sys
 	rm -f $@-t $@
 	{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
 	  sed -e 's|@''INCLUDE_NEXT''@|$(INCLUDE_NEXT)|g' \

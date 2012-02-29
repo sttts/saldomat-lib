@@ -27,7 +27,7 @@
 
 
 
-VPATH = /Users/michael/Documents/Source/Limoia/git/lib/gettext-0.17/gettext-runtime/gnulib-lib
+VPATH = /Users/michael/src/git/lib/gettext-0.17/gettext-runtime/gnulib-lib
 pkgdatadir = $(datadir)/gettext-runtime
 pkglibdir = $(libdir)/gettext-runtime
 pkgincludedir = $(includedir)/gettext-runtime
@@ -43,8 +43,8 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-build_triplet = i386-apple-darwin11.1.0
-host_triplet = i386-apple-darwin11.1.0
+build_triplet = i386-apple-darwin11.3.0
+host_triplet = i386-apple-darwin11.3.0
 subdir = gnulib-lib
 DIST_COMMON = $(noinst_HEADERS) $(srcdir)/Makefile.am \
 	$(srcdir)/Makefile.in
@@ -154,15 +154,15 @@ HEADERS = $(noinst_HEADERS)
 ETAGS = etags
 CTAGS = ctags
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /Users/michael/Documents/Source/Limoia/git/lib/gettext-0.17/build-aux/missing --run aclocal-1.10
+ACLOCAL = ${SHELL} /Users/michael/src/git/lib/gettext-0.17/build-aux/missing --run aclocal-1.10
 ALLOCA = 
 ALLOCA_H = alloca.h
-AMTAR = ${SHELL} /Users/michael/Documents/Source/Limoia/git/lib/gettext-0.17/build-aux/missing --run tar
+AMTAR = ${SHELL} /Users/michael/src/git/lib/gettext-0.17/build-aux/missing --run tar
 AR = ar
 AS = as
-AUTOCONF = ${SHELL} /Users/michael/Documents/Source/Limoia/git/lib/gettext-0.17/build-aux/missing --run autoconf
-AUTOHEADER = ${SHELL} /Users/michael/Documents/Source/Limoia/git/lib/gettext-0.17/build-aux/missing --run autoheader
-AUTOMAKE = ${SHELL} /Users/michael/Documents/Source/Limoia/git/lib/gettext-0.17/build-aux/missing --run automake-1.10
+AUTOCONF = ${SHELL} /Users/michael/src/git/lib/gettext-0.17/build-aux/missing --run autoconf
+AUTOHEADER = ${SHELL} /Users/michael/src/git/lib/gettext-0.17/build-aux/missing --run autoheader
+AUTOMAKE = ${SHELL} /Users/michael/src/git/lib/gettext-0.17/build-aux/missing --run automake-1.10
 AWK = awk
 BITSIZEOF_PTRDIFF_T = 32
 BITSIZEOF_SIG_ATOMIC_T = 32
@@ -175,13 +175,13 @@ BUILD_INCLUDED_LIBINTL = yes
 CATOBJEXT = .gmo
 CC = gcc
 CCDEPMODE = depmode=none
-CFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/include/ -mmacosx-version-min=10.5
+CFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-5.0.14/include/ -mmacosx-version-min=10.5
 CFLAG_VISIBILITY = -fvisibility=hidden
 CLASSPATH = 
 CLASSPATH_SEPARATOR = :
 CONF_JAVAC = javac -target 1.1 -source 1.3
 CPP = gcc -E
-CPPFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/include/ -mmacosx-version-min=10.5 -I/Developer_3/SDKs/MacOSX10.5.sdk/usr/include
+CPPFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-5.0.14/include/ -mmacosx-version-min=10.5 -I/Developer_3/SDKs/MacOSX10.5.sdk/usr/include
 CROSS_COMPILING = no
 CSHARPCOMPFLAGS = -O -g
 CSHARP_CHOICE = any
@@ -322,7 +322,7 @@ ICONV_H =
 INCLUDE_NEXT = include_next
 INSTALL = /usr/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
-INSTALL_PROGRAM = /Users/michael/Documents/Source/Limoia/git/lib/gettext-0.17/gettext-runtime/../build-aux/install-reloc
+INSTALL_PROGRAM = /Users/michael/src/git/lib/gettext-0.17/gettext-runtime/../build-aux/install-reloc
 INSTALL_PROGRAM_ENV = RELOC_LIBRARY_PATH_VAR="DYLD_LIBRARY_PATH" RELOC_LIBRARY_PATH_VALUE="$(RELOCATABLE_LIBRARY_PATH)" RELOC_PREFIX="$(prefix)" RELOC_COMPILE_COMMAND="$(CC) $(CPPFLAGS) $(CFLAGS) $(LDFLAGS)" RELOC_SRCDIR="$(RELOCATABLE_SRC_DIR)" RELOC_BUILDDIR="$(RELOCATABLE_BUILD_DIR)" RELOC_CONFIG_H_DIR="$(RELOCATABLE_CONFIG_H_DIR)" RELOC_EXEEXT="$(EXEEXT)" RELOC_INSTALL_PROG="${INSTALL}"
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
@@ -334,7 +334,7 @@ INTL_LIBTOOL_SUFFIX_PREFIX = l
 INTL_MACOSX_LIBS = -Wl,-framework -Wl,CoreFoundation
 JAR = jar
 JAVA_CHOICE = no
-LDFLAGS = -arch i386 -L/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/lib -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
+LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-debug-5.0.14/lib -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
 LIBGRT_LIBDEPS =  /Developer_3/SDKs/MacOSX10.5.sdk/usr/lib//libiconv.dylib
 LIBGRT_LTLIBDEPS =  -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ -liconv
 LIBICONV = /Developer_3/SDKs/MacOSX10.5.sdk/usr/lib//libiconv.dylib
@@ -355,8 +355,8 @@ LTLIBMULTITHREAD = -lpthread
 LTLIBOBJS = 
 LTLIBPTH = 
 LTLIBTHREAD = 
-MAKEINFO = ${SHELL} /Users/michael/Documents/Source/Limoia/git/lib/gettext-0.17/build-aux/missing --run makeinfo
-MKDIR_P = /Users/michael/Documents/Source/Limoia/git/lib/gettext-0.17/gettext-runtime/../build-aux/install-sh -c -d
+MAKEINFO = ${SHELL} /Users/michael/src/git/lib/gettext-0.17/build-aux/missing --run makeinfo
+MKDIR_P = /Users/michael/src/git/lib/gettext-0.17/gettext-runtime/../build-aux/install-sh -c -d
 MSGFMT = :
 MSGFMT_015 = :
 MSGMERGE = :
@@ -422,10 +422,10 @@ XGETTEXT_015 = :
 XGETTEXT_EXTRA_OPTIONS =  --flag=error:3:c-format --flag=error_at_line:5:c-format
 YACC = bison -y
 YFLAGS = 
-abs_builddir = /Users/michael/Documents/Source/Limoia/git/lib/tmp-debug/gettext-0.17/gnulib-lib
-abs_srcdir = /Users/michael/Documents/Source/Limoia/git/lib/gettext-0.17/gettext-runtime/gnulib-lib
-abs_top_builddir = /Users/michael/Documents/Source/Limoia/git/lib/tmp-debug/gettext-0.17
-abs_top_srcdir = /Users/michael/Documents/Source/Limoia/git/lib/gettext-0.17/gettext-runtime
+abs_builddir = /Users/michael/src/git/lib/tmp-debug/gettext-0.17/gnulib-lib
+abs_srcdir = /Users/michael/src/git/lib/gettext-0.17/gettext-runtime/gnulib-lib
+abs_top_builddir = /Users/michael/src/git/lib/tmp-debug/gettext-0.17
+abs_top_srcdir = /Users/michael/src/git/lib/gettext-0.17/gettext-runtime
 ac_ct_CC = gcc
 ac_ct_CXX = g++
 ac_ct_F77 = 
@@ -435,10 +435,10 @@ am__quote =
 am__tar = ${AMTAR} chof - "$$tardir"
 am__untar = ${AMTAR} xf -
 bindir = ${exec_prefix}/bin
-build = i386-apple-darwin11.1.0
+build = i386-apple-darwin11.3.0
 build_alias = 
 build_cpu = i386
-build_os = darwin11.1.0
+build_os = darwin11.3.0
 build_vendor = apple
 builddir = .
 datadir = ${datarootdir}
@@ -448,34 +448,34 @@ dvidir = ${docdir}
 exec_prefix = ${prefix}
 gl_LIBOBJS =  canonicalize-lgpl.o error.o getopt.o getopt1.o progreloc.o relocatable.o strnlen.o wcwidth.o
 gl_LTLIBOBJS =  canonicalize-lgpl.lo error.lo getopt.lo getopt1.lo progreloc.lo relocatable.lo strnlen.lo wcwidth.lo
-host = i386-apple-darwin11.1.0
+host = i386-apple-darwin11.3.0
 host_alias = 
 host_cpu = i386
-host_os = darwin11.1.0
+host_os = darwin11.3.0
 host_vendor = apple
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = $(SHELL) /Users/michael/Documents/Source/Limoia/git/lib/gettext-0.17/build-aux/install-sh
+install_sh = $(SHELL) /Users/michael/src/git/lib/gettext-0.17/build-aux/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
 localstatedir = ${prefix}/var
 mandir = ${datarootdir}/man
-mkdir_p = /Users/michael/Documents/Source/Limoia/git/lib/gettext-0.17/gettext-runtime/../build-aux/install-sh -c -d
+mkdir_p = /Users/michael/src/git/lib/gettext-0.17/gettext-runtime/../build-aux/install-sh -c -d
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14
+prefix = /Users/michael/src/git/lib/static-build-debug-5.0.14
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
-srcdir = /Users/michael/Documents/Source/Limoia/git/lib/gettext-0.17/gettext-runtime/gnulib-lib
+srcdir = /Users/michael/src/git/lib/gettext-0.17/gettext-runtime/gnulib-lib
 subdirs =  libasprintf
 sysconfdir = ${prefix}/etc
 target_alias = 
 top_builddir = ..
-top_srcdir = /Users/michael/Documents/Source/Limoia/git/lib/gettext-0.17/gettext-runtime
+top_srcdir = /Users/michael/src/git/lib/gettext-0.17/gettext-runtime
 AUTOMAKE_OPTIONS = 1.5 gnits subdir-objects no-dependencies
 noinst_HEADERS = 
 noinst_LIBRARIES = libgrt.a

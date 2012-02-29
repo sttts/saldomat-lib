@@ -754,14 +754,14 @@ s,@INSTALL_STRIP_PROGRAM@,|#_!!_#|${SHELL} $(install_sh) -c -s,g
 s,@AWK@,|#_!!_#|awk,g
 s,@SET_MAKE@,|#_!!_#|,g
 s,@am__leading_dot@,|#_!!_#|.,g
-s,@build@,|#_!!_#|i386-apple-darwin11.0.0,g
+s,@build@,|#_!!_#|i386-apple-darwin11.3.0,g
 s,@build_cpu@,|#_!!_#|i386,g
 s,@build_vendor@,|#_!!_#|apple,g
-s,@build_os@,|#_!!_#|darwin11.0.0,g
-s,@host@,|#_!!_#|i386-apple-darwin11.0.0,g
+s,@build_os@,|#_!!_#|darwin11.3.0,g
+s,@host@,|#_!!_#|i386-apple-darwin11.3.0,g
 s,@host_cpu@,|#_!!_#|i386,g
 s,@host_vendor@,|#_!!_#|apple,g
-s,@host_os@,|#_!!_#|darwin11.0.0,g
+s,@host_os@,|#_!!_#|darwin11.3.0,g
 s,@CC@,|#_!!_#|gcc,g
 s,@CFLAGS@,|#_!!_#|-O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.14/include/ -mmacosx-version-min=10.5 -Wall  -D_REENTRANT,g
 s,@LDFLAGS@,|#_!!_#|-arch i386 -L/Users/michael/src/git/lib/static-build-i386-5.0.14/lib -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5,g

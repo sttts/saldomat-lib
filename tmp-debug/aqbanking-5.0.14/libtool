@@ -63,13 +63,13 @@ ECHO="printf %s\\n"
 
 # The host system.
 host_alias=
-host=i386-apple-darwin11.1.0
-host_os=darwin11.1.0
+host=i386-apple-darwin11.3.0
+host_os=darwin11.3.0
 
 # The build system.
 build_alias=
-build=i386-apple-darwin11.1.0
-build_os=darwin11.1.0
+build=i386-apple-darwin11.3.0
+build_os=darwin11.3.0
 
 # A sed program that does not truncate output.
 SED="/usr/bin/sed"
@@ -138,7 +138,7 @@ lock_old_archive_extraction=yes
 LTCC="gcc"
 
 # LTCC compiler flags.
-LTCFLAGS="-O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/include/ -mmacosx-version-min=10.5 -g -Wall"
+LTCFLAGS="-O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-5.0.14/include/ -mmacosx-version-min=10.5 -g -Wall"
 
 # Take the output of nm and produce a listing of raw symbols and C names.
 global_symbol_pipe="sed -n -e 's/^.*[	 ]\\([BCDEGRST][BCDEGRST]*\\)[	 ][	 ]*_\\([_A-Za-z][_A-Za-z0-9]*\\)\$/\\1 _\\2 \\2/p'"

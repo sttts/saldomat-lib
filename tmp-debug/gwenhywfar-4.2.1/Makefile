@@ -15,7 +15,7 @@
 
 
 
-VPATH = /Users/michael/Documents/Source/Limoia/git/lib/gwenhywfar
+VPATH = /Users/michael/src/git/lib/gwenhywfar
 pkgdatadir = $(datadir)/gwenhywfar
 pkglibdir = $(libdir)/gwenhywfar
 pkgincludedir = $(includedir)/gwenhywfar
@@ -31,8 +31,8 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-build_triplet = i386-apple-darwin11.1.0
-host_triplet = i386-apple-darwin11.1.0
+build_triplet = i386-apple-darwin11.3.0
+host_triplet = i386-apple-darwin11.3.0
 #am__append_1 = $(I18NCATALOGS)
 subdir = .
 DIST_COMMON = README $(am__configure_deps) $(dist_M4_DATA) \
@@ -100,24 +100,24 @@ DIST_ARCHIVES = $(distdir).tar.gz
 GZIP_ENV = --best
 distuninstallcheck_listfiles = find . -type f -print
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ${SHELL} /Users/michael/Documents/Source/Limoia/git/lib/gwenhywfar/missing --run aclocal-1.10
-AMTAR = ${SHELL} /Users/michael/Documents/Source/Limoia/git/lib/gwenhywfar/missing --run tar
+ACLOCAL = ${SHELL} /Users/michael/src/git/lib/gwenhywfar/missing --run aclocal-1.10
+AMTAR = ${SHELL} /Users/michael/src/git/lib/gwenhywfar/missing --run tar
 APPKIT_FRAMEWORK = -framework AppKit
 AR = ar
 AS = as
-AUTOCONF = ${SHELL} /Users/michael/Documents/Source/Limoia/git/lib/gwenhywfar/missing --run autoconf
-AUTOHEADER = ${SHELL} /Users/michael/Documents/Source/Limoia/git/lib/gwenhywfar/missing --run autoheader
-AUTOMAKE = ${SHELL} /Users/michael/Documents/Source/Limoia/git/lib/gwenhywfar/missing --run automake-1.10
+AUTOCONF = ${SHELL} /Users/michael/src/git/lib/gwenhywfar/missing --run autoconf
+AUTOHEADER = ${SHELL} /Users/michael/src/git/lib/gwenhywfar/missing --run autoheader
+AUTOMAKE = ${SHELL} /Users/michael/src/git/lib/gwenhywfar/missing --run automake-1.10
 AWK = awk
 BINRELOC_CFLAGS = -DENABLE_BINRELOC
 BINRELOC_LIBS = -lpthread
 CC = gcc
 CCDEPMODE = depmode=none
-CFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/include/ -mmacosx-version-min=10.5 -g -Wall -g -Wall
+CFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-5.0.14/include/ -mmacosx-version-min=10.5 -g -Wall -g -Wall
 COCOA_FRAMEWORK = -framework Cocoa
 COREDATA_FRAMEWORK = -framework CoreData
 CPP = gcc -E
-CPPFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/include/ -mmacosx-version-min=10.5 -I/usr/include
+CPPFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-5.0.14/include/ -mmacosx-version-min=10.5 -I/usr/include
 CXX = g++
 CXXCPP = g++ -E
 CXXDEPMODE = depmode=none
@@ -138,9 +138,9 @@ EGREP = /usr/bin/grep -E
 EXEEXT = 
 FGREP = /usr/bin/grep -F
 FOUNDATION_FRAMEWORK = -framework CoreFoundation
-GPG_ERROR_CFLAGS = -I/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/include
-GPG_ERROR_CONFIG = /Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/bin/gpg-error-config
-GPG_ERROR_LIBS = -L/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/lib -lgpg-error
+GPG_ERROR_CFLAGS = -I/Users/michael/src/git/lib/static-build-debug-5.0.14/include
+GPG_ERROR_CONFIG = /Users/michael/src/git/lib/static-build-debug-5.0.14/bin/gpg-error-config
+GPG_ERROR_LIBS = -L/Users/michael/src/git/lib/static-build-debug-5.0.14/lib -lgpg-error
 GREP = /usr/bin/grep
 GTK2_CFLAGS = 
 GTK2_LIBS = 
@@ -174,11 +174,11 @@ INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 LD = /usr/llvm-gcc-4.2/libexec/gcc/i686-apple-darwin11/4.2.1/ld
-LDFLAGS = -framework CoreFoundation -arch i386 -L/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/lib -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5 -lcharset -liconv -lintl -lgmp -lgpg-error -lgcrypt -lgnutls -lgnutls-extra -lgnutls-openssl -g -g
-LIBGCRYPT_CFLAGS = -I/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/include
-LIBGCRYPT_CONFIG = /Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/bin/libgcrypt-config
-LIBGCRYPT_LIBS = -L/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/lib -lgcrypt -lgpg-error
-LIBGNUTLS_CFLAGS = -H/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/include/gnutls
+LDFLAGS = -framework CoreFoundation -arch i386 -L/Users/michael/src/git/lib/static-build-debug-5.0.14/lib -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5 -lcharset -liconv -lintl -lgmp -lgpg-error -lgcrypt -lgnutls -lgnutls-extra -lgnutls-openssl -g -g
+LIBGCRYPT_CFLAGS = -I/Users/michael/src/git/lib/static-build-debug-5.0.14/include
+LIBGCRYPT_CONFIG = /Users/michael/src/git/lib/static-build-debug-5.0.14/bin/libgcrypt-config
+LIBGCRYPT_LIBS = -L/Users/michael/src/git/lib/static-build-debug-5.0.14/lib -lgcrypt -lgpg-error
+LIBGNUTLS_CFLAGS = -H/Users/michael/src/git/lib/static-build-debug-5.0.14/include/gnutls
 LIBGNUTLS_LIBS = -lz -lintl -lgnutls -lgnutls-openssl
 LIBICONV = 
 LIBOBJS = 
@@ -188,10 +188,10 @@ LIPO = lipo
 LN_S = ln -s
 LTLIBICONV = 
 LTLIBOBJS = 
-MAKEINFO = ${SHELL} /Users/michael/Documents/Source/Limoia/git/lib/gwenhywfar/missing --run makeinfo
+MAKEINFO = ${SHELL} /Users/michael/src/git/lib/gwenhywfar/missing --run makeinfo
 MAKE_DLL_TARGET = 
 MAKE_I18N_FILES = no
-MKDIR_P = /Users/michael/Documents/Source/Limoia/git/lib/gwenhywfar/install-sh -c -d
+MKDIR_P = /Users/michael/src/git/lib/gwenhywfar/install-sh -c -d
 MSGFMT = missing
 NM = /usr/bin/nm
 NMEDIT = nmedit
@@ -212,7 +212,7 @@ PACKAGE_STRING =
 PACKAGE_TARNAME = 
 PACKAGE_VERSION = 
 PATH_SEPARATOR = :
-PKG_CONFIG = /Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/bin/pkg-config
+PKG_CONFIG = /Users/michael/src/git/lib/static-build-debug-5.0.14/bin/pkg-config
 PROFILING_CFLAGS = 
 PROFILING_LDFLAGS = 
 PROG_LIBRARIES =  -L/usr/lib -lssl -lcrypto 
@@ -231,10 +231,10 @@ WEBKIT_FRAMEWORK = -framework WebKit
 WITH_ICONV = 1
 XGETTEXT = missing
 YES = 
-abs_builddir = /Users/michael/Documents/Source/Limoia/git/lib/tmp-debug/gwenhywfar-4.2.1
-abs_srcdir = /Users/michael/Documents/Source/Limoia/git/lib/gwenhywfar
-abs_top_builddir = /Users/michael/Documents/Source/Limoia/git/lib/tmp-debug/gwenhywfar-4.2.1
-abs_top_srcdir = /Users/michael/Documents/Source/Limoia/git/lib/gwenhywfar
+abs_builddir = /Users/michael/src/git/lib/tmp-debug/gwenhywfar-4.2.1
+abs_srcdir = /Users/michael/src/git/lib/gwenhywfar
+abs_top_builddir = /Users/michael/src/git/lib/tmp-debug/gwenhywfar-4.2.1
+abs_top_srcdir = /Users/michael/src/git/lib/gwenhywfar
 ac_ct_CC = gcc
 ac_ct_CXX = g++
 ac_ct_DUMPBIN = 
@@ -250,10 +250,10 @@ aq_distrib_name =
 aq_distrib_tag = 
 aq_distrib_version = 
 bindir = ${exec_prefix}/bin
-build = i386-apple-darwin11.1.0
+build = i386-apple-darwin11.3.0
 build_alias = 
 build_cpu = i386
-build_os = darwin11.1.0
+build_os = darwin11.3.0
 build_vendor = apple
 builddir = .
 datadir = ${datarootdir}
@@ -293,25 +293,25 @@ gwenhywfar_plugins_dbio_libs =  csv/libdbio_csv.la olddb/libdbio_olddb.la xmldb/
 gwenhywfar_symlinkdir = $(top_builddir)/gwenhywfar4
 gwenhywfar_sys_is_windows = 0
 gwenhywfar_sysdata_searchdir = share
-host = i386-apple-darwin11.1.0
+host = i386-apple-darwin11.3.0
 host_alias = 
 host_cpu = i386
-host_os = darwin11.1.0
+host_os = darwin11.3.0
 host_vendor = apple
 htmldir = ${docdir}
 i18n_libs = 
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = $(SHELL) /Users/michael/Documents/Source/Limoia/git/lib/gwenhywfar/install-sh
+install_sh = $(SHELL) /Users/michael/src/git/lib/gwenhywfar/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
 localstatedir = ${prefix}/var
 mandir = ${datarootdir}/man
-mkdir_p = /Users/michael/Documents/Source/Limoia/git/lib/gwenhywfar/install-sh -c -d
+mkdir_p = /Users/michael/src/git/lib/gwenhywfar/install-sh -c -d
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14
+prefix = /Users/michael/src/git/lib/static-build-debug-5.0.14
 program_transform_name = s,x,x,
 psdir = ${docdir}
 qt4_includes = 
@@ -321,7 +321,7 @@ qt4_uic =
 rt_libs = 
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
-srcdir = /Users/michael/Documents/Source/Limoia/git/lib/gwenhywfar
+srcdir = /Users/michael/src/git/lib/gwenhywfar
 ssl_available = yes
 ssl_includes = 
 ssl_lib = -lssl -lcrypto
@@ -329,7 +329,7 @@ ssl_libraries = -L/usr/lib
 sysconfdir = ${prefix}/etc
 target_alias = 
 top_builddir = .
-top_srcdir = /Users/michael/Documents/Source/Limoia/git/lib/gwenhywfar
+top_srcdir = /Users/michael/src/git/lib/gwenhywfar
 visibility_cflags = -fvisibility=hidden
 with_gui_fox16 = 
 with_gui_gtk2 = 
@@ -934,7 +934,7 @@ $(gwenhywfar_symlinkdir)/gwenhywfar/system.h: $(top_builddir)/src/os/$(OS_TYPE)/
 
 gwenhywfar-config: gwenhywfar-config.in
 	echo "#! /bin/sh" >gwenhywfar-config && \
-	echo 'dir="/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14"' >>gwenhywfar-config && \
+	echo 'dir="/Users/michael/src/git/lib/static-build-debug-5.0.14"' >>gwenhywfar-config && \
 	cat gwenhywfar-config.in >>gwenhywfar-config && \
 	chmod a+x gwenhywfar-config
 

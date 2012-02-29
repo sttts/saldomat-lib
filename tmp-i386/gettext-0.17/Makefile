@@ -30,8 +30,8 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-build_triplet = i386-apple-darwin11.0.0
-host_triplet = i386-apple-darwin11.0.0
+build_triplet = i386-apple-darwin11.3.0
+host_triplet = i386-apple-darwin11.3.0
 subdir = .
 DIST_COMMON = README $(am__configure_deps) \
 	$(srcdir)/../build-aux/compile \
@@ -197,7 +197,7 @@ CPPFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/
 CROSS_COMPILING = no
 CSHARPCOMPFLAGS = -O -g
 CSHARP_CHOICE = any
-CXX = :
+CXX = g++
 CXXCPP = g++ -E
 CXXDEPMODE = depmode=none
 CXXFLAGS = -g -O2
@@ -447,10 +447,10 @@ am__quote =
 am__tar = ${AMTAR} chof - "$$tardir"
 am__untar = ${AMTAR} xf -
 bindir = ${exec_prefix}/bin
-build = i386-apple-darwin11.0.0
+build = i386-apple-darwin11.3.0
 build_alias = 
 build_cpu = i386
-build_os = darwin11.0.0
+build_os = darwin11.3.0
 build_vendor = apple
 builddir = .
 datadir = ${datarootdir}
@@ -460,10 +460,10 @@ dvidir = ${docdir}
 exec_prefix = ${prefix}
 gl_LIBOBJS =  canonicalize-lgpl.o error.o getopt.o getopt1.o progreloc.o relocatable.o strnlen.o wcwidth.o
 gl_LTLIBOBJS =  canonicalize-lgpl.lo error.lo getopt.lo getopt1.lo progreloc.lo relocatable.lo strnlen.lo wcwidth.lo
-host = i386-apple-darwin11.0.0
+host = i386-apple-darwin11.3.0
 host_alias = 
 host_cpu = i386
-host_os = darwin11.0.0
+host_os = darwin11.3.0
 host_vendor = apple
 htmldir = ${docdir}
 includedir = ${prefix}/include
@@ -490,11 +490,11 @@ top_builddir = .
 top_srcdir = /Users/michael/src/git/lib/gettext-0.17/gettext-runtime
 AUTOMAKE_OPTIONS = 1.5 gnu no-dependencies
 ACLOCAL_AMFLAGS = -I m4 -I ../autoconf-lib-link/m4 -I ../m4 -I gnulib-m4
-SUBDIR_libasprintf = 
+#SUBDIR_libasprintf = 
 
 # The list of subdirectories depends on whether --disable-libasprintf was
 # specified.
-#SUBDIR_libasprintf = libasprintf
+SUBDIR_libasprintf = libasprintf
 SUBDIRS = doc intl intl-java intl-csharp gnulib-lib $(SUBDIR_libasprintf) src po man m4 tests
 
 # Allow users to use "gnulib-tool --update".

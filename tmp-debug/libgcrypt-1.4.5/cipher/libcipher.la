@@ -14,7 +14,7 @@ library_names=''
 old_library='libcipher.a'
 
 # Libraries that this one depends upon.
-dependency_libs=' -L/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/lib -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/'
+dependency_libs=' -L/Users/michael/src/git/lib/static-build-debug-5.0.14/lib -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/'
 
 # Version information for libcipher.
 current=

@@ -18,11 +18,11 @@ PACKAGE_BUGREPORT = bug-gnutls@gnu.org
 SHELL = /bin/sh
 
 
-srcdir = /Users/michael/Documents/Source/Limoia/git/lib/gnutls-2.8.5/lib/po
-top_srcdir = /Users/michael/Documents/Source/Limoia/git/lib/gnutls-2.8.5/lib
-VPATH = /Users/michael/Documents/Source/Limoia/git/lib/gnutls-2.8.5/lib/po
+srcdir = /Users/michael/src/git/lib/gnutls-2.8.5/lib/po
+top_srcdir = /Users/michael/src/git/lib/gnutls-2.8.5/lib
+VPATH = /Users/michael/src/git/lib/gnutls-2.8.5/lib/po
 
-prefix = /Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14
+prefix = /Users/michael/src/git/lib/static-build-debug-5.0.14
 exec_prefix = ${prefix}
 datarootdir = ${prefix}/share
 datadir = ${datarootdir}
@@ -35,14 +35,14 @@ INSTALL_DATA = ${INSTALL} -m 644
 # We use $(mkdir_p).
 # In automake <= 1.9.x, $(mkdir_p) is defined either as "mkdir -p --" or as
 # "$(mkinstalldirs)" or as "$(install_sh) -d". For these automake versions,
-# ${SHELL} /Users/michael/Documents/Source/Limoia/git/lib/gnutls-2.8.5/lib/build-aux/install-sh does not start with $(SHELL), so we add it.
-# In automake >= 1.10, /Users/michael/Documents/Source/Limoia/git/lib/gnutls-2.8.5/lib/build-aux/install-sh -c -d is derived from ${MKDIR_P}, which is defined
+# ${SHELL} /Users/michael/src/git/lib/gnutls-2.8.5/lib/build-aux/install-sh does not start with $(SHELL), so we add it.
+# In automake >= 1.10, /Users/michael/src/git/lib/gnutls-2.8.5/lib/build-aux/install-sh -c -d is derived from ${MKDIR_P}, which is defined
 # either as "/path/to/mkdir -p" or ".../install-sh -c -d". For these automake
 # versions, $(mkinstalldirs) and $(install_sh) are unused.
-mkinstalldirs = $(SHELL) ${SHELL} /Users/michael/Documents/Source/Limoia/git/lib/gnutls-2.8.5/lib/build-aux/install-sh -d
-install_sh = $(SHELL) ${SHELL} /Users/michael/Documents/Source/Limoia/git/lib/gnutls-2.8.5/lib/build-aux/install-sh
-MKDIR_P = /Users/michael/Documents/Source/Limoia/git/lib/gnutls-2.8.5/lib/build-aux/install-sh -c -d
-mkdir_p = /Users/michael/Documents/Source/Limoia/git/lib/gnutls-2.8.5/lib/build-aux/install-sh -c -d
+mkinstalldirs = $(SHELL) ${SHELL} /Users/michael/src/git/lib/gnutls-2.8.5/lib/build-aux/install-sh -d
+install_sh = $(SHELL) ${SHELL} /Users/michael/src/git/lib/gnutls-2.8.5/lib/build-aux/install-sh
+MKDIR_P = /Users/michael/src/git/lib/gnutls-2.8.5/lib/build-aux/install-sh -c -d
+mkdir_p = /Users/michael/src/git/lib/gnutls-2.8.5/lib/build-aux/install-sh -c -d
 
 GMSGFMT_ = :
 GMSGFMT_no = :
@@ -73,10 +73,10 @@ $(POFILES) $(GMOFILES) \
 $(DISTFILES.extra1) $(DISTFILES.extra2) $(DISTFILES.extra3)
 
 POTFILES = \
-     /Users/michael/Documents/Source/Limoia/git/lib/gnutls-2.8.5/lib/gnutls_errors.c \
-     /Users/michael/Documents/Source/Limoia/git/lib/gnutls-2.8.5/lib/gnutls_alert.c \
-     /Users/michael/Documents/Source/Limoia/git/lib/gnutls-2.8.5/lib/x509/output.c \
-     /Users/michael/Documents/Source/Limoia/git/lib/gnutls-2.8.5/lib/openpgp/output.c
+     /Users/michael/src/git/lib/gnutls-2.8.5/lib/gnutls_errors.c \
+     /Users/michael/src/git/lib/gnutls-2.8.5/lib/gnutls_alert.c \
+     /Users/michael/src/git/lib/gnutls-2.8.5/lib/x509/output.c \
+     /Users/michael/src/git/lib/gnutls-2.8.5/lib/openpgp/output.c
 
 CATALOGS =  en@boldquot.gmo en@quot.gmo cs.gmo de.gmo fr.gmo ms.gmo nl.gmo pl.gmo sv.gmo vi.gmo
 

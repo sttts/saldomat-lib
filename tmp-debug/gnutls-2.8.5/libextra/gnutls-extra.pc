@@ -10,7 +10,7 @@
 # WITHOUT ANY WARRANTY, to the extent permitted by law; without even the
 # implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-prefix=/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14
+prefix=/Users/michael/src/git/lib/static-build-debug-5.0.14
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

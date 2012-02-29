@@ -34,7 +34,7 @@
 
 # Process this file with automake to produce Makefile.in
 
-VPATH = /Users/michael/Documents/Source/Limoia/git/lib/libgcrypt-1.4.5/random
+VPATH = /Users/michael/src/git/lib/libgcrypt-1.4.5/random
 pkgdatadir = $(datadir)/libgcrypt
 pkglibdir = $(libdir)/libgcrypt
 pkgincludedir = $(includedir)/libgcrypt
@@ -50,7 +50,7 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-build_triplet = i386-apple-darwin11.1.0
+build_triplet = i386-apple-darwin11.3.0
 host_triplet = powerpc-unknown-none
 #am__append_1 = random-daemon.c 
 subdir = random
@@ -91,13 +91,13 @@ DIST_SOURCES = $(am__librandom_la_SOURCES_DIST) \
 ETAGS = etags
 CTAGS = ctags
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /Users/michael/Documents/Source/Limoia/git/lib/libgcrypt-1.4.5/missing --run aclocal-1.10
-AMTAR = ${SHELL} /Users/michael/Documents/Source/Limoia/git/lib/libgcrypt-1.4.5/missing --run tar
+ACLOCAL = ${SHELL} /Users/michael/src/git/lib/libgcrypt-1.4.5/missing --run aclocal-1.10
+AMTAR = ${SHELL} /Users/michael/src/git/lib/libgcrypt-1.4.5/missing --run tar
 AR = ar
 AS = as
-AUTOCONF = ${SHELL} /Users/michael/Documents/Source/Limoia/git/lib/libgcrypt-1.4.5/missing --run autoconf
-AUTOHEADER = ${SHELL} /Users/michael/Documents/Source/Limoia/git/lib/libgcrypt-1.4.5/missing --run autoheader
-AUTOMAKE = ${SHELL} /Users/michael/Documents/Source/Limoia/git/lib/libgcrypt-1.4.5/missing --run automake-1.10
+AUTOCONF = ${SHELL} /Users/michael/src/git/lib/libgcrypt-1.4.5/missing --run autoconf
+AUTOHEADER = ${SHELL} /Users/michael/src/git/lib/libgcrypt-1.4.5/missing --run autoheader
+AUTOMAKE = ${SHELL} /Users/michael/src/git/lib/libgcrypt-1.4.5/missing --run automake-1.10
 AWK = awk
 BUILD_FILEVERSION = 
 BUILD_REVISION = 1417
@@ -105,11 +105,11 @@ BUILD_TIMESTAMP =
 CC = gcc
 CCAS = gcc
 CCASDEPMODE = depmode=none
-CCASFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/include/ -mmacosx-version-min=10.5
+CCASFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-5.0.14/include/ -mmacosx-version-min=10.5
 CCDEPMODE = depmode=none
-CFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/include/ -mmacosx-version-min=10.5 -Wall
+CFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-5.0.14/include/ -mmacosx-version-min=10.5 -Wall
 CPP = gcc -E
-CPPFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/include/ -mmacosx-version-min=10.5
+CPPFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-5.0.14/include/ -mmacosx-version-min=10.5
 CXX = g++
 CXXCPP = g++ -E
 CXXDEPMODE = depmode=none
@@ -132,16 +132,16 @@ GCRYPT_CIPHERS =  arcfour.lo blowfish.lo cast5.lo des.lo rijndael.lo twofish.lo 
 GCRYPT_DIGESTS =  crc.lo md4.lo md5.lo sha256.lo sha512.lo tiger.lo whirlpool.lo rmd160.lo sha1.lo
 GCRYPT_PUBKEY_CIPHERS =  dsa.lo rsa.lo elgamal.lo ecc.lo
 GCRYPT_RANDOM =  rndlinux.lo
-GPG_ERROR_CFLAGS = -I/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/include
-GPG_ERROR_CONFIG = /Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/bin/gpg-error-config
-GPG_ERROR_LIBS = -L/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/lib -lgpg-error
+GPG_ERROR_CFLAGS = -I/Users/michael/src/git/lib/static-build-debug-5.0.14/include
+GPG_ERROR_CONFIG = /Users/michael/src/git/lib/static-build-debug-5.0.14/bin/gpg-error-config
+GPG_ERROR_LIBS = -L/Users/michael/src/git/lib/static-build-debug-5.0.14/lib -lgpg-error
 GREP = /usr/bin/grep
 INSTALL = /usr/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
-LDFLAGS = -arch i386 -L/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/lib -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
+LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-debug-5.0.14/lib -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
 LIBGCRYPT_CIPHERS = arcfour blowfish cast5 des aes twofish serpent rfc2268 seed camellia
 LIBGCRYPT_CONFIG_API_VERSION = 1
 LIBGCRYPT_CONFIG_CFLAGS = 
@@ -158,8 +158,8 @@ LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LN_S = ln -s
 LTLIBOBJS = 
 MAINT = #
-MAKEINFO = ${SHELL} /Users/michael/Documents/Source/Limoia/git/lib/libgcrypt-1.4.5/missing --run makeinfo
-MKDIR_P = /Users/michael/Documents/Source/Limoia/git/lib/libgcrypt-1.4.5/install-sh -c -d
+MAKEINFO = ${SHELL} /Users/michael/src/git/lib/libgcrypt-1.4.5/missing --run makeinfo
+MKDIR_P = /Users/michael/src/git/lib/libgcrypt-1.4.5/install-sh -c -d
 MPI_SFLAGS = 
 NOEXECSTACK_FLAGS = 
 OBJDUMP = objdump
@@ -182,10 +182,10 @@ SHELL = /bin/sh
 STRIP = strip
 SYS_SOCKET_H = 
 VERSION = 1.4.5
-abs_builddir = /Users/michael/Documents/Source/Limoia/git/lib/tmp-debug/libgcrypt-1.4.5/random
-abs_srcdir = /Users/michael/Documents/Source/Limoia/git/lib/libgcrypt-1.4.5/random
-abs_top_builddir = /Users/michael/Documents/Source/Limoia/git/lib/tmp-debug/libgcrypt-1.4.5
-abs_top_srcdir = /Users/michael/Documents/Source/Limoia/git/lib/libgcrypt-1.4.5
+abs_builddir = /Users/michael/src/git/lib/tmp-debug/libgcrypt-1.4.5/random
+abs_srcdir = /Users/michael/src/git/lib/libgcrypt-1.4.5/random
+abs_top_builddir = /Users/michael/src/git/lib/tmp-debug/libgcrypt-1.4.5
+abs_top_srcdir = /Users/michael/src/git/lib/libgcrypt-1.4.5
 ac_ct_CC = gcc
 ac_ct_CXX = g++
 ac_ct_F77 = 
@@ -195,10 +195,10 @@ am__quote =
 am__tar = ${AMTAR} chof - "$$tardir"
 am__untar = ${AMTAR} xf -
 bindir = ${exec_prefix}/bin
-build = i386-apple-darwin11.1.0
+build = i386-apple-darwin11.3.0
 build_alias = 
 build_cpu = i386
-build_os = darwin11.1.0
+build_os = darwin11.3.0
 build_vendor = apple
 builddir = .
 datadir = ${datarootdir}
@@ -214,26 +214,26 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = $(SHELL) /Users/michael/Documents/Source/Limoia/git/lib/libgcrypt-1.4.5/install-sh
+install_sh = $(SHELL) /Users/michael/src/git/lib/libgcrypt-1.4.5/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
 localstatedir = ${prefix}/var
 mandir = ${datarootdir}/man
-mkdir_p = /Users/michael/Documents/Source/Limoia/git/lib/libgcrypt-1.4.5/install-sh -c -d
+mkdir_p = /Users/michael/src/git/lib/libgcrypt-1.4.5/install-sh -c -d
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14
+prefix = /Users/michael/src/git/lib/static-build-debug-5.0.14
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
-srcdir = /Users/michael/Documents/Source/Limoia/git/lib/libgcrypt-1.4.5/random
+srcdir = /Users/michael/src/git/lib/libgcrypt-1.4.5/random
 sysconfdir = ${prefix}/etc
 target_alias = 
 top_build_prefix = ../
 top_builddir = ..
-top_srcdir = /Users/michael/Documents/Source/Limoia/git/lib/libgcrypt-1.4.5
+top_srcdir = /Users/michael/src/git/lib/libgcrypt-1.4.5
 
 # Need to include ../src in addition to top_srcdir because gcrypt.h is
 # a built header.

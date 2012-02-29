@@ -18,11 +18,11 @@ PACKAGE_BUGREPORT =
 SHELL = /bin/sh
 
 
-srcdir = /Users/michael/Documents/Source/Limoia/git/lib/gettext-0.17/gettext-runtime/po
-top_srcdir = /Users/michael/Documents/Source/Limoia/git/lib/gettext-0.17/gettext-runtime
-VPATH = /Users/michael/Documents/Source/Limoia/git/lib/gettext-0.17/gettext-runtime/po
+srcdir = /Users/michael/src/git/lib/gettext-0.17/gettext-runtime/po
+top_srcdir = /Users/michael/src/git/lib/gettext-0.17/gettext-runtime
+VPATH = /Users/michael/src/git/lib/gettext-0.17/gettext-runtime/po
 
-prefix = /Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14
+prefix = /Users/michael/src/git/lib/static-build-debug-5.0.14
 exec_prefix = ${prefix}
 datarootdir = ${prefix}/share
 datadir = ${datarootdir}
@@ -35,14 +35,14 @@ INSTALL_DATA = ${INSTALL} -m 644
 # We use $(mkdir_p).
 # In automake <= 1.9.x, $(mkdir_p) is defined either as "mkdir -p --" or as
 # "$(mkinstalldirs)" or as "$(install_sh) -d". For these automake versions,
-# $(SHELL) /Users/michael/Documents/Source/Limoia/git/lib/gettext-0.17/build-aux/install-sh does not start with $(SHELL), so we add it.
-# In automake >= 1.10, /Users/michael/Documents/Source/Limoia/git/lib/gettext-0.17/gettext-runtime/../build-aux/install-sh -c -d is derived from ${MKDIR_P}, which is defined
+# $(SHELL) /Users/michael/src/git/lib/gettext-0.17/build-aux/install-sh does not start with $(SHELL), so we add it.
+# In automake >= 1.10, /Users/michael/src/git/lib/gettext-0.17/gettext-runtime/../build-aux/install-sh -c -d is derived from ${MKDIR_P}, which is defined
 # either as "/path/to/mkdir -p" or ".../install-sh -c -d". For these automake
 # versions, $(mkinstalldirs) and $(install_sh) are unused.
-mkinstalldirs = $(SHELL) $(SHELL) /Users/michael/Documents/Source/Limoia/git/lib/gettext-0.17/build-aux/install-sh -d
-install_sh = $(SHELL) $(SHELL) /Users/michael/Documents/Source/Limoia/git/lib/gettext-0.17/build-aux/install-sh
-MKDIR_P = /Users/michael/Documents/Source/Limoia/git/lib/gettext-0.17/gettext-runtime/../build-aux/install-sh -c -d
-mkdir_p = /Users/michael/Documents/Source/Limoia/git/lib/gettext-0.17/gettext-runtime/../build-aux/install-sh -c -d
+mkinstalldirs = $(SHELL) $(SHELL) /Users/michael/src/git/lib/gettext-0.17/build-aux/install-sh -d
+install_sh = $(SHELL) $(SHELL) /Users/michael/src/git/lib/gettext-0.17/build-aux/install-sh
+MKDIR_P = /Users/michael/src/git/lib/gettext-0.17/gettext-runtime/../build-aux/install-sh -c -d
+mkdir_p = /Users/michael/src/git/lib/gettext-0.17/gettext-runtime/../build-aux/install-sh -c -d
 
 GMSGFMT_ = :
 GMSGFMT_no = :
@@ -73,13 +73,13 @@ $(POFILES) $(GMOFILES) \
 $(DISTFILES.extra1) $(DISTFILES.extra2) $(DISTFILES.extra3)
 
 POTFILES = \
-     /Users/michael/Documents/Source/Limoia/git/lib/gettext-0.17/gettext-runtime/gnulib-lib/closeout.c \
-     /Users/michael/Documents/Source/Limoia/git/lib/gettext-0.17/gettext-runtime/gnulib-lib/error.c \
-     /Users/michael/Documents/Source/Limoia/git/lib/gettext-0.17/gettext-runtime/gnulib-lib/getopt.c \
-     /Users/michael/Documents/Source/Limoia/git/lib/gettext-0.17/gettext-runtime/gnulib-lib/xmalloc.c \
-     /Users/michael/Documents/Source/Limoia/git/lib/gettext-0.17/gettext-runtime/src/envsubst.c \
-     /Users/michael/Documents/Source/Limoia/git/lib/gettext-0.17/gettext-runtime/src/gettext.c \
-     /Users/michael/Documents/Source/Limoia/git/lib/gettext-0.17/gettext-runtime/src/ngettext.c
+     /Users/michael/src/git/lib/gettext-0.17/gettext-runtime/gnulib-lib/closeout.c \
+     /Users/michael/src/git/lib/gettext-0.17/gettext-runtime/gnulib-lib/error.c \
+     /Users/michael/src/git/lib/gettext-0.17/gettext-runtime/gnulib-lib/getopt.c \
+     /Users/michael/src/git/lib/gettext-0.17/gettext-runtime/gnulib-lib/xmalloc.c \
+     /Users/michael/src/git/lib/gettext-0.17/gettext-runtime/src/envsubst.c \
+     /Users/michael/src/git/lib/gettext-0.17/gettext-runtime/src/gettext.c \
+     /Users/michael/src/git/lib/gettext-0.17/gettext-runtime/src/ngettext.c
 
 CATALOGS =  be.gmo ca.gmo cs.gmo da.gmo de.gmo el.gmo en@quot.gmo en@boldquot.gmo eo.gmo es.gmo et.gmo fi.gmo fr.gmo ga.gmo gl.gmo id.gmo it.gmo ja.gmo ko.gmo nb.gmo nl.gmo nn.gmo pl.gmo pt.gmo pt_BR.gmo ro.gmo ru.gmo sk.gmo sl.gmo sr.gmo sv.gmo tr.gmo uk.gmo vi.gmo zh_CN.gmo zh_HK.gmo zh_TW.gmo
 

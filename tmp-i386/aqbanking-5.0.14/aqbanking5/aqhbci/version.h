@@ -1,1 +1,1 @@
-/Users/michael/Documents/Source/Limoia/git/lib/tmp-i386/aqbanking-5.0.14/src/plugins/backends/aqhbci/plugin/version.h
+/Users/michael/src/git/lib/tmp-i386/aqbanking-5.0.14/src/plugins/backends/aqhbci/plugin/version.h

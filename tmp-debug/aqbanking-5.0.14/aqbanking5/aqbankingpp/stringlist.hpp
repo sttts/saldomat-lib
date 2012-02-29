@@ -1,1 +1,1 @@
-/Users/michael/Documents/Source/Limoia/git/lib/aqbanking/src/libs/aqbankingpp/stringlist.hpp
+/Users/michael/src/git/lib/aqbanking/src/libs/aqbankingpp/stringlist.hpp

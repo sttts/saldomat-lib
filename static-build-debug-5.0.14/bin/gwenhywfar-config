@@ -1,9 +1,9 @@
 #! /bin/sh
-dir="/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14"
+dir="/Users/michael/src/git/lib/static-build-debug-5.0.14"
 # $Id$
 # Author of this file: Martin Preuss<martin@libchipcard.de>
 
-prefix=/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14
+prefix=/Users/michael/src/git/lib/static-build-debug-5.0.14
 exec_prefix=${prefix}
 includedir=${prefix}/include
 bindir=${exec_prefix}/bin

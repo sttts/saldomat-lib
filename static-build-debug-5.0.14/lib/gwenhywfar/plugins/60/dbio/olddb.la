@@ -17,7 +17,7 @@ old_library='olddb.a'
 inherited_linker_flags='  -framework CoreFoundation'
 
 # Libraries that this one depends upon.
-dependency_libs=' -L/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/lib -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ /Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/lib/libgwenhywfar.la -L/usr/lib /Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/lib/libgnutls.la -lcharset -liconv -lintl /Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/lib/libgcrypt.la /Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/lib/libgpg-error.la -lz'
+dependency_libs=' -L/Users/michael/src/git/lib/static-build-debug-5.0.14/lib -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ /Users/michael/src/git/lib/static-build-debug-5.0.14/lib/libgwenhywfar.la -L/usr/lib /Users/michael/src/git/lib/static-build-debug-5.0.14/lib/libgnutls.la -lcharset -liconv -lintl /Users/michael/src/git/lib/static-build-debug-5.0.14/lib/libgcrypt.la /Users/michael/src/git/lib/static-build-debug-5.0.14/lib/libgpg-error.la -lz'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''
@@ -38,4 +38,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14/lib/gwenhywfar/plugins/60/dbio'
+libdir='/Users/michael/src/git/lib/static-build-debug-5.0.14/lib/gwenhywfar/plugins/60/dbio'

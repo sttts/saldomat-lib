@@ -420,7 +420,7 @@
 /* #undef ICONV_FLAVOR */
 
 /* Define to the value of ${prefix}, as a string. */
-#define INSTALLPREFIX "/Users/michael/Documents/Source/Limoia/git/lib/static-build-debug-5.0.14"
+#define INSTALLPREFIX "/Users/michael/src/git/lib/static-build-debug-5.0.14"
 
 /* Define if integer division by zero raises signal SIGFPE. */
 #define INTDIV0_RAISES_SIGFPE 1

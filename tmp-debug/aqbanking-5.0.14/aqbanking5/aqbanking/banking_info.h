@@ -1,1 +1,1 @@
-/Users/michael/Documents/Source/Limoia/git/lib/aqbanking/src/libs/aqbanking/banking_info.h
+/Users/michael/src/git/lib/aqbanking/src/libs/aqbanking/banking_info.h
