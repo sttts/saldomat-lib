@@ -16,8 +16,8 @@ all:
 	$(MAKE) build arch=i386 postfix=-i386
 	$(MAKE) build arch=i386 postfix=-debug DEBUG=yes
 	rm -f static-build-debug static-build-i386
-	ln -s static-build-debug-$(AqVer) static-build-debug 
-	ln -s static-build-i386-$(AqVer) static-build-i386 
+	ln -s static-build-debug-$(AqVer) static-build-debug
+	ln -s static-build-i386-$(AqVer) static-build-i386
 
 build: .aqbanking.compiled$(postfix) dsyms
 
@@ -97,12 +97,12 @@ PATH=$(PREFIX)/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 	touch .gmp.compiled$(postfix)
 
 .gnutls.compiled$(postfix): .gettext.compiled$(postfix) .gmp.compiled$(postfix) .libgcrypt.compiled$(postfix)
-	mkdir -p $(BUILDDIR)/gnutls-2.8.5
-	cd $(BUILDDIR)/gnutls-2.8.5; \
+	mkdir -p $(BUILDDIR)/gnutls-2.12.21-gotofail
+	cd $(BUILDDIR)/gnutls-2.12.21-gotofail; \
 	PATH=$(PATH) LDFLAGS="$(LDFLAGS)" \
 	CFLAGS="$(CFLAGS)" \
 	CPPFLAGS="$(CFLAGS)" \
-	ABI=32 $(BASEDIR)/gnutls-2.8.5/configure $(CONFFLAGS) \
+	ABI=32 $(BASEDIR)/gnutls-2.12.21-gotofail/configure $(CONFFLAGS) \
 	--disable-rpath --disable-nls --disable-guile --disable-cxx --with-libgcrypt-prefix=$(PREFIX) && \
 	make && \
 	make install
