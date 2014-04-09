@@ -36,10 +36,10 @@ PATH=$(PREFIX)/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 	mkdir -p $(BUILDDIR)/pkg-config-0.23
 	cd $(BUILDDIR)/pkg-config-0.23; \
 	PATH=$(PATH) LDFLAGS="$(LDFLAGS)" \
-	CFLAGS="$(CFLAGS)" \
+	CFLAGS="$(CFLAGS) -std=gnu89" \
 	CPPFLAGS="$(CFLAGS)" \
 	$(BASEDIR)/pkg-config-0.23/configure $(CONFFLAGS) \
-		--disable-rpath --enable-relocatable && \
+		--disable-rpath --enable-relocatable --without-testlib && \
 	make && \
 	make install
 	touch .pkg-config.compiled$(postfix)
@@ -74,7 +74,7 @@ PATH=$(PREFIX)/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 	cd $(BUILDDIR)/libgcrypt-1.4.5; \
 	PATH=$(PREFIX)/bin:$$PATH \
 	PATH=$(PATH) LDFLAGS="$(LDFLAGS)" \
-	CFLAGS="$(CFLAGS)" \
+	CFLAGS="$(CFLAGS) -fheinous-gnu-extensions -std=gnu89" \
 	CPPFLAGS="$(CFLAGS)" \
 	$(BASEDIR)/libgcrypt-1.4.5/configure $(CONFFLAGS) --host=ppc --disable-asm \
 	&& \
@@ -82,6 +82,32 @@ PATH=$(PREFIX)/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 	make install && \
 	cp $(BASEDIR)/libgcrypt-1.4.5/src/libgcrypt.m4 $(PREFIX)/share/aclocal
 	touch .libgcrypt.compiled$(postfix)
+
+.nettle.compiled$(postfix): .libgpg-error.compiled$(postfix)
+	mkdir -p $(BUILDDIR)/nettle-2.7.1
+	cd $(BUILDDIR)/nettle-2.7.1; \
+	PATH=$(PREFIX)/bin:$$PATH \
+	PATH=$(PATH) LDFLAGS="$(LDFLAGS)" \
+	CFLAGS="$(CFLAGS) -fheinous-gnu-extensions -std=gnu89" \
+	CPPFLAGS="$(CFLAGS)" \
+	$(BASEDIR)/nettle-2.7.1/configure $(CONFFLAGS) --disable-openssl --without-examples \
+	&& \
+	make && \
+	make install
+	touch .nettle.compiled$(postfix)
+
+.libtasn1.compiled$(postfix):
+	mkdir -p $(BUILDDIR)/libtasn1-3.4
+	cd $(BUILDDIR)/libtasn1-3.4; \
+	PATH=$(PREFIX)/bin:$$PATH \
+	PATH=$(PATH) LDFLAGS="$(LDFLAGS)" \
+	CFLAGS="$(CFLAGS) -fheinous-gnu-extensions -std=gnu89" \
+	CPPFLAGS="$(CFLAGS)" \
+	$(BASEDIR)/libtasn1-3.4/configure $(CONFFLAGS) \
+	&& \
+	make && \
+	make install
+	touch .libtasn1.compiled$(postfix)
 
 .gmp.compiled$(postfix):
 	mkdir -p $(BUILDDIR)/gmp-4.3.2
@@ -96,14 +122,14 @@ PATH=$(PREFIX)/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 	make install
 	touch .gmp.compiled$(postfix)
 
-.gnutls.compiled$(postfix): .gettext.compiled$(postfix) .gmp.compiled$(postfix) .libgcrypt.compiled$(postfix)
+.gnutls.compiled$(postfix): .gettext.compiled$(postfix) .gmp.compiled$(postfix) .nettle.compiled$(postfix) .libtasn1.compiled$(postfix)
 	mkdir -p $(BUILDDIR)/gnutls-2.12.21-gotofail
 	cd $(BUILDDIR)/gnutls-2.12.21-gotofail; \
 	PATH=$(PATH) LDFLAGS="$(LDFLAGS)" \
-	CFLAGS="$(CFLAGS)" \
+	CFLAGS="$(CFLAGS) -std=gnu89" \
 	CPPFLAGS="$(CFLAGS)" \
 	ABI=32 $(BASEDIR)/gnutls-2.12.21-gotofail/configure $(CONFFLAGS) \
-	--disable-rpath --disable-nls --disable-guile --disable-cxx --with-libgcrypt-prefix=$(PREFIX) && \
+	--disable-rpath --disable-nls --disable-guile --without-libextra --disable-cxx --without-p11-kit --with-libgcrypt-prefix=$(PREFIX) && \
 	make && \
 	make install
 	touch .gnutls.compiled$(postfix)
