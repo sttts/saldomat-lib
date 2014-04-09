@@ -21,8 +21,9 @@
 
 #include "memxor.h"
 
+/* Avoiding duplicate symbol _memxor when linking against nettle */
 void *
-memxor (void *restrict dest, const void *restrict src, size_t n)
+gl_memxor (void *restrict dest, const void *restrict src, size_t n)
 {
   char const *s = src;
   char *d = dest;
