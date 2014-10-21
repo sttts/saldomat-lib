@@ -1,9 +1,9 @@
 #! /bin/sh
-dir="/Users/michael/src/git/lib/static-build-debug-5.0.14"
+dir="/Users/sts/Quellen/mac/hbci/lib/static-build-debug-5.0.14"
 # $Id$
 # Author of this file: Martin Preuss<martin@libchipcard.de>
 
-prefix=/Users/michael/src/git/lib/static-build-debug-5.0.14
+prefix=/Users/sts/Quellen/mac/hbci/lib/static-build-debug-5.0.14
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 datarootdir=${prefix}/share
@@ -15,7 +15,7 @@ result=""
 for d in $*; do
     case $d in
 	--includes)
-	    result="$result -I${includedir}/aqbanking5 -I/Users/michael/src/git/lib/static-build-debug-5.0.14/include/gwenhywfar4"
+	    result="$result -I${includedir}/aqbanking5 -I/Users/sts/Quellen/mac/hbci/lib/static-build-debug-5.0.14/include/gwenhywfar4"
 	    ;;
 	--libraries)
 	    result="$result -L${libdir} -laqbanking"

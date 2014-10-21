@@ -1,11 +1,13 @@
-This is /Users/michael/src/git/lib/gnutls-2.8.5/doc/gnutls.info,
+This is
+/Users/sts/Quellen/mac/hbci/lib/gnutls-2.12.21-gotofail/doc/gnutls.info,
 produced by makeinfo version 4.8 from
-/Users/michael/src/git/lib/gnutls-2.8.5/doc/gnutls.texi.
+/Users/sts/Quellen/mac/hbci/lib/gnutls-2.12.21-gotofail/doc/gnutls.texi.
 
-This manual is last updated 6 April 2010 for version 2.8.5 of GNU TLS.
+This manual is last updated 6 January 2012 for version 2.12.21 of
+GnuTLS.
 
-Copyright (C) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009 Free
-Software Foundation, Inc.
+Copyright (C) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009,
+2010 Free Software Foundation, Inc.
 
      Permission is granted to copy, distribute and/or modify this
      document under the terms of the GNU Free Documentation License,
@@ -22,9 +24,9 @@ END-INFO-DIR-ENTRY
 INFO-DIR-SECTION System Administration
 START-INFO-DIR-ENTRY
 * certtool: (gnutls)Invoking certtool.	Manipulate certificates and keys.
-* gnutls-serv: (gnutls)Invoking gnutls-serv.	GNU TLS test server.
-* gnutls-cli: (gnutls)Invoking gnutls-cli.	GNU TLS test client.
-* gnutls-cli-debug: (gnutls)Invoking gnutls-cli-debug.	GNU TLS debug client.
+* gnutls-serv: (gnutls)Invoking gnutls-serv.	GnuTLS test server.
+* gnutls-cli: (gnutls)Invoking gnutls-cli.	GnuTLS test client.
+* gnutls-cli-debug: (gnutls)Invoking gnutls-cli-debug.	GnuTLS debug client.
 * psktool: (gnutls)Invoking psktool.	Simple TLS-Pre-Shared-Keys manager.
 * srptool: (gnutls)Invoking srptool.	Simple SRP password tool.
 END-INFO-DIR-ENTRY
@@ -992,7 +994,8 @@ TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
      OTHER SOFTWARE), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN
      ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 
-                      END OF TERMS AND CONDITIONS
+END OF TERMS AND CONDITIONS
+---------------------------
 
 How to Apply These Terms to Your New Libraries
 ----------------------------------------------
@@ -1828,26 +1831,41 @@ Bibliography
      Request Syntax Specification", November 2000, Available from
      `http://www.ietf.org/rfc/rfc2986.txt'.
 
-[RFC3280]
-     Russell Housley, Tim Polk, Warwick Ford and David Solo, "Internet
-     X.509 Public Key Infrastructure Certificate and Certificate
-     Revocation List (CRL) Profile", April 2002, Available from
-     `http://www.ietf.org/rfc/rfc3280.txt'.
+[PKIX]
+     D. Cooper, S. Santesson, S. Farrel, S. Boeyen, R. Housley, W. Polk,
+     "Internet X.509 Public Key Infrastructure Certificate and
+     Certificate Revocation List (CRL) Profile", May 2008, available
+     from `http://www.ietf.org/rfc/rfc5280.txt'.
 
 [RFC3749]
      Scott Hollenbeck, "Transport Layer Security Protocol Compression
-     Methods", May 2004, Available from
+     Methods", May 2004, available from
      `http://www.ietf.org/rfc/rfc3749.txt'.
 
 [RFC3820]
      Steven Tuecke, Von Welch, Doug Engert, Laura Pearlman, and Mary
      Thompson, "Internet X.509 Public Key Infrastructure (PKI) Proxy
      Certificate Profile", June 2004, available from
-     `http://www.ietf.org/rfc3820'.
+     `http://www.ietf.org/rfc/rfc3820'.
+
+[RFC5746]
+     E. Rescorla, M. Ray, S. Dispensa, and N. Oskov, "Transport Layer
+     Security (TLS) Renegotiation Indication Extension", February 2010,
+     available from `http://www.ietf.org/rfc/rfc5746'.
+
+[TLSTKT]
+     Joseph Salowey, Hao Zhou, Pasi Eronen, Hannes Tschofenig,
+     "Transport Layer Security (TLS) Session Resumption without
+     Server-Side State", January 2008, available from
+     `http://www.ietf.org/rfc/rfc5077'.
 
 [PKCS12]
      RSA Laboratories, "PKCS 12 v1.0: Personal Information Exchange
      Syntax", June 1999, Available from `http://www.rsa.com'.
+
+[PKCS11]
+     RSA Laboratories, "PKCS #11 Base Functionality v2.30: Cryptoki –
+     Draft 4", July 2009, Available from `http://www.rsa.com'.
 
 [RESCORLA]
      Eric Rescorla, "SSL and TLS: Designing and Building Secure
@@ -1874,8 +1892,8 @@ Bibliography
 
 [TLSPGP]
      Nikos Mavrogiannopoulos, "Using OpenPGP keys for TLS
-     authentication", April 2004, November 2007. Available from
-     `http://www.ietf.org/rfc/rfc5081.txt'.
+     authentication", January 2011. Available from
+     `http://www.ietf.org/rfc/rfc6091.txt'.
 
 [TLSSRP]
      David Taylor, Trevor Perrin, Tom Wu and Nikos Mavrogiannopoulos,
@@ -1895,6 +1913,19 @@ Bibliography
      Arjen Lenstra and Xiaoyun Wang and Benne de Weger, "Colliding X.509
      Certificates", Cryptology ePrint Archive, Report 2005/067,
      Available at `http://eprint.iacr.org/'.
+
+[ECRYPT]
+     European Network of Excellence in Cryptology II, "ECRYPT II Yearly
+     Report on Algorithms and Keysizes (2009-2010)", Available at
+     `http://www.ecrypt.eu.org/documents/D.SPA.13.pdf'.
+
+[RFC5056]
+     N. Williams, "On the Use of Channel Bindings to Secure Channels",
+     November 2007, available from `http://www.ietf.org/rfc/rfc5056'.
+
+[RFC5929]
+     J. Altman, N. Williams, L. Zhu, "Channel Bindings for TLS", July
+     2010, available from `http://www.ietf.org/rfc/rfc5929'.
 
 
 
@@ -1926,8 +1957,8 @@ Function and Data Index
 * credentials->string:                   Core Interface.     (line  438)
 * dh-parameters?:                        Core Interface.     (line  363)
 * digest->string:                        Core Interface.     (line  432)
-* error->string <1>:                     Exception Handling. (line    6)
-* error->string:                         Core Interface.     (line  375)
+* error->string <1>:                     Core Interface.     (line  375)
+* error->string:                         Exception Handling. (line    6)
 * gnutls-version:                        Core Interface.     (line  335)
 * gnutls_alert_get:                      Core functions.     (line   26)
 * gnutls_alert_get_name:                 Core functions.     (line   13)
@@ -1950,132 +1981,156 @@ Function and Data Index
                                                              (line  288)
 * gnutls_certificate_client_set_retrieve_function: Core functions.
                                                              (line  302)
-* gnutls_certificate_expiration_time_peers: Core functions.  (line  338)
-* gnutls_certificate_free_ca_names:      Core functions.     (line  352)
-* gnutls_certificate_free_cas:           Core functions.     (line  366)
-* gnutls_certificate_free_credentials:   Core functions.     (line  378)
-* gnutls_certificate_free_crls:          Core functions.     (line  392)
-* gnutls_certificate_free_keys:          Core functions.     (line  402)
-* gnutls_certificate_get_openpgp_keyring: Core functions.    (line  415)
-* gnutls_certificate_get_ours:           Core functions.     (line  429)
-* gnutls_certificate_get_peers:          Core functions.     (line  444)
-* gnutls_certificate_get_x509_cas:       Core functions.     (line  467)
-* gnutls_certificate_get_x509_crls:      Core functions.     (line  485)
-* gnutls_certificate_send_x509_rdn_sequence: Core functions. (line  501)
-* gnutls_certificate_server_set_request: Core functions.     (line  519)
+* gnutls_certificate_expiration_time_peers: Core functions.  (line  340)
+* gnutls_certificate_free_ca_names:      Core functions.     (line  354)
+* gnutls_certificate_free_cas:           Core functions.     (line  371)
+* gnutls_certificate_free_credentials:   Core functions.     (line  383)
+* gnutls_certificate_free_crls:          Core functions.     (line  397)
+* gnutls_certificate_free_keys:          Core functions.     (line  407)
+* gnutls_certificate_get_issuer:         Core functions.     (line  420)
+* gnutls_certificate_get_openpgp_keyring: Core functions.    (line  439)
+* gnutls_certificate_get_ours:           Core functions.     (line  453)
+* gnutls_certificate_get_peers:          Core functions.     (line  468)
+* gnutls_certificate_get_x509_cas:       Core functions.     (line  491)
+* gnutls_certificate_get_x509_crls:      Core functions.     (line  509)
+* gnutls_certificate_send_x509_rdn_sequence: Core functions. (line  525)
+* gnutls_certificate_server_set_request: Core functions.     (line  543)
 * gnutls_certificate_server_set_retrieve_function: Core functions.
-                                                             (line  535)
-* gnutls_certificate_set_dh_params:      Core functions.     (line  560)
-* gnutls_certificate_set_openpgp_key:    OpenPGP functions.  (line  158)
+                                                             (line  559)
+* gnutls_certificate_set_dh_params:      Core functions.     (line  585)
+* gnutls_certificate_set_openpgp_key:    OpenPGP functions.  (line  160)
 * gnutls_certificate_set_openpgp_key_file: OpenPGP functions.
-                                                             (line   44)
+                                                             (line   45)
 * gnutls_certificate_set_openpgp_key_file2: OpenPGP functions.
                                                              (line   16)
-* gnutls_certificate_set_openpgp_key_mem: OpenPGP functions. (line   96)
+* gnutls_certificate_set_openpgp_key_mem: OpenPGP functions. (line   97)
 * gnutls_certificate_set_openpgp_key_mem2: OpenPGP functions.
-                                                             (line   66)
+                                                             (line   67)
 * gnutls_certificate_set_openpgp_keyring_file: OpenPGP functions.
-                                                             (line  116)
+                                                             (line  118)
 * gnutls_certificate_set_openpgp_keyring_mem: OpenPGP functions.
-                                                             (line  136)
-* gnutls_certificate_set_params_function: Core functions.    (line  577)
-* gnutls_certificate_set_rsa_export_params: Core functions.  (line  591)
-* gnutls_certificate_set_verify_flags:   Core functions.     (line  604)
-* gnutls_certificate_set_verify_limits:  Core functions.     (line  618)
-* gnutls_certificate_set_x509_crl:       Core functions.     (line  679)
-* gnutls_certificate_set_x509_crl_file:  Core functions.     (line  637)
-* gnutls_certificate_set_x509_crl_mem:   Core functions.     (line  658)
-* gnutls_certificate_set_x509_key:       Core functions.     (line  767)
-* gnutls_certificate_set_x509_key_file:  Core functions.     (line  702)
-* gnutls_certificate_set_x509_key_mem:   Core functions.     (line  728)
+                                                             (line  138)
+* gnutls_certificate_set_params_function: Core functions.    (line  602)
+* gnutls_certificate_set_retrieve_function: Core functions.  (line  616)
+* gnutls_certificate_set_rsa_export_params: Core functions.  (line  657)
+* gnutls_certificate_set_verify_flags:   Core functions.     (line  670)
+* gnutls_certificate_set_verify_function: Core functions.    (line  684)
+* gnutls_certificate_set_verify_limits:  Core functions.     (line  713)
+* gnutls_certificate_set_x509_crl:       Core functions.     (line  774)
+* gnutls_certificate_set_x509_crl_file:  Core functions.     (line  732)
+* gnutls_certificate_set_x509_crl_mem:   Core functions.     (line  753)
+* gnutls_certificate_set_x509_key:       Core functions.     (line  867)
+* gnutls_certificate_set_x509_key_file:  Core functions.     (line  797)
+* gnutls_certificate_set_x509_key_mem:   Core functions.     (line  828)
 * gnutls_certificate_set_x509_simple_pkcs12_file: Core functions.
-                                                             (line  791)
+                                                             (line  893)
 * gnutls_certificate_set_x509_simple_pkcs12_mem: Core functions.
-                                                             (line  831)
-* gnutls_certificate_set_x509_trust:     Core functions.     (line  924)
-* gnutls_certificate_set_x509_trust_file: Core functions.    (line  873)
-* gnutls_certificate_set_x509_trust_mem: Core functions.     (line  899)
-* gnutls_certificate_type_get:           Core functions.     (line  973)
-* gnutls_certificate_type_get_id:        Core functions.     (line  949)
-* gnutls_certificate_type_get_name:      Core functions.     (line  961)
-* gnutls_certificate_type_list:          Core functions.     (line  986)
-* gnutls_certificate_type_set_priority:  Core functions.     (line  998)
+                                                             (line  933)
+* gnutls_certificate_set_x509_trust:     Core functions.     (line 1029)
+* gnutls_certificate_set_x509_trust_file: Core functions.    (line  975)
+* gnutls_certificate_set_x509_trust_mem: Core functions.     (line 1004)
+* gnutls_certificate_type_get:           Core functions.     (line 1078)
+* gnutls_certificate_type_get_id:        Core functions.     (line 1054)
+* gnutls_certificate_type_get_name:      Core functions.     (line 1066)
+* gnutls_certificate_type_list:          Core functions.     (line 1091)
+* gnutls_certificate_type_set_priority:  Core functions.     (line 1103)
 * gnutls_certificate_verify_flags:       Verifying X.509 certificate paths.
                                                              (line   44)
-* gnutls_certificate_verify_peers:       Core functions.     (line 1046)
-* gnutls_certificate_verify_peers2:      Core functions.     (line 1016)
-* gnutls_check_version:                  Core functions.     (line 1065)
-* gnutls_cipher_get:                     Core functions.     (line 1119)
-* gnutls_cipher_get_id:                  Core functions.     (line 1082)
-* gnutls_cipher_get_key_size:            Core functions.     (line 1095)
-* gnutls_cipher_get_name:                Core functions.     (line 1107)
-* gnutls_cipher_list:                    Core functions.     (line 1131)
-* gnutls_cipher_set_priority:            Core functions.     (line 1144)
-* gnutls_cipher_suite_get_name:          Core functions.     (line 1163)
-* gnutls_cipher_suite_info:              Core functions.     (line 1182)
-* gnutls_compression_get:                Core functions.     (line 1234)
-* gnutls_compression_get_id:             Core functions.     (line 1210)
-* gnutls_compression_get_name:           Core functions.     (line 1222)
-* gnutls_compression_list:               Core functions.     (line 1246)
-* gnutls_compression_set_priority:       Core functions.     (line 1258)
-* gnutls_credentials_clear:              Core functions.     (line 1280)
-* gnutls_credentials_set:                Core functions.     (line 1289)
-* gnutls_crypto_bigint_register2:        Core functions.     (line 1324)
-* gnutls_crypto_cipher_register2:        Core functions.     (line 1353)
-* gnutls_crypto_digest_register2:        Core functions.     (line 1379)
-* gnutls_crypto_mac_register2:           Core functions.     (line 1405)
-* gnutls_crypto_pk_register2:            Core functions.     (line 1430)
-* gnutls_crypto_rnd_register2:           Core functions.     (line 1459)
-* gnutls_crypto_single_cipher_register2: Core functions.     (line 1486)
-* gnutls_crypto_single_digest_register2: Core functions.     (line 1515)
-* gnutls_crypto_single_mac_register2:    Core functions.     (line 1544)
-* gnutls_db_check_entry:                 Core functions.     (line 1571)
-* gnutls_db_get_ptr:                     Core functions.     (line 1586)
-* gnutls_db_remove_session:              Core functions.     (line 1597)
-* gnutls_db_set_cache_expiration:        Core functions.     (line 1612)
-* gnutls_db_set_ptr:                     Core functions.     (line 1624)
-* gnutls_db_set_remove_function:         Core functions.     (line 1636)
-* gnutls_db_set_retrieve_function:       Core functions.     (line 1651)
-* gnutls_db_set_store_function:          Core functions.     (line 1671)
-* gnutls_deinit:                         Core functions.     (line 1685)
-* gnutls_dh_get_group:                   Core functions.     (line 1696)
-* gnutls_dh_get_peers_public_bits:       Core functions.     (line 1716)
-* gnutls_dh_get_prime_bits:              Core functions.     (line 1728)
-* gnutls_dh_get_pubkey:                  Core functions.     (line 1745)
-* gnutls_dh_get_secret_bits:             Core functions.     (line 1761)
-* gnutls_dh_params_cpy:                  Core functions.     (line 1775)
-* gnutls_dh_params_deinit:               Core functions.     (line 1790)
-* gnutls_dh_params_export_pkcs3:         Core functions.     (line 1800)
-* gnutls_dh_params_export_raw:           Core functions.     (line 1827)
-* gnutls_dh_params_generate2:            Core functions.     (line 1848)
-* gnutls_dh_params_import_pkcs3:         Core functions.     (line 1871)
-* gnutls_dh_params_import_raw:           Core functions.     (line 1893)
-* gnutls_dh_params_init:                 Core functions.     (line 1910)
-* gnutls_dh_set_prime_bits:              Core functions.     (line 1922)
-* gnutls_error_is_fatal:                 Core functions.     (line 1941)
-* gnutls_error_to_alert:                 Core functions.     (line 1959)
-* gnutls_ext_register:                   Core functions.     (line 1980)
+* gnutls_certificate_verify_peers:       Core functions.     (line 1146)
+* gnutls_certificate_verify_peers2:      Core functions.     (line 1121)
+* gnutls_check_version:                  Core functions.     (line 1165)
+* gnutls_cipher_decrypt:                 Core functions.     (line 1205)
+* gnutls_cipher_decrypt2:                Core functions.     (line 1183)
+* gnutls_cipher_deinit:                  Core functions.     (line 1222)
+* gnutls_cipher_encrypt:                 Core functions.     (line 1257)
+* gnutls_cipher_encrypt2:                Core functions.     (line 1235)
+* gnutls_cipher_get:                     Core functions.     (line 1325)
+* gnutls_cipher_get_block_size:          Core functions.     (line 1275)
+* gnutls_cipher_get_id:                  Core functions.     (line 1288)
+* gnutls_cipher_get_key_size:            Core functions.     (line 1301)
+* gnutls_cipher_get_name:                Core functions.     (line 1313)
+* gnutls_cipher_init:                    Core functions.     (line 1338)
+* gnutls_cipher_list:                    Core functions.     (line 1360)
+* gnutls_cipher_set_priority:            Core functions.     (line 1373)
+* gnutls_cipher_suite_get_name:          Core functions.     (line 1392)
+* gnutls_cipher_suite_info:              Core functions.     (line 1411)
+* gnutls_compression_get:                Core functions.     (line 1460)
+* gnutls_compression_get_id:             Core functions.     (line 1436)
+* gnutls_compression_get_name:           Core functions.     (line 1448)
+* gnutls_compression_list:               Core functions.     (line 1472)
+* gnutls_compression_set_priority:       Core functions.     (line 1484)
+* gnutls_credentials_clear:              Core functions.     (line 1506)
+* gnutls_credentials_set:                Core functions.     (line 1515)
+* gnutls_crypto_bigint_register2:        Core functions.     (line 1550)
+* gnutls_crypto_cipher_register2:        Core functions.     (line 1579)
+* gnutls_crypto_digest_register2:        Core functions.     (line 1605)
+* gnutls_crypto_mac_register2:           Core functions.     (line 1631)
+* gnutls_crypto_pk_register2:            Core functions.     (line 1656)
+* gnutls_crypto_rnd_register2:           Core functions.     (line 1685)
+* gnutls_crypto_single_cipher_register2: Core functions.     (line 1712)
+* gnutls_crypto_single_digest_register2: Core functions.     (line 1741)
+* gnutls_crypto_single_mac_register2:    Core functions.     (line 1770)
+* gnutls_db_check_entry:                 Core functions.     (line 1797)
+* gnutls_db_get_ptr:                     Core functions.     (line 1812)
+* gnutls_db_remove_session:              Core functions.     (line 1823)
+* gnutls_db_set_cache_expiration:        Core functions.     (line 1838)
+* gnutls_db_set_ptr:                     Core functions.     (line 1850)
+* gnutls_db_set_remove_function:         Core functions.     (line 1862)
+* gnutls_db_set_retrieve_function:       Core functions.     (line 1877)
+* gnutls_db_set_store_function:          Core functions.     (line 1897)
+* gnutls_deinit:                         Core functions.     (line 1911)
+* gnutls_dh_get_group:                   Core functions.     (line 1922)
+* gnutls_dh_get_peers_public_bits:       Core functions.     (line 1942)
+* gnutls_dh_get_prime_bits:              Core functions.     (line 1954)
+* gnutls_dh_get_pubkey:                  Core functions.     (line 1971)
+* gnutls_dh_get_secret_bits:             Core functions.     (line 1987)
+* gnutls_dh_params_cpy:                  Core functions.     (line 2001)
+* gnutls_dh_params_deinit:               Core functions.     (line 2016)
+* gnutls_dh_params_export_pkcs3:         Core functions.     (line 2026)
+* gnutls_dh_params_export_raw:           Core functions.     (line 2053)
+* gnutls_dh_params_generate2:            Core functions.     (line 2074)
+* gnutls_dh_params_import_pkcs3:         Core functions.     (line 2098)
+* gnutls_dh_params_import_raw:           Core functions.     (line 2120)
+* gnutls_dh_params_init:                 Core functions.     (line 2137)
+* gnutls_dh_set_prime_bits:              Core functions.     (line 2149)
+* gnutls_error_is_fatal:                 Core functions.     (line 2168)
+* gnutls_error_to_alert:                 Core functions.     (line 2186)
+* gnutls_ext_register:                   Core functions.     (line 2207)
 * gnutls_extra_check_version:            GnuTLS-extra functions.
                                                              (line   15)
-* gnutls_fingerprint:                    Core functions.     (line 2002)
-* gnutls_free:                           Core functions.     (line 2027)
-* gnutls_global_deinit:                  Core functions.     (line 2036)
-* gnutls_global_init:                    Core functions.     (line 2046)
+* gnutls_fingerprint:                    Core functions.     (line 2229)
+* gnutls_free:                           Core functions.     (line 2254)
+* gnutls_global_deinit:                  Core functions.     (line 2263)
+* gnutls_global_init:                    Core functions.     (line 2273)
 * gnutls_global_init_extra:              GnuTLS-extra functions.
                                                              (line   31)
-* gnutls_global_set_log_function:        Core functions.     (line 2080)
-* gnutls_global_set_log_level:           Core functions.     (line 2094)
-* gnutls_global_set_mem_functions:       Core functions.     (line 2111)
-* gnutls_handshake:                      Core functions.     (line 2237)
-* gnutls_handshake_get_last_in:          Core functions.     (line 2140)
-* gnutls_handshake_get_last_out:         Core functions.     (line 2157)
-* gnutls_handshake_set_max_packet_length: Core functions.    (line 2174)
+* gnutls_global_set_log_function:        Core functions.     (line 2304)
+* gnutls_global_set_log_level:           Core functions.     (line 2318)
+* gnutls_global_set_mem_functions:       Core functions.     (line 2335)
+* gnutls_global_set_mutex:               Core functions.     (line 2365)
+* gnutls_global_set_time_function:       Core functions.     (line 2387)
+* gnutls_handshake:                      Core functions.     (line 2497)
+* gnutls_handshake_get_last_in:          Core functions.     (line 2400)
+* gnutls_handshake_get_last_out:         Core functions.     (line 2417)
+* gnutls_handshake_set_max_packet_length: Core functions.    (line 2434)
 * gnutls_handshake_set_post_client_hello_function: Core functions.
-                                                             (line 2193)
-* gnutls_handshake_set_private_extensions: Core functions.   (line 2218)
-* gnutls_hex2bin:                        Core functions.     (line 2266)
-* gnutls_hex_decode:                     Core functions.     (line 2286)
-* gnutls_hex_encode:                     Core functions.     (line 2305)
+                                                             (line 2453)
+* gnutls_handshake_set_private_extensions: Core functions.   (line 2478)
+* gnutls_hash:                           Core functions.     (line 2607)
+* gnutls_hash_deinit:                    Core functions.     (line 2528)
+* gnutls_hash_fast:                      Core functions.     (line 2542)
+* gnutls_hash_get_len:                   Core functions.     (line 2562)
+* gnutls_hash_init:                      Core functions.     (line 2576)
+* gnutls_hash_output:                    Core functions.     (line 2594)
+* gnutls_hex2bin:                        Core functions.     (line 2625)
+* gnutls_hex_decode:                     Core functions.     (line 2645)
+* gnutls_hex_encode:                     Core functions.     (line 2664)
+* gnutls_hmac:                           Core functions.     (line 2769)
+* gnutls_hmac_deinit:                    Core functions.     (line 2681)
+* gnutls_hmac_fast:                      Core functions.     (line 2696)
+* gnutls_hmac_get_len:                   Core functions.     (line 2719)
+* gnutls_hmac_init:                      Core functions.     (line 2734)
+* gnutls_hmac_output:                    Core functions.     (line 2756)
 * gnutls_ia_allocate_client_credentials: TLS Inner Application (TLS/IA) functions.
                                                              (line   59)
 * gnutls_ia_allocate_server_credentials: TLS Inner Application (TLS/IA) functions.
@@ -2116,115 +2171,145 @@ Function and Data Index
                                                              (line  426)
 * gnutls_ia_verify_endphase:             TLS Inner Application (TLS/IA) functions.
                                                              (line  438)
-* gnutls_init:                           Core functions.     (line 2322)
-* gnutls_kx_get:                         Core functions.     (line 2365)
-* gnutls_kx_get_id:                      Core functions.     (line 2340)
-* gnutls_kx_get_name:                    Core functions.     (line 2353)
-* gnutls_kx_list:                        Core functions.     (line 2376)
-* gnutls_kx_set_priority:                Core functions.     (line 2386)
-* gnutls_mac_get:                        Core functions.     (line 2441)
-* gnutls_mac_get_id:                     Core functions.     (line 2404)
-* gnutls_mac_get_key_size:               Core functions.     (line 2417)
-* gnutls_mac_get_name:                   Core functions.     (line 2429)
-* gnutls_mac_list:                       Core functions.     (line 2452)
-* gnutls_mac_set_priority:               Core functions.     (line 2465)
-* gnutls_malloc:                         Core functions.     (line 2482)
-* gnutls_openpgp_crt_check_hostname:     OpenPGP functions.  (line  177)
-* gnutls_openpgp_crt_deinit:             OpenPGP functions.  (line  191)
-* gnutls_openpgp_crt_export:             OpenPGP functions.  (line  201)
-* gnutls_openpgp_crt_get_auth_subkey:    OpenPGP functions.  (line  222)
-* gnutls_openpgp_crt_get_creation_time:  OpenPGP functions.  (line  243)
-* gnutls_openpgp_crt_get_expiration_time: OpenPGP functions. (line  254)
-* gnutls_openpgp_crt_get_fingerprint:    OpenPGP functions.  (line  266)
-* gnutls_openpgp_crt_get_key_id:         OpenPGP functions.  (line  283)
-* gnutls_openpgp_crt_get_key_usage:      OpenPGP functions.  (line  298)
-* gnutls_openpgp_crt_get_name:           OpenPGP functions.  (line  313)
-* gnutls_openpgp_crt_get_pk_algorithm:   OpenPGP functions.  (line  333)
-* gnutls_openpgp_crt_get_pk_dsa_raw:     OpenPGP functions.  (line  354)
-* gnutls_openpgp_crt_get_pk_rsa_raw:     OpenPGP functions.  (line  378)
+* gnutls_init:                           Core functions.     (line 2787)
+* gnutls_kx_get:                         Core functions.     (line 2830)
+* gnutls_kx_get_id:                      Core functions.     (line 2805)
+* gnutls_kx_get_name:                    Core functions.     (line 2818)
+* gnutls_kx_list:                        Core functions.     (line 2841)
+* gnutls_kx_set_priority:                Core functions.     (line 2851)
+* gnutls_mac_get:                        Core functions.     (line 2906)
+* gnutls_mac_get_id:                     Core functions.     (line 2869)
+* gnutls_mac_get_key_size:               Core functions.     (line 2882)
+* gnutls_mac_get_name:                   Core functions.     (line 2894)
+* gnutls_mac_list:                       Core functions.     (line 2917)
+* gnutls_mac_set_priority:               Core functions.     (line 2930)
+* gnutls_malloc:                         Core functions.     (line 2947)
+* gnutls_openpgp_crt_check_hostname:     OpenPGP functions.  (line  182)
+* gnutls_openpgp_crt_deinit:             OpenPGP functions.  (line  196)
+* gnutls_openpgp_crt_export:             OpenPGP functions.  (line  206)
+* gnutls_openpgp_crt_get_auth_subkey:    OpenPGP functions.  (line  227)
+* gnutls_openpgp_crt_get_creation_time:  OpenPGP functions.  (line  248)
+* gnutls_openpgp_crt_get_expiration_time: OpenPGP functions. (line  259)
+* gnutls_openpgp_crt_get_fingerprint:    OpenPGP functions.  (line  271)
+* gnutls_openpgp_crt_get_key_id:         OpenPGP functions.  (line  288)
+* gnutls_openpgp_crt_get_key_usage:      OpenPGP functions.  (line  303)
+* gnutls_openpgp_crt_get_name:           OpenPGP functions.  (line  318)
+* gnutls_openpgp_crt_get_pk_algorithm:   OpenPGP functions.  (line  339)
+* gnutls_openpgp_crt_get_pk_dsa_raw:     OpenPGP functions.  (line  360)
+* gnutls_openpgp_crt_get_pk_rsa_raw:     OpenPGP functions.  (line  384)
 * gnutls_openpgp_crt_get_preferred_key_id: OpenPGP functions.
-                                                             (line  397)
-* gnutls_openpgp_crt_get_revoked_status: OpenPGP functions.  (line  411)
-* gnutls_openpgp_crt_get_subkey_count:   OpenPGP functions.  (line  425)
+                                                             (line  403)
+* gnutls_openpgp_crt_get_revoked_status: OpenPGP functions.  (line  417)
+* gnutls_openpgp_crt_get_subkey_count:   OpenPGP functions.  (line  431)
 * gnutls_openpgp_crt_get_subkey_creation_time: OpenPGP functions.
-                                                             (line  439)
+                                                             (line  445)
 * gnutls_openpgp_crt_get_subkey_expiration_time: OpenPGP functions.
-                                                             (line  454)
+                                                             (line  460)
 * gnutls_openpgp_crt_get_subkey_fingerprint: OpenPGP functions.
-                                                             (line  471)
-* gnutls_openpgp_crt_get_subkey_id:      OpenPGP functions.  (line  508)
-* gnutls_openpgp_crt_get_subkey_idx:     OpenPGP functions.  (line  492)
+                                                             (line  477)
+* gnutls_openpgp_crt_get_subkey_id:      OpenPGP functions.  (line  514)
+* gnutls_openpgp_crt_get_subkey_idx:     OpenPGP functions.  (line  498)
 * gnutls_openpgp_crt_get_subkey_pk_algorithm: OpenPGP functions.
-                                                             (line  524)
+                                                             (line  530)
 * gnutls_openpgp_crt_get_subkey_pk_dsa_raw: OpenPGP functions.
-                                                             (line  549)
+                                                             (line  555)
 * gnutls_openpgp_crt_get_subkey_pk_rsa_raw: OpenPGP functions.
-                                                             (line  575)
+                                                             (line  581)
 * gnutls_openpgp_crt_get_subkey_revoked_status: OpenPGP functions.
-                                                             (line  596)
-* gnutls_openpgp_crt_get_subkey_usage:   OpenPGP functions.  (line  613)
-* gnutls_openpgp_crt_get_version:        OpenPGP functions.  (line  634)
-* gnutls_openpgp_crt_import:             OpenPGP functions.  (line  646)
-* gnutls_openpgp_crt_init:               OpenPGP functions.  (line  662)
-* gnutls_openpgp_crt_print:              OpenPGP functions.  (line  674)
+                                                             (line  602)
+* gnutls_openpgp_crt_get_subkey_usage:   OpenPGP functions.  (line  619)
+* gnutls_openpgp_crt_get_version:        OpenPGP functions.  (line  640)
+* gnutls_openpgp_crt_import:             OpenPGP functions.  (line  652)
+* gnutls_openpgp_crt_init:               OpenPGP functions.  (line  668)
+* gnutls_openpgp_crt_print:              OpenPGP functions.  (line  680)
 * gnutls_openpgp_crt_set_preferred_key_id: OpenPGP functions.
-                                                             (line  694)
-* gnutls_openpgp_crt_verify_ring:        OpenPGP functions.  (line  710)
-* gnutls_openpgp_crt_verify_self:        OpenPGP functions.  (line  732)
-* gnutls_openpgp_keyring_check_id:       OpenPGP functions.  (line  750)
-* gnutls_openpgp_keyring_deinit:         OpenPGP functions.  (line  766)
-* gnutls_openpgp_keyring_get_crt:        OpenPGP functions.  (line  788)
-* gnutls_openpgp_keyring_get_crt_count:  OpenPGP functions.  (line  775)
-* gnutls_openpgp_keyring_import:         OpenPGP functions.  (line  807)
-* gnutls_openpgp_keyring_init:           OpenPGP functions.  (line  824)
-* gnutls_openpgp_privkey_deinit:         OpenPGP functions.  (line  835)
-* gnutls_openpgp_privkey_export:         OpenPGP functions.  (line  963)
-* gnutls_openpgp_privkey_export_dsa_raw: OpenPGP functions.  (line  846)
-* gnutls_openpgp_privkey_export_rsa_raw: OpenPGP functions.  (line  873)
+                                                             (line  700)
+* gnutls_openpgp_crt_verify_ring:        OpenPGP functions.  (line  716)
+* gnutls_openpgp_crt_verify_self:        OpenPGP functions.  (line  738)
+* gnutls_openpgp_keyring_check_id:       OpenPGP functions.  (line  756)
+* gnutls_openpgp_keyring_deinit:         OpenPGP functions.  (line  772)
+* gnutls_openpgp_keyring_get_crt:        OpenPGP functions.  (line  794)
+* gnutls_openpgp_keyring_get_crt_count:  OpenPGP functions.  (line  781)
+* gnutls_openpgp_keyring_import:         OpenPGP functions.  (line  813)
+* gnutls_openpgp_keyring_init:           OpenPGP functions.  (line  830)
+* gnutls_openpgp_privkey_deinit:         OpenPGP functions.  (line  841)
+* gnutls_openpgp_privkey_export:         OpenPGP functions.  (line  969)
+* gnutls_openpgp_privkey_export_dsa_raw: OpenPGP functions.  (line  852)
+* gnutls_openpgp_privkey_export_rsa_raw: OpenPGP functions.  (line  879)
 * gnutls_openpgp_privkey_export_subkey_dsa_raw: OpenPGP functions.
-                                                             (line  902)
+                                                             (line  908)
 * gnutls_openpgp_privkey_export_subkey_rsa_raw: OpenPGP functions.
-                                                             (line  932)
-* gnutls_openpgp_privkey_get_fingerprint: OpenPGP functions. (line  990)
-* gnutls_openpgp_privkey_get_key_id:     OpenPGP functions.  (line 1009)
+                                                             (line  938)
+* gnutls_openpgp_privkey_get_fingerprint: OpenPGP functions. (line  996)
+* gnutls_openpgp_privkey_get_key_id:     OpenPGP functions.  (line 1015)
 * gnutls_openpgp_privkey_get_pk_algorithm: OpenPGP functions.
-                                                             (line 1025)
+                                                             (line 1031)
 * gnutls_openpgp_privkey_get_preferred_key_id: OpenPGP functions.
-                                                             (line 1047)
+                                                             (line 1053)
 * gnutls_openpgp_privkey_get_revoked_status: OpenPGP functions.
-                                                             (line 1061)
+                                                             (line 1067)
 * gnutls_openpgp_privkey_get_subkey_count: OpenPGP functions.
-                                                             (line 1075)
+                                                             (line 1081)
 * gnutls_openpgp_privkey_get_subkey_creation_time: OpenPGP functions.
-                                                             (line 1089)
+                                                             (line 1095)
 * gnutls_openpgp_privkey_get_subkey_expiration_time: OpenPGP functions.
-                                                             (line 1104)
+                                                             (line 1110)
 * gnutls_openpgp_privkey_get_subkey_fingerprint: OpenPGP functions.
-                                                             (line 1121)
-* gnutls_openpgp_privkey_get_subkey_id:  OpenPGP functions.  (line 1159)
-* gnutls_openpgp_privkey_get_subkey_idx: OpenPGP functions.  (line 1143)
+                                                             (line 1127)
+* gnutls_openpgp_privkey_get_subkey_id:  OpenPGP functions.  (line 1165)
+* gnutls_openpgp_privkey_get_subkey_idx: OpenPGP functions.  (line 1149)
 * gnutls_openpgp_privkey_get_subkey_pk_algorithm: OpenPGP functions.
-                                                             (line 1178)
+                                                             (line 1184)
 * gnutls_openpgp_privkey_get_subkey_revoked_status: OpenPGP functions.
-                                                             (line 1202)
-* gnutls_openpgp_privkey_import:         OpenPGP functions.  (line 1220)
-* gnutls_openpgp_privkey_init:           OpenPGP functions.  (line 1241)
+                                                             (line 1208)
+* gnutls_openpgp_privkey_import:         OpenPGP functions.  (line 1226)
+* gnutls_openpgp_privkey_init:           OpenPGP functions.  (line 1247)
+* gnutls_openpgp_privkey_sec_param:      OpenPGP functions.  (line 1258)
 * gnutls_openpgp_privkey_set_preferred_key_id: OpenPGP functions.
-                                                             (line 1253)
-* gnutls_openpgp_privkey_sign_hash:      OpenPGP functions.  (line 1268)
-* gnutls_openpgp_send_cert:              Core functions.     (line 2493)
-* gnutls_openpgp_set_recv_key_function:  OpenPGP functions.  (line 1286)
-* gnutls_oprfi_enable_client:            Core functions.     (line 2508)
-* gnutls_oprfi_enable_server:            Core functions.     (line 2526)
-* gnutls_pem_base64_decode:              Core functions.     (line 2575)
-* gnutls_pem_base64_decode_alloc:        Core functions.     (line 2552)
-* gnutls_pem_base64_encode:              Core functions.     (line 2619)
-* gnutls_pem_base64_encode_alloc:        Core functions.     (line 2598)
-* gnutls_perror:                         Core functions.     (line 2641)
-* gnutls_pk_algorithm_get_name:          Core functions.     (line 2651)
-* gnutls_pk_get_id:                      Core functions.     (line 2662)
-* gnutls_pk_get_name:                    Core functions.     (line 2678)
-* gnutls_pk_list:                        Core functions.     (line 2691)
+                                                             (line 1272)
+* gnutls_openpgp_privkey_sign_hash:      OpenPGP functions.  (line 1287)
+* gnutls_openpgp_send_cert:              Core functions.     (line 2958)
+* gnutls_openpgp_set_recv_key_function:  OpenPGP functions.  (line 1307)
+* gnutls_pem_base64_decode:              Core functions.     (line 2996)
+* gnutls_pem_base64_decode_alloc:        Core functions.     (line 2973)
+* gnutls_pem_base64_encode:              Core functions.     (line 3040)
+* gnutls_pem_base64_encode_alloc:        Core functions.     (line 3019)
+* gnutls_perror:                         Core functions.     (line 3062)
+* gnutls_pk_algorithm_get_name:          Core functions.     (line 3072)
+* gnutls_pk_bits_to_sec_param:           Core functions.     (line 3084)
+* gnutls_pk_get_id:                      Core functions.     (line 3098)
+* gnutls_pk_get_name:                    Core functions.     (line 3114)
+* gnutls_pk_list:                        Core functions.     (line 3127)
+* gnutls_pkcs11_add_provider:            Core functions.     (line 3139)
+* gnutls_pkcs11_copy_secret_key:         Core functions.     (line 3156)
+* gnutls_pkcs11_copy_x509_crt:           Core functions.     (line 3178)
+* gnutls_pkcs11_copy_x509_privkey:       Core functions.     (line 3199)
+* gnutls_pkcs11_deinit:                  Core functions.     (line 3221)
+* gnutls_pkcs11_delete_url:              Core functions.     (line 3228)
+* gnutls_pkcs11_init:                    Core functions.     (line 3242)
+* gnutls_pkcs11_obj_deinit:              Core functions.     (line 3268)
+* gnutls_pkcs11_obj_export:              Core functions.     (line 3293)
+* gnutls_pkcs11_obj_export_url:          Core functions.     (line 3277)
+* gnutls_pkcs11_obj_get_info:            Core functions.     (line 3320)
+* gnutls_pkcs11_obj_get_type:            Core functions.     (line 3342)
+* gnutls_pkcs11_obj_import_url:          Core functions.     (line 3352)
+* gnutls_pkcs11_obj_init:                Core functions.     (line 3371)
+* gnutls_pkcs11_obj_list_import_url:     Core functions.     (line 3385)
+* gnutls_pkcs11_privkey_deinit:          Core functions.     (line 3408)
+* gnutls_pkcs11_privkey_export_url:      Core functions.     (line 3418)
+* gnutls_pkcs11_privkey_get_info:        Core functions.     (line 3435)
+* gnutls_pkcs11_privkey_get_pk_algorithm: Core functions.    (line 3457)
+* gnutls_pkcs11_privkey_import_url:      Core functions.     (line 3471)
+* gnutls_pkcs11_privkey_init:            Core functions.     (line 3490)
+* gnutls_pkcs11_reinit:                  Core functions.     (line 3501)
+* gnutls_pkcs11_set_pin_function:        Core functions.     (line 3515)
+* gnutls_pkcs11_set_token_function:      Core functions.     (line 3548)
+* gnutls_pkcs11_token_get_flags:         Core functions.     (line 3563)
+* gnutls_pkcs11_token_get_info:          Core functions.     (line 3578)
+* gnutls_pkcs11_token_get_mechanism:     Core functions.     (line 3598)
+* gnutls_pkcs11_token_get_url:           Core functions.     (line 3615)
+* gnutls_pkcs11_token_init:              Core functions.     (line 3633)
+* gnutls_pkcs11_token_set_pin:           Core functions.     (line 3651)
 * gnutls_pkcs12_bag_decrypt:             X.509 certificate functions.
                                                              (line   14)
 * gnutls_pkcs12_bag_deinit:              X.509 certificate functions.
@@ -2297,102 +2382,142 @@ Function and Data Index
                                                              (line  577)
 * gnutls_pkcs7_set_crt_raw:              X.509 certificate functions.
                                                              (line  562)
-* gnutls_prf:                            Core functions.     (line 2744)
-* gnutls_prf_raw:                        Core functions.     (line 2704)
-* gnutls_priority_deinit:                Core functions.     (line 2784)
-* gnutls_priority_init:                  Core functions.     (line 2794)
-* gnutls_priority_set:                   Core functions.     (line 2905)
-* gnutls_priority_set_direct:            Core functions.     (line 2885)
-* gnutls_protocol_get_id:                Core functions.     (line 2919)
-* gnutls_protocol_get_name:              Core functions.     (line 2931)
-* gnutls_protocol_get_version:           Core functions.     (line 2943)
-* gnutls_protocol_list:                  Core functions.     (line 2953)
-* gnutls_protocol_set_priority:          Core functions.     (line 2963)
-* gnutls_psk_allocate_client_credentials: Core functions.    (line 2978)
-* gnutls_psk_allocate_server_credentials: Core functions.    (line 2990)
-* gnutls_psk_client_get_hint:            Core functions.     (line 3002)
-* gnutls_psk_free_client_credentials:    Core functions.     (line 3018)
-* gnutls_psk_free_server_credentials:    Core functions.     (line 3028)
-* gnutls_psk_netconf_derive_key:         Core functions.     (line 3039)
-* gnutls_psk_server_get_username:        Core functions.     (line 3060)
-* gnutls_psk_set_client_credentials:     Core functions.     (line 3097)
+* gnutls_prf:                            Core functions.     (line 3712)
+* gnutls_prf_raw:                        Core functions.     (line 3672)
+* gnutls_priority_deinit:                Core functions.     (line 3752)
+* gnutls_priority_init:                  Core functions.     (line 3762)
+* gnutls_priority_set:                   Core functions.     (line 3846)
+* gnutls_priority_set_direct:            Core functions.     (line 3826)
+* gnutls_privkey_decrypt_data:           Core functions.     (line 3861)
+* gnutls_privkey_deinit:                 Core functions.     (line 3880)
+* gnutls_privkey_get_pk_algorithm:       Core functions.     (line 3889)
+* gnutls_privkey_get_type:               Core functions.     (line 3906)
+* gnutls_privkey_import_openpgp:         Core functions.     (line 3919)
+* gnutls_privkey_import_pkcs11:          Core functions.     (line 3940)
+* gnutls_privkey_import_x509:            Core functions.     (line 3960)
+* gnutls_privkey_init:                   Core functions.     (line 3979)
+* gnutls_privkey_sign_data:              Core functions.     (line 3992)
+* gnutls_privkey_sign_hash:              Core functions.     (line 4019)
+* gnutls_protocol_get_id:                Core functions.     (line 4048)
+* gnutls_protocol_get_name:              Core functions.     (line 4060)
+* gnutls_protocol_get_version:           Core functions.     (line 4072)
+* gnutls_protocol_list:                  Core functions.     (line 4082)
+* gnutls_protocol_set_priority:          Core functions.     (line 4092)
+* gnutls_psk_allocate_client_credentials: Core functions.    (line 4107)
+* gnutls_psk_allocate_server_credentials: Core functions.    (line 4119)
+* gnutls_psk_client_get_hint:            Core functions.     (line 4131)
+* gnutls_psk_free_client_credentials:    Core functions.     (line 4147)
+* gnutls_psk_free_server_credentials:    Core functions.     (line 4157)
+* gnutls_psk_netconf_derive_key:         Core functions.     (line 4168)
+* gnutls_psk_server_get_username:        Core functions.     (line 4193)
+* gnutls_psk_set_client_credentials:     Core functions.     (line 4230)
 * gnutls_psk_set_client_credentials_function: Core functions.
-                                                             (line 3073)
-* gnutls_psk_set_params_function:        Core functions.     (line 3118)
-* gnutls_psk_set_server_credentials_file: Core functions.    (line 3132)
+                                                             (line 4206)
+* gnutls_psk_set_params_function:        Core functions.     (line 4251)
+* gnutls_psk_set_server_credentials_file: Core functions.    (line 4265)
 * gnutls_psk_set_server_credentials_function: Core functions.
-                                                             (line 3148)
-* gnutls_psk_set_server_credentials_hint: Core functions.    (line 3172)
-* gnutls_psk_set_server_dh_params:       Core functions.     (line 3191)
-* gnutls_psk_set_server_params_function: Core functions.     (line 3205)
-* gnutls_record_check_pending:           Core functions.     (line 3218)
-* gnutls_record_disable_padding:         Core functions.     (line 3234)
-* gnutls_record_get_direction:           Core functions.     (line 3248)
-* gnutls_record_get_max_size:            Core functions.     (line 3269)
-* gnutls_record_recv:                    Core functions.     (line 3281)
-* gnutls_record_send:                    Core functions.     (line 3316)
-* gnutls_record_set_max_size:            Core functions.     (line 3349)
-* gnutls_rehandshake:                    Core functions.     (line 3372)
-* gnutls_rsa_export_get_modulus_bits:    Core functions.     (line 3397)
-* gnutls_rsa_export_get_pubkey:          Core functions.     (line 3409)
-* gnutls_rsa_params_cpy:                 Core functions.     (line 3427)
-* gnutls_rsa_params_deinit:              Core functions.     (line 3442)
-* gnutls_rsa_params_export_pkcs1:        Core functions.     (line 3452)
-* gnutls_rsa_params_export_raw:          Core functions.     (line 3480)
-* gnutls_rsa_params_generate2:           Core functions.     (line 3508)
-* gnutls_rsa_params_import_pkcs1:        Core functions.     (line 3530)
-* gnutls_rsa_params_import_raw:          Core functions.     (line 3553)
-* gnutls_rsa_params_init:                Core functions.     (line 3579)
-* gnutls_server_name_get:                Core functions.     (line 3593)
-* gnutls_server_name_set:                Core functions.     (line 3630)
-* gnutls_session_enable_compatibility_mode: Core functions.  (line 3656)
-* gnutls_session_get_client_random:      Core functions.     (line 3670)
-* gnutls_session_get_data:               Core functions.     (line 3708)
-* gnutls_session_get_data2:              Core functions.     (line 3686)
-* gnutls_session_get_id:                 Core functions.     (line 3732)
-* gnutls_session_get_master_secret:      Core functions.     (line 3756)
-* gnutls_session_get_ptr:                Core functions.     (line 3774)
-* gnutls_session_get_server_random:      Core functions.     (line 3787)
-* gnutls_session_is_resumed:             Core functions.     (line 3802)
-* gnutls_session_set_data:               Core functions.     (line 3814)
-* gnutls_session_set_finished_function:  Core functions.     (line 3837)
-* gnutls_session_set_ptr:                Core functions.     (line 3865)
-* gnutls_set_default_export_priority:    Core functions.     (line 3878)
-* gnutls_set_default_priority:           Core functions.     (line 3899)
-* gnutls_sign_algorithm_get_name:        Core functions.     (line 3920)
-* gnutls_sign_callback_get:              Core functions.     (line 3932)
-* gnutls_sign_callback_set:              Core functions.     (line 3946)
-* gnutls_sign_get_id:                    Core functions.     (line 3968)
-* gnutls_sign_get_name:                  Core functions.     (line 3980)
-* gnutls_sign_list:                      Core functions.     (line 3993)
-* gnutls_srp_allocate_client_credentials: Core functions.    (line 4003)
-* gnutls_srp_allocate_server_credentials: Core functions.    (line 4016)
-* gnutls_srp_base64_decode:              Core functions.     (line 4049)
-* gnutls_srp_base64_decode_alloc:        Core functions.     (line 4029)
-* gnutls_srp_base64_encode:              Core functions.     (line 4092)
-* gnutls_srp_base64_encode_alloc:        Core functions.     (line 4071)
-* gnutls_srp_free_client_credentials:    Core functions.     (line 4114)
-* gnutls_srp_free_server_credentials:    Core functions.     (line 4124)
-* gnutls_srp_server_get_username:        Core functions.     (line 4134)
-* gnutls_srp_set_client_credentials:     Core functions.     (line 4179)
+                                                             (line 4281)
+* gnutls_psk_set_server_credentials_hint: Core functions.    (line 4305)
+* gnutls_psk_set_server_dh_params:       Core functions.     (line 4324)
+* gnutls_psk_set_server_params_function: Core functions.     (line 4338)
+* gnutls_pubkey_deinit:                  Core functions.     (line 4350)
+* gnutls_pubkey_export:                  Core functions.     (line 4360)
+* gnutls_pubkey_get_key_id:              Core functions.     (line 4387)
+* gnutls_pubkey_get_key_usage:           Core functions.     (line 4413)
+* gnutls_pubkey_get_pk_algorithm:        Core functions.     (line 4428)
+* gnutls_pubkey_get_pk_dsa_raw:          Core functions.     (line 4446)
+* gnutls_pubkey_get_pk_rsa_raw:          Core functions.     (line 4467)
+* gnutls_pubkey_get_preferred_hash_algorithm: Core functions.
+                                                             (line 4485)
+* gnutls_pubkey_get_verify_algorithm:    Core functions.     (line 4509)
+* gnutls_pubkey_import:                  Core functions.     (line 4658)
+* gnutls_pubkey_import_dsa_raw:          Core functions.     (line 4528)
+* gnutls_pubkey_import_openpgp:          Core functions.     (line 4550)
+* gnutls_pubkey_import_pkcs11:           Core functions.     (line 4585)
+* gnutls_pubkey_import_pkcs11_url:       Core functions.     (line 4568)
+* gnutls_pubkey_import_privkey:          Core functions.     (line 4602)
+* gnutls_pubkey_import_rsa_raw:          Core functions.     (line 4623)
+* gnutls_pubkey_import_x509:             Core functions.     (line 4641)
+* gnutls_pubkey_init:                    Core functions.     (line 4676)
+* gnutls_pubkey_set_key_usage:           Core functions.     (line 4688)
+* gnutls_pubkey_verify_data:             Core functions.     (line 4705)
+* gnutls_pubkey_verify_hash:             Core functions.     (line 4728)
+* gnutls_record_check_pending:           Core functions.     (line 4748)
+* gnutls_record_disable_padding:         Core functions.     (line 4760)
+* gnutls_record_get_direction:           Core functions.     (line 4774)
+* gnutls_record_get_max_size:            Core functions.     (line 4795)
+* gnutls_record_recv:                    Core functions.     (line 4807)
+* gnutls_record_send:                    Core functions.     (line 4842)
+* gnutls_record_set_max_size:            Core functions.     (line 4875)
+* gnutls_rehandshake:                    Core functions.     (line 4898)
+* gnutls_rnd:                            Core functions.     (line 4930)
+* gnutls_rsa_export_get_modulus_bits:    Core functions.     (line 4946)
+* gnutls_rsa_export_get_pubkey:          Core functions.     (line 4958)
+* gnutls_rsa_params_cpy:                 Core functions.     (line 4976)
+* gnutls_rsa_params_deinit:              Core functions.     (line 4991)
+* gnutls_rsa_params_export_pkcs1:        Core functions.     (line 5001)
+* gnutls_rsa_params_export_raw:          Core functions.     (line 5029)
+* gnutls_rsa_params_generate2:           Core functions.     (line 5057)
+* gnutls_rsa_params_import_pkcs1:        Core functions.     (line 5079)
+* gnutls_rsa_params_import_raw:          Core functions.     (line 5102)
+* gnutls_rsa_params_init:                Core functions.     (line 5128)
+* gnutls_safe_renegotiation_status:      Core functions.     (line 5141)
+* gnutls_sec_param_get_name:             Core functions.     (line 5156)
+* gnutls_sec_param_to_pk_bits:           Core functions.     (line 5168)
+* gnutls_server_name_get:                Core functions.     (line 5186)
+* gnutls_server_name_set:                Core functions.     (line 5223)
+* gnutls_session_channel_binding:        Core functions.     (line 5249)
+* gnutls_session_enable_compatibility_mode: Core functions.  (line 5270)
+* gnutls_session_get_data:               Core functions.     (line 5306)
+* gnutls_session_get_data2:              Core functions.     (line 5284)
+* gnutls_session_get_id:                 Core functions.     (line 5330)
+* gnutls_session_get_ptr:                Core functions.     (line 5353)
+* gnutls_session_is_resumed:             Core functions.     (line 5365)
+* gnutls_session_set_data:               Core functions.     (line 5377)
+* gnutls_session_set_ptr:                Core functions.     (line 5400)
+* gnutls_session_ticket_enable_client:   Core functions.     (line 5413)
+* gnutls_session_ticket_enable_server:   Core functions.     (line 5428)
+* gnutls_session_ticket_key_generate:    Core functions.     (line 5446)
+* gnutls_set_default_export_priority:    Core functions.     (line 5462)
+* gnutls_set_default_priority:           Core functions.     (line 5483)
+* gnutls_sign_algorithm_get_name:        Core functions.     (line 5504)
+* gnutls_sign_algorithm_get_requested:   Core functions.     (line 5516)
+* gnutls_sign_callback_get:              Core functions.     (line 5542)
+* gnutls_sign_callback_set:              Core functions.     (line 5558)
+* gnutls_sign_get_id:                    Core functions.     (line 5582)
+* gnutls_sign_get_name:                  Core functions.     (line 5594)
+* gnutls_sign_list:                      Core functions.     (line 5607)
+* gnutls_srp_allocate_client_credentials: Core functions.    (line 5617)
+* gnutls_srp_allocate_server_credentials: Core functions.    (line 5630)
+* gnutls_srp_base64_decode:              Core functions.     (line 5663)
+* gnutls_srp_base64_decode_alloc:        Core functions.     (line 5643)
+* gnutls_srp_base64_encode:              Core functions.     (line 5706)
+* gnutls_srp_base64_encode_alloc:        Core functions.     (line 5685)
+* gnutls_srp_free_client_credentials:    Core functions.     (line 5728)
+* gnutls_srp_free_server_credentials:    Core functions.     (line 5738)
+* gnutls_srp_server_get_username:        Core functions.     (line 5748)
+* gnutls_srp_set_client_credentials:     Core functions.     (line 5792)
 * gnutls_srp_set_client_credentials_function: Core functions.
-                                                             (line 4148)
-* gnutls_srp_set_prime_bits:             Core functions.     (line 4199)
-* gnutls_srp_set_server_credentials_file: Core functions.    (line 4221)
+                                                             (line 5762)
+* gnutls_srp_set_prime_bits:             Core functions.     (line 5812)
+* gnutls_srp_set_server_credentials_file: Core functions.    (line 5834)
 * gnutls_srp_set_server_credentials_function: Core functions.
-                                                             (line 4241)
-* gnutls_srp_verifier:                   Core functions.     (line 4275)
-* gnutls_strerror:                       Core functions.     (line 4318)
-* gnutls_strerror_name:                  Core functions.     (line 4303)
-* gnutls_transport_get_ptr:              Core functions.     (line 4349)
-* gnutls_transport_get_ptr2:             Core functions.     (line 4334)
-* gnutls_transport_set_errno:            Core functions.     (line 4362)
-* gnutls_transport_set_global_errno:     Core functions.     (line 4385)
-* gnutls_transport_set_lowat:            Core functions.     (line 4408)
-* gnutls_transport_set_ptr:              Core functions.     (line 4441)
-* gnutls_transport_set_ptr2:             Core functions.     (line 4425)
-* gnutls_transport_set_pull_function:    Core functions.     (line 4454)
-* gnutls_transport_set_push_function:    Core functions.     (line 4470)
+                                                             (line 5854)
+* gnutls_srp_verifier:                   Core functions.     (line 5889)
+* gnutls_strerror:                       Core functions.     (line 5932)
+* gnutls_strerror_name:                  Core functions.     (line 5917)
+* gnutls_supplemental_get_name:          Core functions.     (line 5947)
+* gnutls_transport_get_ptr:              Core functions.     (line 5976)
+* gnutls_transport_get_ptr2:             Core functions.     (line 5961)
+* gnutls_transport_set_errno:            Core functions.     (line 6005)
+* gnutls_transport_set_errno_function:   Core functions.     (line 5989)
+* gnutls_transport_set_global_errno:     Core functions.     (line 6028)
+* gnutls_transport_set_lowat:            Core functions.     (line 6051)
+* gnutls_transport_set_ptr:              Core functions.     (line 6084)
+* gnutls_transport_set_ptr2:             Core functions.     (line 6068)
+* gnutls_transport_set_pull_function:    Core functions.     (line 6097)
+* gnutls_transport_set_push_function:    Core functions.     (line 6113)
+* gnutls_transport_set_vec_push_function: Core functions.    (line 6131)
 * gnutls_x509_crl_check_issuer:          X.509 certificate functions.
                                                              (line  593)
 * gnutls_x509_crl_deinit:                X.509 certificate functions.
@@ -2421,316 +2546,349 @@ Function and Data Index
                                                              (line  869)
 * gnutls_x509_crl_get_number:            X.509 certificate functions.
                                                              (line  883)
-* gnutls_x509_crl_get_signature:         X.509 certificate functions.
-                                                             (line  918)
-* gnutls_x509_crl_get_signature_algorithm: X.509 certificate functions.
+* gnutls_x509_crl_get_raw_issuer_dn:     X.509 certificate functions.
                                                              (line  905)
+* gnutls_x509_crl_get_signature:         X.509 certificate functions.
+                                                             (line  934)
+* gnutls_x509_crl_get_signature_algorithm: X.509 certificate functions.
+                                                             (line  921)
 * gnutls_x509_crl_get_this_update:       X.509 certificate functions.
-                                                             (line  935)
+                                                             (line  951)
 * gnutls_x509_crl_get_version:           X.509 certificate functions.
-                                                             (line  945)
+                                                             (line  961)
 * gnutls_x509_crl_import:                X.509 certificate functions.
-                                                             (line  956)
+                                                             (line  972)
 * gnutls_x509_crl_init:                  X.509 certificate functions.
-                                                             (line  975)
+                                                             (line  991)
 * gnutls_x509_crl_print:                 X.509 certificate functions.
-                                                             (line  992)
+                                                             (line 1008)
+* gnutls_x509_crl_privkey_sign:          X.509 certificate functions.
+                                                             (line 1028)
 * gnutls_x509_crl_set_authority_key_id:  X.509 certificate functions.
-                                                             (line 1011)
+                                                             (line 1053)
 * gnutls_x509_crl_set_crt:               X.509 certificate functions.
-                                                             (line 1050)
+                                                             (line 1092)
 * gnutls_x509_crl_set_crt_serial:        X.509 certificate functions.
-                                                             (line 1031)
+                                                             (line 1073)
 * gnutls_x509_crl_set_next_update:       X.509 certificate functions.
-                                                             (line 1068)
+                                                             (line 1110)
 * gnutls_x509_crl_set_number:            X.509 certificate functions.
-                                                             (line 1082)
+                                                             (line 1124)
 * gnutls_x509_crl_set_this_update:       X.509 certificate functions.
-                                                             (line 1100)
+                                                             (line 1142)
 * gnutls_x509_crl_set_version:           X.509 certificate functions.
-                                                             (line 1114)
-* gnutls_x509_crl_sign:                  X.509 certificate functions.
                                                              (line 1156)
+* gnutls_x509_crl_sign:                  X.509 certificate functions.
+                                                             (line 1200)
 * gnutls_x509_crl_sign2:                 X.509 certificate functions.
-                                                             (line 1131)
+                                                             (line 1173)
 * gnutls_x509_crl_verify:                X.509 certificate functions.
-                                                             (line 1174)
+                                                             (line 1220)
 * gnutls_x509_crq_deinit:                X.509 certificate functions.
-                                                             (line 1197)
+                                                             (line 1243)
 * gnutls_x509_crq_export:                X.509 certificate functions.
-                                                             (line 1207)
+                                                             (line 1254)
 * gnutls_x509_crq_get_attribute_by_oid:  X.509 certificate functions.
-                                                             (line 1234)
+                                                             (line 1282)
 * gnutls_x509_crq_get_attribute_data:    X.509 certificate functions.
-                                                             (line 1258)
+                                                             (line 1306)
 * gnutls_x509_crq_get_attribute_info:    X.509 certificate functions.
-                                                             (line 1287)
+                                                             (line 1335)
 * gnutls_x509_crq_get_basic_constraints: X.509 certificate functions.
-                                                             (line 1319)
+                                                             (line 1367)
 * gnutls_x509_crq_get_challenge_password: X.509 certificate functions.
-                                                             (line 1347)
+                                                             (line 1395)
 * gnutls_x509_crq_get_dn:                X.509 certificate functions.
-                                                             (line 1422)
+                                                             (line 1468)
 * gnutls_x509_crq_get_dn_by_oid:         X.509 certificate functions.
-                                                             (line 1364)
+                                                             (line 1414)
 * gnutls_x509_crq_get_dn_oid:            X.509 certificate functions.
-                                                             (line 1399)
+                                                             (line 1447)
 * gnutls_x509_crq_get_extension_by_oid:  X.509 certificate functions.
-                                                             (line 1445)
+                                                             (line 1490)
 * gnutls_x509_crq_get_extension_data:    X.509 certificate functions.
-                                                             (line 1474)
+                                                             (line 1519)
 * gnutls_x509_crq_get_extension_info:    X.509 certificate functions.
-                                                             (line 1505)
+                                                             (line 1550)
 * gnutls_x509_crq_get_key_id:            X.509 certificate functions.
-                                                             (line 1539)
+                                                             (line 1584)
 * gnutls_x509_crq_get_key_purpose_oid:   X.509 certificate functions.
-                                                             (line 1568)
+                                                             (line 1613)
 * gnutls_x509_crq_get_key_rsa_raw:       X.509 certificate functions.
-                                                             (line 1597)
+                                                             (line 1640)
 * gnutls_x509_crq_get_key_usage:         X.509 certificate functions.
-                                                             (line 1617)
+                                                             (line 1660)
 * gnutls_x509_crq_get_pk_algorithm:      X.509 certificate functions.
-                                                             (line 1643)
+                                                             (line 1686)
 * gnutls_x509_crq_get_subject_alt_name:  X.509 certificate functions.
-                                                             (line 1664)
+                                                             (line 1707)
 * gnutls_x509_crq_get_subject_alt_othername_oid: X.509 certificate functions.
-                                                             (line 1701)
+                                                             (line 1744)
 * gnutls_x509_crq_get_version:           X.509 certificate functions.
-                                                             (line 1735)
+                                                             (line 1778)
 * gnutls_x509_crq_import:                X.509 certificate functions.
-                                                             (line 1748)
+                                                             (line 1791)
 * gnutls_x509_crq_init:                  X.509 certificate functions.
-                                                             (line 1768)
+                                                             (line 1811)
 * gnutls_x509_crq_print:                 X.509 certificate functions.
-                                                             (line 1782)
-* gnutls_x509_crq_set_attribute_by_oid:  X.509 certificate functions.
-                                                             (line 1804)
-* gnutls_x509_crq_set_basic_constraints: X.509 certificate functions.
                                                              (line 1825)
+* gnutls_x509_crq_privkey_sign:          X.509 certificate functions.
+                                                             (line 1847)
+* gnutls_x509_crq_set_attribute_by_oid:  X.509 certificate functions.
+                                                             (line 1874)
+* gnutls_x509_crq_set_basic_constraints: X.509 certificate functions.
+                                                             (line 1895)
 * gnutls_x509_crq_set_challenge_password: X.509 certificate functions.
-                                                             (line 1846)
+                                                             (line 1916)
 * gnutls_x509_crq_set_dn_by_oid:         X.509 certificate functions.
-                                                             (line 1862)
-* gnutls_x509_crq_set_key:               X.509 certificate functions.
-                                                             (line 1948)
-* gnutls_x509_crq_set_key_purpose_oid:   X.509 certificate functions.
-                                                             (line 1891)
-* gnutls_x509_crq_set_key_rsa_raw:       X.509 certificate functions.
-                                                             (line 1913)
-* gnutls_x509_crq_set_key_usage:         X.509 certificate functions.
                                                              (line 1932)
+* gnutls_x509_crq_set_key:               X.509 certificate functions.
+                                                             (line 2018)
+* gnutls_x509_crq_set_key_purpose_oid:   X.509 certificate functions.
+                                                             (line 1961)
+* gnutls_x509_crq_set_key_rsa_raw:       X.509 certificate functions.
+                                                             (line 1983)
+* gnutls_x509_crq_set_key_usage:         X.509 certificate functions.
+                                                             (line 2002)
+* gnutls_x509_crq_set_pubkey:            Core functions.     (line 6149)
 * gnutls_x509_crq_set_subject_alt_name:  X.509 certificate functions.
-                                                             (line 1964)
+                                                             (line 2034)
 * gnutls_x509_crq_set_version:           X.509 certificate functions.
-                                                             (line 1999)
+                                                             (line 2069)
 * gnutls_x509_crq_sign:                  X.509 certificate functions.
-                                                             (line 2042)
+                                                             (line 2113)
 * gnutls_x509_crq_sign2:                 X.509 certificate functions.
-                                                             (line 2015)
+                                                             (line 2085)
+* gnutls_x509_crq_verify:                X.509 certificate functions.
+                                                             (line 2130)
 * gnutls_x509_crt_check_hostname:        X.509 certificate functions.
-                                                             (line 2057)
+                                                             (line 2148)
 * gnutls_x509_crt_check_issuer:          X.509 certificate functions.
-                                                             (line 2073)
+                                                             (line 2164)
 * gnutls_x509_crt_check_revocation:      X.509 certificate functions.
-                                                             (line 2089)
+                                                             (line 2181)
 * gnutls_x509_crt_cpy_crl_dist_points:   X.509 certificate functions.
-                                                             (line 2106)
+                                                             (line 2198)
 * gnutls_x509_crt_deinit:                X.509 certificate functions.
-                                                             (line 2121)
+                                                             (line 2213)
 * gnutls_x509_crt_export:                X.509 certificate functions.
-                                                             (line 2131)
+                                                             (line 2223)
 * gnutls_x509_crt_get_activation_time:   X.509 certificate functions.
-                                                             (line 2157)
+                                                             (line 2249)
 * gnutls_x509_crt_get_authority_key_id:  X.509 certificate functions.
-                                                             (line 2170)
+                                                             (line 2262)
 * gnutls_x509_crt_get_basic_constraints: X.509 certificate functions.
-                                                             (line 2193)
+                                                             (line 2285)
 * gnutls_x509_crt_get_ca_status:         X.509 certificate functions.
-                                                             (line 2219)
+                                                             (line 2311)
 * gnutls_x509_crt_get_crl_dist_points:   X.509 certificate functions.
-                                                             (line 2242)
+                                                             (line 2334)
 * gnutls_x509_crt_get_dn:                X.509 certificate functions.
-                                                             (line 2345)
+                                                             (line 2435)
 * gnutls_x509_crt_get_dn_by_oid:         X.509 certificate functions.
-                                                             (line 2287)
+                                                             (line 2377)
 * gnutls_x509_crt_get_dn_oid:            X.509 certificate functions.
-                                                             (line 2322)
+                                                             (line 2412)
 * gnutls_x509_crt_get_expiration_time:   X.509 certificate functions.
-                                                             (line 2367)
+                                                             (line 2457)
 * gnutls_x509_crt_get_extension_by_oid:  X.509 certificate functions.
-                                                             (line 2380)
+                                                             (line 2470)
 * gnutls_x509_crt_get_extension_data:    X.509 certificate functions.
-                                                             (line 2407)
+                                                             (line 2497)
 * gnutls_x509_crt_get_extension_info:    X.509 certificate functions.
-                                                             (line 2436)
+                                                             (line 2526)
 * gnutls_x509_crt_get_extension_oid:     X.509 certificate functions.
-                                                             (line 2467)
+                                                             (line 2557)
 * gnutls_x509_crt_get_fingerprint:       X.509 certificate functions.
-                                                             (line 2491)
+                                                             (line 2581)
 * gnutls_x509_crt_get_issuer:            X.509 certificate functions.
-                                                             (line 2594)
+                                                             (line 2822)
+* gnutls_x509_crt_get_issuer_alt_name:   X.509 certificate functions.
+                                                             (line 2642)
+* gnutls_x509_crt_get_issuer_alt_name2:  X.509 certificate functions.
+                                                             (line 2604)
+* gnutls_x509_crt_get_issuer_alt_othername_oid: X.509 certificate functions.
+                                                             (line 2685)
 * gnutls_x509_crt_get_issuer_dn:         X.509 certificate functions.
-                                                             (line 2572)
+                                                             (line 2779)
 * gnutls_x509_crt_get_issuer_dn_by_oid:  X.509 certificate functions.
-                                                             (line 2514)
+                                                             (line 2721)
 * gnutls_x509_crt_get_issuer_dn_oid:     X.509 certificate functions.
-                                                             (line 2549)
+                                                             (line 2756)
+* gnutls_x509_crt_get_issuer_unique_id:  X.509 certificate functions.
+                                                             (line 2801)
 * gnutls_x509_crt_get_key_id:            X.509 certificate functions.
-                                                             (line 2613)
+                                                             (line 2841)
 * gnutls_x509_crt_get_key_purpose_oid:   X.509 certificate functions.
-                                                             (line 2640)
+                                                             (line 2868)
 * gnutls_x509_crt_get_key_usage:         X.509 certificate functions.
-                                                             (line 2667)
+                                                             (line 2895)
 * gnutls_x509_crt_get_pk_algorithm:      X.509 certificate functions.
-                                                             (line 2691)
+                                                             (line 2918)
 * gnutls_x509_crt_get_pk_dsa_raw:        X.509 certificate functions.
-                                                             (line 2712)
+                                                             (line 2939)
 * gnutls_x509_crt_get_pk_rsa_raw:        X.509 certificate functions.
-                                                             (line 2733)
+                                                             (line 2960)
+* gnutls_x509_crt_get_preferred_hash_algorithm: X.509 certificate functions.
+                                                             (line 2978)
 * gnutls_x509_crt_get_proxy:             X.509 certificate functions.
-                                                             (line 2751)
+                                                             (line 3005)
 * gnutls_x509_crt_get_raw_dn:            X.509 certificate functions.
-                                                             (line 2776)
+                                                             (line 3030)
 * gnutls_x509_crt_get_raw_issuer_dn:     X.509 certificate functions.
-                                                             (line 2791)
+                                                             (line 3045)
 * gnutls_x509_crt_get_serial:            X.509 certificate functions.
-                                                             (line 2806)
+                                                             (line 3060)
 * gnutls_x509_crt_get_signature:         X.509 certificate functions.
-                                                             (line 2839)
+                                                             (line 3093)
 * gnutls_x509_crt_get_signature_algorithm: X.509 certificate functions.
-                                                             (line 2826)
+                                                             (line 3079)
 * gnutls_x509_crt_get_subject:           X.509 certificate functions.
-                                                             (line 2990)
+                                                             (line 3262)
 * gnutls_x509_crt_get_subject_alt_name:  X.509 certificate functions.
-                                                             (line 2893)
+                                                             (line 3147)
 * gnutls_x509_crt_get_subject_alt_name2: X.509 certificate functions.
-                                                             (line 2857)
+                                                             (line 3111)
 * gnutls_x509_crt_get_subject_alt_othername_oid: X.509 certificate functions.
-                                                             (line 2936)
-* gnutls_x509_crt_get_subject_key_id:    X.509 certificate functions.
-                                                             (line 2969)
-* gnutls_x509_crt_get_verify_algorithm:  X.509 certificate functions.
-                                                             (line 3009)
-* gnutls_x509_crt_get_version:           X.509 certificate functions.
-                                                             (line 3028)
-* gnutls_x509_crt_import:                X.509 certificate functions.
-                                                             (line 3039)
-* gnutls_x509_crt_init:                  X.509 certificate functions.
-                                                             (line 3059)
-* gnutls_x509_crt_list_import:           X.509 certificate functions.
-                                                             (line 3072)
-* gnutls_x509_crt_list_verify:           X.509 certificate functions.
-                                                             (line 3103)
-* gnutls_x509_crt_print:                 X.509 certificate functions.
-                                                             (line 3148)
-* gnutls_x509_crt_set_activation_time:   X.509 certificate functions.
-                                                             (line 3172)
-* gnutls_x509_crt_set_authority_key_id:  X.509 certificate functions.
                                                              (line 3187)
+* gnutls_x509_crt_get_subject_key_id:    X.509 certificate functions.
+                                                             (line 3220)
+* gnutls_x509_crt_get_subject_unique_id: X.509 certificate functions.
+                                                             (line 3241)
+* gnutls_x509_crt_get_verify_algorithm:  X.509 certificate functions.
+                                                             (line 3281)
+* gnutls_x509_crt_get_version:           X.509 certificate functions.
+                                                             (line 3302)
+* gnutls_x509_crt_import:                X.509 certificate functions.
+                                                             (line 3313)
+* gnutls_x509_crt_import_pkcs11:         Core functions.     (line 6182)
+* gnutls_x509_crt_import_pkcs11_url:     Core functions.     (line 6164)
+* gnutls_x509_crt_init:                  X.509 certificate functions.
+                                                             (line 3333)
+* gnutls_x509_crt_list_import:           X.509 certificate functions.
+                                                             (line 3346)
+* gnutls_x509_crt_list_import_pkcs11:    Core functions.     (line 6198)
+* gnutls_x509_crt_list_verify:           X.509 certificate functions.
+                                                             (line 3384)
+* gnutls_x509_crt_print:                 X.509 certificate functions.
+                                                             (line 3429)
+* gnutls_x509_crt_privkey_sign:          X.509 certificate functions.
+                                                             (line 3454)
+* gnutls_x509_crt_set_activation_time:   X.509 certificate functions.
+                                                             (line 3478)
+* gnutls_x509_crt_set_authority_key_id:  X.509 certificate functions.
+                                                             (line 3493)
 * gnutls_x509_crt_set_basic_constraints: X.509 certificate functions.
-                                                             (line 3206)
+                                                             (line 3512)
 * gnutls_x509_crt_set_ca_status:         X.509 certificate functions.
-                                                             (line 3225)
+                                                             (line 3531)
 * gnutls_x509_crt_set_crl_dist_points:   X.509 certificate functions.
-                                                             (line 3268)
+                                                             (line 3574)
 * gnutls_x509_crt_set_crl_dist_points2:  X.509 certificate functions.
-                                                             (line 3244)
+                                                             (line 3550)
 * gnutls_x509_crt_set_crq:               X.509 certificate functions.
-                                                             (line 3304)
+                                                             (line 3610)
 * gnutls_x509_crt_set_crq_extensions:    X.509 certificate functions.
-                                                             (line 3287)
+                                                             (line 3593)
 * gnutls_x509_crt_set_dn_by_oid:         X.509 certificate functions.
-                                                             (line 3321)
+                                                             (line 3627)
 * gnutls_x509_crt_set_expiration_time:   X.509 certificate functions.
-                                                             (line 3349)
+                                                             (line 3655)
 * gnutls_x509_crt_set_extension_by_oid:  X.509 certificate functions.
-                                                             (line 3364)
+                                                             (line 3670)
 * gnutls_x509_crt_set_issuer_dn_by_oid:  X.509 certificate functions.
-                                                             (line 3388)
+                                                             (line 3694)
 * gnutls_x509_crt_set_key:               X.509 certificate functions.
-                                                             (line 3455)
+                                                             (line 3761)
 * gnutls_x509_crt_set_key_purpose_oid:   X.509 certificate functions.
-                                                             (line 3421)
+                                                             (line 3727)
 * gnutls_x509_crt_set_key_usage:         X.509 certificate functions.
-                                                             (line 3441)
+                                                             (line 3747)
 * gnutls_x509_crt_set_proxy:             X.509 certificate functions.
-                                                             (line 3498)
-* gnutls_x509_crt_set_proxy_dn:          X.509 certificate functions.
-                                                             (line 3472)
-* gnutls_x509_crt_set_serial:            X.509 certificate functions.
-                                                             (line 3520)
-* gnutls_x509_crt_set_subject_alt_name:  X.509 certificate functions.
-                                                             (line 3540)
-* gnutls_x509_crt_set_subject_alternative_name: X.509 certificate functions.
-                                                             (line 3576)
-* gnutls_x509_crt_set_subject_key_id:    X.509 certificate functions.
-                                                             (line 3597)
-* gnutls_x509_crt_set_version:           X.509 certificate functions.
-                                                             (line 3614)
-* gnutls_x509_crt_sign:                  X.509 certificate functions.
-                                                             (line 3661)
-* gnutls_x509_crt_sign2:                 X.509 certificate functions.
-                                                             (line 3637)
-* gnutls_x509_crt_verify:                X.509 certificate functions.
-                                                             (line 3719)
-* gnutls_x509_crt_verify_data:           X.509 certificate functions.
-                                                             (line 3679)
-* gnutls_x509_crt_verify_hash:           X.509 certificate functions.
-                                                             (line 3699)
-* gnutls_x509_dn_deinit:                 X.509 certificate functions.
-                                                             (line 3742)
-* gnutls_x509_dn_export:                 X.509 certificate functions.
-                                                             (line 3755)
-* gnutls_x509_dn_get_rdn_ava:            X.509 certificate functions.
-                                                             (line 3781)
-* gnutls_x509_dn_import:                 X.509 certificate functions.
                                                              (line 3804)
+* gnutls_x509_crt_set_proxy_dn:          X.509 certificate functions.
+                                                             (line 3778)
+* gnutls_x509_crt_set_pubkey:            Core functions.     (line 6217)
+* gnutls_x509_crt_set_serial:            X.509 certificate functions.
+                                                             (line 3826)
+* gnutls_x509_crt_set_subject_alt_name:  X.509 certificate functions.
+                                                             (line 3846)
+* gnutls_x509_crt_set_subject_alternative_name: X.509 certificate functions.
+                                                             (line 3882)
+* gnutls_x509_crt_set_subject_key_id:    X.509 certificate functions.
+                                                             (line 3903)
+* gnutls_x509_crt_set_version:           X.509 certificate functions.
+                                                             (line 3920)
+* gnutls_x509_crt_sign:                  X.509 certificate functions.
+                                                             (line 3967)
+* gnutls_x509_crt_sign2:                 X.509 certificate functions.
+                                                             (line 3943)
+* gnutls_x509_crt_verify:                X.509 certificate functions.
+                                                             (line 4031)
+* gnutls_x509_crt_verify_data:           X.509 certificate functions.
+                                                             (line 3985)
+* gnutls_x509_crt_verify_hash:           X.509 certificate functions.
+                                                             (line 4008)
+* gnutls_x509_dn_deinit:                 X.509 certificate functions.
+                                                             (line 4053)
+* gnutls_x509_dn_export:                 X.509 certificate functions.
+                                                             (line 4066)
+* gnutls_x509_dn_get_rdn_ava:            X.509 certificate functions.
+                                                             (line 4092)
+* gnutls_x509_dn_import:                 X.509 certificate functions.
+                                                             (line 4115)
 * gnutls_x509_dn_init:                   X.509 certificate functions.
-                                                             (line 3822)
+                                                             (line 4133)
 * gnutls_x509_dn_oid_known:              X.509 certificate functions.
-                                                             (line 3838)
+                                                             (line 4149)
 * gnutls_x509_privkey_cpy:               X.509 certificate functions.
-                                                             (line 3855)
+                                                             (line 4166)
 * gnutls_x509_privkey_deinit:            X.509 certificate functions.
-                                                             (line 3870)
+                                                             (line 4181)
 * gnutls_x509_privkey_export:            X.509 certificate functions.
-                                                             (line 3973)
-* gnutls_x509_privkey_export_dsa_raw:    X.509 certificate functions.
-                                                             (line 3881)
-* gnutls_x509_privkey_export_pkcs8:      X.509 certificate functions.
-                                                             (line 3907)
-* gnutls_x509_privkey_export_rsa_raw:    X.509 certificate functions.
-                                                             (line 3946)
-* gnutls_x509_privkey_fix:               X.509 certificate functions.
-                                                             (line 4000)
-* gnutls_x509_privkey_generate:          X.509 certificate functions.
-                                                             (line 4014)
-* gnutls_x509_privkey_get_key_id:        X.509 certificate functions.
-                                                             (line 4034)
-* gnutls_x509_privkey_get_pk_algorithm:  X.509 certificate functions.
-                                                             (line 4060)
-* gnutls_x509_privkey_import:            X.509 certificate functions.
-                                                             (line 4163)
-* gnutls_x509_privkey_import_dsa_raw:    X.509 certificate functions.
-                                                             (line 4075)
-* gnutls_x509_privkey_import_pkcs8:      X.509 certificate functions.
-                                                             (line 4101)
-* gnutls_x509_privkey_import_rsa_raw:    X.509 certificate functions.
-                                                             (line 4136)
-* gnutls_x509_privkey_init:              X.509 certificate functions.
-                                                             (line 4183)
-* gnutls_x509_privkey_sign_data:         X.509 certificate functions.
-                                                             (line 4197)
-* gnutls_x509_privkey_sign_hash:         X.509 certificate functions.
-                                                             (line 4227)
-* gnutls_x509_privkey_verify_data:       X.509 certificate functions.
-                                                             (line 4247)
-* gnutls_x509_rdn_get:                   X.509 certificate functions.
                                                              (line 4317)
+* gnutls_x509_privkey_export_dsa_raw:    X.509 certificate functions.
+                                                             (line 4192)
+* gnutls_x509_privkey_export_pkcs8:      X.509 certificate functions.
+                                                             (line 4218)
+* gnutls_x509_privkey_export_rsa_raw:    X.509 certificate functions.
+                                                             (line 4290)
+* gnutls_x509_privkey_export_rsa_raw2:   X.509 certificate functions.
+                                                             (line 4258)
+* gnutls_x509_privkey_fix:               X.509 certificate functions.
+                                                             (line 4344)
+* gnutls_x509_privkey_generate:          X.509 certificate functions.
+                                                             (line 4358)
+* gnutls_x509_privkey_get_key_id:        X.509 certificate functions.
+                                                             (line 4381)
+* gnutls_x509_privkey_get_pk_algorithm:  X.509 certificate functions.
+                                                             (line 4407)
+* gnutls_x509_privkey_import:            X.509 certificate functions.
+                                                             (line 4544)
+* gnutls_x509_privkey_import_dsa_raw:    X.509 certificate functions.
+                                                             (line 4422)
+* gnutls_x509_privkey_import_pkcs8:      X.509 certificate functions.
+                                                             (line 4448)
+* gnutls_x509_privkey_import_rsa_raw:    X.509 certificate functions.
+                                                             (line 4517)
+* gnutls_x509_privkey_import_rsa_raw2:   X.509 certificate functions.
+                                                             (line 4484)
+* gnutls_x509_privkey_init:              X.509 certificate functions.
+                                                             (line 4564)
+* gnutls_x509_privkey_sec_param:         X.509 certificate functions.
+                                                             (line 4576)
+* gnutls_x509_privkey_sign_data:         X.509 certificate functions.
+                                                             (line 4591)
+* gnutls_x509_privkey_sign_hash:         X.509 certificate functions.
+                                                             (line 4626)
+* gnutls_x509_privkey_verify_data:       X.509 certificate functions.
+                                                             (line 4648)
+* gnutls_x509_rdn_get:                   X.509 certificate functions.
+                                                             (line 4721)
 * gnutls_x509_rdn_get_by_oid:            X.509 certificate functions.
-                                                             (line 4267)
+                                                             (line 4671)
 * gnutls_x509_rdn_get_oid:               X.509 certificate functions.
-                                                             (line 4294)
+                                                             (line 4698)
 * handshake:                             Core Interface.     (line  325)
 * handshake-description->string:         Core Interface.     (line  416)
 * import-openpgp-certificate:            Extra Interface.    (line   59)
@@ -2747,9 +2905,9 @@ Function and Data Index
 * make-dh-parameters:                    Core Interface.     (line  213)
 * make-psk-client-credentials:           Core Interface.     (line   99)
 * make-psk-server-credentials:           Core Interface.     (line  105)
-* make-rsa-parameters <1>:               Core Interface.     (line  187)
-* make-rsa-parameters:                   Representation of Binary Data.
+* make-rsa-parameters <1>:               Representation of Binary Data.
                                                              (line   19)
+* make-rsa-parameters:                   Core Interface.     (line  187)
 * make-session:                          Core Interface.     (line  331)
 * openpgp-certificate-algorithm:         Extra Interface.    (line   30)
 * openpgp-certificate-fingerprint:       Extra Interface.    (line   40)
@@ -2768,9 +2926,9 @@ Function and Data Index
 * params->string:                        Core Interface.     (line  441)
 * peer-certificate-status:               Core Interface.     (line  108)
 * pk-algorithm->string:                  Core Interface.     (line  390)
-* pkcs1-export-rsa-parameters <1>:       Core Interface.     (line  177)
-* pkcs1-export-rsa-parameters:           Representation of Binary Data.
+* pkcs1-export-rsa-parameters <1>:       Representation of Binary Data.
                                                              (line   19)
+* pkcs1-export-rsa-parameters:           Core Interface.     (line  177)
 * pkcs1-import-rsa-parameters:           Core Interface.     (line  182)
 * pkcs3-export-dh-parameters:            Core Interface.     (line  203)
 * pkcs3-import-dh-parameters:            Core Interface.     (line  208)
@@ -2781,16 +2939,16 @@ Function and Data Index
 * psk-server-credentials?:               Core Interface.     (line  348)
 * record-receive! <1>:                   Core Interface.     (line  227)
 * record-receive!:                       Input and Output.   (line   48)
-* record-send <1>:                       Input and Output.   (line   48)
-* record-send:                           Core Interface.     (line  231)
+* record-send <1>:                       Core Interface.     (line  231)
+* record-send:                           Input and Output.   (line   48)
 * rehandshake:                           Core Interface.     (line  322)
 * rsa-parameters?:                       Core Interface.     (line  360)
 * server-session-psk-username:           Core Interface.     (line   91)
 * session-authentication-type:           Core Interface.     (line  294)
 * session-certificate-type:              Core Interface.     (line  301)
-* session-cipher <1>:                    Core Interface.     (line  313)
-* session-cipher:                        Enumerates and Constants.
+* session-cipher <1>:                    Enumerates and Constants.
                                                              (line   51)
+* session-cipher:                        Core Interface.     (line  313)
 * session-client-authentication-type:    Core Interface.     (line  286)
 * session-compression-method:            Core Interface.     (line  304)
 * session-kx:                            Core Interface.     (line  310)
@@ -2842,8 +3000,8 @@ Function and Data Index
 * set-session-protocol-priority!:        Core Interface.     (line  251)
 * set-session-transport-fd! <1>:         Core Interface.     (line  219)
 * set-session-transport-fd!:             Input and Output.   (line    6)
-* set-session-transport-port! <1>:       Input and Output.   (line    6)
-* set-session-transport-port!:           Core Interface.     (line  216)
+* set-session-transport-port! <1>:       Core Interface.     (line  216)
+* set-session-transport-port!:           Input and Output.   (line    6)
 * sign-algorithm->string:                Core Interface.     (line  387)
 * srp-client-credentials?:               Core Interface.     (line  351)
 * srp-server-credentials?:               Core Interface.     (line  354)
@@ -2874,6 +3032,7 @@ Concept Index
  [index ]
 * Menu:
 
+* Abstract types:                        Abstract data types.  (line  6)
 * Alert protocol:                        The TLS Alert Protocol.
                                                                (line  6)
 * Anonymous authentication:              Anonymous authentication.
@@ -2885,10 +3044,11 @@ Concept Index
 * Certificate requests:                  PKCS #10 certificate requests.
                                                                (line  6)
 * certtool:                              Invoking certtool.    (line  6)
+* Channel Bindings:                      Channel Bindings.     (line  6)
 * Ciphersuites:                          All the supported ciphersuites in GnuTLS.
                                                                (line  6)
-* Client Certificate authentication:     The TLS Handshake Protocol.
-                                                               (line 65)
+* Client Certificate authentication:     Client Authentication.
+                                                               (line  6)
 * Compression algorithms:                Compression algorithms used in the record layer.
                                                                (line  6)
 * constant:                              Enumerates and Constants.
@@ -2911,6 +3071,7 @@ Concept Index
 * FDL, GNU Free Documentation License:   GNU Free Documentation License.
                                                                (line  6)
 * Function reference:                    Function reference.   (line  6)
+* generating parameters:                 Parameter generation. (line  6)
 * gnutls-cli:                            Invoking gnutls-cli.  (line  6)
 * gnutls-cli-debug:                      Invoking gnutls-cli-debug.
                                                                (line  6)
@@ -2938,24 +3099,25 @@ Concept Index
 * LGPL, GNU Lesser General Public License: GNU LGPL.           (line  6)
 * License, GNU GPL:                      GNU GPL.              (line  6)
 * License, GNU LGPL:                     GNU LGPL.             (line  6)
-* Maximum fragment length:               TLS Extensions.       (line 18)
+* Maximum fragment length:               TLS Extensions.       (line 22)
 * Netconf:                               Example client PSK connection.
                                                                (line 29)
-* Opaque PRF Input:                      Opaque PRF Input TLS Extension.
-                                                               (line  6)
 * OpenPGP functions:                     OpenPGP functions.    (line  6)
-* OpenPGP Keys <1>:                      Certificate authentication.
-                                                               (line 17)
-* OpenPGP Keys:                          The OpenPGP trust model.
+* OpenPGP Keys <1>:                      The OpenPGP trust model.
                                                                (line  6)
+* OpenPGP Keys:                          Certificate authentication.
+                                                               (line 17)
 * OpenPGP Server:                        Echo Server with OpenPGP authentication.
                                                                (line  6)
 * OpenSSL:                               Compatibility with the OpenSSL library.
                                                                (line  6)
+* p11tool:                               Invoking p11tool.     (line  6)
+* parameter generation:                  Parameter generation. (line  6)
 * PCT:                                   On SSL 2 and older protocols.
                                                                (line 38)
 * PKCS #10:                              PKCS #10 certificate requests.
                                                                (line  6)
+* PKCS #11 tokens:                       PKCS #11 tokens.      (line  6)
 * PKCS #12:                              PKCS #12 structures.  (line  6)
 * PSK authentication:                    Authentication using PSK.
                                                                (line  6)
@@ -2967,10 +3129,11 @@ Concept Index
 * Record padding:                        On Record Padding.    (line  6)
 * Record protocol:                       The TLS record protocol.
                                                                (line  6)
+* renegotiation:                         TLS Extensions.       (line 61)
 * Reporting Bugs:                        Bug Reports.          (line  6)
-* Resuming sessions:                     The TLS Handshake Protocol.
-                                                               (line 85)
-* Server name indication:                TLS Extensions.       (line 27)
+* Resuming sessions:                     Resuming Sessions.    (line  6)
+* Server name indication:                TLS Extensions.       (line 31)
+* Session Tickets:                       TLS Extensions.       (line 45)
 * SRFI-4:                                Representation of Binary Data.
                                                                (line 11)
 * SRP authentication:                    Authentication using SRP.
@@ -2980,17 +3143,18 @@ Concept Index
                                                                (line  6)
 * Symmetric encryption algorithms:       Encryption algorithms used in the record layer.
                                                                (line  6)
-* TLS Extensions:                        TLS Extensions.       (line  6)
+* Ticket:                                TLS Extensions.       (line 45)
+* TLS Extensions:                        TLS Extensions.       (line 45)
 * TLS Inner Application (TLS/IA) functions: TLS Inner Application (TLS/IA) functions.
                                                                (line  6)
 * TLS Layers:                            TLS layers.           (line  6)
 * Transport protocol:                    The transport layer.  (line  6)
 * Verifying certificate paths:           Verifying X.509 certificate paths.
                                                                (line  6)
-* X.509 certificates <1>:                The X.509 trust model.
-                                                               (line  6)
-* X.509 certificates:                    Certificate authentication.
+* X.509 certificates <1>:                Certificate authentication.
                                                                (line  9)
+* X.509 certificates:                    The X.509 trust model.
+                                                               (line  6)
 * X.509 Functions:                       X.509 certificate functions.
                                                                (line  6)
 

@@ -1,1 +1,1 @@
-/Users/michael/src/git/lib/gwenhywfar/gui/cocoa/CocoaWindowContentView.h
+/Users/sts/Quellen/mac/hbci/lib/gwenhywfar/gui/cocoa/CocoaWindowContentView.h

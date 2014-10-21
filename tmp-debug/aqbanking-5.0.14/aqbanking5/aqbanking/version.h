@@ -1,1 +1,1 @@
-/Users/michael/src/git/lib/tmp-debug/aqbanking-5.0.14/version.h
+/Users/sts/Quellen/mac/hbci/lib/tmp-debug/aqbanking-5.0.14/version.h

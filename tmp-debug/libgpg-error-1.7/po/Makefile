@@ -17,11 +17,11 @@ PACKAGE_BUGREPORT = bug-gnupg@gnupg.org
 SHELL = /bin/sh
 
 
-srcdir = /Users/michael/src/git/lib/libgpg-error-1.7/po
-top_srcdir = /Users/michael/src/git/lib/libgpg-error-1.7
-VPATH = /Users/michael/src/git/lib/libgpg-error-1.7/po
+srcdir = /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7/po
+top_srcdir = /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7
+VPATH = /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7/po
 
-prefix = /Users/michael/src/git/lib/static-build-debug-5.0.14
+prefix = /Users/sts/Quellen/mac/hbci/lib/static-build-debug-5.0.14
 exec_prefix = ${prefix}
 datarootdir = ${prefix}/share
 datadir = ${datarootdir}
@@ -30,8 +30,8 @@ gettextsrcdir = $(datadir)/gettext/po
 
 INSTALL = /usr/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
-mkinstalldirs = $(SHELL) $(SHELL) /Users/michael/src/git/lib/libgpg-error-1.7/install-sh -d
-mkdir_p = /Users/michael/src/git/lib/libgpg-error-1.7/install-sh -c -d
+mkinstalldirs = $(SHELL) $(SHELL) /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7/install-sh -d
+mkdir_p = /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7/install-sh -c -d
 
 GMSGFMT_ = :
 GMSGFMT_no = :
@@ -62,9 +62,9 @@ $(POFILES) $(GMOFILES) \
 $(DISTFILES.extra1) $(DISTFILES.extra2) $(DISTFILES.extra3)
 
 POTFILES = \
-     /Users/michael/src/git/lib/libgpg-error-1.7/src/err-sources.h \
-     /Users/michael/src/git/lib/libgpg-error-1.7/src/err-codes.h \
-     /Users/michael/src/git/lib/libgpg-error-1.7/src/gpg-error.c
+     /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7/src/err-sources.h \
+     /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7/src/err-codes.h \
+     /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7/src/gpg-error.c
 
 CATALOGS =  de.gmo pl.gmo ro.gmo fr.gmo sv.gmo vi.gmo
 

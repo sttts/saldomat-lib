@@ -2,7 +2,7 @@
 # For information about the syntax, see pkg-config(1)
 
 # General installation directories
-prefix=/Users/michael/src/git/lib/static-build-i386-5.0.14
+prefix=/Users/sts/Quellen/mac/hbci/lib/static-build-i386-5.0.14
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

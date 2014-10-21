@@ -14,9 +14,9 @@
 
 
 
-srcdir = /Users/michael/src/git/lib/pkg-config-0.23/glib-1.2.10/gmodule
-top_srcdir = /Users/michael/src/git/lib/pkg-config-0.23/glib-1.2.10
-VPATH = /Users/michael/src/git/lib/pkg-config-0.23/glib-1.2.10/gmodule
+srcdir = /Users/sts/Quellen/mac/hbci/lib/pkg-config-0.23/glib-1.2.10/gmodule
+top_srcdir = /Users/sts/Quellen/mac/hbci/lib/pkg-config-0.23/glib-1.2.10
+VPATH = /Users/sts/Quellen/mac/hbci/lib/pkg-config-0.23/glib-1.2.10/gmodule
 pkgdatadir = $(datadir)/glib
 pkglibdir = $(libdir)/glib
 pkgincludedir = $(includedir)/glib
@@ -35,21 +35,21 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-host_triplet = i386-apple-darwin11.3.0
-ACLOCAL = ${SHELL} /Users/michael/src/git/lib/pkg-config-0.23/glib-1.2.10/missing --run aclocal-1.7
+host_triplet = i386-apple-darwin14.0.0
+ACLOCAL = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/pkg-config-0.23/glib-1.2.10/missing --run aclocal-1.7
 AMDEP_FALSE = 
 AMDEP_TRUE = #
-AMTAR = ${SHELL} /Users/michael/src/git/lib/pkg-config-0.23/glib-1.2.10/missing --run tar
+AMTAR = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/pkg-config-0.23/glib-1.2.10/missing --run tar
 AR = ar
-AUTOCONF = ${SHELL} /Users/michael/src/git/lib/pkg-config-0.23/glib-1.2.10/missing --run autoconf
-AUTOHEADER = ${SHELL} /Users/michael/src/git/lib/pkg-config-0.23/glib-1.2.10/missing --run autoheader
-AUTOMAKE = ${SHELL} /Users/michael/src/git/lib/pkg-config-0.23/glib-1.2.10/missing --run automake-1.7
+AUTOCONF = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/pkg-config-0.23/glib-1.2.10/missing --run autoconf
+AUTOHEADER = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/pkg-config-0.23/glib-1.2.10/missing --run autoheader
+AUTOMAKE = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/pkg-config-0.23/glib-1.2.10/missing --run automake-1.7
 AWK = awk
 CC = gcc
 CCDEPMODE = depmode=none
-CFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-5.0.14/include/ -mmacosx-version-min=10.5 -Wall  -D_REENTRANT
+CFLAGS = -O -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -arch i386 -I/Users/sts/Quellen/mac/hbci/lib/static-build-debug-5.0.14/include/ -mmacosx-version-min=10.9 -std=gnu89 -Wall  -D_REENTRANT
 CPP = gcc -E
-CPPFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-5.0.14/include/ -mmacosx-version-min=10.5
+CPPFLAGS = -O -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -arch i386 -I/Users/sts/Quellen/mac/hbci/lib/static-build-debug-5.0.14/include/ -mmacosx-version-min=10.9
 CXX = g++
 CXXCPP = g++ -E
 CXXDEPMODE = depmode=none
@@ -87,7 +87,7 @@ INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = ${SHELL} $(install_sh) -c -s
-LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-debug-5.0.14/lib -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
+LDFLAGS = -arch i386 -L/Users/sts/Quellen/mac/hbci/lib/static-build-debug-5.0.14/lib -L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/ -mmacosx-version-min=10.9
 LIBOBJS = 
 LIBS = 
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
@@ -100,7 +100,7 @@ LT_REVISION = 10
 MAINT = #
 MAINTAINER_MODE_FALSE = 
 MAINTAINER_MODE_TRUE = #
-MAKEINFO = ${SHELL} /Users/michael/src/git/lib/pkg-config-0.23/glib-1.2.10/missing --run makeinfo
+MAKEINFO = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/pkg-config-0.23/glib-1.2.10/missing --run makeinfo
 OBJEXT = o
 PACKAGE = glib
 PACKAGE_BUGREPORT = 
@@ -126,25 +126,25 @@ am__include = include
 am__leading_dot = .
 am__quote = 
 bindir = ${exec_prefix}/bin
-build = i386-apple-darwin11.3.0
+build = i386-apple-darwin14.0.0
 build_alias = 
 build_cpu = i386
-build_os = darwin11.3.0
+build_os = darwin14.0.0
 build_vendor = apple
 datadir = ${datarootdir}
 datarootdir = ${prefix}/share
 docdir = ${datarootdir}/doc/${PACKAGE}
 dvidir = ${docdir}
 exec_prefix = ${prefix}
-host = i386-apple-darwin11.3.0
+host = i386-apple-darwin14.0.0
 host_alias = 
 host_cpu = i386
-host_os = darwin11.3.0
+host_os = darwin14.0.0
 host_vendor = apple
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = /Users/michael/src/git/lib/pkg-config-0.23/glib-1.2.10/install-sh
+install_sh = /Users/sts/Quellen/mac/hbci/lib/pkg-config-0.23/glib-1.2.10/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -152,7 +152,7 @@ localstatedir = ${prefix}/var
 mandir = ${datarootdir}/man
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /Users/michael/src/git/lib/static-build-debug-5.0.14
+prefix = /Users/sts/Quellen/mac/hbci/lib/static-build-debug-5.0.14
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin

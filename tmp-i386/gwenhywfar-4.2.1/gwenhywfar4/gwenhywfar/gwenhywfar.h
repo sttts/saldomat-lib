@@ -1,1 +1,1 @@
-/Users/michael/src/git/lib/gwenhywfar/src/gwenhywfar.h
+/Users/sts/Quellen/mac/hbci/lib/gwenhywfar/src/gwenhywfar.h

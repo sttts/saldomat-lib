@@ -1,11 +1,13 @@
-This is /Users/michael/src/git/lib/gnutls-2.8.5/doc/gnutls.info,
+This is
+/Users/sts/Quellen/mac/hbci/lib/gnutls-2.12.21-gotofail/doc/gnutls.info,
 produced by makeinfo version 4.8 from
-/Users/michael/src/git/lib/gnutls-2.8.5/doc/gnutls.texi.
+/Users/sts/Quellen/mac/hbci/lib/gnutls-2.12.21-gotofail/doc/gnutls.texi.
 
-This manual is last updated 6 April 2010 for version 2.8.5 of GNU TLS.
+This manual is last updated 6 January 2012 for version 2.12.21 of
+GnuTLS.
 
-Copyright (C) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009 Free
-Software Foundation, Inc.
+Copyright (C) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009,
+2010 Free Software Foundation, Inc.
 
      Permission is granted to copy, distribute and/or modify this
      document under the terms of the GNU Free Documentation License,
@@ -22,9 +24,9 @@ END-INFO-DIR-ENTRY
 INFO-DIR-SECTION System Administration
 START-INFO-DIR-ENTRY
 * certtool: (gnutls)Invoking certtool.	Manipulate certificates and keys.
-* gnutls-serv: (gnutls)Invoking gnutls-serv.	GNU TLS test server.
-* gnutls-cli: (gnutls)Invoking gnutls-cli.	GNU TLS test client.
-* gnutls-cli-debug: (gnutls)Invoking gnutls-cli-debug.	GNU TLS debug client.
+* gnutls-serv: (gnutls)Invoking gnutls-serv.	GnuTLS test server.
+* gnutls-cli: (gnutls)Invoking gnutls-cli.	GnuTLS test client.
+* gnutls-cli-debug: (gnutls)Invoking gnutls-cli-debug.	GnuTLS debug client.
 * psktool: (gnutls)Invoking psktool.	Simple TLS-Pre-Shared-Keys manager.
 * srptool: (gnutls)Invoking srptool.	Simple SRP password tool.
 END-INFO-DIR-ENTRY
@@ -102,11 +104,11 @@ gnutls_pkcs12_bag_get_data
      DATA: where the bag's data will be. Should be treated as constant.
 
      This function will return the bag's data. The data is a constant
-     that is stored into the bag. Should not be accessed after the bag
+     that is stored into the bag.  Should not be accessed after the bag
      is deleted.
 
      *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
-     negative error value.and a negative error code on error.
+     negative error value.
 
 gnutls_pkcs12_bag_get_friendly_name
 -----------------------------------
@@ -138,8 +140,8 @@ gnutls_pkcs12_bag_get_key_id
      ID: where the ID will be copied (to be treated as const)
 
      This function will return the key ID, of the specified bag element.
-     The key ID is usually used to distinguish the local private key
-     and the certificate pair.
+     The key ID is usually used to distinguish the local private key and
+     the certificate pair.
 
      *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
      negative error value. or a negative value on error.
@@ -164,8 +166,8 @@ gnutls_pkcs12_bag_init
      BAG: The structure to be initialized
 
      This function will initialize a PKCS12 bag structure. PKCS12 Bags
-     usually contain private keys, lists of X.509 Certificates and
-     X.509 Certificate revocation lists.
+     usually contain private keys, lists of X.509 Certificates and X.509
+     Certificate revocation lists.
 
      *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
      negative error value.
@@ -319,11 +321,11 @@ gnutls_pkcs12_get_bag
 
      This function will return a Bag from the PKCS12 structure.
 
+     After the last Bag has been read
+     `GNUTLS_E_REQUESTED_DATA_NOT_AVAILABLE' will be returned.
+
      *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
      negative error value.
-
-     After the last Bag has been read
-     GNUTLS_E_REQUESTED_DATA_NOT_AVAILABLE will be returned.
 
 gnutls_pkcs12_import
 --------------------
@@ -537,7 +539,7 @@ gnutls_pkcs7_import
 
      This function will convert the given DER or PEM encoded PKCS7 to
      the native `gnutls_pkcs7_t' format.  The output will be stored in
-     'pkcs7'.
+     `pkcs7'.
 
      If the PKCS7 is PEM encoded it should have a header of "PKCS7".
 
@@ -657,7 +659,7 @@ gnutls_x509_crl_export
      This function will export the revocation list to DER or PEM format.
 
      If the buffer provided is not long enough to hold the output, then
-     ¤GNUTLS_E_SHORT_MEMORY_BUFFER will be returned.
+     `GNUTLS_E_SHORT_MEMORY_BUFFER' will be returned.
 
      If the structure is PEM encoded, it will have a header of "BEGIN
      X509 CRL".
@@ -765,9 +767,9 @@ gnutls_x509_crl_get_extension_data
      buffer.
 
      Use `gnutls_x509_crl_get_extension_info()' to extract the OID and
-     critical flag.  Use `gnutls_x509_crl_get_extension_by_oid()'
-     instead, if you want to get data indexed by the extension OID
-     rather than sequence.
+     critical flag.  Use `gnutls_x509_crl_get_extension_info()' instead,
+     if you want to get data indexed by the extension OID rather than
+     sequence.
 
      *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
      negative value in case of an error.  If your have reached the last
@@ -929,6 +931,22 @@ gnutls_x509_crl_get_number
 
      *Since:* 2.8.0
 
+gnutls_x509_crl_get_raw_issuer_dn
+---------------------------------
+
+ -- Function: int gnutls_x509_crl_get_raw_issuer_dn (gnutls_x509_crl_t
+          CRL, gnutls_datum_t * DN)
+     CRL: should contain a gnutls_x509_crl_t structure
+
+     DN: will hold the starting point of the DN
+
+     This function will return a pointer to the DER encoded DN structure
+     and the length.
+
+     *Returns:* a negative value on error, and zero on success.
+
+     *Since:* 2.12.0
+
 gnutls_x509_crl_get_signature_algorithm
 ---------------------------------------
 
@@ -1031,6 +1049,32 @@ gnutls_x509_crl_print
      list, suitable for display to a human.
 
      The output `out' needs to be deallocate using `gnutls_free()'.
+
+     *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
+     negative error value.
+
+gnutls_x509_crl_privkey_sign
+----------------------------
+
+ -- Function: int gnutls_x509_crl_privkey_sign (gnutls_x509_crl_t CRL,
+          gnutls_x509_crt_t ISSUER, gnutls_privkey_t ISSUER_KEY,
+          gnutls_digest_algorithm_t DIG, unsigned int FLAGS)
+     CRL: should contain a gnutls_x509_crl_t structure
+
+     ISSUER: is the certificate of the certificate issuer
+
+     ISSUER_KEY: holds the issuer's private key
+
+     DIG: The message digest to use. GNUTLS_DIG_SHA1 is the safe choice
+     unless you know what you're doing.
+
+     FLAGS: must be 0
+
+     This function will sign the CRL with the issuer's private key, and
+     will copy the issuer's information into the CRL.
+
+     This must be the last step in a certificate CRL since all the
+     previously set parameters are now signed.
 
      *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
      negative error value.
@@ -1180,6 +1224,8 @@ gnutls_x509_crl_sign2
      *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
      negative error value.
 
+     *Deprecated:* Use `gnutls_x509_crl_privkey_sign()' instead.
+
 gnutls_x509_crl_sign
 --------------------
 
@@ -1196,6 +1242,8 @@ gnutls_x509_crl_sign
 
      *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
      negative error value.
+
+     *Deprecated:* Use `gnutls_x509_crl_privkey_sign()'.
 
 gnutls_x509_crl_verify
 ----------------------
@@ -1228,7 +1276,8 @@ gnutls_x509_crq_deinit
  -- Function: void gnutls_x509_crq_deinit (gnutls_x509_crq_t CRQ)
      CRQ: The structure to be initialized
 
-     This function will deinitialize a CRL structure.
+     This function will deinitialize a PKCS`10' certificate request
+     structure.
 
 gnutls_x509_crq_export
 ----------------------
@@ -1236,7 +1285,7 @@ gnutls_x509_crq_export
  -- Function: int gnutls_x509_crq_export (gnutls_x509_crq_t CRQ,
           gnutls_x509_crt_fmt_t FORMAT, void * OUTPUT_DATA, size_t *
           OUTPUT_DATA_SIZE)
-     CRQ: Holds the request
+     CRQ: should contain a `gnutls_x509_crq_t' structure
 
      FORMAT: the format of output params. One of PEM or DER.
 
@@ -1245,11 +1294,12 @@ gnutls_x509_crq_export
      OUTPUT_DATA_SIZE: holds the size of output_data (and will be
      replaced by the actual size of parameters)
 
-     This function will export the certificate request to a PKCS10
+     This function will export the certificate request to a PEM or DER
+     encoded PKCS10 structure.
 
      If the buffer provided is not long enough to hold the output, then
-     GNUTLS_E_SHORT_MEMORY_BUFFER will be returned and
-     *output_data_size will be updated.
+     `GNUTLS_E_SHORT_MEMORY_BUFFER' will be returned and
+     *`output_data_size' will be updated.
 
      If the structure is PEM encoded, it will have a header of "BEGIN
      NEW CERTIFICATE REQUEST".
@@ -1263,20 +1313,20 @@ gnutls_x509_crq_get_attribute_by_oid
  -- Function: int gnutls_x509_crq_get_attribute_by_oid
           (gnutls_x509_crq_t CRQ, const char * OID, int INDX, void *
           BUF, size_t * SIZEOF_BUF)
-     CRQ: should contain a gnutls_x509_crq_t structure
+     CRQ: should contain a `gnutls_x509_crq_t' structure
 
-     OID: holds an Object Identified in null terminated string
+     OID: holds an Object Identified in zero-terminated string
 
      INDX: In case multiple same OIDs exist in the attribute list, this
-     specifies which to send. Use zero to get the first one.
+     specifies which to send, use zero to get the first one
 
      BUF: a pointer to a structure to hold the attribute data (may be
-     null)
+     `NULL')
 
      SIZEOF_BUF: initially holds the size of `buf'
 
      This function will return the attribute in the certificate request
-     specified by the given Object ID. The attribute will be DER
+     specified by the given Object ID.  The attribute will be DER
      encoded.
 
      *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
@@ -1286,8 +1336,8 @@ gnutls_x509_crq_get_attribute_data
 ----------------------------------
 
  -- Function: int gnutls_x509_crq_get_attribute_data (gnutls_x509_crq_t
-          CERT, int INDX, void * DATA, size_t * SIZEOF_DATA)
-     CERT: should contain a `gnutls_x509_crq_t' structure
+          CRQ, int INDX, void * DATA, size_t * SIZEOF_DATA)
+     CRQ: should contain a `gnutls_x509_crq_t' structure
 
      INDX: Specifies which attribute OID to send. Use zero to get the
      first one.
@@ -1315,8 +1365,8 @@ gnutls_x509_crq_get_attribute_info
 ----------------------------------
 
  -- Function: int gnutls_x509_crq_get_attribute_info (gnutls_x509_crq_t
-          CERT, int INDX, void * OID, size_t * SIZEOF_OID)
-     CERT: should contain a `gnutls_x509_crq_t' structure
+          CRQ, int INDX, void * OID, size_t * SIZEOF_OID)
+     CRQ: should contain a `gnutls_x509_crq_t' structure
 
      INDX: Specifies which attribute OID to send. Use zero to get the
      first one.
@@ -1346,9 +1396,9 @@ gnutls_x509_crq_get_basic_constraints
 -------------------------------------
 
  -- Function: int gnutls_x509_crq_get_basic_constraints
-          (gnutls_x509_crq_t CERT, unsigned int * CRITICAL, int * CA,
+          (gnutls_x509_crq_t CRQ, unsigned int * CRITICAL, int * CA,
           int * PATHLEN)
-     CERT: should contain a `gnutls_x509_crq_t' structure
+     CRQ: should contain a `gnutls_x509_crq_t' structure
 
      CRITICAL: will be non zero if the extension is marked as critical
 
@@ -1376,13 +1426,15 @@ gnutls_x509_crq_get_challenge_password
 
  -- Function: int gnutls_x509_crq_get_challenge_password
           (gnutls_x509_crq_t CRQ, char * PASS, size_t * SIZEOF_PASS)
-     CRQ: should contain a gnutls_x509_crq_t structure
+     CRQ: should contain a `gnutls_x509_crq_t' structure
 
-     PASS: will hold a null terminated password
+     PASS: will hold a zero-terminated password string
 
      SIZEOF_PASS: Initially holds the size of `pass'.
 
      This function will return the challenge password in the request.
+     The challenge password is intended to be used for requesting a
+     revocation of the certificate.
 
      *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
      negative error value.
@@ -1402,7 +1454,7 @@ gnutls_x509_crq_get_dn_by_oid
 
      RAW_FLAG: If non zero returns the raw DER data of the DN part.
 
-     BUF: a pointer to a structure to hold the name (may be null)
+     BUF: a pointer to a structure to hold the name (may be `NULL')
 
      SIZEOF_BUF: initially holds the size of `buf'
 
@@ -1417,11 +1469,9 @@ gnutls_x509_crq_get_dn_by_oid
      hex format with a '\#' prefix.  You can check about known OIDs
      using `gnutls_x509_dn_oid_known()'.
 
-     If `buf' is null then only the size will be filled.
-
-     *Returns:* GNUTLS_E_SHORT_MEMORY_BUFFER if the provided buffer is
-     not long enough, and in that case the *sizeof_buf will be updated
-     with the required size.  On success 0 is returned.
+     *Returns:* `GNUTLS_E_SHORT_MEMORY_BUFFER' if the provided buffer is
+     not long enough, and in that case the *`sizeof_buf' will be
+     updated with the required size.  On success 0 is returned.
 
 gnutls_x509_crq_get_dn_oid
 --------------------------
@@ -1433,48 +1483,45 @@ gnutls_x509_crq_get_dn_oid
      INDX: Specifies which DN OID to send. Use zero to get the first
      one.
 
-     OID: a pointer to a structure to hold the name (may be null)
+     OID: a pointer to a structure to hold the name (may be `NULL')
 
      SIZEOF_OID: initially holds the size of `oid'
 
      This function will extract the requested OID of the name of the
-     Certificate request subject, specified by the given index.
+     certificate request subject, specified by the given index.
 
-     If oid is null then only the size will be filled.
-
-     *Returns:* GNUTLS_E_SHORT_MEMORY_BUFFER if the provided buffer is
-     not long enough, and in that case the *sizeof_oid will be updated
-     with the required size.  On success 0 is returned.
+     *Returns:* `GNUTLS_E_SHORT_MEMORY_BUFFER' if the provided buffer is
+     not long enough, and in that case the *`sizeof_oid' will be
+     updated with the required size.  On success 0 is returned.
 
 gnutls_x509_crq_get_dn
 ----------------------
 
  -- Function: int gnutls_x509_crq_get_dn (gnutls_x509_crq_t CRQ, char *
           BUF, size_t * SIZEOF_BUF)
-     CRQ: should contain a gnutls_x509_crq_t structure
+     CRQ: should contain a `gnutls_x509_crq_t' structure
 
-     BUF: a pointer to a structure to hold the name (may be null)
+     BUF: a pointer to a structure to hold the name (may be `NULL')
 
      SIZEOF_BUF: initially holds the size of `buf'
 
-     This function will copy the name of the Certificate request
-     subject in the provided buffer. The name will be in the form
-     "C=xxxx,O=yyyy,CN=zzzz" as described in RFC2253. The output string
-     will be ASCII or UTF-8 encoded, depending on the certificate data.
+     This function will copy the name of the Certificate request subject
+     to the provided buffer.  The name will be in the form
+     "C=xxxx,O=yyyy,CN=zzzz" as described in RFC 2253. The output string
+     `buf' will be ASCII or UTF-8 encoded, depending on the certificate
+     data.
 
-     If `buf' is null then only the size will be filled.
-
-     *Returns:* GNUTLS_E_SHORT_MEMORY_BUFFER if the provided buffer is
-     not long enough, and in that case the *sizeof_buf will be updated
-     with the required size.  On success 0 is returned.
+     *Returns:* `GNUTLS_E_SHORT_MEMORY_BUFFER' if the provided buffer
+     is not long enough, and in that case the *`sizeof_buf' will be
+     updated with the required size.  On success 0 is returned.
 
 gnutls_x509_crq_get_extension_by_oid
 ------------------------------------
 
  -- Function: int gnutls_x509_crq_get_extension_by_oid
-          (gnutls_x509_crq_t CERT, const char * OID, int INDX, void *
+          (gnutls_x509_crq_t CRQ, const char * OID, int INDX, void *
           BUF, size_t * SIZEOF_BUF, unsigned int * CRITICAL)
-     CERT: should contain a `gnutls_x509_crq_t' structure
+     CRQ: should contain a `gnutls_x509_crq_t' structure
 
      OID: holds an Object Identified in null terminated string
 
@@ -1502,8 +1549,8 @@ gnutls_x509_crq_get_extension_data
 ----------------------------------
 
  -- Function: int gnutls_x509_crq_get_extension_data (gnutls_x509_crq_t
-          CERT, int INDX, void * DATA, size_t * SIZEOF_DATA)
-     CERT: should contain a `gnutls_x509_crq_t' structure
+          CRQ, int INDX, void * DATA, size_t * SIZEOF_DATA)
+     CRQ: should contain a `gnutls_x509_crq_t' structure
 
      INDX: Specifies which extension OID to send. Use zero to get the
      first one.
@@ -1532,9 +1579,9 @@ gnutls_x509_crq_get_extension_info
 ----------------------------------
 
  -- Function: int gnutls_x509_crq_get_extension_info (gnutls_x509_crq_t
-          CERT, int INDX, void * OID, size_t * SIZEOF_OID, int *
+          CRQ, int INDX, void * OID, size_t * SIZEOF_OID, int *
           CRITICAL)
-     CERT: should contain a `gnutls_x509_crq_t' structure
+     CRQ: should contain a `gnutls_x509_crq_t' structure
 
      INDX: Specifies which extension OID to send. Use zero to get the
      first one.
@@ -1568,7 +1615,7 @@ gnutls_x509_crq_get_key_id
  -- Function: int gnutls_x509_crq_get_key_id (gnutls_x509_crq_t CRQ,
           unsigned int FLAGS, unsigned char * OUTPUT_DATA, size_t *
           OUTPUT_DATA_SIZE)
-     CRQ: Holds the certificate signing request
+     CRQ: a certificate of type `gnutls_x509_crq_t'
 
      FLAGS: should be 0 for now
 
@@ -1577,13 +1624,13 @@ gnutls_x509_crq_get_key_id
      OUTPUT_DATA_SIZE: holds the size of output_data (and will be
      replaced by the actual size of parameters)
 
-     This function will return a unique ID the depends on the public
-     key parameters. This ID can be used in checking whether a
-     certificate corresponds to the given private key.
+     This function will return a unique ID the depends on the public key
+     parameters.  This ID can be used in checking whether a certificate
+     corresponds to the given private key.
 
      If the buffer provided is not long enough to hold the output, then
-     *output_data_size is updated and GNUTLS_E_SHORT_MEMORY_BUFFER will
-     be returned.  The output will normally be a SHA-1 hash output,
+     *`output_data_size' is updated and GNUTLS_E_SHORT_MEMORY_BUFFER
+     will be returned.  The output will normally be a SHA-1 hash output,
      which is 20 bytes.
 
      *Return value:* In case of failure a negative value will be
@@ -1595,29 +1642,27 @@ gnutls_x509_crq_get_key_purpose_oid
 -----------------------------------
 
  -- Function: int gnutls_x509_crq_get_key_purpose_oid
-          (gnutls_x509_crq_t CERT, int INDX, void * OID, size_t *
+          (gnutls_x509_crq_t CRQ, int INDX, void * OID, size_t *
           SIZEOF_OID, unsigned int * CRITICAL)
-     CERT: should contain a `gnutls_x509_crq_t' structure
+     CRQ: should contain a `gnutls_x509_crq_t' structure
 
-     INDX: This specifies which OID to return. Use zero to get the
-     first one.
+     INDX: This specifies which OID to return, use zero to get the
+     first one
 
-     OID: a pointer to a buffer to hold the OID (may be null)
+     OID: a pointer to a buffer to hold the OID (may be `NULL')
 
      SIZEOF_OID: initially holds the size of `oid'
 
-     CRITICAL: output variable with critical flag, may be NULL.
+     CRITICAL: output variable with critical flag, may be `NULL'.
 
      This function will extract the key purpose OIDs of the Certificate
-     specified by the given index.  These are stored in the Extended
-     Key Usage extension (2.5.29.37).  See the GNUTLS_KP_* definitions
-     for human readable names.
-
-     If `oid' is null then only the size will be filled.
+     specified by the given index.  These are stored in the Extended Key
+     Usage extension (2.5.29.37).  See the GNUTLS_KP_* definitions for
+     human readable names.
 
      *Returns:* `GNUTLS_E_SHORT_MEMORY_BUFFER' if the provided buffer is
-     not long enough, and in that case the *sizeof_oid will be updated
-     with the required size.  On success 0 is returned.
+     not long enough, and in that case the *`sizeof_oid' will be
+     updated with the required size.  On success 0 is returned.
 
      *Since:* 2.8.0
 
@@ -1644,9 +1689,9 @@ gnutls_x509_crq_get_key_rsa_raw
 gnutls_x509_crq_get_key_usage
 -----------------------------
 
- -- Function: int gnutls_x509_crq_get_key_usage (gnutls_x509_crq_t
-          CERT, unsigned int * KEY_USAGE, unsigned int * CRITICAL)
-     CERT: should contain a `gnutls_x509_crq_t' structure
+ -- Function: int gnutls_x509_crq_get_key_usage (gnutls_x509_crq_t CRQ,
+          unsigned int * KEY_USAGE, unsigned int * CRITICAL)
+     CRQ: should contain a `gnutls_x509_crq_t' structure
 
      KEY_USAGE: where the key usage bits will be stored
 
@@ -1672,16 +1717,16 @@ gnutls_x509_crq_get_pk_algorithm
 
  -- Function: int gnutls_x509_crq_get_pk_algorithm (gnutls_x509_crq_t
           CRQ, unsigned int * BITS)
-     CRQ: should contain a gnutls_x509_crq_t structure
+     CRQ: should contain a `gnutls_x509_crq_t' structure
 
-     BITS: if bits is non null it will hold the size of the parameters'
-     in bits
+     BITS: if bits is non-`NULL' it will hold the size of the
+     parameters' in bits
 
-     This function will return the public key algorithm of a PKCS \`10'
+     This function will return the public key algorithm of a PKCS`10'
      certificate request.
 
-     If bits is non null, it should have enough size to hold the
-     parameters size in bits. For RSA the bits returned is the modulus.
+     If bits is non-`NULL', it should have enough size to hold the
+     parameters size in bits.  For RSA the bits returned is the modulus.
      For DSA the bits returned are of the public exponent.
 
      *Returns:* a member of the `gnutls_pk_algorithm_t' enumeration on
@@ -1691,9 +1736,9 @@ gnutls_x509_crq_get_subject_alt_name
 ------------------------------------
 
  -- Function: int gnutls_x509_crq_get_subject_alt_name
-          (gnutls_x509_crq_t CERT, unsigned int SEQ, void * RET, size_t
+          (gnutls_x509_crq_t CRQ, unsigned int SEQ, void * RET, size_t
           * RET_SIZE, unsigned int * RET_TYPE, unsigned int * CRITICAL)
-     CERT: should contain a `gnutls_x509_crq_t' structure
+     CRQ: should contain a `gnutls_x509_crq_t' structure
 
      SEQ: specifies the sequence number of the alt name, 0 for the
      first one, 1 for the second etc.
@@ -1728,9 +1773,9 @@ gnutls_x509_crq_get_subject_alt_othername_oid
 ---------------------------------------------
 
  -- Function: int gnutls_x509_crq_get_subject_alt_othername_oid
-          (gnutls_x509_crq_t CERT, unsigned int SEQ, void * RET, size_t
+          (gnutls_x509_crq_t CRQ, unsigned int SEQ, void * RET, size_t
           * RET_SIZE)
-     CERT: should contain a `gnutls_x509_crq_t' structure
+     CRQ: should contain a `gnutls_x509_crq_t' structure
 
      SEQ: specifies the sequence number of the alt name (0 for the
      first one, 1 for the second etc.)
@@ -1764,7 +1809,7 @@ gnutls_x509_crq_get_version
 ---------------------------
 
  -- Function: int gnutls_x509_crq_get_version (gnutls_x509_crq_t CRQ)
-     CRQ: should contain a gnutls_x509_crq_t structure
+     CRQ: should contain a `gnutls_x509_crq_t' structure
 
      This function will return the version of the specified Certificate
      request.
@@ -1783,9 +1828,9 @@ gnutls_x509_crq_import
 
      FORMAT: One of DER or PEM
 
-     This function will convert the given DER or PEM encoded Certificate
-     to the native gnutls_x509_crq_t format. The output will be stored
-     in `cert'.
+     This function will convert the given DER or PEM encoded certificate
+     request to a `gnutls_x509_crq_t' structure.  The output will be
+     stored in `crq'.
 
      If the Certificate is PEM encoded it should have a header of "NEW
      CERTIFICATE REQUEST".
@@ -1799,7 +1844,7 @@ gnutls_x509_crq_init
  -- Function: int gnutls_x509_crq_init (gnutls_x509_crq_t * CRQ)
      CRQ: The structure to be initialized
 
-     This function will initialize a PKCS10 certificate request
+     This function will initialize a PKCS`10' certificate request
      structure.
 
      *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
@@ -1827,22 +1872,49 @@ gnutls_x509_crq_print
 
      *Since:* 2.8.0
 
+gnutls_x509_crq_privkey_sign
+----------------------------
+
+ -- Function: int gnutls_x509_crq_privkey_sign (gnutls_x509_crq_t CRQ,
+          gnutls_privkey_t KEY, gnutls_digest_algorithm_t DIG, unsigned
+          int FLAGS)
+     CRQ: should contain a `gnutls_x509_crq_t' structure
+
+     KEY: holds a private key
+
+     DIG: The message digest to use, i.e., `GNUTLS_DIG_SHA1'
+
+     FLAGS: must be 0
+
+     This function will sign the certificate request with a private key.
+     This must be the same key as the one used in
+     `gnutls_x509_crt_set_key()' since a certificate request is self
+     signed.
+
+     This must be the last step in a certificate request generation
+     since all the previously set parameters are now signed.
+
+     *Returns:* `GNUTLS_E_SUCCESS' on success, otherwise an error.
+     `GNUTLS_E_ASN1_VALUE_NOT_FOUND' is returned if you didn't set all
+     information in the certificate request (e.g., the version using
+     `gnutls_x509_crq_set_version()').
+
 gnutls_x509_crq_set_attribute_by_oid
 ------------------------------------
 
  -- Function: int gnutls_x509_crq_set_attribute_by_oid
           (gnutls_x509_crq_t CRQ, const char * OID, void * BUF, size_t
           SIZEOF_BUF)
-     CRQ: should contain a gnutls_x509_crq_t structure
+     CRQ: should contain a `gnutls_x509_crq_t' structure
 
-     OID: holds an Object Identified in null terminated string
+     OID: holds an Object Identified in zero-terminated string
 
      BUF: a pointer to a structure that holds the attribute data
 
      SIZEOF_BUF: holds the size of `buf'
 
      This function will set the attribute in the certificate request
-     specified by the given Object ID. The attribute must be be DER
+     specified by the given Object ID.  The attribute must be be DER
      encoded.
 
      *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
@@ -1854,9 +1926,9 @@ gnutls_x509_crq_set_basic_constraints
  -- Function: int gnutls_x509_crq_set_basic_constraints
           (gnutls_x509_crq_t CRQ, unsigned int CA, int
           PATHLENCONSTRAINT)
-     CRQ: a certificate of type `gnutls_x509_crq_t'
+     CRQ: a certificate request of type `gnutls_x509_crq_t'
 
-     CA: true(1) or false(0). Depending on the Certificate authority
+     CA: true(1) or false(0) depending on the Certificate authority
      status.
 
      PATHLENCONSTRAINT: non-negative values indicate maximum length of
@@ -1875,9 +1947,9 @@ gnutls_x509_crq_set_challenge_password
 
  -- Function: int gnutls_x509_crq_set_challenge_password
           (gnutls_x509_crq_t CRQ, const char * PASS)
-     CRQ: should contain a gnutls_x509_crq_t structure
+     CRQ: should contain a `gnutls_x509_crq_t' structure
 
-     PASS: holds a null terminated password
+     PASS: holds a zero-terminated password
 
      This function will set a challenge password to be used when
      revoking the request.
@@ -1891,9 +1963,9 @@ gnutls_x509_crq_set_dn_by_oid
  -- Function: int gnutls_x509_crq_set_dn_by_oid (gnutls_x509_crq_t CRQ,
           const char * OID, unsigned int RAW_FLAG, const void * DATA,
           unsigned int SIZEOF_DATA)
-     CRQ: should contain a gnutls_x509_crq_t structure
+     CRQ: should contain a `gnutls_x509_crq_t' structure
 
-     OID: holds an Object Identifier in a null terminated string
+     OID: holds an Object Identifier in a zero-terminated string
 
      RAW_FLAG: must be 0, or 1 if the data are DER encoded
 
@@ -1902,14 +1974,14 @@ gnutls_x509_crq_set_dn_by_oid
      SIZEOF_DATA: holds the size of `data'
 
      This function will set the part of the name of the Certificate
-     request subject, specified by the given OID. The input string
+     request subject, specified by the given OID.  The input string
      should be ASCII or UTF-8 encoded.
 
      Some helper macros with popular OIDs can be found in gnutls/x509.h
-     With this function you can only set the known OIDs. You can test
-     for known OIDs using `gnutls_x509_dn_oid_known()'. For OIDs that
-     are not known (by gnutls) you should properly DER encode your data,
-     and call this function with raw_flag set.
+     With this function you can only set the known OIDs.  You can test
+     for known OIDs using `gnutls_x509_dn_oid_known()'.  For OIDs that
+     are not known (by gnutls) you should properly DER encode your
+     data, and call this function with raw_flag set.
 
      *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
      negative error value.
@@ -1918,11 +1990,11 @@ gnutls_x509_crq_set_key_purpose_oid
 -----------------------------------
 
  -- Function: int gnutls_x509_crq_set_key_purpose_oid
-          (gnutls_x509_crq_t CERT, const void * OID, unsigned int
+          (gnutls_x509_crq_t CRQ, const void * OID, unsigned int
           CRITICAL)
-     CERT: a certificate of type `gnutls_x509_crq_t'
+     CRQ: a certificate of type `gnutls_x509_crq_t'
 
-     OID: a pointer to a null terminated string that holds the OID
+     OID: a pointer to a zero-terminated string that holds the OID
 
      CRITICAL: Whether this extension will be critical or not
 
@@ -1961,7 +2033,7 @@ gnutls_x509_crq_set_key_usage
 
  -- Function: int gnutls_x509_crq_set_key_usage (gnutls_x509_crq_t CRQ,
           unsigned int USAGE)
-     CRQ: a certificate of type `gnutls_x509_crq_t'
+     CRQ: a certificate request of type `gnutls_x509_crq_t'
 
      USAGE: an ORed sequence of the GNUTLS_KEY_* elements.
 
@@ -1977,12 +2049,12 @@ gnutls_x509_crq_set_key
 
  -- Function: int gnutls_x509_crq_set_key (gnutls_x509_crq_t CRQ,
           gnutls_x509_privkey_t KEY)
-     CRQ: should contain a gnutls_x509_crq_t structure
+     CRQ: should contain a `gnutls_x509_crq_t' structure
 
      KEY: holds a private key
 
-     This function will set the public parameters from the given
-     private key to the request. Only RSA keys are currently supported.
+     This function will set the public parameters from the given private
+     key to the request.  Only RSA keys are currently supported.
 
      *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
      negative error value.
@@ -1993,7 +2065,7 @@ gnutls_x509_crq_set_subject_alt_name
  -- Function: int gnutls_x509_crq_set_subject_alt_name
           (gnutls_x509_crq_t CRQ, gnutls_x509_subject_alt_name_t NT,
           const void * DATA, unsigned int DATA_SIZE, unsigned int FLAGS)
-     CRQ: a certificate of type `gnutls_x509_crq_t'
+     CRQ: a certificate request of type `gnutls_x509_crq_t'
 
      NT: is one of the `gnutls_x509_subject_alt_name_t' enumerations
 
@@ -2005,7 +2077,7 @@ gnutls_x509_crq_set_subject_alt_name
      `GNUTLS_FSAN_APPEND' to append.
 
      This function will set the subject alternative name certificate
-     extension. It can set the following types:
+     extension.  It can set the following types:
 
      &GNUTLS_SAN_DNSNAME: as a text string
 
@@ -2028,11 +2100,11 @@ gnutls_x509_crq_set_version
 
  -- Function: int gnutls_x509_crq_set_version (gnutls_x509_crq_t CRQ,
           unsigned int VERSION)
-     CRQ: should contain a gnutls_x509_crq_t structure
+     CRQ: should contain a `gnutls_x509_crq_t' structure
 
-     VERSION: holds the version number. For v1 Requests must be 1.
+     VERSION: holds the version number, for v1 Requests must be 1
 
-     This function will set the version of the certificate request. For
+     This function will set the version of the certificate request.  For
      version 1 requests this must be one.
 
      *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
@@ -2048,8 +2120,7 @@ gnutls_x509_crq_sign2
 
      KEY: holds a private key
 
-     DIG: The message digest to use, `GNUTLS_DIG_SHA1' is the safe
-     choice unless you know what you're doing.
+     DIG: The message digest to use, i.e., `GNUTLS_DIG_SHA1'
 
      FLAGS: must be 0
 
@@ -2066,12 +2137,14 @@ gnutls_x509_crq_sign2
      information in the certificate request (e.g., the version using
      `gnutls_x509_crq_set_version()').
 
+     *Deprecated:* Use `gnutls_x509_crq_privkey_sign()' instead.
+
 gnutls_x509_crq_sign
 --------------------
 
  -- Function: int gnutls_x509_crq_sign (gnutls_x509_crq_t CRQ,
           gnutls_x509_privkey_t KEY)
-     CRQ: should contain a gnutls_x509_crq_t structure
+     CRQ: should contain a `gnutls_x509_crq_t' structure
 
      KEY: holds a private key
 
@@ -2080,6 +2153,26 @@ gnutls_x509_crq_sign
 
      *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
      negative error value.
+
+     *Deprecated:* Use `gnutls_x509_crq_privkey_sign()' instead.
+
+gnutls_x509_crq_verify
+----------------------
+
+ -- Function: int gnutls_x509_crq_verify (gnutls_x509_crq_t CRQ,
+          unsigned int FLAGS)
+     CRQ: is the crq to be verified
+
+     FLAGS: Flags that may be used to change the verification
+     algorithm. Use OR of the gnutls_certificate_verify_flags
+     enumerations.
+
+     This function will verify self signature in the certificate
+     request and return its status.
+
+     *Returns:* On success, `GNUTLS_E_SUCCESS' is returned,
+     `GNUTLS_E_PK_SIG_VERIFY_FAILED' if verification failed, otherwise
+     a negative error value.
 
 gnutls_x509_crt_check_hostname
 ------------------------------
@@ -2107,7 +2200,8 @@ gnutls_x509_crt_check_issuer
      ISSUER: is the certificate of a possible issuer
 
      This function will check if the given certificate was issued by the
-     given issuer.
+     given issuer. It checks the DN fields and the authority key
+     identifier and subject key identifier fields match.
 
      *Returns:* It will return true (1) if the given certificate is
      issued by the given issuer, and false (0) if not.  A negative
@@ -2150,9 +2244,9 @@ gnutls_x509_crt_deinit
 ----------------------
 
  -- Function: void gnutls_x509_crt_deinit (gnutls_x509_crt_t CERT)
-     CERT: The structure to be initialized
+     CERT: The structure to be deinitialized
 
-     This function will deinitialize a CRL structure.
+     This function will deinitialize a certificate structure.
 
 gnutls_x509_crt_export
 ----------------------
@@ -2214,7 +2308,7 @@ gnutls_x509_crt_get_authority_key_id
      only returns the keyIdentifier field of the extension.
 
      *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
-     negative error value.and a negative value in case of an error.
+     negative error value.
 
 gnutls_x509_crt_get_basic_constraints
 -------------------------------------
@@ -2285,22 +2379,20 @@ gnutls_x509_crt_get_crl_dist_points
      CRITICAL: will be non zero if the extension is marked as critical
      (may be null)
 
-     This function will return the CRL distribution points (2.5.29.31),
-     contained in the given certificate.
+     This function retrieves the CRL distribution points (2.5.29.31),
+     contained in the given certificate in the X509v3 Certificate
+     Extensions.
 
      `reason_flags' should be an ORed sequence of
-     GNUTLS_CRL_REASON_UNUSED, GNUTLS_CRL_REASON_KEY_COMPROMISE,
-     GNUTLS_CRL_REASON_CA_COMPROMISE,
-     GNUTLS_CRL_REASON_AFFILIATION_CHANGED,
-     GNUTLS_CRL_REASON_SUPERSEEDED,
-     GNUTLS_CRL_REASON_CESSATION_OF_OPERATION,
-     GNUTLS_CRL_REASON_CERTIFICATE_HOLD,
-     GNUTLS_CRL_REASON_PRIVILEGE_WITHDRAWN,
-     GNUTLS_CRL_REASON_AA_COMPROMISE, or zero for all possible reasons.
-
-     This is specified in X509v3 Certificate Extensions. GNUTLS will
-     return the distribution point type, or a negative error code on
-     error.
+     `GNUTLS_CRL_REASON_UNUSED', `GNUTLS_CRL_REASON_KEY_COMPROMISE',
+     `GNUTLS_CRL_REASON_CA_COMPROMISE',
+     `GNUTLS_CRL_REASON_AFFILIATION_CHANGED',
+     `GNUTLS_CRL_REASON_SUPERSEEDED',
+     `GNUTLS_CRL_REASON_CESSATION_OF_OPERATION',
+     `GNUTLS_CRL_REASON_CERTIFICATE_HOLD',
+     `GNUTLS_CRL_REASON_PRIVILEGE_WITHDRAWN',
+     `GNUTLS_CRL_REASON_AA_COMPROMISE', or zero for all possible
+     reasons.
 
      *Returns:* `GNUTLS_E_SHORT_MEMORY_BUFFER' and updates &`ret_size'
      if &`ret_size' is not enough to hold the distribution point, or the
@@ -2342,7 +2434,7 @@ gnutls_x509_crt_get_dn_by_oid
 
      If `buf' is null then only the size will be filled.
 
-     *Returns:* GNUTLS_E_SHORT_MEMORY_BUFFER if the provided buffer is
+     *Returns:* `GNUTLS_E_SHORT_MEMORY_BUFFER' if the provided buffer is
      not long enough, and in that case the *sizeof_buf will be updated
      with the required size.  On success 0 is returned.
 
@@ -2365,7 +2457,7 @@ gnutls_x509_crt_get_dn_oid
 
      If oid is null then only the size will be filled.
 
-     *Returns:* GNUTLS_E_SHORT_MEMORY_BUFFER if the provided buffer is
+     *Returns:* `GNUTLS_E_SHORT_MEMORY_BUFFER' if the provided buffer is
      not long enough, and in that case the *sizeof_oid will be updated
      with the required size.  On success 0 is returned.
 
@@ -2380,16 +2472,16 @@ gnutls_x509_crt_get_dn
 
      SIZEOF_BUF: initially holds the size of `buf'
 
-     This function will copy the name of the Certificate in the
-     provided buffer. The name will be in the form
-     "C=xxxx,O=yyyy,CN=zzzz" as described in RFC2253. The output string
-     will be ASCII or UTF-8 encoded, depending on the certificate data.
+     This function will copy the name of the Certificate in the provided
+     buffer. The name will be in the form "C=xxxx,O=yyyy,CN=zzzz" as
+     described in RFC2253. The output string will be ASCII or UTF-8
+     encoded, depending on the certificate data.
 
      If `buf' is null then only the size will be filled.
 
-     *Returns:* GNUTLS_E_SHORT_MEMORY_BUFFER if the provided buffer is
-     not long enough, and in that case the *sizeof_buf will be updated
-     with the required size.  On success 0 is returned.
+     *Returns:* `GNUTLS_E_SHORT_MEMORY_BUFFER' if the provided buffer
+     is not long enough, and in that case the *sizeof_buf will be
+     updated with the required size.  On success 0 is returned.
 
 gnutls_x509_crt_get_expiration_time
 -----------------------------------
@@ -2537,6 +2629,123 @@ gnutls_x509_crt_get_fingerprint
      not long enough, and in that case the *sizeof_buf will be updated
      with the required size.  On success 0 is returned.
 
+gnutls_x509_crt_get_issuer_alt_name2
+------------------------------------
+
+ -- Function: int gnutls_x509_crt_get_issuer_alt_name2
+          (gnutls_x509_crt_t CERT, unsigned int SEQ, void * RET, size_t
+          * RET_SIZE, unsigned int * RET_TYPE, unsigned int * CRITICAL)
+     CERT: should contain a `gnutls_x509_crt_t' structure
+
+     SEQ: specifies the sequence number of the alt name (0 for the
+     first one, 1 for the second etc.)
+
+     RET: is the place where the alternative name will be copied to
+
+     RET_SIZE: holds the size of ret.
+
+     RET_TYPE: holds the type of the alternative name (one of
+     gnutls_x509_subject_alt_name_t).
+
+     CRITICAL: will be non zero if the extension is marked as critical
+     (may be null)
+
+     This function will return the alternative names, contained in the
+     given certificate. It is the same as
+     `gnutls_x509_crt_get_issuer_alt_name()' except for the fact that it
+     will return the type of the alternative name in `ret_type' even if
+     the function fails for some reason (i.e.  the buffer provided is
+     not enough).
+
+     *Returns:* the alternative issuer name type on success, one of the
+     enumerated `gnutls_x509_subject_alt_name_t'.  It will return
+     `GNUTLS_E_SHORT_MEMORY_BUFFER' if `ret_size' is not large enough
+     to hold the value.  In that case `ret_size' will be updated with
+     the required size.  If the certificate does not have an
+     Alternative name with the specified sequence number then
+     `GNUTLS_E_REQUESTED_DATA_NOT_AVAILABLE' is returned.
+
+     *Since:* 2.10.0
+
+gnutls_x509_crt_get_issuer_alt_name
+-----------------------------------
+
+ -- Function: int gnutls_x509_crt_get_issuer_alt_name
+          (gnutls_x509_crt_t CERT, unsigned int SEQ, void * RET, size_t
+          * RET_SIZE, unsigned int * CRITICAL)
+     CERT: should contain a `gnutls_x509_crt_t' structure
+
+     SEQ: specifies the sequence number of the alt name (0 for the
+     first one, 1 for the second etc.)
+
+     RET: is the place where the alternative name will be copied to
+
+     RET_SIZE: holds the size of ret.
+
+     CRITICAL: will be non zero if the extension is marked as critical
+     (may be null)
+
+     This function retrieves the Issuer Alternative Name (2.5.29.18),
+     contained in the given certificate in the X509v3 Certificate
+     Extensions.
+
+     When the SAN type is otherName, it will extract the data in the
+     otherName's value field, and `GNUTLS_SAN_OTHERNAME' is returned.
+     You may use `gnutls_x509_crt_get_subject_alt_othername_oid()' to
+     get the corresponding OID and the "virtual" SAN types (e.g.,
+     `GNUTLS_SAN_OTHERNAME_XMPP').
+
+     If an otherName OID is known, the data will be decoded.  Otherwise
+     the returned data will be DER encoded, and you will have to decode
+     it yourself.  Currently, only the RFC 3920 id-on-xmppAddr Issuer
+     AltName is recognized.
+
+     *Returns:* the alternative issuer name type on success, one of the
+     enumerated `gnutls_x509_subject_alt_name_t'.  It will return
+     `GNUTLS_E_SHORT_MEMORY_BUFFER' if `ret_size' is not large enough
+     to hold the value.  In that case `ret_size' will be updated with
+     the required size.  If the certificate does not have an
+     Alternative name with the specified sequence number then
+     `GNUTLS_E_REQUESTED_DATA_NOT_AVAILABLE' is returned.
+
+     *Since:* 2.10.0
+
+gnutls_x509_crt_get_issuer_alt_othername_oid
+--------------------------------------------
+
+ -- Function: int gnutls_x509_crt_get_issuer_alt_othername_oid
+          (gnutls_x509_crt_t CERT, unsigned int SEQ, void * RET, size_t
+          * RET_SIZE)
+     CERT: should contain a `gnutls_x509_crt_t' structure
+
+     SEQ: specifies the sequence number of the alt name (0 for the
+     first one, 1 for the second etc.)
+
+     RET: is the place where the otherName OID will be copied to
+
+     RET_SIZE: holds the size of ret.
+
+     This function will extract the type OID of an otherName Subject
+     Alternative Name, contained in the given certificate, and return
+     the type as an enumerated element.
+
+     This function is only useful if
+     `gnutls_x509_crt_get_issuer_alt_name()' returned
+     `GNUTLS_SAN_OTHERNAME'.
+
+     *Returns:* the alternative issuer name type on success, one of the
+     enumerated gnutls_x509_subject_alt_name_t.  For supported OIDs, it
+     will return one of the virtual (GNUTLS_SAN_OTHERNAME_*) types,
+     e.g. `GNUTLS_SAN_OTHERNAME_XMPP', and `GNUTLS_SAN_OTHERNAME' for
+     unknown OIDs.  It will return `GNUTLS_E_SHORT_MEMORY_BUFFER' if
+     `ret_size' is not large enough to hold the value.  In that case
+     `ret_size' will be updated with the required size.  If the
+     certificate does not have an Alternative name with the specified
+     sequence number and with the otherName type then
+     `GNUTLS_E_REQUESTED_DATA_NOT_AVAILABLE' is returned.
+
+     *Since:* 2.10.0
+
 gnutls_x509_crt_get_issuer_dn_by_oid
 ------------------------------------
 
@@ -2618,6 +2827,27 @@ gnutls_x509_crt_get_issuer_dn
      not long enough, and in that case the *sizeof_buf will be updated
      with the required size.  On success 0 is returned.
 
+gnutls_x509_crt_get_issuer_unique_id
+------------------------------------
+
+ -- Function: int gnutls_x509_crt_get_issuer_unique_id
+          (gnutls_x509_crt_t CRT, char * BUF, size_t * SIZEOF_BUF)
+     CRT: Holds the certificate
+
+     BUF: user allocated memory buffer, will hold the unique id
+
+     SIZEOF_BUF: size of user allocated memory buffer (on input), will
+     hold actual size of the unique ID on return.
+
+     This function will extract the issuerUniqueID value (if present)
+     for the given certificate.
+
+     If the user allocated memory buffer is not large enough to hold the
+     full subjectUniqueID, then a GNUTLS_E_SHORT_MEMORY_BUFFER error
+     will be returned, and sizeof_buf will be set to the actual length.
+
+     *Returns:* `GNUTLS_E_SUCCESS' on success, otherwise an error.
+
 gnutls_x509_crt_get_issuer
 --------------------------
 
@@ -2681,9 +2911,9 @@ gnutls_x509_crt_get_key_purpose_oid
      CRITICAL: output flag to indicate criticality of extension
 
      This function will extract the key purpose OIDs of the Certificate
-     specified by the given index.  These are stored in the Extended
-     Key Usage extension (2.5.29.37) See the GNUTLS_KP_* definitions
-     for human readable names.
+     specified by the given index.  These are stored in the Extended Key
+     Usage extension (2.5.29.37) See the GNUTLS_KP_* definitions for
+     human readable names.
 
      If `oid' is null then only the size will be filled.
 
@@ -2703,9 +2933,8 @@ gnutls_x509_crt_get_key_usage
      CRITICAL: will be non zero if the extension is marked as critical
 
      This function will return certificate's key usage, by reading the
-     keyUsage X.509 extension (2.5.29.15). The key usage value will
-
-     *ORed values of the:* `GNUTLS_KEY_DIGITAL_SIGNATURE',
+     keyUsage X.509 extension (2.5.29.15). The key usage value will ORed
+     values of the: `GNUTLS_KEY_DIGITAL_SIGNATURE',
      `GNUTLS_KEY_NON_REPUDIATION', `GNUTLS_KEY_KEY_ENCIPHERMENT',
      `GNUTLS_KEY_DATA_ENCIPHERMENT', `GNUTLS_KEY_KEY_AGREEMENT',
      `GNUTLS_KEY_KEY_CERT_SIGN', `GNUTLS_KEY_CRL_SIGN',
@@ -2773,6 +3002,33 @@ gnutls_x509_crt_get_pk_rsa_raw
      `gnutls_malloc()' and will be stored in the appropriate datum.
 
      *Returns:* `GNUTLS_E_SUCCESS' on success, otherwise an error.
+
+gnutls_x509_crt_get_preferred_hash_algorithm
+--------------------------------------------
+
+ -- Function: int gnutls_x509_crt_get_preferred_hash_algorithm
+          (gnutls_x509_crt_t CRT, gnutls_digest_algorithm_t * HASH,
+          unsigned int * MAND)
+     CRT: Holds the certificate
+
+     HASH: The result of the call with the hash algorithm used for
+     signature
+
+     MAND: If non zero it means that the algorithm MUST use this hash.
+     May be NULL.
+
+     This function will read the certifcate and return the appropriate
+     digest algorithm to use for signing with this certificate. Some
+     certificates (i.e.  DSA might not be able to sign without the
+     preferred algorithm).
+
+     *Deprecated:* Please use
+     `gnutls_pubkey_get_preferred_hash_algorithm()'.
+
+     *Returns:* the 0 if the hash algorithm is found. A negative value
+     is returned on error.
+
+     *Since:* 2.11.0
 
 gnutls_x509_crt_get_proxy
 -------------------------
@@ -2842,13 +3098,12 @@ gnutls_x509_crt_get_serial
      RESULT_SIZE: Holds the size of the result field.
 
      This function will return the X.509 certificate's serial number.
-     This is obtained by the X509 Certificate serialNumber field.
-     Serial is not always a 32 or 64bit number. Some CAs use large
-     serial numbers, thus it may be wise to handle it as something
-     opaque.
+     This is obtained by the X509 Certificate serialNumber field. Serial
+     is not always a 32 or 64bit number. Some CAs use large serial
+     numbers, thus it may be wise to handle it as something opaque.
 
      *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
-     negative error value.and a negative value in case of an error.
+     negative error value.
 
 gnutls_x509_crt_get_signature_algorithm
 ---------------------------------------
@@ -2858,7 +3113,8 @@ gnutls_x509_crt_get_signature_algorithm
      CERT: should contain a `gnutls_x509_crt_t' structure
 
      This function will return a value of the `gnutls_sign_algorithm_t'
-     enumeration that is the signature algorithm.
+     enumeration that is the signature algorithm that has been used to
+     sign this certificate.
 
      *Returns:* a `gnutls_sign_algorithm_t' value, or a negative value
      on error.
@@ -2934,11 +3190,8 @@ gnutls_x509_crt_get_subject_alt_name
      CRITICAL: will be non zero if the extension is marked as critical
      (may be null)
 
-     This function will return the alternative names, contained in the
-     given certificate.
-
-     This is specified in X509v3 Certificate Extensions.  GNUTLS will
-     return the Alternative name (2.5.29.17), or a negative error code.
+     This function retrieves the Alternative Name (2.5.29.17), contained
+     in the given certificate in the X509v3 Certificate Extensions.
 
      When the SAN type is otherName, it will extract the data in the
      otherName's value field, and `GNUTLS_SAN_OTHERNAME' is returned.
@@ -2953,10 +3206,10 @@ gnutls_x509_crt_get_subject_alt_name
 
      *Returns:* the alternative subject name type on success, one of the
      enumerated `gnutls_x509_subject_alt_name_t'.  It will return
-     `GNUTLS_E_SHORT_MEMORY_BUFFER' if `ret_size' is not large enough
-     to hold the value.  In that case `ret_size' will be updated with
-     the required size.  If the certificate does not have an
-     Alternative name with the specified sequence number then
+     `GNUTLS_E_SHORT_MEMORY_BUFFER' if `ret_size' is not large enough to
+     hold the value.  In that case `ret_size' will be updated with the
+     required size.  If the certificate does not have an Alternative
+     name with the specified sequence number then
      `GNUTLS_E_REQUESTED_DATA_NOT_AVAILABLE' is returned.
 
 gnutls_x509_crt_get_subject_alt_othername_oid
@@ -3012,7 +3265,28 @@ gnutls_x509_crt_get_subject_key_id
      extension field (2.5.29.14).
 
      *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
-     negative error value.and a negative value in case of an error.
+     negative error value.
+
+gnutls_x509_crt_get_subject_unique_id
+-------------------------------------
+
+ -- Function: int gnutls_x509_crt_get_subject_unique_id
+          (gnutls_x509_crt_t CRT, char * BUF, size_t * SIZEOF_BUF)
+     CRT: Holds the certificate
+
+     BUF: user allocated memory buffer, will hold the unique id
+
+     SIZEOF_BUF: size of user allocated memory buffer (on input), will
+     hold actual size of the unique ID on return.
+
+     This function will extract the subjectUniqueID value (if present)
+     for the given certificate.
+
+     If the user allocated memory buffer is not large enough to hold the
+     full subjectUniqueID, then a GNUTLS_E_SHORT_MEMORY_BUFFER error
+     will be returned, and sizeof_buf will be set to the actual length.
+
+     *Returns:* `GNUTLS_E_SUCCESS' on success, otherwise an error.
 
 gnutls_x509_crt_get_subject
 ---------------------------
@@ -3047,6 +3321,8 @@ gnutls_x509_crt_get_verify_algorithm
 
      This function will read the certifcate and the signed data to
      determine the hash algorithm used to generate the signature.
+
+     *Deprecated:* Use `gnutls_pubkey_get_verify_algorithm()' instead.
 
      *Returns:* the 0 if the hash algorithm is found. A negative value
      is returned on error.
@@ -3118,6 +3394,13 @@ gnutls_x509_crt_list_import
      to the native gnutls_x509_crt_t format. The output will be stored
      in `certs'.  They will be automatically initialized.
 
+     The flag `GNUTLS_X509_CRT_LIST_IMPORT_FAIL_IF_EXCEED' will cause
+     import to fail if the certificates in the provided buffer are more
+     than the available structures. The
+     `GNUTLS_X509_CRT_LIST_FAIL_IF_UNSORTED' flag will cause the
+     function to fail if the provided list is not sorted from subject
+     to issuer.
+
      If the Certificate is PEM encoded it should have a header of "X509
      CERTIFICATE", or "CERTIFICATE".
 
@@ -3161,15 +3444,15 @@ gnutls_x509_crt_list_verify
 
      The certificate verification output will be put in `verify' and
      will be one or more of the gnutls_certificate_status_t enumerated
-     elements bitwise or'd.  For a more detailed verification status
-     use `gnutls_x509_crt_verify()' per list element.
+     elements bitwise or'd.  For a more detailed verification status use
+     `gnutls_x509_crt_verify()' per list element.
 
      *GNUTLS_CERT_INVALID:* the certificate chain is not valid.
 
      *GNUTLS_CERT_REVOKED:* a certificate in the chain has been revoked.
 
      *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
-     negative error value.and a negative value in case of an error.
+     negative error value.
 
 gnutls_x509_crt_print
 ---------------------
@@ -3192,6 +3475,31 @@ gnutls_x509_crt_print
      selected fields, which is useful for logging purposes.
 
      The output `out' needs to be deallocate using `gnutls_free()'.
+
+     *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
+     negative error value.
+
+gnutls_x509_crt_privkey_sign
+----------------------------
+
+ -- Function: int gnutls_x509_crt_privkey_sign (gnutls_x509_crt_t CRT,
+          gnutls_x509_crt_t ISSUER, gnutls_privkey_t ISSUER_KEY,
+          gnutls_digest_algorithm_t DIG, unsigned int FLAGS)
+     CRT: a certificate of type `gnutls_x509_crt_t'
+
+     ISSUER: is the certificate of the certificate issuer
+
+     ISSUER_KEY: holds the issuer's private key
+
+     DIG: The message digest to use, `GNUTLS_DIG_SHA1' is a safe choice
+
+     FLAGS: must be 0
+
+     This function will sign the certificate with the issuer's private
+     key, and will copy the issuer's information into the certificate.
+
+     This must be the last step in a certificate generation since all
+     the previously set parameters are now signed.
 
      *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
      negative error value.
@@ -3409,7 +3717,7 @@ gnutls_x509_crt_set_extension_by_oid
      encoded.
 
      *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
-     negative error value.and a negative value in case of an error.
+     negative error value.
 
 gnutls_x509_crt_set_issuer_dn_by_oid
 ------------------------------------
@@ -3719,7 +4027,10 @@ gnutls_x509_crt_verify_data
      This function will verify the given signed data, using the
      parameters from the certificate.
 
-     *Returns:* In case of a verification failure 0 is returned, and 1
+     Deprecated. Please use `gnutls_pubkey_verify_data()'.
+
+     *Returns:* In case of a verification failure
+     `GNUTLS_E_PK_SIG_VERIFY_FAILED' is returned, and a positive code
      on success.
 
 gnutls_x509_crt_verify_hash
@@ -3739,7 +4050,10 @@ gnutls_x509_crt_verify_hash
      This function will verify the given signed digest, using the
      parameters from the certificate.
 
-     *Returns:* In case of a verification failure 0 is returned, and 1
+     Deprecated. Please use `gnutls_pubkey_verify_data()'.
+
+     *Returns:* In case of a verification failure
+     `GNUTLS_E_PK_SIG_VERIFY_FAILED' is returned, and a positive code
      on success.
 
 gnutls_x509_crt_verify
@@ -3761,11 +4075,10 @@ gnutls_x509_crt_verify
      VERIFY: will hold the certificate verification output.
 
      This function will try to verify the given certificate and return
-     its status.  The verification output in this functions cannot be
-     GNUTLS_CERT_NOT_VALID.
+     its status.
 
      *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
-     negative error value.and a negative value in case of an error.
+     negative error value.
 
 gnutls_x509_dn_deinit
 ---------------------
@@ -3889,7 +4202,7 @@ gnutls_x509_privkey_cpy
      SRC: The source key
 
      This function will copy a private key from source to destination
-     key.
+     key. Destination has to be initialized.
 
      *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
      negative error value.
@@ -3899,7 +4212,7 @@ gnutls_x509_privkey_deinit
 
  -- Function: void gnutls_x509_privkey_deinit (gnutls_x509_privkey_t
           KEY)
-     KEY: The structure to be initialized
+     KEY: The structure to be deinitialized
 
      This function will deinitialize a private key structure.
 
@@ -3967,6 +4280,39 @@ gnutls_x509_privkey_export_pkcs8
 
      *Return value:* In case of failure a negative value will be
      returned, and 0 on success.
+
+gnutls_x509_privkey_export_rsa_raw2
+-----------------------------------
+
+ -- Function: int gnutls_x509_privkey_export_rsa_raw2
+          (gnutls_x509_privkey_t KEY, gnutls_datum_t * M,
+          gnutls_datum_t * E, gnutls_datum_t * D, gnutls_datum_t * P,
+          gnutls_datum_t * Q, gnutls_datum_t * U, gnutls_datum_t * E1,
+          gnutls_datum_t * E2)
+     KEY: a structure that holds the rsa parameters
+
+     M: will hold the modulus
+
+     E: will hold the public exponent
+
+     D: will hold the private exponent
+
+     P: will hold the first prime (p)
+
+     Q: will hold the second prime (q)
+
+     U: will hold the coefficient
+
+     E1: will hold e1 = d mod (p-1)
+
+     E2: will hold e2 = d mod (q-1)
+
+     This function will export the RSA private key's parameters found
+     in the given structure. The new parameters will be allocated using
+     `gnutls_malloc()' and will be stored in the appropriate datum.
+
+     *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
+     negative error value.
 
 gnutls_x509_privkey_export_rsa_raw
 ----------------------------------
@@ -4053,6 +4399,9 @@ gnutls_x509_privkey_generate
 
      This function will generate a random private key. Note that this
      function must be called on an empty private key.
+
+     Do not set the number of bits directly, use
+     `gnutls_sec_param_to_pk_bits()'.
 
      *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
      negative error value.
@@ -4157,6 +4506,40 @@ gnutls_x509_privkey_import_pkcs8
      *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
      negative error value.
 
+gnutls_x509_privkey_import_rsa_raw2
+-----------------------------------
+
+ -- Function: int gnutls_x509_privkey_import_rsa_raw2
+          (gnutls_x509_privkey_t KEY, const gnutls_datum_t * M, const
+          gnutls_datum_t * E, const gnutls_datum_t * D, const
+          gnutls_datum_t * P, const gnutls_datum_t * Q, const
+          gnutls_datum_t * U, const gnutls_datum_t * E1, const
+          gnutls_datum_t * E2)
+     KEY: The structure to store the parsed key
+
+     M: holds the modulus
+
+     E: holds the public exponent
+
+     D: holds the private exponent
+
+     P: holds the first prime (p)
+
+     Q: holds the second prime (q)
+
+     U: holds the coefficient
+
+     E1: holds e1 = d mod (p-1)
+
+     E2: holds e2 = d mod (q-1)
+
+     This function will convert the given RSA raw parameters to the
+     native `gnutls_x509_privkey_t' format.  The output will be stored
+     in `key'.
+
+     *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
+     negative error value.
+
 gnutls_x509_privkey_import_rsa_raw
 ----------------------------------
 
@@ -4219,6 +4602,19 @@ gnutls_x509_privkey_init
      *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
      negative error value.
 
+gnutls_x509_privkey_sec_param
+-----------------------------
+
+ -- Function: gnutls_sec_param_t gnutls_x509_privkey_sec_param
+          (gnutls_x509_privkey_t KEY)
+     KEY: a key structure
+
+     This function will return the security parameter appropriate with
+     this private key.
+
+     *Returns:* On success, a valid security parameter is returned
+     otherwise `GNUTLS_SEC_PARAM_UNKNOWN' is returned.
+
 gnutls_x509_privkey_sign_data
 -----------------------------
 
@@ -4248,8 +4644,13 @@ gnutls_x509_privkey_sign_data
      *`signature_size' is updated and `GNUTLS_E_SHORT_MEMORY_BUFFER'
      will be returned.
 
+     Use `gnutls_x509_crt_get_preferred_hash_algorithm()' to determine
+     the hash algorithm.
+
      *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
      negative error value.
+
+     *Deprecated:* Use `gnutls_privkey_sign_data()'.
 
 gnutls_x509_privkey_sign_hash
 -----------------------------
@@ -4270,6 +4671,8 @@ gnutls_x509_privkey_sign_hash
      *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
      negative error value.
 
+     *Deprecated in:* 2.12.0
+
 gnutls_x509_privkey_verify_data
 -------------------------------
 
@@ -4287,8 +4690,11 @@ gnutls_x509_privkey_verify_data
      This function will verify the given signed data, using the
      parameters in the private key.
 
-     *Returns:* In case of a verification failure 0 is returned, and 1
+     *Returns:* In case of a verification failure
+     `GNUTLS_E_PK_SIG_VERIFY_FAILED' is returned, and a positive code
      on success.
+
+     *Deprecated:* Use `gnutls_pubkey_verify_data()'.
 
 gnutls_x509_rdn_get_by_oid
 --------------------------
@@ -4432,7 +4838,8 @@ gnutls_certificate_set_openpgp_key_file2
      FORMAT: the format of the keys
 
      This funtion is used to load OpenPGP keys into the GnuTLS
-     credential structure. The files should contain non encrypted keys.
+     credential structure. The file should contain at least one valid
+     non encrypted subkey.
 
      The special keyword "auto" is also accepted as `subkey_id'.  In
      that case the `gnutls_openpgp_crt_get_auth_subkey()' will be used
@@ -4458,8 +4865,8 @@ gnutls_certificate_set_openpgp_key_file
      FORMAT: the format of the keys
 
      This funtion is used to load OpenPGP keys into the GnuTLS
-     credentials structure.  The files should only contain one key which
-     is not encrypted.
+     credentials structure. The file should contain at least one valid
+     non encrypted subkey.
 
      *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
      negative error value.
@@ -4482,8 +4889,8 @@ gnutls_certificate_set_openpgp_key_mem2
      FORMAT: the format of the keys
 
      This funtion is used to load OpenPGP keys into the GnuTLS
-     credentials structure.  The files should only contain one key which
-     is not encrypted.
+     credentials structure. The datum should contain at least one valid
+     non encrypted subkey.
 
      The special keyword "auto" is also accepted as `subkey_id'.  In
      that case the `gnutls_openpgp_crt_get_auth_subkey()' will be used
@@ -4510,7 +4917,8 @@ gnutls_certificate_set_openpgp_key_mem
      FORMAT: the format of the keys
 
      This funtion is used to load OpenPGP keys into the GnuTLS
-     credential structure. The files should contain non encrypted keys.
+     credential structure. The datum should contain at least one valid
+     non encrypted subkey.
 
      *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
      negative error value.
@@ -4572,7 +4980,10 @@ gnutls_certificate_set_openpgp_key
      called more than once (in case multiple keys/certificates exist
      for the server).
 
-     With this function the subkeys of the certificate are not used.
+     Note that this function requires that the preferred key ids have
+     been set and be used. See
+     `gnutls_openpgp_crt_set_preferred_key_id()'.  Otherwise the master
+     key will be used.
 
      *Returns:* On success, `GNUTLS_E_SUCCESS' (zero) is returned,
      otherwise an error code is returned.
@@ -4722,7 +5133,8 @@ gnutls_openpgp_crt_get_name
 
      IDX: the index of the ID to extract
 
-     BUF: a pointer to a structure to hold the name
+     BUF: a pointer to a structure to hold the name, may be `NULL' to
+     only get the `sizeof_buf'.
 
      SIZEOF_BUF: holds the maximum size of `buf', on return hold the
      actual/required size of `buf'.
@@ -4751,7 +5163,7 @@ gnutls_openpgp_crt_get_pk_algorithm
      For DSA the bits returned are of the public exponent.
 
      *Returns:* a member of the `gnutls_pk_algorithm_t' enumeration on
-     success, or a negative value on error.
+     success, or GNUTLS_PK_UNKNOWN on error.
 
 gnutls_openpgp_crt_get_pk_dsa_raw
 ---------------------------------
@@ -4944,7 +5356,7 @@ gnutls_openpgp_crt_get_subkey_pk_algorithm (gnutls_openpgp_crt_t KEY,
      For DSA the bits returned are of the public exponent.
 
      *Returns:* a member of the `gnutls_pk_algorithm_t' enumeration on
-     success, or a negative value on error.
+     success, or GNUTLS_PK_UNKNOWN on error.
 
      *Since:* 2.4.0
 
@@ -5652,6 +6064,19 @@ gnutls_openpgp_privkey_init
 
      *Returns:* `GNUTLS_E_SUCCESS' on success, or an error code.
 
+gnutls_openpgp_privkey_sec_param
+--------------------------------
+
+ -- Function: gnutls_sec_param_t gnutls_openpgp_privkey_sec_param
+          (gnutls_openpgp_privkey_t KEY)
+     KEY: a key structure
+
+     This function will return the security parameter appropriate with
+     this private key.
+
+     *Returns:* On success, a valid security parameter is returned
+     otherwise `GNUTLS_SEC_PARAM_UNKNOWN' is returned.
+
 gnutls_openpgp_privkey_set_preferred_key_id
 -------------------------------------------
 
@@ -5680,11 +6105,13 @@ gnutls_openpgp_privkey_sign_hash
      SIGNATURE: will contain newly allocated signature
 
      This function will sign the given hash using the private key.  You
-     should use `gnutls_openpgp_privkey_set_subkey()' before calling
-     this function to set the subkey to use.
+     should use `gnutls_openpgp_privkey_set_preferred_key_id()' before
+     calling this function to set the subkey to use.
 
      *Returns:* On success, `GNUTLS_E_SUCCESS' is returned, otherwise a
      negative error value.
+
+     *Deprecated:* Use `gnutls_privkey_sign_hash()' instead.
 
 gnutls_openpgp_set_recv_key_function
 ------------------------------------
@@ -5765,8 +6192,8 @@ gnutls_ia_allocate_client_credentials
 
      Adding this credential to a session will enable TLS/IA, and will
      require an Application Phase after the TLS handshake (if the server
-     support TLS/IA).  Use `gnutls_ia_require_inner_phase()' to toggle
-     the TLS/IA mode.
+     support TLS/IA).  Use `gnutls_ia_enable()' to toggle the TLS/IA
+     mode.
 
      *Returns:* On success, `GNUTLS_E_SUCCESS' (0) is returned,
      otherwise an error code is returned.
@@ -5783,8 +6210,8 @@ gnutls_ia_allocate_server_credentials
 
      Adding this credential to a session will enable TLS/IA, and will
      require an Application Phase after the TLS handshake (if the client
-     support TLS/IA).  Use `gnutls_ia_require_inner_phase()' to toggle
-     the TLS/IA mode.
+     support TLS/IA).  Use `gnutls_ia_enable()' to toggle the TLS/IA
+     mode.
 
      *Returns:* On success, `GNUTLS_E_SUCCESS' (0) is returned,
      otherwise an error code is returned.
@@ -5796,8 +6223,8 @@ gnutls_ia_enable
           ALLOW_SKIP_ON_RESUME)
      SESSION: is a `gnutls_session_t' structure.
 
-     ALLOW_SKIP_ON_RESUME: non-zero if local party allows to skip the
-     TLS/IA application phases for a resumed session.
+     ALLOW_SKIP_ON_RESUME: non-zero if local party allows one to skip
+     the TLS/IA application phases for a resumed session.
 
      Specify whether we must advertise support for the TLS/IA extension
      during the handshake.
@@ -6215,14 +6642,30 @@ expressions.
 `GNUTLS_E_CERTIFICATE_KEY_MISMATCH:'
      The certificate and the given key do not match.
 
+`GNUTLS_E_CERTIFICATE_LIST_UNSORTED:'
+     The provided X.509 certificate list is not sorted (in subject to
+     issuer order)
+
+`GNUTLS_E_CHANNEL_BINDING_NOT_AVAILABLE:'
+     Channel binding data not available
+
 `GNUTLS_E_COMPRESSION_FAILED:'
      Compression of the TLS record packet has failed.
 
 `GNUTLS_E_CONSTRAINT_ERROR:'
      Some constraint limits were reached.
 
+`GNUTLS_E_CRYPTODEV_DEVICE_ERROR:'
+     Error opening /dev/crypto
+
+`GNUTLS_E_CRYPTODEV_IOCTL_ERROR:'
+     Error interfacing with /dev/crypto
+
 `GNUTLS_E_CRYPTO_ALREADY_REGISTERED:'
      There is already a crypto algorithm with lower priority.
+
+`GNUTLS_E_CRYPTO_INIT_FAILED:'
+     The initialization of crypto backend has failed.
 
 `GNUTLS_E_DB_ERROR:'
      Error in Database backend.
@@ -6274,6 +6717,9 @@ expressions.
 `GNUTLS_E_INCOMPATIBLE_LIBTASN1_LIBRARY:'
      The tasn1 library version is too old.
 
+`GNUTLS_E_INCOMPAT_DSA_KEY_WITH_TLS_PROTOCOL:'
+     The given DSA key is incompatible with the selected TLS protocol.
+
 `GNUTLS_E_INIT_LIBEXTRA:'
      The initialization of GnuTLS-extra has failed.
 
@@ -6304,6 +6750,9 @@ expressions.
 `GNUTLS_E_LIBRARY_VERSION_MISMATCH:'
      The GnuTLS library version does not match the GnuTLS-extra library
      version.
+
+`GNUTLS_E_LOCKING_ERROR:'
+     Thread locking error
 
 `GNUTLS_E_LZO_INIT_FAILED:'
      The initialization of LZO has failed.
@@ -6344,11 +6793,62 @@ expressions.
 `GNUTLS_E_OPENPGP_KEYRING_ERROR:'
      Error loading the keyring.
 
+`GNUTLS_E_OPENPGP_PREFERRED_KEY_ERROR:'
+     The OpenPGP key has not a preferred key set.
+
 `GNUTLS_E_OPENPGP_SUBKEY_ERROR:'
      Could not find OpenPGP subkey.
 
 `GNUTLS_E_OPENPGP_UID_REVOKED:'
      The OpenPGP User ID is revoked.
+
+`GNUTLS_E_PARSING_ERROR:'
+     Error in parsing.
+
+`GNUTLS_E_PKCS11_ATTRIBUTE_ERROR:'
+     PKCS #11 error in attribute
+
+`GNUTLS_E_PKCS11_DATA_ERROR:'
+     PKCS #11 error in data
+
+`GNUTLS_E_PKCS11_DEVICE_ERROR:'
+     PKCS #11 error in device
+
+`GNUTLS_E_PKCS11_ERROR:'
+     PKCS #11 error.
+
+`GNUTLS_E_PKCS11_KEY_ERROR:'
+     PKCS #11 error in key
+
+`GNUTLS_E_PKCS11_LOAD_ERROR:'
+     PKCS #11 initialization error.
+
+`GNUTLS_E_PKCS11_PIN_ERROR:'
+     PKCS #11 error in PIN.
+
+`GNUTLS_E_PKCS11_PIN_EXPIRED:'
+     PKCS #11 PIN expired
+
+`GNUTLS_E_PKCS11_PIN_LOCKED:'
+     PKCS #11 PIN locked
+
+`GNUTLS_E_PKCS11_SESSION_ERROR:'
+     PKCS #11 error in session
+
+`GNUTLS_E_PKCS11_SIGNATURE_ERROR:'
+     PKCS #11 error in signature
+
+`GNUTLS_E_PKCS11_SLOT_ERROR:'
+     PKCS #11 error in slot
+
+`GNUTLS_E_PKCS11_TOKEN_ERROR:'
+     PKCS #11 error in token
+
+`GNUTLS_E_PKCS11_UNSUPPORTED_FEATURE_ERROR:'
+     PKCS #11 unsupported feature
+
+`GNUTLS_E_PKCS11_USER_ERROR:'
+     PKCS #11 user error
 
 `GNUTLS_E_PKCS1_WRONG_PAD:'
      Wrong padding in PKCS1 packet.
@@ -6389,6 +6889,9 @@ expressions.
 
 `GNUTLS_E_REQUESTED_DATA_NOT_AVAILABLE:'
      The requested data were not available.
+
+`GNUTLS_E_SAFE_RENEGOTIATION_FAILED:'
+     Safe renegotiation failed.
 
 `GNUTLS_E_SHORT_MEMORY_BUFFER:'
      The given memory buffer is too short to hold parameters.
@@ -6438,8 +6941,17 @@ expressions.
 `GNUTLS_E_UNKNOWN_PK_ALGORITHM:'
      An unknown public key algorithm was encountered.
 
+`GNUTLS_E_UNKNOWN_SRP_USERNAME:'
+     The SRP username supplied is unknown.
+
+`GNUTLS_E_UNSAFE_RENEGOTIATION_DENIED:'
+     Unsafe renegotiation denied.
+
 `GNUTLS_E_UNSUPPORTED_CERTIFICATE_TYPE:'
      The certificate type is not supported.
+
+`GNUTLS_E_UNSUPPORTED_SIGNATURE_ALGORITHM:'
+     The signature algorithm is not supported.
 
 `GNUTLS_E_UNSUPPORTED_VERSION_PACKET:'
      A record packet with illegal version was received.
@@ -6482,6 +6994,8 @@ TLS_ANON_DH_AES_128_CBC_SHA1                0x00 0x34      SSL3.0
 TLS_ANON_DH_AES_256_CBC_SHA1                0x00 0x3a      SSL3.0
 TLS_ANON_DH_CAMELLIA_128_CBC_SHA1           0x00 0x46      TLS1.0
 TLS_ANON_DH_CAMELLIA_256_CBC_SHA1           0x00 0x89      TLS1.0
+TLS_ANON_DH_AES_128_CBC_SHA256              0x00 0x6c      TLS1.2
+TLS_ANON_DH_AES_256_CBC_SHA256              0x00 0x6d      TLS1.2
 TLS_PSK_SHA_ARCFOUR_SHA1                    0x00 0x8a      TLS1.0
 TLS_PSK_SHA_3DES_EDE_CBC_SHA1               0x00 0x8b      TLS1.0
 TLS_PSK_SHA_AES_128_CBC_SHA1                0x00 0x8c      TLS1.0
@@ -6505,12 +7019,18 @@ TLS_DHE_DSS_AES_128_CBC_SHA1                0x00 0x32      SSL3.0
 TLS_DHE_DSS_AES_256_CBC_SHA1                0x00 0x38      SSL3.0
 TLS_DHE_DSS_CAMELLIA_128_CBC_SHA1           0x00 0x44      TLS1.0
 TLS_DHE_DSS_CAMELLIA_256_CBC_SHA1           0x00 0x87      TLS1.0
+TLS_DHE_DSS_AES_128_CBC_SHA256              0x00 0x40      TLS1.2
+TLS_DHE_DSS_AES_256_CBC_SHA256              0x00 0x6a      TLS1.2
 TLS_DHE_RSA_3DES_EDE_CBC_SHA1               0x00 0x16      SSL3.0
 TLS_DHE_RSA_AES_128_CBC_SHA1                0x00 0x33      SSL3.0
 TLS_DHE_RSA_AES_256_CBC_SHA1                0x00 0x39      SSL3.0
 TLS_DHE_RSA_CAMELLIA_128_CBC_SHA1           0x00 0x45      TLS1.0
 TLS_DHE_RSA_CAMELLIA_256_CBC_SHA1           0x00 0x88      TLS1.0
+TLS_DHE_RSA_AES_128_CBC_SHA256              0x00 0x67      TLS1.2
+TLS_DHE_RSA_AES_256_CBC_SHA256              0x00 0x6b      TLS1.2
 TLS_RSA_NULL_MD5                            0x00 0x01      SSL3.0
+TLS_RSA_NULL_SHA1                           0x00 0x02      SSL3.0
+TLS_RSA_NULL_SHA256                         0x00 0x3b      TLS1.2
 TLS_RSA_EXPORT_ARCFOUR_40_MD5               0x00 0x03      SSL3.0
 TLS_RSA_ARCFOUR_SHA1                        0x00 0x05      SSL3.0
 TLS_RSA_ARCFOUR_MD5                         0x00 0x04      SSL3.0
@@ -6519,6 +7039,8 @@ TLS_RSA_AES_128_CBC_SHA1                    0x00 0x2f      SSL3.0
 TLS_RSA_AES_256_CBC_SHA1                    0x00 0x35      SSL3.0
 TLS_RSA_CAMELLIA_128_CBC_SHA1               0x00 0x41      TLS1.0
 TLS_RSA_CAMELLIA_256_CBC_SHA1               0x00 0x84      TLS1.0
+TLS_RSA_AES_128_CBC_SHA256                  0x00 0x3c      TLS1.2
+TLS_RSA_AES_256_CBC_SHA256                  0x00 0x3d      TLS1.2
 
 Available certificate types:
    * X.509
@@ -6570,7 +7092,7 @@ Available MAC algorithms:
 
    * RIPEMD160
 
-   * NULL
+   * MAC-NULL
 
 Available key exchange methods:
    * ANON-DH
@@ -6599,7 +7121,9 @@ Available public key algorithms:
    * DSA
 
 Available public key signature algorithms:
-   * RSA-SHA
+   * RSA-SHA1
+
+   * RSA-SHA224
 
    * RSA-SHA256
 
@@ -6609,7 +7133,11 @@ Available public key signature algorithms:
 
    * RSA-RMD160
 
-   * DSA-SHA
+   * DSA-SHA1
+
+   * DSA-SHA224
+
+   * DSA-SHA256
 
    * RSA-MD5
 
@@ -6633,10 +7161,9 @@ Some additional information regarding some of the algorithms:
 
 `MD2'
      MD2 is a cryptographic hash algorithm designed by Ron Rivest.  It
-     is optimized for 8-bit processors. Outputs 128 bits of data.
-     There are no known weaknesses of this algorithm but since this
-     algorithm is rarely used and not really studied it should not be
-     used today.
+     is optimized for 8-bit processors.  Outputs 128 bits of data.
+     There are several known weaknesses of this algorithm and it should
+     not be used.
 
 `MD5'
      MD5 is a cryptographic hash algorithm designed by Ron Rivest.
@@ -6734,6 +7261,15 @@ example as follows:
 
      $ LD_LIBRARY_PATH=/usr/local/lib GUILE_LOAD_PATH=/usr/local/share/guile/site guile
      guile> (use-modules (gnutls))
+     guile>
+
+To check that you got the intended GnuTLS library version, you may
+print the version number of the loaded library as follows:
+
+     $ guile
+     guile> (use-modules (gnutls))
+     guile> (gnutls-version)
+     "2.12.21"
      guile>
 
 
@@ -7726,6 +8262,7 @@ to know what happens inside the black box.
 * TLS Handshake Protocol::
 * TLS Authentication Methods::
 * TLS Extension Handling::
+* Certificate Handling::
 * Cryptographic Backend::
 
 
@@ -7788,7 +8325,7 @@ its pointers has to be registered in `gnutls_algorithms.c' in the
 (1) such as the `gnutls_certificate_credentials_t' structures
 
 
-File: gnutls.info,  Node: TLS Extension Handling,  Next: Cryptographic Backend,  Prev: TLS Authentication Methods,  Up: Internal architecture of GnuTLS
+File: gnutls.info,  Node: TLS Extension Handling,  Next: Certificate Handling,  Prev: TLS Authentication Methods,  Up: Internal architecture of GnuTLS
 
 12.4 TLS Extension Handling
 ===========================
@@ -7813,12 +8350,16 @@ the process to do so is not difficult.  Here are the steps you need to
 follow if you wish to do this yourself.  For sake of discussion, let's
 consider adding support for the hypothetical TLS extension `foobar'.
 
-  1. Modify `configure.in' to add `--enable-foobar' or
+  1. Add `configure' option like `--enable-foobar' or
      `--disable-foobar'.
 
-     Which to chose depends on whether you intend to make the extension
-     be enabled by default.  Look at existing checks (i.e., SRP, authz)
-     for how to model the code.  For example:
+     This step is useful when the extension code is large and it might
+     be desirable to disable the extension under some circumstances.
+     Otherwise it can be safely skipped.
+
+     Whether to chose enable or disable depends on whether you intend
+     to make the extension be enabled by default.  Look at existing
+     checks (i.e., SRP, authz) for how to model the code.  For example:
 
           AC_MSG_CHECKING([whether to disable foobar support])
           AC_ARG_ENABLE(foobar,
@@ -7834,6 +8375,8 @@ consider adding support for the hypothetical TLS extension `foobar'.
           fi
           AM_CONDITIONAL(ENABLE_FOOBAR, test "$ac_enable_foobar" != "no")
 
+     These lines should go in `lib/m4/hooks.m4'.
+
   2. Add IANA extension value to `extensions_t' in `gnutls_int.h'.
 
      A good name for the value would be GNUTLS_EXTENSION_FOOBAR.  Check
@@ -7848,25 +8391,50 @@ consider adding support for the hypothetical TLS extension `foobar'.
 
      A typical entry would be:
 
+            int ret;
+
+            /* ...
+             */
+
           #if ENABLE_FOOBAR
-            GNUTLS_EXTENSION_ENTRY (GNUTLS_EXTENSION_FOOBAR,
-          			  _gnutls_foobar_recv_params,
-          			  _gnutls_foobar_send_params),
+
+            ret = _gnutls_ext_register (&foobar_ext);
+            if (ret != GNUTLS_E_SUCCESS)
+              return ret;
           #endif
 
-     The GNUTLS_EXTENSION_FOOBAR is the integer value you added to
-     `gnutls_int.h' earlier.  The two functions are new functions that
-     you will need to implement, most likely you'll need to add an
-     `#include "ext_foobar.h"' as well.
+     Most likely you'll need to add an `#include "ext_foobar.h"', that
+     will contain something like like:
+            extension_entry_st foobar_ext = {
+              .name = "FOOBAR",
+              .type = GNUTLS_EXTENSION_FOOBAR,
+              .parse_type = GNUTLS_EXT_TLS,
+              .recv_func = _foobar_recv_params,
+              .send_func = _foobar_send_params,
+              .pack_func = _foobar_pack,
+              .unpack_func = _foobar_unpack,
+              .deinit_func = NULL
+            }
 
-  4. Add new files `ext_foobar.c' and `ext_foobar.h' that implements
-     the extension.
+     The GNUTLS_EXTENSION_FOOBAR is the integer value you added to
+     `gnutls_int.h' earlier.  In this structure you specify the
+     functions to read the extension from the hello message, the
+     function to send the reply to, and two more functions to pack and
+     unpack from stored session data (e.g. when resumming a session).
+     The `deinit' function will be called to deinitialize the
+     extension's private parameters, if any.
+
+     Note that the conditional `ENABLE_FOOBAR' definition should only be
+     used if step 1 with the `configure' options has taken place.
+
+  4. Add new files `ext_foobar.c' and `ext_foobar.h' that implement the
+     extension.
 
      The functions you are responsible to add are those mentioned in the
      previous step.  As a starter, you could add this:
 
           int
-          _gnutls_foobar_recv_params (gnutls_session_t session,
+          _foobar_recv_params (gnutls_session_t session,
                                       const opaque * data,
                                       size_t data_size)
           {
@@ -7874,28 +8442,49 @@ consider adding support for the hypothetical TLS extension `foobar'.
           }
 
           int
-          _gnutls_foobar_send_params (gnutls_session_t session,
+          _foobar_send_params (gnutls_session_t session,
                                       opaque * data,
                                       size_t _data_size)
           {
             return 0;
           }
 
-     The `_gnutls_foobar_recv_params' function is responsible for
-     parsing incoming extension data (both in the client and server).
+          int
+          _foobar_pack (extension_priv_data_t epriv, gnutls_buffer_st * ps)
+          {
+             /* Append the extension's internal state to buffer */
+             return 0;
+          }
 
-     The `_gnutls_foobar_send_params' function is responsible for
-     sending extension data (both in the client and server).
+          int
+          _foobar_unpack (gnutls_buffer_st * ps, extension_priv_data_t * epriv)
+          {
+             /* Read the internal state from buffer */
+             return 0;
+          }
+
+     The `_foobar_recv_params' function is responsible for parsing
+     incoming extension data (both in the client and server).
+
+     The `_foobar_send_params' function is responsible for sending
+     extension data (both in the client and server).
+
+     The `_foobar_pack' function is responsible for packing internal
+     extension data to save them in the session storage.
+
+     The `_foobar_unpack' function is responsible for restoring session
+     data from the session storage.
 
      If you receive length fields that doesn't match, return
      `GNUTLS_E_UNEXPECTED_PACKET_LENGTH'.  If you receive invalid data,
      return `GNUTLS_E_RECEIVED_ILLEGAL_PARAMETER'.  You can use other
      error codes too.  Return 0 on success.
 
-     The function typically store some information in the `session'
-     variable for later usage.  If you need to add new fields there,
-     check `tls_ext_st' in `gnutls_int.h' and compare with existing TLS
-     extension specific variables.
+     The function could store some information in the `session'
+     variable for later usage. That can be done using the functions
+     `_gnutls_ext_set_session_data' and `_gnutls_ext_get_session_data'.
+     You can check simple examples at `ext_max_record.c' and
+     `ext_server_name.c' extensions.
 
      Recall that both the client and server both send and receives
      parameters, and your code most likely will need to do different
@@ -7954,6 +8543,17 @@ consider adding support for the hypothetical TLS extension `foobar'.
      if that file ends up becoming rather larger, add a
      `gnutls_foobar.c' file.
 
+     To make the API available in the shared library you need to add the
+     symbol in `lib/libgnutls.map' or `libextra/libgnutls-extra.map' as
+     appropriate, so that the symbol is exported properly.
+
+     When writing GTK-DOC style documentation for your new APIs, don't
+     forget to add `Since:' tags to indicate the GnuTLS version the API
+     was introduced in.
+
+
+
+File: gnutls.info,  Node: Certificate Handling,  Next: Cryptographic Backend,  Prev: TLS Extension Handling,  Up: Internal architecture of GnuTLS
 
 12.5 Certificate Handling
 =========================
@@ -7962,21 +8562,59 @@ What is provided by the certificate handling functions is summarized in
 the following diagram.
 
 
-File: gnutls.info,  Node: Cryptographic Backend,  Prev: TLS Extension Handling,  Up: Internal architecture of GnuTLS
+File: gnutls.info,  Node: Cryptographic Backend,  Prev: Certificate Handling,  Up: Internal architecture of GnuTLS
 
 12.6 Cryptographic Backend
 ==========================
 
-Several new systems provide hardware assisted cryptographic algorithm
-implementations that offer implementations some orders of magnitude
-faster than the software. For this reason in current releases of GnuTLS
-it is possible to override parts of the crypto backend or the whole. It
-is possible to override them both at runtime and compile time, however
-here we will discuss the runtime possibility. The API available for
-this functionality is in `gnutls/crypto.h' header file.
+Today most new processors, either for embedded or desktop systems
+include either instructions  intended to speed up cryptographic
+operations, or a co-processor with cryptographic capabilities. Taking
+advantage of those is a challenging task for every cryptographic
+application or library. Unfortunately the cryptographic libraries that
+GnuTLS is based on take no advantage of these properties. For this
+reason GnuTLS handles this internally by following a layered approach
+to accessing cryptographic operations as in the following figure.
 
-12.6.1 Override specific algorithms
------------------------------------
+ The TLS layer uses a cryptographic provider layer, that will in turn
+either use the default crypto provider - a crypto library, or use an
+external crypto provider, if available.
+
+12.6.1 Cryptographic Library layer
+----------------------------------
+
+The Cryptographic Library layer, can  currently be used either with
+libgcrypt or libnettle, each of one has its advantages and some
+disadvantages. Libgcrypt is a self-contained library, pretty broad in
+scope that supports many algorithms. In some processors like VIA, it
+will also use the available crypto instruction set hence providing
+performance benefit comparing to plain software implementation.
+Libnettle provides only software implementation of the basic algorithms
+required in TLS, and is on average 30% faster that libgcrypt on almost
+all algorithms. For this reason libnettle is library used by default in
+GnuTLS.
+
+12.6.2 External cryptography provider
+-------------------------------------
+
+Systems that include a cryptographic co-processor, typically come with
+kernel drivers to utilize the operations from software. For this reason
+GnuTLS provides a layer where each individual algorithm used can be
+replaced by another implementation, i.e. the one provided by the
+driver. The FreeBSD, OpenBSD and Linux kernels(1) include already a
+number of hardware assisted implementations, and also provide an
+interface to access them, called `/dev/crypto'.  GnuTLS will take
+advantage of this interface if compiled with special options. That is
+because in most systems where hardware-assisted cryptographic
+operations are not available, using this interface might actually
+reduce performance.
+
+It is possible to override parts of crypto backend both at runtime and
+compile time. Here we discuss the runtime possibility. The API
+available for this functionality is in `gnutls/crypto.h' header file.
+
+12.6.2.1 Override specific algorithms
+.....................................
 
 When an optimized implementation of a single algorithm is available,
 say a hardware assisted version of AES-CBC then the following functions
@@ -7985,18 +8623,15 @@ can be used to register those algorithms.
    * *Note gnutls_crypto_single_cipher_register2:: To register a cipher
      algorithm.
 
-   * *Note gnutls_crypto_single_mac_register2:: To register a MAC
-     algorithm.
-
-     *Note gnutls_crypto_single_digest_register2:: To register a digest
-     (hash) algorithm.
+     *Note gnutls_crypto_single_digest_register2:: To register a hash
+     (digest) or MAC algorithm.
 
 
 Those registration functions will only replace the specified algorithm
 and leave the rest of subsystem intact.
 
-12.6.2 Override parts of the backend
-------------------------------------
+12.6.2.2 Override parts of the backend
+......................................
 
 In some systems, such as embedded ones, it might be desirable to
 override big parts of the cryptographic backend, or even all of them.
@@ -8004,9 +8639,6 @@ For this reason the following functions are provided.
 
    * *Note gnutls_crypto_cipher_register2:: To override the
      cryptographic algorithms backend.
-
-   * *Note gnutls_crypto_mac_register2:: To override the MAC algorithms
-     backend.
 
    * *Note gnutls_crypto_digest_register2:: To override the digest
      algorithms backend.
@@ -8025,6 +8657,11 @@ For this reason the following functions are provided.
 
 If all of them are used then GnuTLS will no longer use libgcrypt.
 
+---------- Footnotes ----------
+
+(1) Check `http://home.gna.org/cryptodev-linux/' for the Linux kernel
+implementation of `/dev/crypto'.
+
 
 File: gnutls.info,  Node: Copying Information,  Next: Concept Index,  Prev: Internal architecture of GnuTLS,  Up: Top
 
@@ -8035,5 +8672,5 @@ Appendix A Copying Information
 
 * GNU Free Documentation License::   License for copying this manual.
 * GNU LGPL::                     License for copying the core GnuTLS library.
-* GNU GPL::                      License for copying GNUTLS extra and tools.
+* GNU GPL::                      License for copying GnuTLS-extra and tools.
 

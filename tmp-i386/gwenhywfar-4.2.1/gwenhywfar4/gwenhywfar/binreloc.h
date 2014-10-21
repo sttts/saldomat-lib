@@ -1,1 +1,1 @@
-/Users/michael/src/git/lib/gwenhywfar/src/binreloc.h
+/Users/sts/Quellen/mac/hbci/lib/gwenhywfar/src/binreloc.h

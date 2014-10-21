@@ -1,1 +1,1 @@
-/Users/michael/src/git/lib/gwenhywfar/src/sar/sar.h
+/Users/sts/Quellen/mac/hbci/lib/gwenhywfar/src/sar/sar.h

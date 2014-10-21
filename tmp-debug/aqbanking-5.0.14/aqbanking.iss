@@ -143,7 +143,7 @@ begin
   { Explanation: StringChange(S,FromStr,ToStr): Change all occurances in S of FromStr to ToStr. }
   StringChange(FileString, '@'+'prefix@', appdir);
   StringChange(FileString, '@'+'libdir@', windir);
-  StringChange(FileString, '@'+'all_includes@', '-I/Users/michael/src/git/lib/static-build-debug-5.0.14/include/gwenhywfar4');
+  StringChange(FileString, '@'+'all_includes@', '-I/Users/sts/Quellen/mac/hbci/lib/static-build-debug-5.0.14/include/gwenhywfar4');
   StringChange(FileString, '@'+'aqbanking_includes@', '-I'+includedir);
   StringChange(FileString, '@'+'aqbanking_ldflags@', '-L'+bindir);
   StringChange(FileString, '@'+'aqbanking_libs@', '-laqbanking');

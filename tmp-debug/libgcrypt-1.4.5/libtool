@@ -44,7 +44,7 @@ available_tags=" RC CXX"
 
 # ### BEGIN LIBTOOL CONFIG
 
-# Libtool was configured on host kranich:
+# Libtool was configured on host Goedel.local:
 
 # Shell to use when invoking shell scripts.
 SHELL="/bin/sh"
@@ -88,7 +88,7 @@ with_gcc=yes
 EGREP="/usr/bin/grep -E"
 
 # The linker used to build libraries.
-LD="/usr/llvm-gcc-4.2/libexec/gcc/i686-apple-darwin11/4.2.1/ld"
+LD="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld"
 
 # Whether we need hard or soft links.
 LN_S="ln -s"
@@ -165,7 +165,7 @@ dlopen_self_static=unknown
 link_static_flag="-static"
 
 # Compiler flag to turn off builtin functions.
-no_builtin_flag=" -fno-builtin"
+no_builtin_flag=" -fno-builtin -fno-rtti -fno-exceptions"
 
 # Compiler flag to allow reflexive dlopens.
 export_dynamic_flag_spec=""
@@ -313,7 +313,7 @@ variables_saved_for_relink="PATH   GCC_EXEC_PREFIX COMPILER_PATH LIBRARY_PATH"
 link_all_deplibs=unknown
 
 # Compile-time system search path for libraries
-sys_lib_search_path_spec=" /lib/i686-apple-darwin11/4.2.1/x86_64/ /lib/x86_64/ /usr/lib/i686-apple-darwin11/4.2.1/x86_64/ /usr/lib/x86_64/ /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/x86_64/ /usr/llvm-gcc-4.2/bin/../lib/gcc/x86_64/ /Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/x86_64/ /usr/lib/gcc/i686-apple-darwin11/4.2.1/x86_64/ /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../../../i686-apple-darwin11/lib/i686-apple-darwin11/4.2.1/x86_64/ /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../../../i686-apple-darwin11/lib/x86_64/ /Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../../../i686-apple-darwin11/lib/i686-apple-darwin11/4.2.1/x86_64/ /Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../../../i686-apple-darwin11/lib/x86_64/ /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../../i686-apple-darwin11/4.2.1/x86_64/ /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../../x86_64/ /Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../../i686-apple-darwin11/4.2.1/x86_64/ /Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../../x86_64/ /lib/i686-apple-darwin11/4.2.1/ /lib/ /usr/lib/i686-apple-darwin11/4.2.1/ /usr/lib/ /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/ /usr/llvm-gcc-4.2/bin/../lib/gcc/ /Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/ /usr/lib/gcc/i686-apple-darwin11/4.2.1/ /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../../../i686-apple-darwin11/lib/i686-apple-darwin11/4.2.1/ /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../../../i686-apple-darwin11/lib/ /Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../../../i686-apple-darwin11/lib/i686-apple-darwin11/4.2.1/ /Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../../../i686-apple-darwin11/lib/ /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../../i686-apple-darwin11/4.2.1/ /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../../ /Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../../i686-apple-darwin11/4.2.1/ /Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../../"
+sys_lib_search_path_spec=" /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0"
 
 # Run-time system search path for libraries
 sys_lib_dlsearch_path_spec="/lib /usr/lib"
@@ -7211,7 +7211,7 @@ disable_libs=static
 # End:
 # ### BEGIN LIBTOOL TAG CONFIG: RC
 
-# Libtool was configured on host kranich:
+# Libtool was configured on host Goedel.local:
 
 # Shell to use when invoking shell scripts.
 SHELL="/bin/sh"
@@ -7480,7 +7480,7 @@ variables_saved_for_relink="PATH   GCC_EXEC_PREFIX COMPILER_PATH LIBRARY_PATH"
 link_all_deplibs=
 
 # Compile-time system search path for libraries
-sys_lib_search_path_spec=" /lib/i686-apple-darwin11/4.2.1/x86_64/ /lib/x86_64/ /usr/lib/i686-apple-darwin11/4.2.1/x86_64/ /usr/lib/x86_64/ /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/x86_64/ /usr/llvm-gcc-4.2/bin/../lib/gcc/x86_64/ /Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/x86_64/ /usr/lib/gcc/i686-apple-darwin11/4.2.1/x86_64/ /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../../../i686-apple-darwin11/lib/i686-apple-darwin11/4.2.1/x86_64/ /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../../../i686-apple-darwin11/lib/x86_64/ /Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../../../i686-apple-darwin11/lib/i686-apple-darwin11/4.2.1/x86_64/ /Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../../../i686-apple-darwin11/lib/x86_64/ /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../../i686-apple-darwin11/4.2.1/x86_64/ /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../../x86_64/ /Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../../i686-apple-darwin11/4.2.1/x86_64/ /Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../../x86_64/ /lib/i686-apple-darwin11/4.2.1/ /lib/ /usr/lib/i686-apple-darwin11/4.2.1/ /usr/lib/ /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/ /usr/llvm-gcc-4.2/bin/../lib/gcc/ /Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/ /usr/lib/gcc/i686-apple-darwin11/4.2.1/ /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../../../i686-apple-darwin11/lib/i686-apple-darwin11/4.2.1/ /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../../../i686-apple-darwin11/lib/ /Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../../../i686-apple-darwin11/lib/i686-apple-darwin11/4.2.1/ /Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../../../i686-apple-darwin11/lib/ /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../../i686-apple-darwin11/4.2.1/ /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../../ /Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../../i686-apple-darwin11/4.2.1/ /Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../../"
+sys_lib_search_path_spec=" /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0"
 
 # Run-time system search path for libraries
 sys_lib_dlsearch_path_spec="/lib /usr/lib"
@@ -7507,7 +7507,7 @@ include_expsyms=""
 
 # ### BEGIN LIBTOOL TAG CONFIG: CXX
 
-# Libtool was configured on host kranich:
+# Libtool was configured on host Goedel.local:
 
 # Shell to use when invoking shell scripts.
 SHELL="/bin/sh"
@@ -7551,7 +7551,7 @@ with_gcc=yes
 EGREP="/usr/bin/grep -E"
 
 # The linker used to build libraries.
-LD="/usr/llvm-gcc-4.2/libexec/gcc/i686-apple-darwin11/4.2.1/ld"
+LD="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld"
 
 # Whether we need hard or soft links.
 LN_S="ln -s"
@@ -7692,11 +7692,11 @@ predeps=""
 
 # Dependencies to place after the objects being linked to create a
 # shared library.
-postdeps="-lstdc++ -lgcc_s.10.5 -lgcc -lSystem"
+postdeps=""
 
 # The library search path used internally by the compiler when linking
 # a shared library.
-compiler_lib_search_path="-L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib -L/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1 -L/usr/llvm-gcc-4.2/bin/../lib/gcc -L/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1 -L/usr/lib/gcc/i686-apple-darwin11/4.2.1 -L/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../.. -L/Developer_3/SDKs/MacOSX10.5.sdk/Developer/usr/llvm-gcc-4.2/lib/gcc/.."
+compiler_lib_search_path=""
 
 # Method to check whether dependent libraries are shared objects.
 deplibs_check_method="unknown"
@@ -7776,7 +7776,7 @@ variables_saved_for_relink="PATH   GCC_EXEC_PREFIX COMPILER_PATH LIBRARY_PATH"
 link_all_deplibs=unknown
 
 # Compile-time system search path for libraries
-sys_lib_search_path_spec=" /lib/i686-apple-darwin11/4.2.1/x86_64/ /lib/x86_64/ /usr/lib/i686-apple-darwin11/4.2.1/x86_64/ /usr/lib/x86_64/ /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/x86_64/ /usr/llvm-gcc-4.2/bin/../lib/gcc/x86_64/ /Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/x86_64/ /usr/lib/gcc/i686-apple-darwin11/4.2.1/x86_64/ /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../../../i686-apple-darwin11/lib/i686-apple-darwin11/4.2.1/x86_64/ /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../../../i686-apple-darwin11/lib/x86_64/ /Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../../../i686-apple-darwin11/lib/i686-apple-darwin11/4.2.1/x86_64/ /Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../../../i686-apple-darwin11/lib/x86_64/ /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../../i686-apple-darwin11/4.2.1/x86_64/ /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../../x86_64/ /Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../../i686-apple-darwin11/4.2.1/x86_64/ /Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../../x86_64/ /lib/i686-apple-darwin11/4.2.1/ /lib/ /usr/lib/i686-apple-darwin11/4.2.1/ /usr/lib/ /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/ /usr/llvm-gcc-4.2/bin/../lib/gcc/ /Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/ /usr/lib/gcc/i686-apple-darwin11/4.2.1/ /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../../../i686-apple-darwin11/lib/i686-apple-darwin11/4.2.1/ /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../../../i686-apple-darwin11/lib/ /Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../../../i686-apple-darwin11/lib/i686-apple-darwin11/4.2.1/ /Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../../../i686-apple-darwin11/lib/ /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../../i686-apple-darwin11/4.2.1/ /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../../ /Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../../i686-apple-darwin11/4.2.1/ /Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../../"
+sys_lib_search_path_spec=" /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0"
 
 # Run-time system search path for libraries
 sys_lib_dlsearch_path_spec="/lib /usr/lib"

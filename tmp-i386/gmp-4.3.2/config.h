@@ -24,7 +24,7 @@ along with the GNU MP Library.  If not, see http://www.gnu.org/licenses/.
 
 /* The gmp-mparam.h file (a string) the tune program should suggest updating.
    */
-#define GMP_MPARAM_H_SUGGEST "/Users/michael/src/git/lib/gmp-4.3.2/mpn/generic/gmp-mparam.h"
+#define GMP_MPARAM_H_SUGGEST "/Users/sts/Quellen/mac/hbci/lib/gmp-4.3.2/mpn/generic/gmp-mparam.h"
 
 /* Define to 1 if you have the `alarm' function. */
 #define HAVE_ALARM 1
@@ -344,7 +344,7 @@ along with the GNU MP Library.  If not, see http://www.gnu.org/licenses/.
 #define HAVE_STRING_H 1
 
 /* Define to 1 if you have the `strnlen' function. */
-/* #undef HAVE_STRNLEN */
+#define HAVE_STRNLEN 1
 
 /* Define to 1 if you have the `strtol' function. */
 #define HAVE_STRTOL 1
@@ -502,7 +502,7 @@ along with the GNU MP Library.  If not, see http://www.gnu.org/licenses/.
 
 /* Define to 1 if `lex' declares `yytext' as a `char *' by default, not a
    `char[]'. */
-#define YYTEXT_POINTER 1
+/* #undef YYTEXT_POINTER */
 
 /* Define like PROTOTYPES; this can be used by system headers. */
 #define __PROTOTYPES 1

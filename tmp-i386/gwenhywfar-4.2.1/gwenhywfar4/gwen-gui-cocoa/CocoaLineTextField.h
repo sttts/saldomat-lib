@@ -1,1 +1,1 @@
-/Users/michael/src/git/lib/gwenhywfar/gui/cocoa/CocoaLineTextField.h
+/Users/sts/Quellen/mac/hbci/lib/gwenhywfar/gui/cocoa/CocoaLineTextField.h

@@ -1,1 +1,1 @@
-/Users/michael/src/git/lib/aqbanking/src/libs/aqbankingpp/balance.hpp
+/Users/sts/Quellen/mac/hbci/lib/aqbanking/src/libs/aqbankingpp/balance.hpp

@@ -1,1 +1,1 @@
-/Users/michael/src/git/lib/aqbanking/src/plugins/backends/aqhbci/plugin/msglayer/msgengine.h
+/Users/sts/Quellen/mac/hbci/lib/aqbanking/src/plugins/backends/aqhbci/plugin/msglayer/msgengine.h

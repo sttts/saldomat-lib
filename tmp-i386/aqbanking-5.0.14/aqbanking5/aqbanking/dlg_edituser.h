@@ -1,1 +1,1 @@
-/Users/michael/src/git/lib/aqbanking/src/libs/aqbanking/dialogs/dlg_edituser.h
+/Users/sts/Quellen/mac/hbci/lib/aqbanking/src/libs/aqbanking/dialogs/dlg_edituser.h

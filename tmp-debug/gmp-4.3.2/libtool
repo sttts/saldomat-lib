@@ -44,7 +44,7 @@ available_tags=
 
 # ### BEGIN LIBTOOL CONFIG
 
-# Libtool was configured on host kranich:
+# Libtool was configured on host Goedel.local:
 
 # Shell to use when invoking shell scripts.
 SHELL="/bin/sh"
@@ -82,13 +82,13 @@ AR="ar"
 AR_FLAGS="cq"
 
 # A C compiler.
-LTCC="gcc -std=gnu99"
+LTCC="gcc"
 
 # LTCC compiler flags.
-LTCFLAGS="-O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-5.0.14/include/ -mmacosx-version-min=10.5"
+LTCFLAGS="-O -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -arch i386 -I/Users/sts/Quellen/mac/hbci/lib/static-build-debug-5.0.14/include/ -mmacosx-version-min=10.9"
 
 # A language-specific compiler.
-CC="gcc -std=gnu99"
+CC="gcc"
 
 # Is the compiler the GNU C compiler?
 with_gcc=yes
@@ -97,7 +97,7 @@ with_gcc=yes
 EGREP="/usr/bin/grep -E"
 
 # The linker used to build libraries.
-LD="/usr/llvm-gcc-4.2/libexec/gcc/i686-apple-darwin11/4.2.1/ld"
+LD="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld"
 
 # Whether we need hard or soft links.
 LN_S="ln -s"
@@ -174,7 +174,7 @@ dlopen_self_static=unknown
 link_static_flag=""
 
 # Compiler flag to turn off builtin functions.
-no_builtin_flag=" -fno-builtin"
+no_builtin_flag=" -fno-builtin -fno-rtti -fno-exceptions"
 
 # Compiler flag to allow reflexive dlopens.
 export_dynamic_flag_spec=""
@@ -322,7 +322,7 @@ variables_saved_for_relink="PATH DYLD_LIBRARY_PATH  GCC_EXEC_PREFIX COMPILER_PAT
 link_all_deplibs=yes
 
 # Compile-time system search path for libraries
-sys_lib_search_path_spec="/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/x86_64 /Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/x86_64 /usr/lib/gcc/i686-apple-darwin11/4.2.1/x86_64 /usr/lib/i686-apple-darwin11/4.2.1 /usr/lib /usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1 /usr/llvm-gcc-4.2/lib/gcc /Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1 /usr/lib/gcc/i686-apple-darwin11/4.2.1 /usr/llvm-gcc-4.2/lib /Developer/usr/llvm-gcc-4.2/lib /usr/local/lib"
+sys_lib_search_path_spec="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/6.0 /usr/local/lib"
 
 # Run-time system search path for libraries
 sys_lib_dlsearch_path_spec="/usr/local/lib /lib /usr/lib"

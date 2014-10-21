@@ -1,1 +1,1 @@
-/Users/michael/src/git/lib/gwenhywfar/src/crypt3/cryptkey_be.h
+/Users/sts/Quellen/mac/hbci/lib/gwenhywfar/src/crypt3/cryptkey_be.h

@@ -1,1 +1,1 @@
-/Users/michael/src/git/lib/gwenhywfar/gui/qt4/qt4dialogbox.hpp
+/Users/sts/Quellen/mac/hbci/lib/gwenhywfar/gui/qt4/qt4dialogbox.hpp

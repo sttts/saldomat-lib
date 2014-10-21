@@ -1,1 +1,1 @@
-/Users/michael/src/git/lib/aqbanking/src/libs/aqbankingpp/time.hpp
+/Users/sts/Quellen/mac/hbci/lib/aqbanking/src/libs/aqbankingpp/time.hpp

@@ -1,1 +1,1 @@
-/Users/michael/src/git/lib/gwenhywfar/src/crypttoken/ctf_context_be.h
+/Users/sts/Quellen/mac/hbci/lib/gwenhywfar/src/crypttoken/ctf_context_be.h

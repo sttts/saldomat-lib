@@ -23,13 +23,13 @@
 /* #undef DEBUG */
 
 /* Use binary relocation? */
-#define ENABLE_BINRELOC 
+#define ENABLE_BINRELOC /**/
 
 /* whether local install is wanted */
 #define ENABLE_LOCAL_INSTALL 1
 
 /* visibility */
-#define GCC_WITH_VISIBILITY_ATTRIBUTE 1
+/* #undef GCC_WITH_VISIBILITY_ATTRIBUTE */
 
 /* whether gwen is a subproject */
 /* #undef GWENHYWFAR_IS_SUBPROJECT */
@@ -106,7 +106,7 @@
 #define HAVE_GETPID 1
 
 /* only in gnutls>=1.6 */
-#define HAVE_GNUTLS_TRANSPORT_SET_ERRNO 1
+/* #undef HAVE_GNUTLS_TRANSPORT_SET_ERRNO */
 
 /* whether I18N is available */
 #define HAVE_I18N 1
@@ -280,7 +280,7 @@
 /* #undef OS_LINUX */
 
 /* host system */
-#define OS_NAME "i386-apple-darwin11.3.0"
+#define OS_NAME "x86_64-apple-darwin14.0.0"
 
 /* if NetBSD is used */
 /* #undef OS_NETBSD */
@@ -320,6 +320,9 @@
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME ""
+
+/* Define to the home page for this package. */
+#define PACKAGE_URL ""
 
 /* Define to the version of this package. */
 #define PACKAGE_VERSION ""

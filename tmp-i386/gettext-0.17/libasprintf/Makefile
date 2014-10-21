@@ -15,7 +15,7 @@
 
 
 
-VPATH = /Users/michael/src/git/lib/gettext-0.17/gettext-runtime/libasprintf
+VPATH = /Users/sts/Quellen/mac/hbci/lib/gettext-0.17/gettext-runtime/libasprintf
 pkgdatadir = $(datadir)/libasprintf
 pkglibdir = $(libdir)/libasprintf
 pkgincludedir = $(includedir)/libasprintf
@@ -31,8 +31,8 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-build_triplet = i386-apple-darwin11.3.0
-host_triplet = i386-apple-darwin11.3.0
+build_triplet = i386-apple-darwin14.0.0
+host_triplet = i386-apple-darwin14.0.0
 subdir = .
 DIST_COMMON = README $(am__configure_deps) $(include_HEADERS) \
 	$(srcdir)/../../build-aux/config.guess \
@@ -133,21 +133,21 @@ DIST_ARCHIVES = $(distdir).tar.gz
 GZIP_ENV = --best
 distuninstallcheck_listfiles = find . -type f -print
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ../../build-aux/fixaclocal ${SHELL} /Users/michael/src/git/lib/gettext-0.17/build-aux/missing --run aclocal-1.10
+ACLOCAL = ../../build-aux/fixaclocal ${SHELL} /Users/sts/Quellen/mac/hbci/lib/gettext-0.17/build-aux/missing --run aclocal-1.10
 ALLOCA = 
 ALLOCA_H = alloca.h
-AMTAR = ${SHELL} /Users/michael/src/git/lib/gettext-0.17/build-aux/missing --run tar
+AMTAR = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/gettext-0.17/build-aux/missing --run tar
 AR = ar
 AS = as
-AUTOCONF = ${SHELL} /Users/michael/src/git/lib/gettext-0.17/build-aux/missing --run autoconf
-AUTOHEADER = ${SHELL} /Users/michael/src/git/lib/gettext-0.17/build-aux/missing --run autoheader
-AUTOMAKE = ${SHELL} /Users/michael/src/git/lib/gettext-0.17/build-aux/missing --run automake-1.10
+AUTOCONF = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/gettext-0.17/build-aux/missing --run autoconf
+AUTOHEADER = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/gettext-0.17/build-aux/missing --run autoheader
+AUTOMAKE = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/gettext-0.17/build-aux/missing --run automake-1.10
 AWK = awk
 CC = gcc
 CCDEPMODE = depmode=none
-CFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.14/include/ -mmacosx-version-min=10.5
+CFLAGS = -O -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -arch i386 -I/Users/sts/Quellen/mac/hbci/lib/static-build-i386-5.0.14/include/ -mmacosx-version-min=10.9
 CPP = gcc -E
-CPPFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.14/include/ -mmacosx-version-min=10.5
+CPPFLAGS = -O -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -arch i386 -I/Users/sts/Quellen/mac/hbci/lib/static-build-i386-5.0.14/include/ -mmacosx-version-min=10.9
 CXX = g++
 CXXCPP = g++ -E
 CXXDEPMODE = depmode=none
@@ -160,8 +160,8 @@ DLLTOOL = dlltool
 # Documentation in Postscript format.
 
 # Override of automake's definition:
-#DVIPS = /Users/michael/src/git/lib/gettext-0.17/build-aux/missing dvips
-DVIPS = /Users/michael/src/git/lib/gettext-0.17/build-aux/missing dvips -D600
+#DVIPS = /Users/sts/Quellen/mac/hbci/lib/gettext-0.17/build-aux/missing dvips
+DVIPS = /Users/sts/Quellen/mac/hbci/lib/gettext-0.17/build-aux/missing dvips -D600
 ECHO = /bin/echo
 ECHO_C = \c
 ECHO_N = 
@@ -176,7 +176,7 @@ INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
-LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-i386-5.0.14/lib -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
+LDFLAGS = -arch i386 -L/Users/sts/Quellen/mac/hbci/lib/static-build-i386-5.0.14/lib -L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/ -mmacosx-version-min=10.9
 LIBOBJS = 
 LIBS = 
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
@@ -185,8 +185,8 @@ LTLIBOBJS =
 LTNOUNDEF = 
 
 # Documentation.
-MAKEINFO = env LANG= LC_MESSAGES= LC_ALL= LANGUAGE= ${SHELL} /Users/michael/src/git/lib/gettext-0.17/build-aux/missing --run makeinfo
-MKDIR_P = /Users/michael/src/git/lib/gettext-0.17/gettext-runtime/libasprintf/../../build-aux/install-sh -c -d
+MAKEINFO = env LANG= LC_MESSAGES= LC_ALL= LANGUAGE= ${SHELL} /Users/sts/Quellen/mac/hbci/lib/gettext-0.17/build-aux/missing --run makeinfo
+MKDIR_P = /Users/sts/Quellen/mac/hbci/lib/gettext-0.17/gettext-runtime/libasprintf/../../build-aux/install-sh -c -d
 OBJDUMP = objdump
 OBJEXT = o
 PACKAGE = libasprintf
@@ -204,10 +204,10 @@ SHELL = /bin/sh
 STRIP = strip
 TEXI2PDF = /usr/bin/texi2pdf
 VERSION = 1.0
-abs_builddir = /Users/michael/src/git/lib/tmp-i386/gettext-0.17/libasprintf
-abs_srcdir = /Users/michael/src/git/lib/gettext-0.17/gettext-runtime/libasprintf
-abs_top_builddir = /Users/michael/src/git/lib/tmp-i386/gettext-0.17/libasprintf
-abs_top_srcdir = /Users/michael/src/git/lib/gettext-0.17/gettext-runtime/libasprintf
+abs_builddir = /Users/sts/Quellen/mac/hbci/lib/tmp-i386/gettext-0.17/libasprintf
+abs_srcdir = /Users/sts/Quellen/mac/hbci/lib/gettext-0.17/gettext-runtime/libasprintf
+abs_top_builddir = /Users/sts/Quellen/mac/hbci/lib/tmp-i386/gettext-0.17/libasprintf
+abs_top_srcdir = /Users/sts/Quellen/mac/hbci/lib/gettext-0.17/gettext-runtime/libasprintf
 ac_ct_CC = gcc
 ac_ct_CXX = g++
 ac_ct_F77 = 
@@ -217,10 +217,10 @@ am__quote =
 am__tar = ${AMTAR} chof - "$$tardir"
 am__untar = ${AMTAR} xf -
 bindir = ${exec_prefix}/bin
-build = i386-apple-darwin11.3.0
+build = i386-apple-darwin14.0.0
 build_alias = 
 build_cpu = i386
-build_os = darwin11.3.0
+build_os = darwin14.0.0
 build_vendor = apple
 builddir = .
 datadir = ${datarootdir}
@@ -228,33 +228,33 @@ datarootdir = ${prefix}/share
 docdir = ${datarootdir}/doc/${PACKAGE}
 dvidir = ${docdir}
 exec_prefix = ${prefix}
-host = i386-apple-darwin11.3.0
+host = i386-apple-darwin14.0.0
 host_alias = 
 host_cpu = i386
-host_os = darwin11.3.0
+host_os = darwin14.0.0
 host_vendor = apple
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = $(SHELL) /Users/michael/src/git/lib/gettext-0.17/build-aux/install-sh
+install_sh = $(SHELL) /Users/sts/Quellen/mac/hbci/lib/gettext-0.17/build-aux/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
 localstatedir = ${prefix}/var
 mandir = ${datarootdir}/man
-mkdir_p = /Users/michael/src/git/lib/gettext-0.17/gettext-runtime/libasprintf/../../build-aux/install-sh -c -d
+mkdir_p = /Users/sts/Quellen/mac/hbci/lib/gettext-0.17/gettext-runtime/libasprintf/../../build-aux/install-sh -c -d
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /Users/michael/src/git/lib/static-build-i386-5.0.14
+prefix = /Users/sts/Quellen/mac/hbci/lib/static-build-i386-5.0.14
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
-srcdir = /Users/michael/src/git/lib/gettext-0.17/gettext-runtime/libasprintf
+srcdir = /Users/sts/Quellen/mac/hbci/lib/gettext-0.17/gettext-runtime/libasprintf
 sysconfdir = ${prefix}/etc
 target_alias = 
 top_builddir = .
-top_srcdir = /Users/michael/src/git/lib/gettext-0.17/gettext-runtime/libasprintf
+top_srcdir = /Users/sts/Quellen/mac/hbci/lib/gettext-0.17/gettext-runtime/libasprintf
 AUTOMAKE_OPTIONS = 1.5 gnu no-dependencies
 ACLOCAL_AMFLAGS = -I ../../m4 -I ../m4
 

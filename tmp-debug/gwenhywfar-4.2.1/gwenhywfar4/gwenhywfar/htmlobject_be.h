@@ -1,1 +1,1 @@
-/Users/michael/src/git/lib/gwenhywfar/src/html/htmlobject_be.h
+/Users/sts/Quellen/mac/hbci/lib/gwenhywfar/src/html/htmlobject_be.h

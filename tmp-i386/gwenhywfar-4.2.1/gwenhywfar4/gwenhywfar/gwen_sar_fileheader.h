@@ -1,1 +1,1 @@
-/Users/michael/src/git/lib/gwenhywfar/src/sar/gwen_sar_fileheader.h
+/Users/sts/Quellen/mac/hbci/lib/gwenhywfar/src/sar/gwen_sar_fileheader.h

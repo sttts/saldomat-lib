@@ -1,1 +1,1 @@
-/Users/michael/src/git/lib/aqbanking/src/libs/aqbanking/types/value.h
+/Users/sts/Quellen/mac/hbci/lib/aqbanking/src/libs/aqbanking/types/value.h

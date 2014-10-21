@@ -1,1 +1,1 @@
-/Users/michael/src/git/lib/gwenhywfar/src/os/libloader.h
+/Users/sts/Quellen/mac/hbci/lib/gwenhywfar/src/os/libloader.h

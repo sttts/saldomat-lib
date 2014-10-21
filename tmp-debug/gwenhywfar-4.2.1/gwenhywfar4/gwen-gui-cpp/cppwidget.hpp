@@ -1,1 +1,1 @@
-/Users/michael/src/git/lib/gwenhywfar/gui/cpp/cppwidget.hpp
+/Users/sts/Quellen/mac/hbci/lib/gwenhywfar/gui/cpp/cppwidget.hpp

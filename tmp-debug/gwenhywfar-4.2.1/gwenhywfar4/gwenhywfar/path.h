@@ -1,1 +1,1 @@
-/Users/michael/src/git/lib/gwenhywfar/src/parser/path.h
+/Users/sts/Quellen/mac/hbci/lib/gwenhywfar/src/parser/path.h

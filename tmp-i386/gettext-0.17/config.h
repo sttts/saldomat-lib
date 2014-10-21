@@ -160,7 +160,7 @@
 
 /* Define to 1 if you have the declaration of `strnlen', and to 0 if you
    don't. */
-#define HAVE_DECL_STRNLEN 0
+#define HAVE_DECL_STRNLEN 1
 
 /* Define to 1 if you have the declaration of `wcwidth', and to 0 if you
    don't. */
@@ -315,7 +315,7 @@
 #define HAVE_SNPRINTF 1
 
 /* Define to 1 if stdbool.h conforms to C99. */
-/* #undef HAVE_STDBOOL_H */
+#define HAVE_STDBOOL_H 1
 
 /* Define to 1 if you have the <stddef.h> header file. */
 #define HAVE_STDDEF_H 1
@@ -420,7 +420,7 @@
 /* #undef ICONV_FLAVOR */
 
 /* Define to the value of ${prefix}, as a string. */
-#define INSTALLPREFIX "/Users/michael/src/git/lib/static-build-i386-5.0.14"
+#define INSTALLPREFIX "/Users/sts/Quellen/mac/hbci/lib/static-build-i386-5.0.14"
 
 /* Define if integer division by zero raises signal SIGFPE. */
 #define INTDIV0_RAISES_SIGFPE 1
@@ -605,7 +605,7 @@
 /* #undef ssize_t */
 
 /* Define to rpl_strnlen if the replacement function should be used. */
-#define strnlen rpl_strnlen
+/* #undef strnlen */
 
 /* Define to unsigned long or unsigned long long if <stdint.h> and
    <inttypes.h> don't define. */

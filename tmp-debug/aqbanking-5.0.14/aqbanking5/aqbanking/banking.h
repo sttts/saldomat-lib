@@ -1,1 +1,1 @@
-/Users/michael/src/git/lib/aqbanking/src/libs/aqbanking/banking.h
+/Users/sts/Quellen/mac/hbci/lib/aqbanking/src/libs/aqbanking/banking.h

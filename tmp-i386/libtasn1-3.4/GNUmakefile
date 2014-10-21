@@ -1,0 +1,1 @@
+/Users/sts/Quellen/mac/hbci/lib/libtasn1-3.4/GNUmakefile

@@ -1,1 +1,1 @@
-/Users/michael/src/git/lib/gwenhywfar/gui/cocoa/CocoaVLayout.h
+/Users/sts/Quellen/mac/hbci/lib/gwenhywfar/gui/cocoa/CocoaVLayout.h

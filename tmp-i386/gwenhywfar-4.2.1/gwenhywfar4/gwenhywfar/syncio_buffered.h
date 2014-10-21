@@ -1,1 +1,1 @@
-/Users/michael/src/git/lib/gwenhywfar/src/sio/syncio_buffered.h
+/Users/sts/Quellen/mac/hbci/lib/gwenhywfar/src/sio/syncio_buffered.h

@@ -1,1 +1,1 @@
-/Users/michael/src/git/lib/gwenhywfar/gui/fox16/cppgui.hpp
+/Users/sts/Quellen/mac/hbci/lib/gwenhywfar/gui/fox16/cppgui.hpp

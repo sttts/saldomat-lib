@@ -33,7 +33,7 @@
 # License along with this program; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 
-VPATH = /Users/michael/src/git/lib/libgpg-error-1.7/lang/cl
+VPATH = /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7/lang/cl
 pkgdatadir = $(datadir)/libgpg-error
 pkglibdir = $(libdir)/libgpg-error
 pkgincludedir = $(includedir)/libgpg-error
@@ -49,8 +49,8 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-build_triplet = i386-apple-darwin11.3.0
-host_triplet = i386-apple-darwin11.3.0
+build_triplet = i386-apple-darwin14.0.0
+host_triplet = i386-apple-darwin14.0.0
 subdir = lang/cl
 DIST_COMMON = README $(dist_clfiles_DATA) $(srcdir)/Makefile.am \
 	$(srcdir)/Makefile.in $(srcdir)/gpg-error.asd.in
@@ -79,22 +79,22 @@ dist_clfilesDATA_INSTALL = $(INSTALL_DATA)
 nodist_clfilesDATA_INSTALL = $(INSTALL_DATA)
 DATA = $(dist_clfiles_DATA) $(nodist_clfiles_DATA)
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /Users/michael/src/git/lib/libgpg-error-1.7/missing --run aclocal-1.10
-AMTAR = ${SHELL} /Users/michael/src/git/lib/libgpg-error-1.7/missing --run tar
+ACLOCAL = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7/missing --run aclocal-1.10
+AMTAR = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7/missing --run tar
 AR = ar
 AS = as
-AUTOCONF = ${SHELL} /Users/michael/src/git/lib/libgpg-error-1.7/missing --run autoconf
-AUTOHEADER = ${SHELL} /Users/michael/src/git/lib/libgpg-error-1.7/missing --run autoheader
-AUTOMAKE = ${SHELL} /Users/michael/src/git/lib/libgpg-error-1.7/missing --run automake-1.10
+AUTOCONF = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7/missing --run autoconf
+AUTOHEADER = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7/missing --run autoheader
+AUTOMAKE = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7/missing --run automake-1.10
 AWK = awk
 BUILD_FILEVERSION = 
 BUILD_TIMESTAMP = 
 CC = gcc
 CCDEPMODE = depmode=none
 CC_FOR_BUILD = gcc
-CFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-5.0.14/include/ -mmacosx-version-min=10.5
+CFLAGS = -O -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -arch i386 -I/Users/sts/Quellen/mac/hbci/lib/static-build-debug-5.0.14/include/ -mmacosx-version-min=10.9
 CPP = gcc -E
-CPPFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-debug-5.0.14/include/ -mmacosx-version-min=10.5
+CPPFLAGS = -O -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -arch i386 -I/Users/sts/Quellen/mac/hbci/lib/static-build-debug-5.0.14/include/ -mmacosx-version-min=10.9
 CXX = g++
 CXXCPP = g++ -E
 CXXDEPMODE = depmode=none
@@ -123,22 +123,22 @@ INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 INTLLIBS = 
 INTL_MACOSX_LIBS = -Wl,-framework -Wl,CoreFoundation
-LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-debug-5.0.14/lib -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
+LDFLAGS = -arch i386 -L/Users/sts/Quellen/mac/hbci/lib/static-build-debug-5.0.14/lib -L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/ -mmacosx-version-min=10.9
 LIBGPG_ERROR_LT_AGE = 5
 LIBGPG_ERROR_LT_CURRENT = 5
 LIBGPG_ERROR_LT_REVISION = 0
-LIBICONV = /Developer_3/SDKs/MacOSX10.5.sdk/usr/lib//libiconv.dylib
+LIBICONV = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib//libiconv.dylib
 LIBINTL = 
 LIBOBJS = 
 LIBS = 
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LN_S = ln -s
-LTLIBICONV = -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ -liconv
+LTLIBICONV = -L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/ -liconv
 LTLIBINTL = 
 LTLIBOBJS = 
 MAINT = #
-MAKEINFO = ${SHELL} /Users/michael/src/git/lib/libgpg-error-1.7/missing --run makeinfo
-MKDIR_P = /Users/michael/src/git/lib/libgpg-error-1.7/install-sh -c -d
+MAKEINFO = ${SHELL} /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7/missing --run makeinfo
+MKDIR_P = /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7/install-sh -c -d
 MSGFMT = :
 MSGFMT_015 = :
 MSGMERGE = :
@@ -161,10 +161,10 @@ USE_NLS = no
 VERSION = 1.7
 XGETTEXT = :
 XGETTEXT_015 = :
-abs_builddir = /Users/michael/src/git/lib/tmp-debug/libgpg-error-1.7/lang/cl
-abs_srcdir = /Users/michael/src/git/lib/libgpg-error-1.7/lang/cl
-abs_top_builddir = /Users/michael/src/git/lib/tmp-debug/libgpg-error-1.7
-abs_top_srcdir = /Users/michael/src/git/lib/libgpg-error-1.7
+abs_builddir = /Users/sts/Quellen/mac/hbci/lib/tmp-debug/libgpg-error-1.7/lang/cl
+abs_srcdir = /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7/lang/cl
+abs_top_builddir = /Users/sts/Quellen/mac/hbci/lib/tmp-debug/libgpg-error-1.7
+abs_top_srcdir = /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7
 ac_ct_CC = gcc
 ac_ct_CXX = g++
 ac_ct_F77 = 
@@ -174,10 +174,10 @@ am__quote =
 am__tar = ${AMTAR} chof - "$$tardir"
 am__untar = ${AMTAR} xf -
 bindir = ${exec_prefix}/bin
-build = i386-apple-darwin11.3.0
+build = i386-apple-darwin14.0.0
 build_alias = 
 build_cpu = i386
-build_os = darwin11.3.0
+build_os = darwin14.0.0
 build_vendor = apple
 builddir = .
 datadir = ${datarootdir}
@@ -185,33 +185,33 @@ datarootdir = ${prefix}/share
 docdir = ${datarootdir}/doc/${PACKAGE_TARNAME}
 dvidir = ${docdir}
 exec_prefix = ${prefix}
-host = i386-apple-darwin11.3.0
+host = i386-apple-darwin14.0.0
 host_alias = 
 host_cpu = i386
-host_os = darwin11.3.0
+host_os = darwin14.0.0
 host_vendor = apple
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = $(SHELL) /Users/michael/src/git/lib/libgpg-error-1.7/install-sh
+install_sh = $(SHELL) /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
 localstatedir = ${prefix}/var
 mandir = ${datarootdir}/man
-mkdir_p = /Users/michael/src/git/lib/libgpg-error-1.7/install-sh -c -d
+mkdir_p = /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7/install-sh -c -d
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /Users/michael/src/git/lib/static-build-debug-5.0.14
+prefix = /Users/sts/Quellen/mac/hbci/lib/static-build-debug-5.0.14
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
-srcdir = /Users/michael/src/git/lib/libgpg-error-1.7/lang/cl
+srcdir = /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7/lang/cl
 sysconfdir = ${prefix}/etc
 target_alias = 
 top_builddir = ../..
-top_srcdir = /Users/michael/src/git/lib/libgpg-error-1.7
+top_srcdir = /Users/sts/Quellen/mac/hbci/lib/libgpg-error-1.7
 distributed_clfiles = gpg-error.asd \
 	gpg-error-package.lisp gpg-error.lisp
 

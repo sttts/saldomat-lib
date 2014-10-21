@@ -1,1 +1,1 @@
-/Users/michael/src/git/lib/gwenhywfar/src/base/debug.h
+/Users/sts/Quellen/mac/hbci/lib/gwenhywfar/src/base/debug.h

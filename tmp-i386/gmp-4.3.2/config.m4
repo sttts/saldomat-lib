@@ -1,7 +1,7 @@
 dnl config.m4.  Generated automatically by configure.
 changequote(<,>)
 ifdef(<__CONFIG_M4_INCLUDED__>,,<
-define(<CONFIG_TOP_SRCDIR>,<`/Users/michael/src/git/lib/gmp-4.3.2'>)
+define(<CONFIG_TOP_SRCDIR>,<`/Users/sts/Quellen/mac/hbci/lib/gmp-4.3.2'>)
 define(<WANT_ASSERT>,0)
 define(<WANT_PROFILING>,<`no'>)
 define(<SIZEOF_UNSIGNED>,<4>)

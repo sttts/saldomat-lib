@@ -1,1 +1,1 @@
-/Users/michael/src/git/lib/aqbanking/src/libs/aqbankingpp/stringlist.hpp
+/Users/sts/Quellen/mac/hbci/lib/aqbanking/src/libs/aqbankingpp/stringlist.hpp

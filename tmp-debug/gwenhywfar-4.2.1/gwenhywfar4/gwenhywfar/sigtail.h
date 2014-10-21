@@ -1,1 +1,1 @@
-/Users/michael/src/git/lib/gwenhywfar/src/cryptmsg/sigtail.h
+/Users/sts/Quellen/mac/hbci/lib/gwenhywfar/src/cryptmsg/sigtail.h

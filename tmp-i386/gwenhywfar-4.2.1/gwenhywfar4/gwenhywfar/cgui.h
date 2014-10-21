@@ -1,1 +1,1 @@
-/Users/michael/src/git/lib/gwenhywfar/src/gui/cgui.h
+/Users/sts/Quellen/mac/hbci/lib/gwenhywfar/src/gui/cgui.h

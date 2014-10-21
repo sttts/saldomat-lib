@@ -21,8 +21,8 @@ VERSION = 0.17
 
 SHELL = /bin/sh
 
-srcdir = /Users/michael/src/git/lib/gettext-0.17/gettext-runtime/intl
-top_srcdir = /Users/michael/src/git/lib/gettext-0.17/gettext-runtime
+srcdir = /Users/sts/Quellen/mac/hbci/lib/gettext-0.17/gettext-runtime/intl
+top_srcdir = /Users/sts/Quellen/mac/hbci/lib/gettext-0.17/gettext-runtime
 top_builddir = ..
 
 # The VPATH variables allows builds with $builddir != $srcdir, assuming a
@@ -37,7 +37,7 @@ top_builddir = ..
 #    files it finds in srcdir = ../../gettext-runtime/intl.
 VPATH = $(srcdir)
 
-prefix = /Users/michael/src/git/lib/static-build-i386-5.0.14
+prefix = /Users/sts/Quellen/mac/hbci/lib/static-build-i386-5.0.14
 exec_prefix = ${prefix}
 transform = s,x,x,
 libdir = ${exec_prefix}/lib
@@ -55,14 +55,14 @@ INSTALL_DATA = ${INSTALL} -m 644
 # We use $(mkdir_p).
 # In automake <= 1.9.x, $(mkdir_p) is defined either as "mkdir -p --" or as
 # "$(mkinstalldirs)" or as "$(install_sh) -d". For these automake versions,
-# $(SHELL) /Users/michael/src/git/lib/gettext-0.17/build-aux/install-sh does not start with $(SHELL), so we add it.
-# In automake >= 1.10, /Users/michael/src/git/lib/gettext-0.17/gettext-runtime/../build-aux/install-sh -c -d is derived from ${MKDIR_P}, which is defined
+# $(SHELL) /Users/sts/Quellen/mac/hbci/lib/gettext-0.17/build-aux/install-sh does not start with $(SHELL), so we add it.
+# In automake >= 1.10, /Users/sts/Quellen/mac/hbci/lib/gettext-0.17/gettext-runtime/../build-aux/install-sh -c -d is derived from ${MKDIR_P}, which is defined
 # either as "/path/to/mkdir -p" or ".../install-sh -c -d". For these automake
 # versions, $(mkinstalldirs) and $(install_sh) are unused.
-mkinstalldirs = $(SHELL) $(SHELL) /Users/michael/src/git/lib/gettext-0.17/build-aux/install-sh -d
-install_sh = $(SHELL) $(SHELL) /Users/michael/src/git/lib/gettext-0.17/build-aux/install-sh
-MKDIR_P = /Users/michael/src/git/lib/gettext-0.17/gettext-runtime/../build-aux/install-sh -c -d
-mkdir_p = /Users/michael/src/git/lib/gettext-0.17/gettext-runtime/../build-aux/install-sh -c -d
+mkinstalldirs = $(SHELL) $(SHELL) /Users/sts/Quellen/mac/hbci/lib/gettext-0.17/build-aux/install-sh -d
+install_sh = $(SHELL) $(SHELL) /Users/sts/Quellen/mac/hbci/lib/gettext-0.17/build-aux/install-sh
+MKDIR_P = /Users/sts/Quellen/mac/hbci/lib/gettext-0.17/gettext-runtime/../build-aux/install-sh -c -d
+mkdir_p = /Users/sts/Quellen/mac/hbci/lib/gettext-0.17/gettext-runtime/../build-aux/install-sh -c -d
 
 l = l
 
@@ -82,9 +82,9 @@ DEFS = -DLOCALEDIR=\"$(localedir)\" -DLOCALE_ALIAS_PATH=\"$(aliaspath)\" \
 -Dset_relocation_prefix=libintl_set_relocation_prefix \
 -Drelocate=libintl_relocate \
 -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H
-CPPFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.14/include/ -mmacosx-version-min=10.5 -I/Developer_3/SDKs/MacOSX10.5.sdk/usr/include
-CFLAGS = -O -g -isysroot /Developer_3/SDKs/MacOSX10.5.sdk -arch i386 -I/Users/michael/src/git/lib/static-build-i386-5.0.14/include/ -mmacosx-version-min=10.5 -fvisibility=hidden
-LDFLAGS = -arch i386 -L/Users/michael/src/git/lib/static-build-i386-5.0.14/lib -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5 $(LDFLAGS_no)
+CPPFLAGS = -O -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -arch i386 -I/Users/sts/Quellen/mac/hbci/lib/static-build-i386-5.0.14/include/ -mmacosx-version-min=10.9 -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include
+CFLAGS = -O -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -arch i386 -I/Users/sts/Quellen/mac/hbci/lib/static-build-i386-5.0.14/include/ -mmacosx-version-min=10.9 -fvisibility=hidden
+LDFLAGS = -arch i386 -L/Users/sts/Quellen/mac/hbci/lib/static-build-i386-5.0.14/lib -L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/ -mmacosx-version-min=10.9 $(LDFLAGS_no)
 LDFLAGS_yes = -Wl,--export-all-symbols
 LDFLAGS_no =
 LIBS = 
@@ -193,7 +193,7 @@ libintl.a libgnuintl.a: $(OBJECTS)
 libintl.la libgnuintl.la: $(OBJECTS) $(OBJECTS_RES_no)
 	$(LIBTOOL) --mode=link \
 	  $(CC) $(CPPFLAGS) $(CFLAGS) $(XCFLAGS) $(LDFLAGS) -o $@ \
-	  $(OBJECTS) -L/Developer_3/SDKs/MacOSX10.5.sdk/usr/lib/ -liconv -Wl,-framework -Wl,CoreFoundation $(LIBS)  -lc \
+	  $(OBJECTS) -L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/ -liconv -Wl,-framework -Wl,CoreFoundation $(LIBS)  -lc \
 	  $(OBJECTS_RES_no) \
 	  -version-info $(LTV_CURRENT):$(LTV_REVISION):$(LTV_AGE) \
 	  -rpath $(libdir) \
@@ -326,7 +326,7 @@ libintl.h: $(srcdir)/libgnuintl.h.in
 	  < $(srcdir)/libgnuintl.h.in > libintl.h
 
 charset.alias: $(srcdir)/config.charset
-	$(SHELL) $(srcdir)/config.charset 'i386-apple-darwin11.3.0' > t-$@
+	$(SHELL) $(srcdir)/config.charset 'i386-apple-darwin14.0.0' > t-$@
 	mv t-$@ $@
 
 check: all

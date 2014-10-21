@@ -1,1 +1,1 @@
-/Users/michael/src/git/lib/gwenhywfar/src/os/inetsocket.h
+/Users/sts/Quellen/mac/hbci/lib/gwenhywfar/src/os/inetsocket.h

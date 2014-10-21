@@ -22,11 +22,15 @@ GNU libraries
 
 Software libraries
 * GnuTLS: (gnutls).		GNU Transport Layer Security Library.
+* libtasn1: (libtasn1). Library for Abstract Syntax Notation One (ASN.1).
 
 System Administration
 * certtool: (gnutls)Invoking certtool.	Manipulate certificates and keys.
-* gnutls-cli: (gnutls)Invoking gnutls-cli.	GNU TLS test client.
-* gnutls-cli-debug: (gnutls)Invoking gnutls-cli-debug.	GNU TLS debug client.
-* gnutls-serv: (gnutls)Invoking gnutls-serv.	GNU TLS test server.
+* gnutls-cli: (gnutls)Invoking gnutls-cli.	GnuTLS test client.
+* gnutls-cli-debug: (gnutls)Invoking gnutls-cli-debug.	GnuTLS debug client.
+* gnutls-serv: (gnutls)Invoking gnutls-serv.	GnuTLS test server.
 * psktool: (gnutls)Invoking psktool.	Simple TLS-Pre-Shared-Keys manager.
 * srptool: (gnutls)Invoking srptool.	Simple SRP password tool.
+
+Encryption
+* Nettle: (nettle).             A low-level cryptographic library.
