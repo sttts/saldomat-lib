@@ -10,7 +10,7 @@
 
 AqVer=5.0.14
 GwenVer=4.2.1
-devdir=Developer_3
+devdir=Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer
 
 all:
 	$(MAKE) build arch=i386 postfix=-i386
@@ -26,11 +26,11 @@ DEBUG=no
 BASEDIR=$(shell pwd)
 PREFIX=$(shell pwd)/static-build$(postfix)-$(AqVer)
 BUILDDIR=$(shell pwd)/tmp$(postfix)
-CFLAGS=-O -g -isysroot /$(devdir)/SDKs/MacOSX10.5.sdk -arch $(arch) -I$(PREFIX)/include/ -mmacosx-version-min=10.5
-LDFLAGS=-arch $(arch) -L$(PREFIX)/lib -L/$(devdir)/SDKs/MacOSX10.5.sdk/usr/lib/ -mmacosx-version-min=10.5
+CFLAGS=-O -g -isysroot /$(devdir)/SDKs/MacOSX10.9.sdk -arch $(arch) -I$(PREFIX)/include/ -mmacosx-version-min=10.9
+LDFLAGS=-arch $(arch) -L$(PREFIX)/lib -L/$(devdir)/SDKs/MacOSX10.9.sdk/usr/lib/ -mmacosx-version-min=10.9
 CONFFLAGS=--disable-dependency-tracking --prefix=$(PREFIX) --disable-shared --enable-static
 SHARED_CONFFLAGS=--disable-dependency-tracking --prefix=$(PREFIX) --enable-shared --enable-static
-PATH=$(PREFIX)/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+PATH=$(PREFIX)/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/bin
 
 .pkg-config.compiled$(postfix):
 	mkdir -p $(BUILDDIR)/pkg-config-0.23
@@ -154,7 +154,7 @@ PATH=$(PREFIX)/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 	cd gwenhywfar; autoheader
 	cd gwenhywfar; if test ! -f i18nsources; then echo > i18nsources; fi
 	cd gwenhywfar; automake -f --add-missing
-	cd gwenhywfar; /usr/bin/autoconf
+	cd gwenhywfar; autoconf
 	cd $(BUILDDIR)/gwenhywfar-$(GwenVer); \
 	PATH=$(PATH) \
 	LDFLAGS="-framework CoreFoundation $(LDFLAGS) -lcharset -liconv -lintl -lgmp -lgpg-error -lgcrypt -lgnutls -lgnutls-extra -lgnutls-openssl" \
@@ -183,7 +183,7 @@ PATH=$(PREFIX)/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 	cd aqbanking; autoheader
 	cd aqbanking; if test ! -f i18nsources; then echo > i18nsources; fi
 	cd aqbanking; automake -f --add-missing
-	cd aqbanking; /usr/bin/autoconf
+	cd aqbanking; autoconf
 	cd $(BUILDDIR)/aqbanking-$(AqVer); \
 	PATH=$(PATH) \
 	LDFLAGS="-framework CoreFoundation $(LDFLAGS) -lcharset -liconv -lintl -lgmp -lgpg-error -lgcrypt -lgnutls -lgnutls-extra -lgnutls-openssl -lgwenhywfar" \
