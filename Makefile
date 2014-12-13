@@ -102,13 +102,13 @@ PATH=$(PREFIX)/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/bin
 	touch .nettle.compiled$(postfix)
 
 .libtasn1.compiled$(postfix):
-	mkdir -p $(BUILDDIR)/libtasn1-3.4
-	cd $(BUILDDIR)/libtasn1-3.4; \
+	mkdir -p $(BUILDDIR)/libtasn1-4.2
+	cd $(BUILDDIR)/libtasn1-4.2; \
 	PATH=$(PREFIX)/bin:$$PATH \
 	PATH=$(PATH) LDFLAGS="$(LDFLAGS)" \
 	CFLAGS="$(CFLAGS) -fheinous-gnu-extensions -std=gnu89" \
 	CPPFLAGS="$(CFLAGS)" \
-	$(BASEDIR)/libtasn1-3.4/configure $(CONFFLAGS) \
+	$(BASEDIR)/libtasn1-4.2/configure $(CONFFLAGS) \
 	&& \
 	make && \
 	make install
