@@ -63,12 +63,12 @@ PATH=$(PREFIX)/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/bin
 	touch .gettext.compiled$(postfix)
 
 .libgpg-error.compiled$(postfix):
-	mkdir -p $(BUILDDIR)/libgpg-error-1.7
-	cd $(BUILDDIR)/libgpg-error-1.7; \
+	mkdir -p $(BUILDDIR)/libgpg-error-1.17
+	cd $(BUILDDIR)/libgpg-error-1.17; \
 	PATH=$(PATH) LDFLAGS="$(LDFLAGS)" \
 	CFLAGS="$(CFLAGS)" \
 	CPPFLAGS="$(CFLAGS)" \
-	$(BASEDIR)/libgpg-error-1.7/configure $(CONFFLAGS) \
+	$(BASEDIR)/libgpg-error-1.17/configure $(CONFFLAGS) \
 	--disable-languages --disable-rpath --disable-nls && \
 	make && \
 	make install
