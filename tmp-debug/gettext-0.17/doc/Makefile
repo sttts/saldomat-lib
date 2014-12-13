@@ -130,13 +130,13 @@ BUILD_INCLUDED_LIBINTL = yes
 CATOBJEXT = .gmo
 CC = gcc
 CCDEPMODE = depmode=none
-CFLAGS = -O -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -arch i386 -I/Users/sts/Quellen/mac/hbci/lib/static-build-debug-5.0.14/include/ -mmacosx-version-min=10.9
+CFLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -arch i386 -I/Users/sts/Quellen/mac/hbci/lib/static-build-debug-5.5.0.2/include/ -mmacosx-version-min=10.9 -fno-inline
 CFLAG_VISIBILITY = -fvisibility=hidden
 CLASSPATH = 
 CLASSPATH_SEPARATOR = :
 CONF_JAVAC = javac -target 1.1 -source 1.3
 CPP = gcc -E
-CPPFLAGS = -O -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -arch i386 -I/Users/sts/Quellen/mac/hbci/lib/static-build-debug-5.0.14/include/ -mmacosx-version-min=10.9 -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include
+CPPFLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -arch i386 -I/Users/sts/Quellen/mac/hbci/lib/static-build-debug-5.5.0.2/include/ -mmacosx-version-min=10.9 -fno-inline -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include
 CROSS_COMPILING = no
 CSHARPCOMPFLAGS = -O -g
 CSHARP_CHOICE = any
@@ -289,7 +289,7 @@ INTL_LIBTOOL_SUFFIX_PREFIX = l
 INTL_MACOSX_LIBS = -Wl,-framework -Wl,CoreFoundation
 JAR = jar
 JAVA_CHOICE = no
-LDFLAGS = -arch i386 -L/Users/sts/Quellen/mac/hbci/lib/static-build-debug-5.0.14/lib -L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/ -mmacosx-version-min=10.9
+LDFLAGS = -arch i386 -L/Users/sts/Quellen/mac/hbci/lib/static-build-debug-5.5.0.2/lib -L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/ -mmacosx-version-min=10.9
 LIBGRT_LIBDEPS =  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib//libiconv.dylib
 LIBGRT_LTLIBDEPS =  -L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/ -liconv
 LIBICONV = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib//libiconv.dylib
@@ -420,7 +420,7 @@ mandir = ${datarootdir}/man
 mkdir_p = /Users/sts/Quellen/mac/hbci/lib/gettext-0.17/gettext-runtime/../build-aux/install-sh -c -d
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /Users/sts/Quellen/mac/hbci/lib/static-build-debug-5.0.14
+prefix = /Users/sts/Quellen/mac/hbci/lib/static-build-debug-5.5.0.2
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin

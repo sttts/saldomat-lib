@@ -1,0 +1,1 @@
+/Users/sts/Quellen/mac/hbci/lib/gnutls-3.3.11/GNUmakefile

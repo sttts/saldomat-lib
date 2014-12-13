@@ -420,7 +420,7 @@
 /* #undef ICONV_FLAVOR */
 
 /* Define to the value of ${prefix}, as a string. */
-#define INSTALLPREFIX "/Users/sts/Quellen/mac/hbci/lib/static-build-debug-5.0.14"
+#define INSTALLPREFIX "/Users/sts/Quellen/mac/hbci/lib/static-build-debug-5.5.0.2"
 
 /* Define if integer division by zero raises signal SIGFPE. */
 #define INTDIV0_RAISES_SIGFPE 1

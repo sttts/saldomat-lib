@@ -1,1 +1,0 @@
-/Users/sts/Quellen/mac/hbci/lib/tmp-i386/aqbanking-5.0.14/version.h

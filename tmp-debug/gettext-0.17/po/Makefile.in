@@ -22,7 +22,7 @@ srcdir = /Users/sts/Quellen/mac/hbci/lib/gettext-0.17/gettext-runtime/po
 top_srcdir = /Users/sts/Quellen/mac/hbci/lib/gettext-0.17/gettext-runtime
 VPATH = /Users/sts/Quellen/mac/hbci/lib/gettext-0.17/gettext-runtime/po
 
-prefix = /Users/sts/Quellen/mac/hbci/lib/static-build-debug-5.0.14
+prefix = /Users/sts/Quellen/mac/hbci/lib/static-build-debug-5.5.0.2
 exec_prefix = ${prefix}
 datarootdir = ${prefix}/share
 datadir = ${datarootdir}

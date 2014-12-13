@@ -2,13 +2,13 @@
 
 CC = gcc
 CXX = g++
-CFLAGS = -O -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -arch i386 -I/Users/sts/Quellen/mac/hbci/lib/static-build-i386-5.0.14/include/ -mmacosx-version-min=10.9 -fheinous-gnu-extensions -std=gnu89 -ggdb3 -Wall -W   -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes   -Wpointer-arith -Wbad-function-cast -Wnested-externs
+CFLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -arch i386 -I/Users/sts/Quellen/mac/hbci/lib/static-build-i386-5.5.0.2/include/ -mmacosx-version-min=10.9 -O -fheinous-gnu-extensions -std=gnu89 -ggdb3 -Wall -W   -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes   -Wpointer-arith -Wbad-function-cast -Wnested-externs
 CXXFLAGS = -g -O2
 CCPIC = -fPIC
 CCPIC_MAYBE = -fPIC
-CPPFLAGS = -O -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -arch i386 -I/Users/sts/Quellen/mac/hbci/lib/static-build-i386-5.0.14/include/ -mmacosx-version-min=10.9
+CPPFLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -arch i386 -I/Users/sts/Quellen/mac/hbci/lib/static-build-i386-5.5.0.2/include/ -mmacosx-version-min=10.9 -O
 DEFS = -DHAVE_CONFIG_H
-LDFLAGS = -arch i386 -L/Users/sts/Quellen/mac/hbci/lib/static-build-i386-5.0.14/lib -L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/ -mmacosx-version-min=10.9
+LDFLAGS = -arch i386 -L/Users/sts/Quellen/mac/hbci/lib/static-build-i386-5.5.0.2/lib -L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/ -mmacosx-version-min=10.9
 LIBS = -lgmp 
 LIBOBJS =  ${LIBOBJDIR}memxor$U.o
 EMULATOR = 
@@ -60,7 +60,7 @@ MAKEINFO = makeinfo
 RANLIB = ranlib
 LN_S = ln -s
 
-prefix	=	/Users/sts/Quellen/mac/hbci/lib/static-build-i386-5.0.14
+prefix	=	/Users/sts/Quellen/mac/hbci/lib/static-build-i386-5.5.0.2
 exec_prefix =	${prefix}
 datarootdir =	${prefix}/share
 bindir =	${exec_prefix}/bin

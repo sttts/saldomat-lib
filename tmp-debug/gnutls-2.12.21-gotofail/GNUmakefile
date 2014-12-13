@@ -1,1 +1,0 @@
-/Users/sts/Quellen/mac/hbci/lib/gnutls-2.12.21-gotofail/GNUmakefile
