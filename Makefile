@@ -75,17 +75,17 @@ PATH=$(PREFIX)/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/bin
 	touch .libgpg-error.compiled$(postfix)
 
 .libgcrypt.compiled$(postfix): .libgpg-error.compiled$(postfix)
-	mkdir -p $(BUILDDIR)/libgcrypt-1.4.5
-	cd $(BUILDDIR)/libgcrypt-1.4.5; \
+	mkdir -p $(BUILDDIR)/libgcrypt-1.6.2
+	cd $(BUILDDIR)/libgcrypt-1.6.2; \
 	PATH=$(PREFIX)/bin:$$PATH \
 	PATH=$(PATH) LDFLAGS="$(LDFLAGS)" \
 	CFLAGS="$(CFLAGS) -fheinous-gnu-extensions -std=gnu89" \
 	CPPFLAGS="$(CFLAGS)" \
-	$(BASEDIR)/libgcrypt-1.4.5/configure $(CONFFLAGS) --host=ppc --disable-asm \
+	$(BASEDIR)/libgcrypt-1.6.2/configure $(CONFFLAGS) --host=ppc --disable-asm \
 	&& \
 	make && \
 	make install && \
-	cp $(BASEDIR)/libgcrypt-1.4.5/src/libgcrypt.m4 $(PREFIX)/share/aclocal
+	cp $(BASEDIR)/libgcrypt-1.6.2/src/libgcrypt.m4 $(PREFIX)/share/aclocal
 	touch .libgcrypt.compiled$(postfix)
 
 .nettle.compiled$(postfix): .libgpg-error.compiled$(postfix)
