@@ -128,12 +128,12 @@ PATH=$(PREFIX)/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/bin
 	touch .gmp.compiled$(postfix)
 
 .gnutls.compiled$(postfix): .gettext.compiled$(postfix) .gmp.compiled$(postfix) .nettle.compiled$(postfix) .libtasn1.compiled$(postfix)
-	mkdir -p $(BUILDDIR)/gnutls-2.12.21-gotofail
-	cd $(BUILDDIR)/gnutls-2.12.21-gotofail; \
+	mkdir -p $(BUILDDIR)/gnutls-3.3.11
+	cd $(BUILDDIR)/gnutls-3.3.11; \
 	PATH=$(PATH) LDFLAGS="$(LDFLAGS)" \
 	CFLAGS="$(CFLAGS) -std=gnu89" \
 	CPPFLAGS="$(CFLAGS)" \
-	ABI=32 $(BASEDIR)/gnutls-2.12.21-gotofail/configure $(CONFFLAGS) \
+	ABI=32 $(BASEDIR)/gnutls-3.3.11/configure $(CONFFLAGS) --build=i386-apple-darwin \
 	--disable-rpath --disable-nls --disable-guile --without-libextra --disable-cxx --without-p11-kit --with-libgcrypt-prefix=$(PREFIX) && \
 	make && \
 	make install
@@ -162,7 +162,7 @@ PATH=$(PREFIX)/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/bin
 	cd gwenhywfar; autoconf
 	cd $(BUILDDIR)/gwenhywfar-$(GwenVer); \
 	PATH=$(PATH) \
-	LDFLAGS="-framework CoreFoundation $(LDFLAGS) -lcharset -liconv -lintl -lgmp -lgpg-error -lgcrypt -lgnutls -lgnutls-extra -lgnutls-openssl" \
+	LDFLAGS="-framework CoreFoundation $(LDFLAGS) -lcharset -liconv -lintl -lgmp -lgpg-error -lgcrypt -lgnutls -lgnutls-openssl" \
 	CFLAGS="$(CFLAGS)" \
 	CPPFLAGS="$(CFLAGS)" \
 	LIBGNUTLS_CFLAGS="-H$(PREFIX)/include/gnutls" \
@@ -191,7 +191,7 @@ PATH=$(PREFIX)/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/bin
 	cd aqbanking; autoconf
 	cd $(BUILDDIR)/aqbanking-$(AqVer); \
 	PATH=$(PATH) \
-	LDFLAGS="-framework CoreFoundation $(LDFLAGS) -lcharset -liconv -lintl -lgmp -lgpg-error -lgcrypt -lgnutls -lgnutls-extra -lgnutls-openssl -lgwenhywfar" \
+	LDFLAGS="-framework CoreFoundation $(LDFLAGS) -lcharset -liconv -lintl -lgmp -lgpg-error -lgcrypt -lgnutls -lgnutls-openssl -lgwenhywfar" \
 	CFLAGS="$(CFLAGS)" \
 	CPPFLAGS="$(CFLAGS)" \
 	PKG_CONFIG=$(PREFIX)/bin/pkg-config PKG_CONFIG_PATH=$(PREFIX)/lib/pkgconfig/ \
