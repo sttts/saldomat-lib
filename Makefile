@@ -26,7 +26,12 @@ DEBUG=no
 BASEDIR=$(shell pwd)
 PREFIX=$(shell pwd)/static-build$(postfix)-$(AqVer)
 BUILDDIR=$(shell pwd)/tmp$(postfix)
-CFLAGS=-O -g -isysroot /$(devdir)/SDKs/MacOSX10.9.sdk -arch $(arch) -I$(PREFIX)/include/ -mmacosx-version-min=10.9
+ifeq ($(DEBUG),yes)
+CFLAGS=-g -isysroot /$(devdir)/SDKs/MacOSX10.9.sdk -arch $(arch) -I$(PREFIX)/include/ -mmacosx-version-min=10.9 -fno-inline
+else
+CFLAGS=-g -isysroot /$(devdir)/SDKs/MacOSX10.9.sdk -arch $(arch) -I$(PREFIX)/include/ -mmacosx-version-min=10.9 -O
+endif
+
 LDFLAGS=-arch $(arch) -L$(PREFIX)/lib -L/$(devdir)/SDKs/MacOSX10.9.sdk/usr/lib/ -mmacosx-version-min=10.9
 CONFFLAGS=--disable-dependency-tracking --prefix=$(PREFIX) --disable-shared --enable-static
 SHARED_CONFFLAGS=--disable-dependency-tracking --prefix=$(PREFIX) --enable-shared --enable-static
