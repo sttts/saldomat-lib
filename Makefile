@@ -8,8 +8,8 @@
 # gwen
 # aqbanking
 
-AqVer=5.0.14
-GwenVer=4.2.1
+AqVer=5.5.0.2
+GwenVer=4.12.0beta
 devdir=Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer
 
 all:
